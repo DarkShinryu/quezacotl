@@ -26,6 +26,7 @@ namespace Quezacotl
         private static readonly string Chartable =
         @" , ,1,2,3,4,5,6,7,8,9,%,/,:,!,?,…,+,-,=,*,&,「,」,(,),·,.,,,~,“,”,‘,#,$,',_,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,À,Á,Â,Ä,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ñ,Ò,Ó,Ô,Ö,Ù,Ú,Û,Ü,Œ,ß,à,á,â,ä,ç,è,é,ê,ë,ì,í,î,ï,ñ,ò";
 
+
         public struct GfData
         {
             public string Name;
@@ -71,8 +72,6 @@ namespace Quezacotl
             public byte ApAbility20;
             public byte ApAbility21;
             public byte ApAbility22;
-            public byte ApAbility23;
-            public byte ApAbility24;
             public UInt16 Kills;
             public UInt16 KOs;
             public byte LearningAbility;
@@ -333,6 +332,25 @@ namespace Quezacotl
             }
         }
 
+        /// <summary>
+        /// This is for GF Compatibility
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="add"></param>
+        private static void GfNameToInit(uint a, int add, byte mode)
+        {
+            byte[] nameBytes = BitConverter.GetBytes(a);
+            switch (mode)
+            {
+                case (byte)Mode.Mode_GF:
+                    Array.Copy(nameBytes, 0, Init, OffsetToCharactersSelected + add, 12);
+                    break;
+
+                default:
+                    return;
+            }
+        }
+
         enum Mode : byte
         {
             Mode_GF,
@@ -350,7 +368,7 @@ namespace Quezacotl
             switch (index)
             {
                 case 0:
-                    //reserved for gf name
+                    //GfNameToInit(Convert.ToUInt32(variable), 0, (byte)Mode.Mode_GF); //GF Name
                     return;
                 case 1:
                     ExpToInit(Convert.ToUInt32(variable), 12, (byte)Mode.Mode_GF); //Exp
@@ -365,52 +383,52 @@ namespace Quezacotl
                     CurrentHpToInit(Convert.ToUInt32(variable), 18, (byte)Mode.Mode_GF); //Current Hp
                     return;
                 case 5:
-                    Init[OffsetToGfSelected + 20] = (byte)(Init[OffsetToGfSelected + 19] ^ Convert.ToByte(variable)); //Ability 1
+                    Init[OffsetToGfSelected + 20] = (byte)(Init[OffsetToGfSelected + 20] ^ Convert.ToByte(variable)); //Ability 1
                     return;
                 case 6:
-                    Init[OffsetToGfSelected + 21] = (byte)(Init[OffsetToGfSelected + 20] ^ Convert.ToByte(variable)); //Ability 2
+                    Init[OffsetToGfSelected + 21] = (byte)(Init[OffsetToGfSelected + 21] ^ Convert.ToByte(variable)); //Ability 2
                     return;
                 case 7:
-                    Init[OffsetToGfSelected + 22] = (byte)(Init[OffsetToGfSelected + 21] ^ Convert.ToByte(variable)); //Ability 3
+                    Init[OffsetToGfSelected + 22] = (byte)(Init[OffsetToGfSelected + 22] ^ Convert.ToByte(variable)); //Ability 3
                     return;
                 case 8:
-                    Init[OffsetToGfSelected + 23] = (byte)(Init[OffsetToGfSelected + 22] ^ Convert.ToByte(variable)); //Ability 4
+                    Init[OffsetToGfSelected + 23] = (byte)(Init[OffsetToGfSelected + 23] ^ Convert.ToByte(variable)); //Ability 4
                     return;
                 case 9:
-                    Init[OffsetToGfSelected + 24] = (byte)(Init[OffsetToGfSelected + 23] ^ Convert.ToByte(variable)); //Ability 5
+                    Init[OffsetToGfSelected + 24] = (byte)(Init[OffsetToGfSelected + 24] ^ Convert.ToByte(variable)); //Ability 5
                     return;
                 case 10:
-                    Init[OffsetToGfSelected + 25] = (byte)(Init[OffsetToGfSelected + 24] ^ Convert.ToByte(variable)); //Ability 6
+                    Init[OffsetToGfSelected + 25] = (byte)(Init[OffsetToGfSelected + 25] ^ Convert.ToByte(variable)); //Ability 6
                     return;
                 case 11:
-                    Init[OffsetToGfSelected + 26] = (byte)(Init[OffsetToGfSelected + 25] ^ Convert.ToByte(variable)); //Ability 7
+                    Init[OffsetToGfSelected + 26] = (byte)(Init[OffsetToGfSelected + 26] ^ Convert.ToByte(variable)); //Ability 7
                     return;
                 case 12:
-                    Init[OffsetToGfSelected + 27] = (byte)(Init[OffsetToGfSelected + 26] ^ Convert.ToByte(variable)); //Ability 8
+                    Init[OffsetToGfSelected + 27] = (byte)(Init[OffsetToGfSelected + 27] ^ Convert.ToByte(variable)); //Ability 8
                     return;
                 case 13:
-                    Init[OffsetToGfSelected + 28] = (byte)(Init[OffsetToGfSelected + 27] ^ Convert.ToByte(variable)); //Ability 9
+                    Init[OffsetToGfSelected + 28] = (byte)(Init[OffsetToGfSelected + 28] ^ Convert.ToByte(variable)); //Ability 9
                     return;
                 case 14:
-                    Init[OffsetToGfSelected + 29] = (byte)(Init[OffsetToGfSelected + 28] ^ Convert.ToByte(variable)); //Ability 10
+                    Init[OffsetToGfSelected + 29] = (byte)(Init[OffsetToGfSelected + 29] ^ Convert.ToByte(variable)); //Ability 10
                     return;
                 case 15:
-                    Init[OffsetToGfSelected + 30] = (byte)(Init[OffsetToGfSelected + 29] ^ Convert.ToByte(variable)); //Ability 11
+                    Init[OffsetToGfSelected + 30] = (byte)(Init[OffsetToGfSelected + 30] ^ Convert.ToByte(variable)); //Ability 11
                     return;
                 case 16:
-                    Init[OffsetToGfSelected + 31] = (byte)(Init[OffsetToGfSelected + 30] ^ Convert.ToByte(variable)); //Ability 12
+                    Init[OffsetToGfSelected + 31] = (byte)(Init[OffsetToGfSelected + 31] ^ Convert.ToByte(variable)); //Ability 12
                     return;
                 case 17:
-                    Init[OffsetToGfSelected + 32] = (byte)(Init[OffsetToGfSelected + 31] ^ Convert.ToByte(variable)); //Ability 13
+                    Init[OffsetToGfSelected + 32] = (byte)(Init[OffsetToGfSelected + 32] ^ Convert.ToByte(variable)); //Ability 13
                     return;
                 case 18:
-                    Init[OffsetToGfSelected + 33] = (byte)(Init[OffsetToGfSelected + 32] ^ Convert.ToByte(variable)); //Ability 14
+                    Init[OffsetToGfSelected + 33] = (byte)(Init[OffsetToGfSelected + 33] ^ Convert.ToByte(variable)); //Ability 14
                     return;
                 case 19:
-                    Init[OffsetToGfSelected + 34] = (byte)(Init[OffsetToGfSelected + 33] ^ Convert.ToByte(variable)); //Ability 15
+                    Init[OffsetToGfSelected + 34] = (byte)(Init[OffsetToGfSelected + 34] ^ Convert.ToByte(variable)); //Ability 15
                     return;
                 case 20:
-                    Init[OffsetToGfSelected + 35] = (byte)(Init[OffsetToGfSelected + 34] ^ Convert.ToByte(variable)); //Ability 16
+                    Init[OffsetToGfSelected + 35] = (byte)(Init[OffsetToGfSelected + 35] ^ Convert.ToByte(variable)); //Ability 16
                     return;
                 case 21:
                     Init[OffsetToGfSelected + 36] = Convert.ToByte(variable); //Ap Ability 1
@@ -500,6 +518,7 @@ namespace Quezacotl
         public static void ReadInit(byte[] init)
         {
             Init = init;
+
             GfDataOffset = 0;
             CharactersDataOffset = 1088;
             MiscDataOffset = 2264;
@@ -516,7 +535,7 @@ namespace Quezacotl
             int selectedGfOffset = GfDataOffset + (GfId_List * 68);
             OffsetToGfSelected = selectedGfOffset;
 
-            //to do name
+            //GetSelectedGfData.Name = BuildString((ushort)BitConverter.ToUInt32(Init, selectedGfOffset));
             GetSelectedGfData.Exp = BitConverter.ToUInt32(Init, selectedGfOffset + 12);
             GetSelectedGfData.Unknown1 = Init[selectedGfOffset + 16];
             GetSelectedGfData.Available = Init[selectedGfOffset + 17];
