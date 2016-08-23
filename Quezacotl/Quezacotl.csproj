@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,8 +55,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HexUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InitWorker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +72,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +86,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
