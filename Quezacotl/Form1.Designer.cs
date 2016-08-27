@@ -30,15 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("", 0);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("", 1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("", 2);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("", 3);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("", 4);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("", 5);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("", 6);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("", 7);
             System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("", 0);
             System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("", 1);
             System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("", 2);
@@ -47,14 +38,22 @@
             System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("", 5);
             System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("", 6);
             System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("", 7);
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("", 8);
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("", 9);
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("", 10);
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("", 11);
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("", 12);
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("", 13);
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("", 14);
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("", 15);
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("", 0);
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("", 1);
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("", 2);
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("", 3);
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("", 4);
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("", 5);
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("", 6);
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("", 7);
+            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("", 8);
+            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("", 9);
+            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("", 10);
+            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("", 11);
+            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("", 12);
+            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("", 13);
+            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("", 14);
+            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("", 15);
             this.buttonSave = new System.Windows.Forms.Button();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -110,53 +109,47 @@
             this.labelCharsExpLvUp = new System.Windows.Forms.Label();
             this.comboBoxCharsBody = new System.Windows.Forms.ComboBox();
             this.numericUpDownCharsExp = new System.Windows.Forms.NumericUpDown();
-            this.labelCharsMaxHp = new System.Windows.Forms.Label();
             this.labelCharsCurrentHp = new System.Windows.Forms.Label();
-            this.numericUpDownCharsMaxHp = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownCharsCurrentHp = new System.Windows.Forms.NumericUpDown();
             this.tabPageChars2 = new System.Windows.Forms.TabPage();
-            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp16 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp8 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp12 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp14 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp6 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp10 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp15 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp11 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp13 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp1 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf9 = new System.Windows.Forms.CheckBox();
             this.imageListGfSmall = new System.Windows.Forms.ImageList(this.components);
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf15 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf14 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf13 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf12 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf11 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf10 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf2 = new System.Windows.Forms.CheckBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf1 = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPageChars3 = new System.Windows.Forms.TabPage();
-            this.dataGridViewCharsMagic = new System.Windows.Forms.DataGridView();
-            this.ColumnNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnName = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ColumnQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageChars4 = new System.Windows.Forms.TabPage();
             this.groupBoxCharsAbilities = new System.Windows.Forms.GroupBox();
             this.comboBoxCharsAb1 = new System.Windows.Forms.ComboBox();
@@ -488,6 +481,136 @@
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
+            this.checkBoxCharsAltMod = new System.Windows.Forms.CheckBox();
+            this.numericUpDownCharsMagicQ1 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCharsMagic1 = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.comboBoxCharsMagic2 = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label31 = new System.Windows.Forms.Label();
+            this.numericUpDownCharsMagicQ2 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCharsMagic3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic4 = new System.Windows.Forms.ComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.numericUpDownCharsMagicQ3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ4 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCharsMagic5 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic7 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic6 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic8 = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.numericUpDownCharsMagicQ5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ6 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ8 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCharsMagic9 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic13 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic11 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic15 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic10 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic14 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic12 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic16 = new System.Windows.Forms.ComboBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.numericUpDownCharsMagicQ9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ13 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ11 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ15 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ10 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ14 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ12 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ16 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCharsMagic17 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic25 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic21 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic29 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic19 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic27 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic23 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic31 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic18 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic26 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic22 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic30 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic20 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic28 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic24 = new System.Windows.Forms.ComboBox();
+            this.comboBoxCharsMagic32 = new System.Windows.Forms.ComboBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label47 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label54 = new System.Windows.Forms.Label();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.label55 = new System.Windows.Forms.Label();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label56 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.label57 = new System.Windows.Forms.Label();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label58 = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.label60 = new System.Windows.Forms.Label();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label61 = new System.Windows.Forms.Label();
+            this.numericUpDownCharsMagicQ17 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ25 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ21 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ29 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ19 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ27 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ23 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ31 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ18 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ26 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ22 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ30 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ20 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ28 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ24 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCharsMagicQ32 = new System.Windows.Forms.NumericUpDown();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.hexUpDownCharUnk5 = new Quezacotl.HexUpDown();
             this.hexUpDownCharUnk2 = new Quezacotl.HexUpDown();
             this.hexUpDownCharUnk4 = new Quezacotl.HexUpDown();
@@ -495,6 +618,9 @@
             this.hexUpDownCharUnk1 = new Quezacotl.HexUpDown();
             this.hexUpDownCharsComm4 = new Quezacotl.HexUpDown();
             this.hexUpDownGfUnknown = new Quezacotl.HexUpDown();
+            this.ColumnNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageCharacters.SuspendLayout();
@@ -514,27 +640,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsKills)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsExpLvUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsExp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMaxHp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsCurrentHp)).BeginInit();
             this.tabPageChars2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp1)).BeginInit();
             this.tabPageChars3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharsMagic)).BeginInit();
             this.tabPageChars4.SuspendLayout();
             this.groupBoxCharsAbilities.SuspendLayout();
             this.groupBoxCharsCommands.SuspendLayout();
@@ -588,6 +712,71 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ2)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ4)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ8)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ16)).BeginInit();
+            this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk4)).BeginInit();
@@ -720,15 +909,14 @@
             this.tabPageChars1.Controls.Add(this.labelCharsBody);
             this.tabPageChars1.Controls.Add(this.label29);
             this.tabPageChars1.Controls.Add(this.numericUpDownCharsKills);
+            this.tabPageChars1.Controls.Add(this.checkBoxCharsAltMod);
             this.tabPageChars1.Controls.Add(this.checkBoxCharsAvailable);
             this.tabPageChars1.Controls.Add(this.numericUpDownCharsExpLvUp);
             this.tabPageChars1.Controls.Add(this.labelCharsLv);
             this.tabPageChars1.Controls.Add(this.labelCharsExpLvUp);
             this.tabPageChars1.Controls.Add(this.comboBoxCharsBody);
             this.tabPageChars1.Controls.Add(this.numericUpDownCharsExp);
-            this.tabPageChars1.Controls.Add(this.labelCharsMaxHp);
             this.tabPageChars1.Controls.Add(this.labelCharsCurrentHp);
-            this.tabPageChars1.Controls.Add(this.numericUpDownCharsMaxHp);
             this.tabPageChars1.Controls.Add(this.numericUpDownCharsCurrentHp);
             this.tabPageChars1.Location = new System.Drawing.Point(4, 24);
             this.tabPageChars1.Name = "tabPageChars1";
@@ -1349,17 +1537,6 @@
             this.numericUpDownCharsExp.TabIndex = 8;
             this.numericUpDownCharsExp.ValueChanged += new System.EventHandler(this.numericUpDownCharExp_ValueChanged);
             // 
-            // labelCharsMaxHp
-            // 
-            this.labelCharsMaxHp.AutoSize = true;
-            this.labelCharsMaxHp.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelCharsMaxHp.Location = new System.Drawing.Point(340, 48);
-            this.labelCharsMaxHp.Margin = new System.Windows.Forms.Padding(8);
-            this.labelCharsMaxHp.Name = "labelCharsMaxHp";
-            this.labelCharsMaxHp.Size = new System.Drawing.Size(48, 13);
-            this.labelCharsMaxHp.TabIndex = 16;
-            this.labelCharsMaxHp.Text = "Max HP:";
-            // 
             // labelCharsCurrentHp
             // 
             this.labelCharsCurrentHp.AutoSize = true;
@@ -1370,19 +1547,6 @@
             this.labelCharsCurrentHp.Size = new System.Drawing.Size(66, 13);
             this.labelCharsCurrentHp.TabIndex = 16;
             this.labelCharsCurrentHp.Text = "Current HP:";
-            // 
-            // numericUpDownCharsMaxHp
-            // 
-            this.numericUpDownCharsMaxHp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownCharsMaxHp.Location = new System.Drawing.Point(406, 45);
-            this.numericUpDownCharsMaxHp.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.numericUpDownCharsMaxHp.Name = "numericUpDownCharsMaxHp";
-            this.numericUpDownCharsMaxHp.Size = new System.Drawing.Size(220, 23);
-            this.numericUpDownCharsMaxHp.TabIndex = 20;
             // 
             // numericUpDownCharsCurrentHp
             // 
@@ -1400,39 +1564,39 @@
             // tabPageChars2
             // 
             this.tabPageChars2.BackColor = System.Drawing.Color.White;
-            this.tabPageChars2.Controls.Add(this.numericUpDown16);
-            this.tabPageChars2.Controls.Add(this.numericUpDown8);
-            this.tabPageChars2.Controls.Add(this.numericUpDown15);
-            this.tabPageChars2.Controls.Add(this.numericUpDown4);
-            this.tabPageChars2.Controls.Add(this.numericUpDown14);
-            this.tabPageChars2.Controls.Add(this.numericUpDown7);
-            this.tabPageChars2.Controls.Add(this.numericUpDown13);
-            this.tabPageChars2.Controls.Add(this.numericUpDown2);
-            this.tabPageChars2.Controls.Add(this.numericUpDown12);
-            this.tabPageChars2.Controls.Add(this.numericUpDown6);
-            this.tabPageChars2.Controls.Add(this.numericUpDown11);
-            this.tabPageChars2.Controls.Add(this.numericUpDown3);
-            this.tabPageChars2.Controls.Add(this.numericUpDown10);
-            this.tabPageChars2.Controls.Add(this.numericUpDown5);
-            this.tabPageChars2.Controls.Add(this.numericUpDown9);
-            this.tabPageChars2.Controls.Add(this.numericUpDown1);
-            this.tabPageChars2.Controls.Add(this.checkBox9);
-            this.tabPageChars2.Controls.Add(this.checkBox16);
-            this.tabPageChars2.Controls.Add(this.checkBox8);
-            this.tabPageChars2.Controls.Add(this.checkBox15);
-            this.tabPageChars2.Controls.Add(this.checkBox7);
-            this.tabPageChars2.Controls.Add(this.checkBox14);
-            this.tabPageChars2.Controls.Add(this.checkBox6);
-            this.tabPageChars2.Controls.Add(this.checkBox13);
-            this.tabPageChars2.Controls.Add(this.checkBox5);
-            this.tabPageChars2.Controls.Add(this.checkBox12);
-            this.tabPageChars2.Controls.Add(this.checkBox4);
-            this.tabPageChars2.Controls.Add(this.checkBox11);
-            this.tabPageChars2.Controls.Add(this.checkBox3);
-            this.tabPageChars2.Controls.Add(this.checkBox10);
-            this.tabPageChars2.Controls.Add(this.checkBox2);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp16);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp8);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp12);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp4);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp14);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp6);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp10);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp2);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp15);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp7);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp11);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp3);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp13);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp5);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp9);
+            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp1);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf9);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf16);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf8);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf15);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf7);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf14);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf6);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf13);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf5);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf12);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf4);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf11);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf3);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf10);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf2);
             this.tabPageChars2.Controls.Add(this.label25);
-            this.tabPageChars2.Controls.Add(this.checkBox1);
+            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf1);
             this.tabPageChars2.Controls.Add(this.label21);
             this.tabPageChars2.Controls.Add(this.label26);
             this.tabPageChars2.Controls.Add(this.label17);
@@ -1443,229 +1607,229 @@
             this.tabPageChars2.TabIndex = 1;
             this.tabPageChars2.Text = "G-Forces";
             // 
-            // numericUpDown16
+            // numericUpDownGfComp16
             // 
-            this.numericUpDown16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown16.Location = new System.Drawing.Point(520, 440);
-            this.numericUpDown16.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp16.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp16.Location = new System.Drawing.Point(520, 440);
+            this.numericUpDownGfComp16.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown16.Name = "numericUpDown16";
-            this.numericUpDown16.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown16.TabIndex = 20;
+            this.numericUpDownGfComp16.Name = "numericUpDownGfComp16";
+            this.numericUpDownGfComp16.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp16.TabIndex = 20;
             // 
-            // numericUpDown8
+            // numericUpDownGfComp8
             // 
-            this.numericUpDown8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown8.Location = new System.Drawing.Point(187, 440);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp8.Location = new System.Drawing.Point(187, 440);
+            this.numericUpDownGfComp8.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown8.TabIndex = 20;
+            this.numericUpDownGfComp8.Name = "numericUpDownGfComp8";
+            this.numericUpDownGfComp8.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp8.TabIndex = 20;
             // 
-            // numericUpDown15
+            // numericUpDownGfComp12
             // 
-            this.numericUpDown15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown15.Location = new System.Drawing.Point(520, 216);
-            this.numericUpDown15.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp12.Location = new System.Drawing.Point(520, 216);
+            this.numericUpDownGfComp12.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown15.TabIndex = 20;
+            this.numericUpDownGfComp12.Name = "numericUpDownGfComp12";
+            this.numericUpDownGfComp12.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp12.TabIndex = 20;
             // 
-            // numericUpDown4
+            // numericUpDownGfComp4
             // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown4.Location = new System.Drawing.Point(187, 216);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp4.Location = new System.Drawing.Point(187, 216);
+            this.numericUpDownGfComp4.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown4.TabIndex = 20;
+            this.numericUpDownGfComp4.Name = "numericUpDownGfComp4";
+            this.numericUpDownGfComp4.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp4.TabIndex = 20;
             // 
-            // numericUpDown14
+            // numericUpDownGfComp14
             // 
-            this.numericUpDown14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown14.Location = new System.Drawing.Point(520, 328);
-            this.numericUpDown14.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp14.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp14.Location = new System.Drawing.Point(520, 328);
+            this.numericUpDownGfComp14.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown14.TabIndex = 20;
+            this.numericUpDownGfComp14.Name = "numericUpDownGfComp14";
+            this.numericUpDownGfComp14.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp14.TabIndex = 20;
             // 
-            // numericUpDown7
+            // numericUpDownGfComp6
             // 
-            this.numericUpDown7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown7.Location = new System.Drawing.Point(187, 328);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp6.Location = new System.Drawing.Point(187, 328);
+            this.numericUpDownGfComp6.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown7.TabIndex = 20;
+            this.numericUpDownGfComp6.Name = "numericUpDownGfComp6";
+            this.numericUpDownGfComp6.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp6.TabIndex = 20;
             // 
-            // numericUpDown13
+            // numericUpDownGfComp10
             // 
-            this.numericUpDown13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown13.Location = new System.Drawing.Point(520, 104);
-            this.numericUpDown13.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp10.Location = new System.Drawing.Point(520, 104);
+            this.numericUpDownGfComp10.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown13.TabIndex = 20;
+            this.numericUpDownGfComp10.Name = "numericUpDownGfComp10";
+            this.numericUpDownGfComp10.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp10.TabIndex = 20;
             // 
-            // numericUpDown2
+            // numericUpDownGfComp2
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown2.Location = new System.Drawing.Point(187, 104);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp2.Location = new System.Drawing.Point(187, 104);
+            this.numericUpDownGfComp2.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown2.TabIndex = 20;
+            this.numericUpDownGfComp2.Name = "numericUpDownGfComp2";
+            this.numericUpDownGfComp2.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp2.TabIndex = 20;
             // 
-            // numericUpDown12
+            // numericUpDownGfComp15
             // 
-            this.numericUpDown12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown12.Location = new System.Drawing.Point(520, 384);
-            this.numericUpDown12.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp15.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp15.Location = new System.Drawing.Point(520, 384);
+            this.numericUpDownGfComp15.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown12.TabIndex = 20;
+            this.numericUpDownGfComp15.Name = "numericUpDownGfComp15";
+            this.numericUpDownGfComp15.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp15.TabIndex = 20;
             // 
-            // numericUpDown6
+            // numericUpDownGfComp7
             // 
-            this.numericUpDown6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown6.Location = new System.Drawing.Point(187, 384);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp7.Location = new System.Drawing.Point(187, 384);
+            this.numericUpDownGfComp7.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown6.TabIndex = 20;
+            this.numericUpDownGfComp7.Name = "numericUpDownGfComp7";
+            this.numericUpDownGfComp7.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp7.TabIndex = 20;
             // 
-            // numericUpDown11
+            // numericUpDownGfComp11
             // 
-            this.numericUpDown11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown11.Location = new System.Drawing.Point(520, 160);
-            this.numericUpDown11.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp11.Location = new System.Drawing.Point(520, 160);
+            this.numericUpDownGfComp11.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown11.TabIndex = 20;
+            this.numericUpDownGfComp11.Name = "numericUpDownGfComp11";
+            this.numericUpDownGfComp11.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp11.TabIndex = 20;
             // 
-            // numericUpDown3
+            // numericUpDownGfComp3
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown3.Location = new System.Drawing.Point(187, 160);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp3.Location = new System.Drawing.Point(187, 160);
+            this.numericUpDownGfComp3.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown3.TabIndex = 20;
+            this.numericUpDownGfComp3.Name = "numericUpDownGfComp3";
+            this.numericUpDownGfComp3.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp3.TabIndex = 20;
             // 
-            // numericUpDown10
+            // numericUpDownGfComp13
             // 
-            this.numericUpDown10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown10.Location = new System.Drawing.Point(520, 272);
-            this.numericUpDown10.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp13.Location = new System.Drawing.Point(520, 272);
+            this.numericUpDownGfComp13.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown10.TabIndex = 20;
+            this.numericUpDownGfComp13.Name = "numericUpDownGfComp13";
+            this.numericUpDownGfComp13.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp13.TabIndex = 20;
             // 
-            // numericUpDown5
+            // numericUpDownGfComp5
             // 
-            this.numericUpDown5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown5.Location = new System.Drawing.Point(187, 272);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp5.Location = new System.Drawing.Point(187, 272);
+            this.numericUpDownGfComp5.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown5.TabIndex = 20;
+            this.numericUpDownGfComp5.Name = "numericUpDownGfComp5";
+            this.numericUpDownGfComp5.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp5.TabIndex = 20;
             // 
-            // numericUpDown9
+            // numericUpDownGfComp9
             // 
-            this.numericUpDown9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown9.Location = new System.Drawing.Point(520, 48);
-            this.numericUpDown9.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp9.Location = new System.Drawing.Point(520, 48);
+            this.numericUpDownGfComp9.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown9.TabIndex = 20;
+            this.numericUpDownGfComp9.Name = "numericUpDownGfComp9";
+            this.numericUpDownGfComp9.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp9.TabIndex = 20;
             // 
-            // numericUpDown1
+            // numericUpDownGfComp1
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDown1.Location = new System.Drawing.Point(187, 48);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDownGfComp1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp1.Location = new System.Drawing.Point(187, 48);
+            this.numericUpDownGfComp1.Maximum = new decimal(new int[] {
             6000,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDown1.TabIndex = 20;
+            this.numericUpDownGfComp1.Name = "numericUpDownGfComp1";
+            this.numericUpDownGfComp1.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp1.TabIndex = 20;
             // 
-            // checkBox9
+            // checkBoxCharsGf9
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox9.ImageIndex = 8;
-            this.checkBox9.ImageList = this.imageListGfSmall;
-            this.checkBox9.Location = new System.Drawing.Point(362, 35);
-            this.checkBox9.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(111, 50);
-            this.checkBox9.TabIndex = 13;
-            this.checkBox9.Text = "Pandemona";
-            this.checkBox9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf9.AutoSize = true;
+            this.checkBoxCharsGf9.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf9.ImageIndex = 8;
+            this.checkBoxCharsGf9.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf9.Location = new System.Drawing.Point(362, 35);
+            this.checkBoxCharsGf9.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf9.Name = "checkBoxCharsGf9";
+            this.checkBoxCharsGf9.Size = new System.Drawing.Size(111, 50);
+            this.checkBoxCharsGf9.TabIndex = 13;
+            this.checkBoxCharsGf9.Text = "Pandemona";
+            this.checkBoxCharsGf9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf9.UseVisualStyleBackColor = true;
             // 
             // imageListGfSmall
             // 
@@ -1689,229 +1853,229 @@
             this.imageListGfSmall.Images.SetKeyName(15, "gf15.png");
             this.imageListGfSmall.Images.SetKeyName(16, "gf16.png");
             // 
-            // checkBox16
+            // checkBoxCharsGf16
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox16.ImageIndex = 15;
-            this.checkBox16.ImageList = this.imageListGfSmall;
-            this.checkBox16.Location = new System.Drawing.Point(362, 427);
-            this.checkBox16.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(100, 50);
-            this.checkBox16.TabIndex = 13;
-            this.checkBox16.Text = "Eden";
-            this.checkBox16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf16.AutoSize = true;
+            this.checkBoxCharsGf16.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf16.ImageIndex = 15;
+            this.checkBoxCharsGf16.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf16.Location = new System.Drawing.Point(362, 427);
+            this.checkBoxCharsGf16.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf16.Name = "checkBoxCharsGf16";
+            this.checkBoxCharsGf16.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf16.TabIndex = 13;
+            this.checkBoxCharsGf16.Text = "Eden";
+            this.checkBoxCharsGf16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf16.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkBoxCharsGf8
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox8.ImageIndex = 7;
-            this.checkBox8.ImageList = this.imageListGfSmall;
-            this.checkBox8.Location = new System.Drawing.Point(49, 427);
-            this.checkBox8.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(100, 50);
-            this.checkBox8.TabIndex = 13;
-            this.checkBox8.Text = "Leviathan";
-            this.checkBox8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf8.AutoSize = true;
+            this.checkBoxCharsGf8.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf8.ImageIndex = 7;
+            this.checkBoxCharsGf8.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf8.Location = new System.Drawing.Point(49, 427);
+            this.checkBoxCharsGf8.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf8.Name = "checkBoxCharsGf8";
+            this.checkBoxCharsGf8.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf8.TabIndex = 13;
+            this.checkBoxCharsGf8.Text = "Leviathan";
+            this.checkBoxCharsGf8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf8.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // checkBoxCharsGf15
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox15.ImageIndex = 14;
-            this.checkBox15.ImageList = this.imageListGfSmall;
-            this.checkBox15.Location = new System.Drawing.Point(362, 371);
-            this.checkBox15.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(100, 50);
-            this.checkBox15.TabIndex = 13;
-            this.checkBox15.Text = "Tonberry";
-            this.checkBox15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf15.AutoSize = true;
+            this.checkBoxCharsGf15.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf15.ImageIndex = 14;
+            this.checkBoxCharsGf15.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf15.Location = new System.Drawing.Point(362, 371);
+            this.checkBoxCharsGf15.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf15.Name = "checkBoxCharsGf15";
+            this.checkBoxCharsGf15.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf15.TabIndex = 13;
+            this.checkBoxCharsGf15.Text = "Tonberry";
+            this.checkBoxCharsGf15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf15.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkBoxCharsGf7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox7.ImageIndex = 6;
-            this.checkBox7.ImageList = this.imageListGfSmall;
-            this.checkBox7.Location = new System.Drawing.Point(49, 371);
-            this.checkBox7.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(102, 50);
-            this.checkBox7.TabIndex = 13;
-            this.checkBox7.Text = "Carbuncle";
-            this.checkBox7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf7.AutoSize = true;
+            this.checkBoxCharsGf7.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf7.ImageIndex = 6;
+            this.checkBoxCharsGf7.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf7.Location = new System.Drawing.Point(49, 371);
+            this.checkBoxCharsGf7.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf7.Name = "checkBoxCharsGf7";
+            this.checkBoxCharsGf7.Size = new System.Drawing.Size(102, 50);
+            this.checkBoxCharsGf7.TabIndex = 13;
+            this.checkBoxCharsGf7.Text = "Carbuncle";
+            this.checkBoxCharsGf7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf7.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // checkBoxCharsGf14
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox14.ImageIndex = 13;
-            this.checkBox14.ImageList = this.imageListGfSmall;
-            this.checkBox14.Location = new System.Drawing.Point(362, 315);
-            this.checkBox14.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(100, 50);
-            this.checkBox14.TabIndex = 13;
-            this.checkBox14.Text = "Cactuar";
-            this.checkBox14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf14.AutoSize = true;
+            this.checkBoxCharsGf14.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf14.ImageIndex = 13;
+            this.checkBoxCharsGf14.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf14.Location = new System.Drawing.Point(362, 315);
+            this.checkBoxCharsGf14.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf14.Name = "checkBoxCharsGf14";
+            this.checkBoxCharsGf14.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf14.TabIndex = 13;
+            this.checkBoxCharsGf14.Text = "Cactuar";
+            this.checkBoxCharsGf14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf14.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // checkBoxCharsGf6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox6.ImageIndex = 5;
-            this.checkBox6.ImageList = this.imageListGfSmall;
-            this.checkBox6.Location = new System.Drawing.Point(49, 315);
-            this.checkBox6.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(100, 50);
-            this.checkBox6.TabIndex = 13;
-            this.checkBox6.Text = "Diablos";
-            this.checkBox6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf6.AutoSize = true;
+            this.checkBoxCharsGf6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf6.ImageIndex = 5;
+            this.checkBoxCharsGf6.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf6.Location = new System.Drawing.Point(49, 315);
+            this.checkBoxCharsGf6.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf6.Name = "checkBoxCharsGf6";
+            this.checkBoxCharsGf6.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf6.TabIndex = 13;
+            this.checkBoxCharsGf6.Text = "Diablos";
+            this.checkBoxCharsGf6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf6.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // checkBoxCharsGf13
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox13.ImageIndex = 12;
-            this.checkBox13.ImageList = this.imageListGfSmall;
-            this.checkBox13.Location = new System.Drawing.Point(362, 259);
-            this.checkBox13.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(100, 50);
-            this.checkBox13.TabIndex = 13;
-            this.checkBox13.Text = "Bahamut";
-            this.checkBox13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf13.AutoSize = true;
+            this.checkBoxCharsGf13.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf13.ImageIndex = 12;
+            this.checkBoxCharsGf13.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf13.Location = new System.Drawing.Point(362, 259);
+            this.checkBoxCharsGf13.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf13.Name = "checkBoxCharsGf13";
+            this.checkBoxCharsGf13.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf13.TabIndex = 13;
+            this.checkBoxCharsGf13.Text = "Bahamut";
+            this.checkBoxCharsGf13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf13.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkBoxCharsGf5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox5.ImageIndex = 4;
-            this.checkBox5.ImageList = this.imageListGfSmall;
-            this.checkBox5.Location = new System.Drawing.Point(49, 259);
-            this.checkBox5.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(100, 50);
-            this.checkBox5.TabIndex = 13;
-            this.checkBox5.Text = "Brothers";
-            this.checkBox5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf5.AutoSize = true;
+            this.checkBoxCharsGf5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf5.ImageIndex = 4;
+            this.checkBoxCharsGf5.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf5.Location = new System.Drawing.Point(49, 259);
+            this.checkBoxCharsGf5.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf5.Name = "checkBoxCharsGf5";
+            this.checkBoxCharsGf5.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf5.TabIndex = 13;
+            this.checkBoxCharsGf5.Text = "Brothers";
+            this.checkBoxCharsGf5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf5.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // checkBoxCharsGf12
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox12.ImageIndex = 11;
-            this.checkBox12.ImageList = this.imageListGfSmall;
-            this.checkBox12.Location = new System.Drawing.Point(362, 203);
-            this.checkBox12.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(105, 50);
-            this.checkBox12.TabIndex = 13;
-            this.checkBox12.Text = "Doomtrain";
-            this.checkBox12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf12.AutoSize = true;
+            this.checkBoxCharsGf12.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf12.ImageIndex = 11;
+            this.checkBoxCharsGf12.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf12.Location = new System.Drawing.Point(362, 203);
+            this.checkBoxCharsGf12.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf12.Name = "checkBoxCharsGf12";
+            this.checkBoxCharsGf12.Size = new System.Drawing.Size(105, 50);
+            this.checkBoxCharsGf12.TabIndex = 13;
+            this.checkBoxCharsGf12.Text = "Doomtrain";
+            this.checkBoxCharsGf12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf12.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkBoxCharsGf4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox4.ImageIndex = 3;
-            this.checkBox4.ImageList = this.imageListGfSmall;
-            this.checkBox4.Location = new System.Drawing.Point(49, 203);
-            this.checkBox4.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(100, 50);
-            this.checkBox4.TabIndex = 13;
-            this.checkBox4.Text = "Siren";
-            this.checkBox4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf4.AutoSize = true;
+            this.checkBoxCharsGf4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf4.ImageIndex = 3;
+            this.checkBoxCharsGf4.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf4.Location = new System.Drawing.Point(49, 203);
+            this.checkBoxCharsGf4.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf4.Name = "checkBoxCharsGf4";
+            this.checkBoxCharsGf4.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf4.TabIndex = 13;
+            this.checkBoxCharsGf4.Text = "Siren";
+            this.checkBoxCharsGf4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf4.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // checkBoxCharsGf11
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox11.ImageIndex = 10;
-            this.checkBox11.ImageList = this.imageListGfSmall;
-            this.checkBox11.Location = new System.Drawing.Point(362, 147);
-            this.checkBox11.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(101, 50);
-            this.checkBox11.TabIndex = 13;
-            this.checkBox11.Text = "Alexander";
-            this.checkBox11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf11.AutoSize = true;
+            this.checkBoxCharsGf11.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf11.ImageIndex = 10;
+            this.checkBoxCharsGf11.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf11.Location = new System.Drawing.Point(362, 147);
+            this.checkBoxCharsGf11.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf11.Name = "checkBoxCharsGf11";
+            this.checkBoxCharsGf11.Size = new System.Drawing.Size(101, 50);
+            this.checkBoxCharsGf11.TabIndex = 13;
+            this.checkBoxCharsGf11.Text = "Alexander";
+            this.checkBoxCharsGf11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf11.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBoxCharsGf3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox3.ImageIndex = 2;
-            this.checkBox3.ImageList = this.imageListGfSmall;
-            this.checkBox3.Location = new System.Drawing.Point(49, 147);
-            this.checkBox3.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(100, 50);
-            this.checkBox3.TabIndex = 13;
-            this.checkBox3.Text = "Ifrit";
-            this.checkBox3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf3.AutoSize = true;
+            this.checkBoxCharsGf3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf3.ImageIndex = 2;
+            this.checkBoxCharsGf3.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf3.Location = new System.Drawing.Point(49, 147);
+            this.checkBoxCharsGf3.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf3.Name = "checkBoxCharsGf3";
+            this.checkBoxCharsGf3.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf3.TabIndex = 13;
+            this.checkBoxCharsGf3.Text = "Ifrit";
+            this.checkBoxCharsGf3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf3.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // checkBoxCharsGf10
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox10.ImageIndex = 9;
-            this.checkBox10.ImageList = this.imageListGfSmall;
-            this.checkBox10.Location = new System.Drawing.Point(362, 91);
-            this.checkBox10.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(100, 50);
-            this.checkBox10.TabIndex = 13;
-            this.checkBox10.Text = "Cerberus";
-            this.checkBox10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf10.AutoSize = true;
+            this.checkBoxCharsGf10.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf10.ImageIndex = 9;
+            this.checkBoxCharsGf10.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf10.Location = new System.Drawing.Point(362, 91);
+            this.checkBoxCharsGf10.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf10.Name = "checkBoxCharsGf10";
+            this.checkBoxCharsGf10.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf10.TabIndex = 13;
+            this.checkBoxCharsGf10.Text = "Cerberus";
+            this.checkBoxCharsGf10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf10.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBoxCharsGf2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox2.ImageIndex = 1;
-            this.checkBox2.ImageList = this.imageListGfSmall;
-            this.checkBox2.Location = new System.Drawing.Point(49, 91);
-            this.checkBox2.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(100, 50);
-            this.checkBox2.TabIndex = 13;
-            this.checkBox2.Text = "Shiva";
-            this.checkBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf2.AutoSize = true;
+            this.checkBoxCharsGf2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf2.ImageIndex = 1;
+            this.checkBoxCharsGf2.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf2.Location = new System.Drawing.Point(49, 91);
+            this.checkBoxCharsGf2.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf2.Name = "checkBoxCharsGf2";
+            this.checkBoxCharsGf2.Size = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf2.TabIndex = 13;
+            this.checkBoxCharsGf2.Text = "Shiva";
+            this.checkBoxCharsGf2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf2.UseVisualStyleBackColor = true;
             // 
             // label25
             // 
@@ -1924,21 +2088,21 @@
             this.label25.TabIndex = 12;
             this.label25.Text = "Compatibility";
             // 
-            // checkBox1
+            // checkBoxCharsGf1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBox1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBox1.ImageIndex = 0;
-            this.checkBox1.ImageList = this.imageListGfSmall;
-            this.checkBox1.Location = new System.Drawing.Point(49, 35);
-            this.checkBox1.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 50);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Quezacotl";
-            this.checkBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGf1.AutoSize = true;
+            this.checkBoxCharsGf1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf1.ImageIndex = 0;
+            this.checkBoxCharsGf1.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf1.Location = new System.Drawing.Point(49, 35);
+            this.checkBoxCharsGf1.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf1.Name = "checkBoxCharsGf1";
+            this.checkBoxCharsGf1.Size = new System.Drawing.Size(101, 50);
+            this.checkBoxCharsGf1.TabIndex = 13;
+            this.checkBoxCharsGf1.Text = "Quezacotl";
+            this.checkBoxCharsGf1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf1.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -1976,130 +2140,108 @@
             // tabPageChars3
             // 
             this.tabPageChars3.BackColor = System.Drawing.Color.White;
-            this.tabPageChars3.Controls.Add(this.dataGridViewCharsMagic);
+            this.tabPageChars3.Controls.Add(this.dataGridView1);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ32);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ16);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ24);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ8);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ28);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ12);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ20);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ4);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ30);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ14);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ22);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ6);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ26);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ10);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ18);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ2);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ31);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ15);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ23);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ7);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ27);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ11);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ19);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ3);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ29);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ13);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ21);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ5);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ25);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ9);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ17);
+            this.tabPageChars3.Controls.Add(this.numericUpDownCharsMagicQ1);
+            this.tabPageChars3.Controls.Add(this.panel32);
+            this.tabPageChars3.Controls.Add(this.panel16);
+            this.tabPageChars3.Controls.Add(this.panel31);
+            this.tabPageChars3.Controls.Add(this.panel8);
+            this.tabPageChars3.Controls.Add(this.panel30);
+            this.tabPageChars3.Controls.Add(this.panel15);
+            this.tabPageChars3.Controls.Add(this.panel29);
+            this.tabPageChars3.Controls.Add(this.panel4);
+            this.tabPageChars3.Controls.Add(this.panel28);
+            this.tabPageChars3.Controls.Add(this.panel14);
+            this.tabPageChars3.Controls.Add(this.panel27);
+            this.tabPageChars3.Controls.Add(this.panel7);
+            this.tabPageChars3.Controls.Add(this.panel26);
+            this.tabPageChars3.Controls.Add(this.panel13);
+            this.tabPageChars3.Controls.Add(this.panel25);
+            this.tabPageChars3.Controls.Add(this.panel2);
+            this.tabPageChars3.Controls.Add(this.panel24);
+            this.tabPageChars3.Controls.Add(this.panel12);
+            this.tabPageChars3.Controls.Add(this.panel23);
+            this.tabPageChars3.Controls.Add(this.panel6);
+            this.tabPageChars3.Controls.Add(this.panel22);
+            this.tabPageChars3.Controls.Add(this.panel11);
+            this.tabPageChars3.Controls.Add(this.panel21);
+            this.tabPageChars3.Controls.Add(this.panel3);
+            this.tabPageChars3.Controls.Add(this.panel20);
+            this.tabPageChars3.Controls.Add(this.panel10);
+            this.tabPageChars3.Controls.Add(this.panel19);
+            this.tabPageChars3.Controls.Add(this.panel5);
+            this.tabPageChars3.Controls.Add(this.panel18);
+            this.tabPageChars3.Controls.Add(this.panel9);
+            this.tabPageChars3.Controls.Add(this.panel17);
+            this.tabPageChars3.Controls.Add(this.panel1);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic32);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic16);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic24);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic8);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic28);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic12);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic20);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic4);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic30);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic14);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic22);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic6);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic26);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic10);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic18);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic2);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic31);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic15);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic23);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic7);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic27);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic11);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic19);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic3);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic29);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic13);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic21);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic5);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic25);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic9);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic17);
+            this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic1);
             this.tabPageChars3.Location = new System.Drawing.Point(4, 24);
             this.tabPageChars3.Name = "tabPageChars3";
             this.tabPageChars3.Size = new System.Drawing.Size(634, 718);
             this.tabPageChars3.TabIndex = 2;
             this.tabPageChars3.Text = "Magics";
-            // 
-            // dataGridViewCharsMagic
-            // 
-            this.dataGridViewCharsMagic.AllowUserToAddRows = false;
-            this.dataGridViewCharsMagic.AllowUserToDeleteRows = false;
-            this.dataGridViewCharsMagic.AllowUserToResizeRows = false;
-            this.dataGridViewCharsMagic.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dataGridViewCharsMagic.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.dataGridViewCharsMagic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewCharsMagic.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnNum,
-            this.ColumnName,
-            this.ColumnQty});
-            this.dataGridViewCharsMagic.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dataGridViewCharsMagic.Location = new System.Drawing.Point(7, 9);
-            this.dataGridViewCharsMagic.MultiSelect = false;
-            this.dataGridViewCharsMagic.Name = "dataGridViewCharsMagic";
-            this.dataGridViewCharsMagic.RowHeadersVisible = false;
-            this.dataGridViewCharsMagic.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridViewCharsMagic.RowTemplate.Height = 21;
-            this.dataGridViewCharsMagic.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCharsMagic.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridViewCharsMagic.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewCharsMagic.ShowCellToolTips = false;
-            this.dataGridViewCharsMagic.ShowEditingIcon = false;
-            this.dataGridViewCharsMagic.Size = new System.Drawing.Size(619, 697);
-            this.dataGridViewCharsMagic.TabIndex = 26;
-            // 
-            // ColumnNum
-            // 
-            this.ColumnNum.Frozen = true;
-            this.ColumnNum.HeaderText = "No.";
-            this.ColumnNum.MaxInputLength = 2;
-            this.ColumnNum.Name = "ColumnNum";
-            this.ColumnNum.ReadOnly = true;
-            this.ColumnNum.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnNum.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnNum.Width = 30;
-            // 
-            // ColumnName
-            // 
-            this.ColumnName.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.ColumnName.Frozen = true;
-            this.ColumnName.HeaderText = "Name";
-            this.ColumnName.Items.AddRange(new object[] {
-            "-",
-            "Fire",
-            "Fira",
-            "Firaga",
-            "Blizzard",
-            "Blizzara",
-            "Blizzaga",
-            "Thunder",
-            "Thundara",
-            "Thundaga",
-            "Water",
-            "Aero",
-            "Bio",
-            "Demi",
-            "Holy",
-            "Flare",
-            "Meteor",
-            "Quake",
-            "Tornado",
-            "Ultima",
-            "Apocalypse",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Life",
-            "Full-Life",
-            "Regen",
-            "Esuna",
-            "Dispel",
-            "Protect",
-            "Shell",
-            "Reflect",
-            "Aura",
-            "Double",
-            "Triple",
-            "Haste",
-            "Slow",
-            "Stop",
-            "Blind",
-            "Confuse",
-            "Sleep",
-            "Silence",
-            "Break",
-            "Death",
-            "Drain",
-            "Pain",
-            "Berserk",
-            "Float",
-            "Zombie",
-            "Meltdown",
-            "Scan",
-            "Full Cure",
-            "Wall",
-            "Rapture",
-            "Percent",
-            "Catastrophe",
-            "The End"});
-            this.ColumnName.Name = "ColumnName";
-            this.ColumnName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnName.Width = 526;
-            // 
-            // ColumnQty
-            // 
-            dataGridViewCellStyle1.Format = "N0";
-            dataGridViewCellStyle1.NullValue = "0";
-            this.ColumnQty.DefaultCellStyle = dataGridViewCellStyle1;
-            this.ColumnQty.Frozen = true;
-            this.ColumnQty.HeaderText = "Quantity";
-            this.ColumnQty.MaxInputLength = 3;
-            this.ColumnQty.Name = "ColumnQty";
-            this.ColumnQty.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnQty.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnQty.Width = 60;
             // 
             // tabPageChars4
             // 
@@ -5348,14 +5490,14 @@
             this.listViewCharactersList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listViewCharactersList.HideSelection = false;
             this.listViewCharactersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8});
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16});
             this.listViewCharactersList.LargeImageList = this.imageListChar;
             this.listViewCharactersList.Location = new System.Drawing.Point(8, 3);
             this.listViewCharactersList.MultiSelect = false;
@@ -7863,14 +8005,6 @@
             this.listViewGfList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listViewGfList.HideSelection = false;
             this.listViewGfList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem9,
-            listViewItem10,
-            listViewItem11,
-            listViewItem12,
-            listViewItem13,
-            listViewItem14,
-            listViewItem15,
-            listViewItem16,
             listViewItem17,
             listViewItem18,
             listViewItem19,
@@ -7878,7 +8012,15 @@
             listViewItem21,
             listViewItem22,
             listViewItem23,
-            listViewItem24});
+            listViewItem24,
+            listViewItem25,
+            listViewItem26,
+            listViewItem27,
+            listViewItem28,
+            listViewItem29,
+            listViewItem30,
+            listViewItem31,
+            listViewItem32});
             this.listViewGfList.LargeImageList = this.imageListGfBig;
             this.listViewGfList.Location = new System.Drawing.Point(8, 3);
             this.listViewGfList.MultiSelect = false;
@@ -8323,6 +8465,3280 @@
             this.label28.TabIndex = 20;
             this.label28.Text = "Gil Laguna:";
             // 
+            // checkBoxCharsAltMod
+            // 
+            this.checkBoxCharsAltMod.AutoSize = true;
+            this.checkBoxCharsAltMod.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsAltMod.Location = new System.Drawing.Point(8, 431);
+            this.checkBoxCharsAltMod.Name = "checkBoxCharsAltMod";
+            this.checkBoxCharsAltMod.Size = new System.Drawing.Size(210, 17);
+            this.checkBoxCharsAltMod.TabIndex = 9;
+            this.checkBoxCharsAltMod.Text = "Alternative Model (SeeD, galbadian)";
+            this.checkBoxCharsAltMod.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownCharsMagicQ1
+            // 
+            this.numericUpDownCharsMagicQ1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ1.Location = new System.Drawing.Point(565, 36);
+            this.numericUpDownCharsMagicQ1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ1.Name = "numericUpDownCharsMagicQ1";
+            this.numericUpDownCharsMagicQ1.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ1.TabIndex = 27;
+            // 
+            // comboBoxCharsMagic1
+            // 
+            this.comboBoxCharsMagic1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic1.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic1.FormattingEnabled = true;
+            this.comboBoxCharsMagic1.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic1.Location = new System.Drawing.Point(39, 36);
+            this.comboBoxCharsMagic1.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic1.Name = "comboBoxCharsMagic1";
+            this.comboBoxCharsMagic1.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic1.TabIndex = 28;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Location = new System.Drawing.Point(8, 36);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(32, 21);
+            this.panel1.TabIndex = 30;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label30.Location = new System.Drawing.Point(8, 2);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(14, 15);
+            this.label30.TabIndex = 31;
+            this.label30.Text = "1";
+            // 
+            // comboBoxCharsMagic2
+            // 
+            this.comboBoxCharsMagic2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic2.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic2.FormattingEnabled = true;
+            this.comboBoxCharsMagic2.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic2.Location = new System.Drawing.Point(39, 57);
+            this.comboBoxCharsMagic2.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic2.Name = "comboBoxCharsMagic2";
+            this.comboBoxCharsMagic2.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic2.TabIndex = 28;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label31);
+            this.panel2.Location = new System.Drawing.Point(8, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(32, 21);
+            this.panel2.TabIndex = 30;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label31.Location = new System.Drawing.Point(8, 2);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(14, 15);
+            this.label31.TabIndex = 31;
+            this.label31.Text = "2";
+            // 
+            // numericUpDownCharsMagicQ2
+            // 
+            this.numericUpDownCharsMagicQ2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ2.Location = new System.Drawing.Point(565, 57);
+            this.numericUpDownCharsMagicQ2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ2.Name = "numericUpDownCharsMagicQ2";
+            this.numericUpDownCharsMagicQ2.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ2.TabIndex = 27;
+            // 
+            // comboBoxCharsMagic3
+            // 
+            this.comboBoxCharsMagic3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic3.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic3.FormattingEnabled = true;
+            this.comboBoxCharsMagic3.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic3.Location = new System.Drawing.Point(39, 78);
+            this.comboBoxCharsMagic3.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic3.Name = "comboBoxCharsMagic3";
+            this.comboBoxCharsMagic3.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic3.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic4
+            // 
+            this.comboBoxCharsMagic4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic4.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic4.FormattingEnabled = true;
+            this.comboBoxCharsMagic4.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic4.Location = new System.Drawing.Point(39, 99);
+            this.comboBoxCharsMagic4.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic4.Name = "comboBoxCharsMagic4";
+            this.comboBoxCharsMagic4.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic4.TabIndex = 28;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label32);
+            this.panel3.Location = new System.Drawing.Point(8, 78);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(32, 21);
+            this.panel3.TabIndex = 30;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label32.Location = new System.Drawing.Point(8, 2);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(14, 15);
+            this.label32.TabIndex = 31;
+            this.label32.Text = "3";
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label33);
+            this.panel4.Location = new System.Drawing.Point(8, 99);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(32, 21);
+            this.panel4.TabIndex = 30;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label33.Location = new System.Drawing.Point(8, 2);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(14, 15);
+            this.label33.TabIndex = 31;
+            this.label33.Text = "4";
+            // 
+            // numericUpDownCharsMagicQ3
+            // 
+            this.numericUpDownCharsMagicQ3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ3.Location = new System.Drawing.Point(565, 78);
+            this.numericUpDownCharsMagicQ3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ3.Name = "numericUpDownCharsMagicQ3";
+            this.numericUpDownCharsMagicQ3.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ3.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ4
+            // 
+            this.numericUpDownCharsMagicQ4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ4.Location = new System.Drawing.Point(565, 99);
+            this.numericUpDownCharsMagicQ4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ4.Name = "numericUpDownCharsMagicQ4";
+            this.numericUpDownCharsMagicQ4.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ4.TabIndex = 27;
+            // 
+            // comboBoxCharsMagic5
+            // 
+            this.comboBoxCharsMagic5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic5.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic5.FormattingEnabled = true;
+            this.comboBoxCharsMagic5.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic5.Location = new System.Drawing.Point(39, 120);
+            this.comboBoxCharsMagic5.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic5.Name = "comboBoxCharsMagic5";
+            this.comboBoxCharsMagic5.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic5.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic7
+            // 
+            this.comboBoxCharsMagic7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic7.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic7.FormattingEnabled = true;
+            this.comboBoxCharsMagic7.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic7.Location = new System.Drawing.Point(39, 162);
+            this.comboBoxCharsMagic7.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic7.Name = "comboBoxCharsMagic7";
+            this.comboBoxCharsMagic7.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic7.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic6
+            // 
+            this.comboBoxCharsMagic6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic6.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic6.FormattingEnabled = true;
+            this.comboBoxCharsMagic6.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic6.Location = new System.Drawing.Point(39, 141);
+            this.comboBoxCharsMagic6.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic6.Name = "comboBoxCharsMagic6";
+            this.comboBoxCharsMagic6.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic6.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic8
+            // 
+            this.comboBoxCharsMagic8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic8.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic8.FormattingEnabled = true;
+            this.comboBoxCharsMagic8.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic8.Location = new System.Drawing.Point(39, 183);
+            this.comboBoxCharsMagic8.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic8.Name = "comboBoxCharsMagic8";
+            this.comboBoxCharsMagic8.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic8.TabIndex = 28;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label34);
+            this.panel5.Location = new System.Drawing.Point(8, 120);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(32, 21);
+            this.panel5.TabIndex = 30;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label34.Location = new System.Drawing.Point(8, 2);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(14, 15);
+            this.label34.TabIndex = 31;
+            this.label34.Text = "5";
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label35);
+            this.panel6.Location = new System.Drawing.Point(8, 162);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(32, 21);
+            this.panel6.TabIndex = 30;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label35.Location = new System.Drawing.Point(8, 2);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(14, 15);
+            this.label35.TabIndex = 31;
+            this.label35.Text = "7";
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label36);
+            this.panel7.Location = new System.Drawing.Point(8, 141);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(32, 21);
+            this.panel7.TabIndex = 30;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label36.Location = new System.Drawing.Point(8, 2);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(14, 15);
+            this.label36.TabIndex = 31;
+            this.label36.Text = "6";
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.label37);
+            this.panel8.Location = new System.Drawing.Point(8, 183);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(32, 21);
+            this.panel8.TabIndex = 30;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label37.Location = new System.Drawing.Point(8, 2);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(14, 15);
+            this.label37.TabIndex = 31;
+            this.label37.Text = "8";
+            // 
+            // numericUpDownCharsMagicQ5
+            // 
+            this.numericUpDownCharsMagicQ5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ5.Location = new System.Drawing.Point(565, 120);
+            this.numericUpDownCharsMagicQ5.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ5.Name = "numericUpDownCharsMagicQ5";
+            this.numericUpDownCharsMagicQ5.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ5.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ7
+            // 
+            this.numericUpDownCharsMagicQ7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ7.Location = new System.Drawing.Point(565, 162);
+            this.numericUpDownCharsMagicQ7.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ7.Name = "numericUpDownCharsMagicQ7";
+            this.numericUpDownCharsMagicQ7.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ7.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ6
+            // 
+            this.numericUpDownCharsMagicQ6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ6.Location = new System.Drawing.Point(565, 141);
+            this.numericUpDownCharsMagicQ6.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ6.Name = "numericUpDownCharsMagicQ6";
+            this.numericUpDownCharsMagicQ6.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ6.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ8
+            // 
+            this.numericUpDownCharsMagicQ8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ8.Location = new System.Drawing.Point(565, 183);
+            this.numericUpDownCharsMagicQ8.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ8.Name = "numericUpDownCharsMagicQ8";
+            this.numericUpDownCharsMagicQ8.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ8.TabIndex = 27;
+            // 
+            // comboBoxCharsMagic9
+            // 
+            this.comboBoxCharsMagic9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic9.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic9.FormattingEnabled = true;
+            this.comboBoxCharsMagic9.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic9.Location = new System.Drawing.Point(39, 204);
+            this.comboBoxCharsMagic9.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic9.Name = "comboBoxCharsMagic9";
+            this.comboBoxCharsMagic9.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic9.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic13
+            // 
+            this.comboBoxCharsMagic13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic13.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic13.FormattingEnabled = true;
+            this.comboBoxCharsMagic13.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic13.Location = new System.Drawing.Point(39, 288);
+            this.comboBoxCharsMagic13.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic13.Name = "comboBoxCharsMagic13";
+            this.comboBoxCharsMagic13.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic13.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic11
+            // 
+            this.comboBoxCharsMagic11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic11.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic11.FormattingEnabled = true;
+            this.comboBoxCharsMagic11.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic11.Location = new System.Drawing.Point(39, 246);
+            this.comboBoxCharsMagic11.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic11.Name = "comboBoxCharsMagic11";
+            this.comboBoxCharsMagic11.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic11.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic15
+            // 
+            this.comboBoxCharsMagic15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic15.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic15.FormattingEnabled = true;
+            this.comboBoxCharsMagic15.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic15.Location = new System.Drawing.Point(39, 330);
+            this.comboBoxCharsMagic15.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic15.Name = "comboBoxCharsMagic15";
+            this.comboBoxCharsMagic15.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic15.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic10
+            // 
+            this.comboBoxCharsMagic10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic10.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic10.FormattingEnabled = true;
+            this.comboBoxCharsMagic10.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic10.Location = new System.Drawing.Point(39, 225);
+            this.comboBoxCharsMagic10.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic10.Name = "comboBoxCharsMagic10";
+            this.comboBoxCharsMagic10.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic10.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic14
+            // 
+            this.comboBoxCharsMagic14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic14.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic14.FormattingEnabled = true;
+            this.comboBoxCharsMagic14.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic14.Location = new System.Drawing.Point(39, 309);
+            this.comboBoxCharsMagic14.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic14.Name = "comboBoxCharsMagic14";
+            this.comboBoxCharsMagic14.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic14.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic12
+            // 
+            this.comboBoxCharsMagic12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic12.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic12.FormattingEnabled = true;
+            this.comboBoxCharsMagic12.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic12.Location = new System.Drawing.Point(39, 267);
+            this.comboBoxCharsMagic12.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic12.Name = "comboBoxCharsMagic12";
+            this.comboBoxCharsMagic12.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic12.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic16
+            // 
+            this.comboBoxCharsMagic16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic16.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic16.FormattingEnabled = true;
+            this.comboBoxCharsMagic16.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic16.Location = new System.Drawing.Point(39, 351);
+            this.comboBoxCharsMagic16.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic16.Name = "comboBoxCharsMagic16";
+            this.comboBoxCharsMagic16.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic16.TabIndex = 28;
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label38);
+            this.panel9.Location = new System.Drawing.Point(8, 204);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(32, 21);
+            this.panel9.TabIndex = 30;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label38.Location = new System.Drawing.Point(8, 2);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(14, 15);
+            this.label38.TabIndex = 31;
+            this.label38.Text = "9";
+            // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.label39);
+            this.panel10.Location = new System.Drawing.Point(8, 288);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(32, 21);
+            this.panel10.TabIndex = 30;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label39.Location = new System.Drawing.Point(5, 2);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(21, 15);
+            this.label39.TabIndex = 31;
+            this.label39.Text = "13";
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.label40);
+            this.panel11.Location = new System.Drawing.Point(8, 246);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(32, 21);
+            this.panel11.TabIndex = 30;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label40.Location = new System.Drawing.Point(5, 2);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(20, 15);
+            this.label40.TabIndex = 31;
+            this.label40.Text = "11";
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.label41);
+            this.panel12.Location = new System.Drawing.Point(8, 330);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(32, 21);
+            this.panel12.TabIndex = 30;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label41.Location = new System.Drawing.Point(5, 2);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(21, 15);
+            this.label41.TabIndex = 31;
+            this.label41.Text = "15";
+            // 
+            // panel13
+            // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.label42);
+            this.panel13.Location = new System.Drawing.Point(8, 225);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(32, 21);
+            this.panel13.TabIndex = 30;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label42.Location = new System.Drawing.Point(5, 2);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(21, 15);
+            this.label42.TabIndex = 31;
+            this.label42.Text = "10";
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.label43);
+            this.panel14.Location = new System.Drawing.Point(8, 309);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(32, 21);
+            this.panel14.TabIndex = 30;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label43.Location = new System.Drawing.Point(5, 2);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(21, 15);
+            this.label43.TabIndex = 31;
+            this.label43.Text = "14";
+            // 
+            // panel15
+            // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.label44);
+            this.panel15.Location = new System.Drawing.Point(8, 267);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(32, 21);
+            this.panel15.TabIndex = 30;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label44.Location = new System.Drawing.Point(5, 2);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(21, 15);
+            this.label44.TabIndex = 31;
+            this.label44.Text = "12";
+            // 
+            // panel16
+            // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.label45);
+            this.panel16.Location = new System.Drawing.Point(8, 351);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(32, 21);
+            this.panel16.TabIndex = 30;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label45.Location = new System.Drawing.Point(5, 2);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(21, 15);
+            this.label45.TabIndex = 31;
+            this.label45.Text = "16";
+            // 
+            // numericUpDownCharsMagicQ9
+            // 
+            this.numericUpDownCharsMagicQ9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ9.Location = new System.Drawing.Point(565, 204);
+            this.numericUpDownCharsMagicQ9.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ9.Name = "numericUpDownCharsMagicQ9";
+            this.numericUpDownCharsMagicQ9.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ9.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ13
+            // 
+            this.numericUpDownCharsMagicQ13.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ13.Location = new System.Drawing.Point(565, 288);
+            this.numericUpDownCharsMagicQ13.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ13.Name = "numericUpDownCharsMagicQ13";
+            this.numericUpDownCharsMagicQ13.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ13.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ11
+            // 
+            this.numericUpDownCharsMagicQ11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ11.Location = new System.Drawing.Point(565, 246);
+            this.numericUpDownCharsMagicQ11.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ11.Name = "numericUpDownCharsMagicQ11";
+            this.numericUpDownCharsMagicQ11.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ11.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ15
+            // 
+            this.numericUpDownCharsMagicQ15.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ15.Location = new System.Drawing.Point(565, 330);
+            this.numericUpDownCharsMagicQ15.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ15.Name = "numericUpDownCharsMagicQ15";
+            this.numericUpDownCharsMagicQ15.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ15.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ10
+            // 
+            this.numericUpDownCharsMagicQ10.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ10.Location = new System.Drawing.Point(565, 225);
+            this.numericUpDownCharsMagicQ10.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ10.Name = "numericUpDownCharsMagicQ10";
+            this.numericUpDownCharsMagicQ10.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ10.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ14
+            // 
+            this.numericUpDownCharsMagicQ14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ14.Location = new System.Drawing.Point(565, 309);
+            this.numericUpDownCharsMagicQ14.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ14.Name = "numericUpDownCharsMagicQ14";
+            this.numericUpDownCharsMagicQ14.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ14.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ12
+            // 
+            this.numericUpDownCharsMagicQ12.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ12.Location = new System.Drawing.Point(565, 267);
+            this.numericUpDownCharsMagicQ12.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ12.Name = "numericUpDownCharsMagicQ12";
+            this.numericUpDownCharsMagicQ12.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ12.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ16
+            // 
+            this.numericUpDownCharsMagicQ16.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ16.Location = new System.Drawing.Point(565, 351);
+            this.numericUpDownCharsMagicQ16.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ16.Name = "numericUpDownCharsMagicQ16";
+            this.numericUpDownCharsMagicQ16.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ16.TabIndex = 27;
+            // 
+            // comboBoxCharsMagic17
+            // 
+            this.comboBoxCharsMagic17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic17.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic17.FormattingEnabled = true;
+            this.comboBoxCharsMagic17.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic17.Location = new System.Drawing.Point(39, 372);
+            this.comboBoxCharsMagic17.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic17.Name = "comboBoxCharsMagic17";
+            this.comboBoxCharsMagic17.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic17.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic25
+            // 
+            this.comboBoxCharsMagic25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic25.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic25.FormattingEnabled = true;
+            this.comboBoxCharsMagic25.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic25.Location = new System.Drawing.Point(39, 540);
+            this.comboBoxCharsMagic25.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic25.Name = "comboBoxCharsMagic25";
+            this.comboBoxCharsMagic25.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic25.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic21
+            // 
+            this.comboBoxCharsMagic21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic21.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic21.FormattingEnabled = true;
+            this.comboBoxCharsMagic21.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic21.Location = new System.Drawing.Point(39, 456);
+            this.comboBoxCharsMagic21.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic21.Name = "comboBoxCharsMagic21";
+            this.comboBoxCharsMagic21.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic21.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic29
+            // 
+            this.comboBoxCharsMagic29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic29.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic29.FormattingEnabled = true;
+            this.comboBoxCharsMagic29.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic29.Location = new System.Drawing.Point(39, 624);
+            this.comboBoxCharsMagic29.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic29.Name = "comboBoxCharsMagic29";
+            this.comboBoxCharsMagic29.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic29.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic19
+            // 
+            this.comboBoxCharsMagic19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic19.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic19.FormattingEnabled = true;
+            this.comboBoxCharsMagic19.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic19.Location = new System.Drawing.Point(39, 414);
+            this.comboBoxCharsMagic19.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic19.Name = "comboBoxCharsMagic19";
+            this.comboBoxCharsMagic19.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic19.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic27
+            // 
+            this.comboBoxCharsMagic27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic27.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic27.FormattingEnabled = true;
+            this.comboBoxCharsMagic27.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic27.Location = new System.Drawing.Point(39, 582);
+            this.comboBoxCharsMagic27.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic27.Name = "comboBoxCharsMagic27";
+            this.comboBoxCharsMagic27.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic27.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic23
+            // 
+            this.comboBoxCharsMagic23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic23.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic23.FormattingEnabled = true;
+            this.comboBoxCharsMagic23.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic23.Location = new System.Drawing.Point(39, 498);
+            this.comboBoxCharsMagic23.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic23.Name = "comboBoxCharsMagic23";
+            this.comboBoxCharsMagic23.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic23.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic31
+            // 
+            this.comboBoxCharsMagic31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic31.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic31.FormattingEnabled = true;
+            this.comboBoxCharsMagic31.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic31.Location = new System.Drawing.Point(39, 666);
+            this.comboBoxCharsMagic31.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic31.Name = "comboBoxCharsMagic31";
+            this.comboBoxCharsMagic31.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic31.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic18
+            // 
+            this.comboBoxCharsMagic18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic18.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic18.FormattingEnabled = true;
+            this.comboBoxCharsMagic18.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic18.Location = new System.Drawing.Point(39, 393);
+            this.comboBoxCharsMagic18.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic18.Name = "comboBoxCharsMagic18";
+            this.comboBoxCharsMagic18.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic18.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic26
+            // 
+            this.comboBoxCharsMagic26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic26.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic26.FormattingEnabled = true;
+            this.comboBoxCharsMagic26.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic26.Location = new System.Drawing.Point(39, 561);
+            this.comboBoxCharsMagic26.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic26.Name = "comboBoxCharsMagic26";
+            this.comboBoxCharsMagic26.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic26.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic22
+            // 
+            this.comboBoxCharsMagic22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic22.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic22.FormattingEnabled = true;
+            this.comboBoxCharsMagic22.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic22.Location = new System.Drawing.Point(39, 477);
+            this.comboBoxCharsMagic22.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic22.Name = "comboBoxCharsMagic22";
+            this.comboBoxCharsMagic22.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic22.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic30
+            // 
+            this.comboBoxCharsMagic30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic30.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic30.FormattingEnabled = true;
+            this.comboBoxCharsMagic30.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic30.Location = new System.Drawing.Point(39, 645);
+            this.comboBoxCharsMagic30.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic30.Name = "comboBoxCharsMagic30";
+            this.comboBoxCharsMagic30.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic30.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic20
+            // 
+            this.comboBoxCharsMagic20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic20.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic20.FormattingEnabled = true;
+            this.comboBoxCharsMagic20.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic20.Location = new System.Drawing.Point(39, 435);
+            this.comboBoxCharsMagic20.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic20.Name = "comboBoxCharsMagic20";
+            this.comboBoxCharsMagic20.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic20.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic28
+            // 
+            this.comboBoxCharsMagic28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic28.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic28.FormattingEnabled = true;
+            this.comboBoxCharsMagic28.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic28.Location = new System.Drawing.Point(39, 603);
+            this.comboBoxCharsMagic28.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic28.Name = "comboBoxCharsMagic28";
+            this.comboBoxCharsMagic28.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic28.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic24
+            // 
+            this.comboBoxCharsMagic24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic24.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic24.FormattingEnabled = true;
+            this.comboBoxCharsMagic24.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic24.Location = new System.Drawing.Point(39, 519);
+            this.comboBoxCharsMagic24.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic24.Name = "comboBoxCharsMagic24";
+            this.comboBoxCharsMagic24.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic24.TabIndex = 28;
+            // 
+            // comboBoxCharsMagic32
+            // 
+            this.comboBoxCharsMagic32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCharsMagic32.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.comboBoxCharsMagic32.FormattingEnabled = true;
+            this.comboBoxCharsMagic32.Items.AddRange(new object[] {
+            "-",
+            "Fire",
+            "Fira",
+            "Firaga",
+            "Blizzard",
+            "Blizzara",
+            "Blizzaga",
+            "Thunder",
+            "Thundara",
+            "Thundaga",
+            "Water",
+            "Aero",
+            "Bio",
+            "Demi",
+            "Holy",
+            "Flare",
+            "Meteor",
+            "Quake",
+            "Tornado",
+            "Ultima",
+            "Apocalypse",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Life",
+            "Full-Life",
+            "Regen",
+            "Esuna",
+            "Dispel",
+            "Protect",
+            "Shell",
+            "Reflect",
+            "Aura",
+            "Double",
+            "Triple",
+            "Haste",
+            "Slow",
+            "Stop",
+            "Blind",
+            "Confuse",
+            "Sleep",
+            "Silence",
+            "Break",
+            "Death",
+            "Drain",
+            "Pain",
+            "Berserk",
+            "Float",
+            "Zombie",
+            "Meltdown",
+            "Scan",
+            "Full Cure",
+            "Wall",
+            "Rapture",
+            "Percent",
+            "Catastrophe",
+            "The End"});
+            this.comboBoxCharsMagic32.Location = new System.Drawing.Point(39, 687);
+            this.comboBoxCharsMagic32.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBoxCharsMagic32.Name = "comboBoxCharsMagic32";
+            this.comboBoxCharsMagic32.Size = new System.Drawing.Size(526, 21);
+            this.comboBoxCharsMagic32.TabIndex = 28;
+            // 
+            // panel17
+            // 
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.label46);
+            this.panel17.Location = new System.Drawing.Point(8, 372);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(32, 21);
+            this.panel17.TabIndex = 30;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label46.Location = new System.Drawing.Point(5, 2);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(21, 15);
+            this.label46.TabIndex = 31;
+            this.label46.Text = "17";
+            // 
+            // panel18
+            // 
+            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel18.Controls.Add(this.label47);
+            this.panel18.Location = new System.Drawing.Point(8, 540);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(32, 21);
+            this.panel18.TabIndex = 30;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label47.Location = new System.Drawing.Point(5, 2);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(21, 15);
+            this.label47.TabIndex = 31;
+            this.label47.Text = "25";
+            // 
+            // panel19
+            // 
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.Controls.Add(this.label48);
+            this.panel19.Location = new System.Drawing.Point(8, 456);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(32, 21);
+            this.panel19.TabIndex = 30;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label48.Location = new System.Drawing.Point(5, 2);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(21, 15);
+            this.label48.TabIndex = 31;
+            this.label48.Text = "21";
+            // 
+            // panel20
+            // 
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.label49);
+            this.panel20.Location = new System.Drawing.Point(8, 624);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(32, 21);
+            this.panel20.TabIndex = 30;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label49.Location = new System.Drawing.Point(5, 2);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(21, 15);
+            this.label49.TabIndex = 31;
+            this.label49.Text = "29";
+            // 
+            // panel21
+            // 
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Controls.Add(this.label50);
+            this.panel21.Location = new System.Drawing.Point(8, 414);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(32, 21);
+            this.panel21.TabIndex = 30;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label50.Location = new System.Drawing.Point(5, 2);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(21, 15);
+            this.label50.TabIndex = 31;
+            this.label50.Text = "19";
+            // 
+            // panel22
+            // 
+            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel22.Controls.Add(this.label51);
+            this.panel22.Location = new System.Drawing.Point(8, 582);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(32, 21);
+            this.panel22.TabIndex = 30;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label51.Location = new System.Drawing.Point(5, 2);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(21, 15);
+            this.label51.TabIndex = 31;
+            this.label51.Text = "27";
+            // 
+            // panel23
+            // 
+            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel23.Controls.Add(this.label52);
+            this.panel23.Location = new System.Drawing.Point(8, 498);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(32, 21);
+            this.panel23.TabIndex = 30;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label52.Location = new System.Drawing.Point(5, 2);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(21, 15);
+            this.label52.TabIndex = 31;
+            this.label52.Text = "23";
+            // 
+            // panel24
+            // 
+            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel24.Controls.Add(this.label53);
+            this.panel24.Location = new System.Drawing.Point(8, 666);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(32, 21);
+            this.panel24.TabIndex = 30;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label53.Location = new System.Drawing.Point(5, 2);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(21, 15);
+            this.label53.TabIndex = 31;
+            this.label53.Text = "31";
+            // 
+            // panel25
+            // 
+            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel25.Controls.Add(this.label54);
+            this.panel25.Location = new System.Drawing.Point(8, 393);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(32, 21);
+            this.panel25.TabIndex = 30;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label54.Location = new System.Drawing.Point(5, 2);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(21, 15);
+            this.label54.TabIndex = 31;
+            this.label54.Text = "18";
+            // 
+            // panel26
+            // 
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel26.Controls.Add(this.label55);
+            this.panel26.Location = new System.Drawing.Point(8, 561);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(32, 21);
+            this.panel26.TabIndex = 30;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label55.Location = new System.Drawing.Point(5, 2);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(21, 15);
+            this.label55.TabIndex = 31;
+            this.label55.Text = "26";
+            // 
+            // panel27
+            // 
+            this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel27.Controls.Add(this.label56);
+            this.panel27.Location = new System.Drawing.Point(8, 477);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(32, 21);
+            this.panel27.TabIndex = 30;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label56.Location = new System.Drawing.Point(5, 2);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(21, 15);
+            this.label56.TabIndex = 31;
+            this.label56.Text = "22";
+            // 
+            // panel28
+            // 
+            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel28.Controls.Add(this.label57);
+            this.panel28.Location = new System.Drawing.Point(8, 645);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(32, 21);
+            this.panel28.TabIndex = 30;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label57.Location = new System.Drawing.Point(5, 2);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(21, 15);
+            this.label57.TabIndex = 31;
+            this.label57.Text = "30";
+            // 
+            // panel29
+            // 
+            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel29.Controls.Add(this.label58);
+            this.panel29.Location = new System.Drawing.Point(8, 435);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(32, 21);
+            this.panel29.TabIndex = 30;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label58.Location = new System.Drawing.Point(5, 2);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(21, 15);
+            this.label58.TabIndex = 31;
+            this.label58.Text = "20";
+            // 
+            // panel30
+            // 
+            this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel30.Controls.Add(this.label59);
+            this.panel30.Location = new System.Drawing.Point(8, 603);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(32, 21);
+            this.panel30.TabIndex = 30;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label59.Location = new System.Drawing.Point(5, 2);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(21, 15);
+            this.label59.TabIndex = 31;
+            this.label59.Text = "28";
+            // 
+            // panel31
+            // 
+            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel31.Controls.Add(this.label60);
+            this.panel31.Location = new System.Drawing.Point(8, 519);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(32, 21);
+            this.panel31.TabIndex = 30;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label60.Location = new System.Drawing.Point(5, 2);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(21, 15);
+            this.label60.TabIndex = 31;
+            this.label60.Text = "24";
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel32.Controls.Add(this.label61);
+            this.panel32.Location = new System.Drawing.Point(8, 687);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(32, 21);
+            this.panel32.TabIndex = 30;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Arial", 8.5F);
+            this.label61.Location = new System.Drawing.Point(5, 2);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(21, 15);
+            this.label61.TabIndex = 31;
+            this.label61.Text = "32";
+            // 
+            // numericUpDownCharsMagicQ17
+            // 
+            this.numericUpDownCharsMagicQ17.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ17.Location = new System.Drawing.Point(565, 372);
+            this.numericUpDownCharsMagicQ17.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ17.Name = "numericUpDownCharsMagicQ17";
+            this.numericUpDownCharsMagicQ17.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ17.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ25
+            // 
+            this.numericUpDownCharsMagicQ25.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ25.Location = new System.Drawing.Point(565, 540);
+            this.numericUpDownCharsMagicQ25.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ25.Name = "numericUpDownCharsMagicQ25";
+            this.numericUpDownCharsMagicQ25.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ25.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ21
+            // 
+            this.numericUpDownCharsMagicQ21.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ21.Location = new System.Drawing.Point(565, 456);
+            this.numericUpDownCharsMagicQ21.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ21.Name = "numericUpDownCharsMagicQ21";
+            this.numericUpDownCharsMagicQ21.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ21.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ29
+            // 
+            this.numericUpDownCharsMagicQ29.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ29.Location = new System.Drawing.Point(565, 624);
+            this.numericUpDownCharsMagicQ29.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ29.Name = "numericUpDownCharsMagicQ29";
+            this.numericUpDownCharsMagicQ29.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ29.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ19
+            // 
+            this.numericUpDownCharsMagicQ19.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ19.Location = new System.Drawing.Point(565, 414);
+            this.numericUpDownCharsMagicQ19.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ19.Name = "numericUpDownCharsMagicQ19";
+            this.numericUpDownCharsMagicQ19.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ19.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ27
+            // 
+            this.numericUpDownCharsMagicQ27.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ27.Location = new System.Drawing.Point(565, 582);
+            this.numericUpDownCharsMagicQ27.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ27.Name = "numericUpDownCharsMagicQ27";
+            this.numericUpDownCharsMagicQ27.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ27.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ23
+            // 
+            this.numericUpDownCharsMagicQ23.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ23.Location = new System.Drawing.Point(565, 498);
+            this.numericUpDownCharsMagicQ23.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ23.Name = "numericUpDownCharsMagicQ23";
+            this.numericUpDownCharsMagicQ23.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ23.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ31
+            // 
+            this.numericUpDownCharsMagicQ31.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ31.Location = new System.Drawing.Point(565, 666);
+            this.numericUpDownCharsMagicQ31.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ31.Name = "numericUpDownCharsMagicQ31";
+            this.numericUpDownCharsMagicQ31.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ31.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ18
+            // 
+            this.numericUpDownCharsMagicQ18.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ18.Location = new System.Drawing.Point(565, 393);
+            this.numericUpDownCharsMagicQ18.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ18.Name = "numericUpDownCharsMagicQ18";
+            this.numericUpDownCharsMagicQ18.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ18.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ26
+            // 
+            this.numericUpDownCharsMagicQ26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ26.Location = new System.Drawing.Point(565, 561);
+            this.numericUpDownCharsMagicQ26.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ26.Name = "numericUpDownCharsMagicQ26";
+            this.numericUpDownCharsMagicQ26.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ26.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ22
+            // 
+            this.numericUpDownCharsMagicQ22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ22.Location = new System.Drawing.Point(565, 477);
+            this.numericUpDownCharsMagicQ22.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ22.Name = "numericUpDownCharsMagicQ22";
+            this.numericUpDownCharsMagicQ22.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ22.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ30
+            // 
+            this.numericUpDownCharsMagicQ30.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ30.Location = new System.Drawing.Point(565, 645);
+            this.numericUpDownCharsMagicQ30.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ30.Name = "numericUpDownCharsMagicQ30";
+            this.numericUpDownCharsMagicQ30.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ30.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ20
+            // 
+            this.numericUpDownCharsMagicQ20.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ20.Location = new System.Drawing.Point(565, 435);
+            this.numericUpDownCharsMagicQ20.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ20.Name = "numericUpDownCharsMagicQ20";
+            this.numericUpDownCharsMagicQ20.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ20.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ28
+            // 
+            this.numericUpDownCharsMagicQ28.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ28.Location = new System.Drawing.Point(565, 603);
+            this.numericUpDownCharsMagicQ28.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ28.Name = "numericUpDownCharsMagicQ28";
+            this.numericUpDownCharsMagicQ28.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ28.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ24
+            // 
+            this.numericUpDownCharsMagicQ24.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ24.Location = new System.Drawing.Point(565, 519);
+            this.numericUpDownCharsMagicQ24.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ24.Name = "numericUpDownCharsMagicQ24";
+            this.numericUpDownCharsMagicQ24.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ24.TabIndex = 27;
+            // 
+            // numericUpDownCharsMagicQ32
+            // 
+            this.numericUpDownCharsMagicQ32.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCharsMagicQ32.Location = new System.Drawing.Point(565, 687);
+            this.numericUpDownCharsMagicQ32.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownCharsMagicQ32.Name = "numericUpDownCharsMagicQ32";
+            this.numericUpDownCharsMagicQ32.Size = new System.Drawing.Size(62, 21);
+            this.numericUpDownCharsMagicQ32.TabIndex = 27;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnNum,
+            this.ColumnName,
+            this.ColumnQty});
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 13);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView1.RowTemplate.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView1.ShowCellErrors = false;
+            this.dataGridView1.ShowCellToolTips = false;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.ShowRowErrors = false;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 23);
+            this.dataGridView1.TabIndex = 31;
+            // 
             // hexUpDownCharUnk5
             // 
             this.hexUpDownCharUnk5.Hexadecimal = true;
@@ -8409,6 +11825,36 @@
             this.hexUpDownGfUnknown.Size = new System.Drawing.Size(220, 23);
             this.hexUpDownGfUnknown.TabIndex = 7;
             // 
+            // ColumnNum
+            // 
+            this.ColumnNum.Frozen = true;
+            this.ColumnNum.HeaderText = "No.";
+            this.ColumnNum.Name = "ColumnNum";
+            this.ColumnNum.ReadOnly = true;
+            this.ColumnNum.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnNum.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnNum.Width = 31;
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.Frozen = true;
+            this.ColumnName.HeaderText = "Name";
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.ReadOnly = true;
+            this.ColumnName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnName.Width = 526;
+            // 
+            // ColumnQty
+            // 
+            this.ColumnQty.Frozen = true;
+            this.ColumnQty.HeaderText = "Quantity";
+            this.ColumnQty.Name = "ColumnQty";
+            this.ColumnQty.ReadOnly = true;
+            this.ColumnQty.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnQty.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColumnQty.Width = 61;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -8451,28 +11897,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsKills)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsExpLvUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsExp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMaxHp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsCurrentHp)).EndInit();
             this.tabPageChars2.ResumeLayout(false);
             this.tabPageChars2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp1)).EndInit();
             this.tabPageChars3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharsMagic)).EndInit();
             this.tabPageChars4.ResumeLayout(false);
             this.groupBoxCharsAbilities.ResumeLayout(false);
             this.groupBoxCharsAbilities.PerformLayout();
@@ -8536,6 +11980,103 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ4)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ8)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ16)).EndInit();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            this.panel27.ResumeLayout(false);
+            this.panel27.PerformLayout();
+            this.panel28.ResumeLayout(false);
+            this.panel28.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk4)).EndInit();
@@ -8806,50 +12347,47 @@
         private System.Windows.Forms.Label labelCharUnk4;
         private HexUpDown hexUpDownCharUnk3;
         private System.Windows.Forms.Label labelCharUnk3;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf9;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf8;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf7;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf6;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf5;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf4;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf3;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf2;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ImageList imageListGfSmall;
-        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf16;
         private System.Windows.Forms.ImageList imageListGfBig;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.NumericUpDown numericUpDown16;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.NumericUpDown numericUpDown15;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown14;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf15;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf14;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf13;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf12;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf11;
+        private System.Windows.Forms.CheckBox checkBoxCharsGf10;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp16;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp8;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp12;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp4;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp14;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp6;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp10;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp2;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp15;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp7;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp11;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp3;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp13;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp5;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp9;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfComp1;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label labelCharsMaxHp;
-        private System.Windows.Forms.NumericUpDown numericUpDownCharsMaxHp;
         private System.Windows.Forms.ImageList imageListChar;
         private System.Windows.Forms.Button buttonOpen;
         private System.Windows.Forms.Button buttonSaveAs;
-        private System.Windows.Forms.DataGridView dataGridViewCharsMagic;
         private System.Windows.Forms.GroupBox groupBoxCharsAbilities;
         private System.Windows.Forms.GroupBox groupBoxCharsCommands;
         private System.Windows.Forms.Label labelCharsComm4;
@@ -8859,9 +12397,6 @@
         private System.Windows.Forms.ComboBox comboBoxCharsComm3;
         private System.Windows.Forms.ComboBox comboBoxCharsComm2;
         private System.Windows.Forms.ComboBox comboBoxCharsComm1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNum;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQty;
         private System.Windows.Forms.ComboBox comboBoxCharsAb1;
         private System.Windows.Forms.Label labelCharsAb4;
         private System.Windows.Forms.Label labelCharsAb3;
@@ -8989,6 +12524,139 @@
         private System.Windows.Forms.NumericUpDown numericUpDown18;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.NumericUpDown numericUpDown17;
+        private System.Windows.Forms.CheckBox checkBoxCharsAltMod;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ1;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ32;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ16;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ24;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ8;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ28;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ12;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ20;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ4;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ30;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ14;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ22;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ6;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ26;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ10;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ18;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ2;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ31;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ15;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ23;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ7;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ27;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ11;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ19;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ3;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ29;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ13;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ21;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ5;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ25;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ9;
+        private System.Windows.Forms.NumericUpDown numericUpDownCharsMagicQ17;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic32;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic16;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic24;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic8;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic28;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic12;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic20;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic4;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic30;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic14;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic22;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic6;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic26;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic10;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic18;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic2;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic31;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic15;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic23;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic7;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic27;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic11;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic19;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic3;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic29;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic13;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic21;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic5;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic25;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic9;
+        private System.Windows.Forms.ComboBox comboBoxCharsMagic17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQty;
     }
 }
 

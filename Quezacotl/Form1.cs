@@ -26,8 +26,6 @@ namespace Quezacotl
             buttonSaveAs.Enabled = false;
             buttonDeleteTooltips.Enabled = false;
 
-            PopulateDataGridViewCharsMagic();
-
             _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
             if (File.Exists(_backup))
             {
@@ -191,7 +189,156 @@ namespace Quezacotl
 
             #region Characters event handlers
 
-            numericUpDownCharsExp.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(1, numericUpDownCharsExp.Value);
+            numericUpDownCharsCurrentHp.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(0, numericUpDownCharsCurrentHp.Value);
+            numericUpDownCharsHpBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(1, numericUpDownCharsHpBonus.Value);
+            numericUpDownCharsExp.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(2, numericUpDownCharsExp.Value);
+            comboBoxCharsBody.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(3, comboBoxCharsBody.SelectedIndex);
+            comboBoxCharsWeapon.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(4, comboBoxCharsWeapon.SelectedIndex);
+            numericUpDownCharsStrBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(5, numericUpDownCharsStrBonus.Value);
+            numericUpDownCharsVitBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(6, numericUpDownCharsVitBonus.Value);
+            numericUpDownCharsMagBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(7, numericUpDownCharsMagBonus.Value);
+            numericUpDownCharsSprBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(8, numericUpDownCharsSprBonus.Value);
+            numericUpDownCharsSpdBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(9, numericUpDownCharsSpdBonus.Value);
+            numericUpDownCharsLuckBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(10, numericUpDownCharsLuckBonus.Value);
+            comboBoxCharsMagic1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(11, comboBoxCharsMagic1.SelectedIndex);
+            numericUpDownCharsMagicQ1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(12, numericUpDownCharsMagicQ1.Value);
+            comboBoxCharsMagic2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(13, comboBoxCharsMagic2.SelectedIndex);
+            numericUpDownCharsMagicQ2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(14, numericUpDownCharsMagicQ2.Value);
+            comboBoxCharsMagic3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(15, comboBoxCharsMagic3.SelectedIndex);
+            numericUpDownCharsMagicQ3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(16, numericUpDownCharsMagicQ3.Value);
+            comboBoxCharsMagic4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(17, comboBoxCharsMagic4.SelectedIndex);
+            numericUpDownCharsMagicQ4.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(18, numericUpDownCharsMagicQ4.Value);
+            comboBoxCharsMagic5.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(19, comboBoxCharsMagic5.SelectedIndex);
+            numericUpDownCharsMagicQ5.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(20, numericUpDownCharsMagicQ5.Value);
+            comboBoxCharsMagic6.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(21, comboBoxCharsMagic6.SelectedIndex);
+            numericUpDownCharsMagicQ6.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(22, numericUpDownCharsMagicQ6.Value);
+            comboBoxCharsMagic7.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(23, comboBoxCharsMagic7.SelectedIndex);
+            numericUpDownCharsMagicQ7.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(24, numericUpDownCharsMagicQ7.Value);
+            comboBoxCharsMagic8.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(25, comboBoxCharsMagic8.SelectedIndex);
+            numericUpDownCharsMagicQ8.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(26, numericUpDownCharsMagicQ8.Value);
+            comboBoxCharsMagic9.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(27, comboBoxCharsMagic9.SelectedIndex);
+            numericUpDownCharsMagicQ9.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(28, numericUpDownCharsMagicQ9.Value);
+            comboBoxCharsMagic10.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(29, comboBoxCharsMagic10.SelectedIndex);
+            numericUpDownCharsMagicQ10.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(30, numericUpDownCharsMagicQ10.Value);
+            comboBoxCharsMagic11.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(31, comboBoxCharsMagic11.SelectedIndex);
+            numericUpDownCharsMagicQ11.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(32, numericUpDownCharsMagicQ11.Value);
+            comboBoxCharsMagic12.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(33, comboBoxCharsMagic12.SelectedIndex);
+            numericUpDownCharsMagicQ12.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(34, numericUpDownCharsMagicQ12.Value);
+            comboBoxCharsMagic13.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(35, comboBoxCharsMagic13.SelectedIndex);
+            numericUpDownCharsMagicQ13.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(36, numericUpDownCharsMagicQ13.Value);
+            comboBoxCharsMagic14.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(37, comboBoxCharsMagic14.SelectedIndex);
+            numericUpDownCharsMagicQ14.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(38, numericUpDownCharsMagicQ14.Value);
+            comboBoxCharsMagic15.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(39, comboBoxCharsMagic15.SelectedIndex);
+            numericUpDownCharsMagicQ15.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(40, numericUpDownCharsMagicQ15.Value);
+            comboBoxCharsMagic16.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(41, comboBoxCharsMagic16.SelectedIndex);
+            numericUpDownCharsMagicQ16.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(42, numericUpDownCharsMagicQ16.Value);
+            comboBoxCharsMagic17.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(43, comboBoxCharsMagic17.SelectedIndex);
+            numericUpDownCharsMagicQ17.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(44, numericUpDownCharsMagicQ17.Value);
+            comboBoxCharsMagic18.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(45, comboBoxCharsMagic18.SelectedIndex);
+            numericUpDownCharsMagicQ18.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(46, numericUpDownCharsMagicQ18.Value);
+            comboBoxCharsMagic19.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(47, comboBoxCharsMagic19.SelectedIndex);
+            numericUpDownCharsMagicQ19.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(48, numericUpDownCharsMagicQ19.Value);
+            comboBoxCharsMagic20.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(49, comboBoxCharsMagic20.SelectedIndex);
+            numericUpDownCharsMagicQ20.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(50, numericUpDownCharsMagicQ20.Value);
+            comboBoxCharsMagic21.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(51, comboBoxCharsMagic21.SelectedIndex);
+            numericUpDownCharsMagicQ21.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(52, numericUpDownCharsMagicQ21.Value);
+            comboBoxCharsMagic22.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(53, comboBoxCharsMagic22.SelectedIndex);
+            numericUpDownCharsMagicQ22.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(54, numericUpDownCharsMagicQ22.Value);
+            comboBoxCharsMagic23.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(55, comboBoxCharsMagic23.SelectedIndex);
+            numericUpDownCharsMagicQ23.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(56, numericUpDownCharsMagicQ23.Value);
+            comboBoxCharsMagic24.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(57, comboBoxCharsMagic24.SelectedIndex);
+            numericUpDownCharsMagicQ24.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(58, numericUpDownCharsMagicQ24.Value);
+            comboBoxCharsMagic25.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(59, comboBoxCharsMagic25.SelectedIndex);
+            numericUpDownCharsMagicQ25.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(60, numericUpDownCharsMagicQ25.Value);
+            comboBoxCharsMagic26.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(61, comboBoxCharsMagic26.SelectedIndex);
+            numericUpDownCharsMagicQ26.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(62, numericUpDownCharsMagicQ26.Value);
+            comboBoxCharsMagic27.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(63, comboBoxCharsMagic27.SelectedIndex);
+            numericUpDownCharsMagicQ27.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(64, numericUpDownCharsMagicQ27.Value);
+            comboBoxCharsMagic28.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(65, comboBoxCharsMagic28.SelectedIndex);
+            numericUpDownCharsMagicQ28.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(66, numericUpDownCharsMagicQ28.Value);
+            comboBoxCharsMagic29.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(67, comboBoxCharsMagic29.SelectedIndex);
+            numericUpDownCharsMagicQ29.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(68, numericUpDownCharsMagicQ29.Value);
+            comboBoxCharsMagic30.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(69, comboBoxCharsMagic30.SelectedIndex);
+            numericUpDownCharsMagicQ30.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(70, numericUpDownCharsMagicQ30.Value);
+            comboBoxCharsMagic31.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(71, comboBoxCharsMagic31.SelectedIndex);
+            numericUpDownCharsMagicQ31.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(72, numericUpDownCharsMagicQ31.Value);
+            comboBoxCharsMagic32.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(73, comboBoxCharsMagic32.SelectedIndex);
+            numericUpDownCharsMagicQ32.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(74, numericUpDownCharsMagicQ32.Value);
+            comboBoxCharsComm1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(75, comboBoxCharsComm1.SelectedIndex);
+            comboBoxCharsComm2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(76, comboBoxCharsComm2.SelectedIndex);
+            comboBoxCharsComm3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(77, comboBoxCharsComm3.SelectedIndex);
+            hexUpDownCharUnk1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(78, hexUpDownCharUnk1.Value);
+            comboBoxCharsAb1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(79, comboBoxCharsAb1.SelectedIndex);
+            comboBoxCharsAb2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(80, comboBoxCharsAb2.SelectedIndex);
+            comboBoxCharsAb3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(81, comboBoxCharsAb3.SelectedIndex);
+            comboBoxCharsAb4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(82, comboBoxCharsAb4.SelectedIndex);
+            checkBoxCharsGf1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x01);
+            checkBoxCharsGf2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x02);
+            checkBoxCharsGf3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x04);
+            checkBoxCharsGf4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x08);
+            checkBoxCharsGf5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x10);
+            checkBoxCharsGf6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x20);
+            checkBoxCharsGf7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x40);
+            checkBoxCharsGf8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x80);
+            checkBoxCharsGf9.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x01);
+            checkBoxCharsGf10.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x02);
+            checkBoxCharsGf11.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x04);
+            checkBoxCharsGf12.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x08);
+            checkBoxCharsGf13.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x10);
+            checkBoxCharsGf14.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x20);
+            checkBoxCharsGf15.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x40);
+            checkBoxCharsGf16.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x80);
+            hexUpDownCharUnk2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(85, hexUpDownCharUnk2.Value);
+            checkBoxCharsAltMod.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(86, 0x01);
+            comboBoxCharsJunHp.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(87, comboBoxCharsJunHp.SelectedIndex);
+            comboBoxCharsJunStr.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(88, comboBoxCharsJunStr.SelectedIndex);
+            comboBoxCharsJunVit.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(89, comboBoxCharsJunVit.SelectedIndex);
+            comboBoxCharsJunMag.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(90, comboBoxCharsJunMag.SelectedIndex);
+            comboBoxCharsJunSpr.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(91, comboBoxCharsJunSpr.SelectedIndex);
+            comboBoxCharsJunSpd.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(92, comboBoxCharsJunSpd.SelectedIndex);
+            comboBoxCharsJunEva.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(93, comboBoxCharsJunEva.SelectedIndex);
+            comboBoxCharsJunHit.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(94, comboBoxCharsJunHit.SelectedIndex);
+            comboBoxCharsJunLuck.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(95, comboBoxCharsJunLuck.SelectedIndex);
+            comboBoxCharsElemAtk.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(96, comboBoxCharsElemAtk.SelectedIndex);
+            comboBoxCharsStatusAtk.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(97, comboBoxCharsStatusAtk.SelectedIndex);
+            comboBoxCharsElemDef1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(98, comboBoxCharsElemDef1.SelectedIndex);
+            comboBoxCharsElemDef2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(99, comboBoxCharsElemDef2.SelectedIndex);
+            comboBoxCharsElemDef3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(100, comboBoxCharsElemDef3.SelectedIndex);
+            comboBoxCharsElemDef4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(101, comboBoxCharsElemDef4.SelectedIndex);
+            comboBoxCharsStatusDef1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(102, comboBoxCharsStatusDef1.SelectedIndex);
+            comboBoxCharsStatusDef2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(103, comboBoxCharsStatusDef2.SelectedIndex);
+            comboBoxCharsStatusDef3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(104, comboBoxCharsStatusDef3.SelectedIndex);
+            comboBoxCharsStatusDef4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(105, comboBoxCharsStatusDef4.SelectedIndex);
+            hexUpDownCharUnk3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(106, hexUpDownCharUnk3.Value);
+            numericUpDownGfComp1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(107, numericUpDownGfComp1.Value);
+            numericUpDownGfComp2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(108, numericUpDownGfComp2.Value);
+            numericUpDownGfComp3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(109, numericUpDownGfComp3.Value);
+            numericUpDownGfComp4.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(110, numericUpDownGfComp4.Value);
+            numericUpDownGfComp5.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(111, numericUpDownGfComp5.Value);
+            numericUpDownGfComp6.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(112, numericUpDownGfComp6.Value);
+            numericUpDownGfComp7.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(113, numericUpDownGfComp7.Value);
+            numericUpDownGfComp8.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(114, numericUpDownGfComp8.Value);
+            numericUpDownGfComp9.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(115, numericUpDownGfComp9.Value);
+            numericUpDownGfComp10.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(116, numericUpDownGfComp10.Value);
+            numericUpDownGfComp11.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(117, numericUpDownGfComp11.Value);
+            numericUpDownGfComp12.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(118, numericUpDownGfComp12.Value);
+            numericUpDownGfComp13.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(119, numericUpDownGfComp13.Value);
+            numericUpDownGfComp14.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(120, numericUpDownGfComp14.Value);
+            numericUpDownGfComp15.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(121, numericUpDownGfComp15.Value);
+            numericUpDownGfComp16.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(122, numericUpDownGfComp16.Value);
+            numericUpDownCharsKills.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(123, numericUpDownCharsKills.Value);
+            numericUpDownCharsKOs.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(124, numericUpDownCharsKOs.Value);
+            checkBoxCharsAvailable.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(125, 0x01);
+            hexUpDownCharUnk4.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(126, hexUpDownCharUnk4.Value);
+            checkBoxCharStatus1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x01);
+            checkBoxCharStatus2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x02);
+            checkBoxCharStatus3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x04);
+            checkBoxCharStatus4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x08);
+            checkBoxCharStatus5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x10);
+            checkBoxCharStatus6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x20);
+            checkBoxCharStatus7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x40);
+            checkBoxCharStatus8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x80);
+            hexUpDownCharUnk5.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(128, hexUpDownCharUnk5.Value);
 
             #endregion
         }
@@ -654,7 +801,7 @@ namespace Quezacotl
                 ToolTip(numericUpDownGfAp22, 0, InitWorker.GetSelectedGfData.ApAbility22);
                 ToolTip(numericUpDownGfKills, 0, InitWorker.GetSelectedGfData.Kills);
                 ToolTip(numericUpDownGfKOs, 0, InitWorker.GetSelectedGfData.KOs);
-                ToolTip(comboBoxGfLearningAbility, 2, InitWorker.GetSelectedGfData.LearningAbility);
+                ToolTip(comboBoxGfLearningAbility, 2, comboBoxGfLearningAbility.Items[InitWorker.GetSelectedGfData.LearningAbility]);
             }
             catch (Exception Exception)
             {
@@ -813,7 +960,11 @@ namespace Quezacotl
             InitWorker.ReadCharacters(CharList, InitWorker.BackupInit);
             try
             {
+                ToolTip(numericUpDownCharsCurrentHp, 0, InitWorker.GetSelectedCharactersData.CurrentHp);
+                ToolTip(numericUpDownCharsHpBonus, 0, InitWorker.GetSelectedCharactersData.HpBonus);
                 ToolTip(numericUpDownCharsExp, 0, InitWorker.GetSelectedCharactersData.Exp);
+                ToolTip(comboBoxCharsBody, 2, comboBoxCharsBody.Items[InitWorker.GetSelectedCharactersData.ModelId]);
+                ToolTip(comboBoxCharsWeapon, 2, comboBoxCharsWeapon.Items[InitWorker.GetSelectedCharactersData.WeaponId]);
             }
             catch (Exception Exception)
             {
@@ -823,7 +974,11 @@ namespace Quezacotl
             InitWorker.ReadCharacters(CharList, InitWorker.Init);
             try
             {
+                numericUpDownCharsCurrentHp.Value = InitWorker.GetSelectedCharactersData.CurrentHp;
+                numericUpDownCharsHpBonus.Value = InitWorker.GetSelectedCharactersData.HpBonus;
                 numericUpDownCharsExp.Value = InitWorker.GetSelectedCharactersData.Exp;
+                comboBoxCharsBody.SelectedIndex = InitWorker.GetSelectedCharactersData.ModelId;
+                comboBoxCharsWeapon.SelectedIndex = InitWorker.GetSelectedCharactersData.WeaponId;
             }
             catch (Exception Exception)
             {
@@ -851,42 +1006,6 @@ namespace Quezacotl
         private void numericUpDownCharExp_ValueChanged(object sender, EventArgs e)
         {
             CharacterLevel();
-        }
-
-        private void PopulateDataGridViewCharsMagic()
-        {
-            dataGridViewCharsMagic.Rows.Insert(0, 1, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(1, 2, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(2, 3, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(3, 4, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(4, 5, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(5, 6, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(6, 7, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(7, 8, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(8, 9, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(9, 10, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(10, 11, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(11, 12, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(12, 13, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(13, 14, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(14, 15, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(15, 16, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(16, 17, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(17, 18, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(18, 19, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(19, 20, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(20, 21, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(21, 22, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(22, 23, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(23, 24, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(24, 25, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(25, 26, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(26, 27, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(27, 28, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(28, 29, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(29, 30, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(30, 31, ColumnName.Items[0], 0);
-            dataGridViewCharsMagic.Rows.Insert(31, 32, ColumnName.Items[0], 0);
         }
     }
 }
