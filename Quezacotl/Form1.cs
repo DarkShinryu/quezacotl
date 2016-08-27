@@ -23,7 +23,10 @@ namespace Quezacotl
             InitializeComponent();
 
             buttonSave.Enabled = false;
+            buttonSaveAs.Enabled = false;
             buttonDeleteTooltips.Enabled = false;
+
+            PopulateDataGridViewCharsMagic();
 
             _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
             if (File.Exists(_backup))
@@ -33,7 +36,7 @@ namespace Quezacotl
 
             #region GFs event handlers
 
-            //textBoxGfName.TextChanged += (sender, args) => InitWorker.UpdateVariable_GF(0, textBoxGfName.Text);
+            textBoxGfName.TextChanged += (sender, args) => InitWorker.UpdateVariable_GF(0, textBoxGfName.Text);
             numericUpDownGfExp.ValueChanged += (sender, args) => InitWorker.UpdateVariable_GF(1, numericUpDownGfExp.Value);
             hexUpDownGfUnknown.ValueChanged += (sender, args) => InitWorker.UpdateVariable_GF(2, hexUpDownGfUnknown.Value);
             checkBoxGfAvailable.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_GF(3, 0x01);
@@ -185,6 +188,12 @@ namespace Quezacotl
             comboBoxGfLearningAbility.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_GF(45, comboBoxGfLearningAbility.SelectedIndex);
 
             #endregion
+
+            #region Characters event handlers
+
+            numericUpDownCharsExp.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(1, numericUpDownCharsExp.Value);
+
+            #endregion
         }
 
         #region Listview selection style
@@ -202,7 +211,7 @@ namespace Quezacotl
 
         #endregion
 
-        #region Open and Save
+        #region Open, Save, About
 
         private async void buttonOpen_Click(object sender, EventArgs e)
         {
@@ -227,7 +236,7 @@ namespace Quezacotl
                     _existingFilename = openFileDialog.FileName;
 
                     buttonSave.Enabled = true;
-
+                    buttonSaveAs.Enabled = true;
 
                     toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
                     toolStripStatusLabelInit.Text = Path.GetFileName(_existingFilename) + " loaded";
@@ -246,7 +255,6 @@ namespace Quezacotl
                 }
             }
         }
-
 
         private async void buttonSave_Click(object sender, EventArgs e)
         {
@@ -271,6 +279,58 @@ namespace Quezacotl
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
             }
+        }
+
+        private async void buttonSaveAs_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveAsDialog = new SaveFileDialog();
+            saveAsDialog.Title = "Open FF8 init.out";
+            saveAsDialog.Filter = "FF8 Init File|*.out";
+            saveAsDialog.FileName = Path.GetFileName(_existingFilename);
+
+            if (!(string.IsNullOrEmpty(_existingFilename)) && InitWorker.Init != null)
+            {
+                try
+                {
+                    if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
+                    {
+                        File.WriteAllBytes(saveAsDialog.FileName, InitWorker.Init);
+
+                        statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
+                        toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
+                        toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
+                        await Task.Delay(3000);
+                        statusStrip.BackColor = Color.Gray;
+                        toolStripStatusLabelStatus.BackColor = Color.Gray;
+                        toolStripStatusLabelStatus.Text = "Ready";
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show
+                        (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(saveAsDialog.FileName)), "Error Saving File",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                }
+            }
+        }
+
+        private void buttonAbout_Click(object sender, EventArgs e)
+        {
+            new AboutBox().ShowDialog();
+        }
+
+        #endregion
+
+        #region Trackbars
+
+        private void trackBarCharsRenzoInd_Scroll(object sender, EventArgs e)
+        {
+            labelTrackBarCharsRenzoInd.Text = trackBarCharsRenzoInd.Value.ToString();
+        }
+
+        private void trackBarCharsRenzoInd_ValueChanged(object sender, EventArgs e)
+        {
+            labelTrackBarCharsRenzoInd.Text = trackBarCharsRenzoInd.Value.ToString();
         }
 
         #endregion
@@ -604,7 +664,7 @@ namespace Quezacotl
             InitWorker.ReadGF(GfList, InitWorker.Init);
             try
             {
-                //textBoxGfName.Text = InitWorker.GetSelectedGfData.Name.ToString();
+                textBoxGfName.Text = InitWorker.GetSelectedGfData.Name;
                 numericUpDownGfExp.Value = InitWorker.GetSelectedGfData.Exp;
                 hexUpDownGfUnknown.Value = InitWorker.GetSelectedGfData.Unknown1;
                 checkBoxGfAvailable.Checked = (InitWorker.GetSelectedGfData.Available & 0x01) >= 1 ? true : false;
@@ -738,6 +798,95 @@ namespace Quezacotl
                 MessageBox.Show(Exception.ToString());
             }
             _loaded = true;
+        }
+
+        private void listViewCharactersList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (InitWorker.Init == null || InitWorker.BackupInit == null)
+                return;
+
+            int CharList = 0;
+            if (listViewCharactersList.SelectedItems.Count > 0)
+                CharList = listViewCharactersList.SelectedIndices[0];
+
+            InitWorker.ReadCharacters(CharList, InitWorker.BackupInit);
+            try
+            {
+                ToolTip(numericUpDownCharsExp, 0, InitWorker.GetSelectedCharactersData.Exp);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            InitWorker.ReadCharacters(CharList, InitWorker.Init);
+            try
+            {
+                numericUpDownCharsExp.Value = InitWorker.GetSelectedCharactersData.Exp;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+        private void numericUpDownCharExpLvUp_ValueChanged(object sender, EventArgs e)
+        {
+            CharacterLevel();
+        }
+
+        private void CharacterLevel()
+        {
+            int level = ((int)numericUpDownCharsExp.Value / (int)numericUpDownCharsExpLvUp.Value) + 1;
+            if (level > 100)
+                level = 100;
+            else
+                level = ((int)numericUpDownCharsExp.Value / (int)numericUpDownCharsExpLvUp.Value) + 1;
+
+            labelCharsLv.Text = "Level: " + level.ToString();
+        }
+
+        private void numericUpDownCharExp_ValueChanged(object sender, EventArgs e)
+        {
+            CharacterLevel();
+        }
+
+        private void PopulateDataGridViewCharsMagic()
+        {
+            dataGridViewCharsMagic.Rows.Insert(0, 1, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(1, 2, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(2, 3, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(3, 4, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(4, 5, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(5, 6, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(6, 7, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(7, 8, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(8, 9, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(9, 10, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(10, 11, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(11, 12, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(12, 13, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(13, 14, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(14, 15, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(15, 16, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(16, 17, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(17, 18, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(18, 19, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(19, 20, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(20, 21, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(21, 22, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(22, 23, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(23, 24, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(24, 25, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(25, 26, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(26, 27, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(27, 28, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(28, 29, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(29, 30, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(30, 31, ColumnName.Items[0], 0);
+            dataGridViewCharsMagic.Rows.Insert(31, 32, ColumnName.Items[0], 0);
         }
     }
 }

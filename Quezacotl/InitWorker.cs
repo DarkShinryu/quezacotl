@@ -22,10 +22,6 @@ namespace Quezacotl
         public static GfData GetSelectedGfData;
         public static CharactersData GetSelectedCharactersData;
 
-        static string[] _charstable;
-        private static readonly string Chartable =
-        @" , ,1,2,3,4,5,6,7,8,9,%,/,:,!,?,…,+,-,=,*,&,「,」,(,),·,.,,,~,“,”,‘,#,$,',_,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,À,Á,Â,Ä,Ç,È,É,Ê,Ë,Ì,Í,Î,Ï,Ñ,Ò,Ó,Ô,Ö,Ù,Ú,Û,Ü,Œ,ß,à,á,â,ä,ç,è,é,ê,ë,ì,í,î,ï,ñ,ò";
-
 
         public struct GfData
         {
@@ -91,38 +87,70 @@ namespace Quezacotl
             public byte Spr;
             public byte Spd;
             public byte Luck;
-            public UInt16 Magic1;
-            public UInt16 Magic2;
-            public UInt16 Magic3;
-            public UInt16 Magic4;
-            public UInt16 Magic5;
-            public UInt16 Magic6;
-            public UInt16 Magic7;
-            public UInt16 Magic8;
-            public UInt16 Magic9;
-            public UInt16 Magic10;
-            public UInt16 Magic11;
-            public UInt16 Magic12;
-            public UInt16 Magic13;
-            public UInt16 Magic14;
-            public UInt16 Magic15;
-            public UInt16 Magic16;
-            public UInt16 Magic17;
-            public UInt16 Magic18;
-            public UInt16 Magic19;
-            public UInt16 Magic20;
-            public UInt16 Magic21;
-            public UInt16 Magic22;
-            public UInt16 Magic23;
-            public UInt16 Magic24;
-            public UInt16 Magic25;
-            public UInt16 Magic26;
-            public UInt16 Magic27;
-            public UInt16 Magic28;
-            public UInt16 Magic29;
-            public UInt16 Magic30;
-            public UInt16 Magic31;
-            public UInt16 Magic32;
+            public byte Magic1;
+            public byte Magic1Quantity;
+            public byte Magic2;
+            public byte Magic2Quantity;
+            public byte Magic3;
+            public byte Magic3Quantity;
+            public byte Magic4;
+            public byte Magic4Quantity;
+            public byte Magic5;
+            public byte Magic5Quantity;
+            public byte Magic6;
+            public byte Magic6Quantity;
+            public byte Magic7;
+            public byte Magic7Quantity;
+            public byte Magic8;
+            public byte Magic8Quantity;
+            public byte Magic9;
+            public byte Magic9Quantity;
+            public byte Magic10;
+            public byte Magic10Quantity;
+            public byte Magic11;
+            public byte Magic11Quantity;
+            public byte Magic12;
+            public byte Magic12Quantity;
+            public byte Magic13;
+            public byte Magic13Quantity;
+            public byte Magic14;
+            public byte Magic14Quantity;
+            public byte Magic15;
+            public byte Magic15Quantity;
+            public byte Magic16;
+            public byte Magic16Quantity;
+            public byte Magic17;
+            public byte Magic17Quantity;
+            public byte Magic18;
+            public byte Magic18Quantity;
+            public byte Magic19;
+            public byte Magic19Quantity;
+            public byte Magic20;
+            public byte Magic20Quantity;
+            public byte Magic21;
+            public byte Magic21Quantity;
+            public byte Magic22;
+            public byte Magic22Quantity;
+            public byte Magic23;
+            public byte Magic23Quantity;
+            public byte Magic24;
+            public byte Magic24Quantity;
+            public byte Magic25;
+            public byte Magic25Quantity;
+            public byte Magic26;
+            public byte Magic26Quantity;
+            public byte Magic27;
+            public byte Magic27Quantity;
+            public byte Magic28;
+            public byte Magic28Quantity;
+            public byte Magic29;
+            public byte Magic29Quantity;
+            public byte Magic30;
+            public byte Magic30Quantity;
+            public byte Magic31;
+            public byte Magic31Quantity;
+            public byte Magic32;
+            public byte Magic32Quantity;
             public byte Command1;
             public byte Command2;
             public byte Command3;
@@ -184,6 +212,7 @@ namespace Quezacotl
 
         }
         #endregion
+
 
         #region Multiple bytes stuff
 
@@ -337,13 +366,16 @@ namespace Quezacotl
         /// </summary>
         /// <param name="a"></param>
         /// <param name="add"></param>
-        private static void GfNameToInit(uint a, int add, byte mode)
+        private static void NameToInit(uint a, int add, byte mode)
         {
             byte[] nameBytes = BitConverter.GetBytes(a);
             switch (mode)
             {
                 case (byte)Mode.Mode_GF:
-                    Array.Copy(nameBytes, 0, Init, OffsetToCharactersSelected + add, 12);
+                    Array.Copy(nameBytes, 0, Init, OffsetToGfSelected + add, 12);
+                    break;
+                case (byte)Mode.Mode_Characters:
+                    Array.Copy(nameBytes, 0, Init, OffsetToCharactersSelected + add, 2);
                     break;
 
                 default:
@@ -359,6 +391,7 @@ namespace Quezacotl
 
         #endregion
 
+
         #region Write GF Variables
 
         public static void UpdateVariable_GF(int index, object variable)
@@ -368,7 +401,7 @@ namespace Quezacotl
             switch (index)
             {
                 case 0:
-                    //GfNameToInit(Convert.ToUInt32(variable), 0, (byte)Mode.Mode_GF); //GF Name
+                    NameToInit(Convert.ToUInt32(variable), 0, (byte)Mode.Mode_GF); //GF Name
                     return;
                 case 1:
                     ExpToInit(Convert.ToUInt32(variable), 12, (byte)Mode.Mode_GF); //Exp
@@ -511,13 +544,40 @@ namespace Quezacotl
             }
         }
 
+
+
+
+        #endregion
+
+
+        #region Write Characters Variables
+
+        public static void UpdateVariable_Characters(int index, object variable)
+        {
+            if (!Form1._loaded || Init == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    NameToInit(Convert.ToUInt32(variable), 0, (byte)Mode.Mode_GF); //Name
+                    return;
+                case 1:
+                    ExpToInit(Convert.ToUInt32(variable), 4, (byte)Mode.Mode_Characters); //Exp
+                    return;
+            }
+        }
+
+        #endregion
+
+
         #region READ INIT VARIABLES
 
-        #region INIT OFFSETS
+        #region Init Offsets
 
         public static void ReadInit(byte[] init)
         {
             Init = init;
+            FF8Text.SetInit(Init);
 
             GfDataOffset = 0;
             CharactersDataOffset = 1088;
@@ -527,7 +587,7 @@ namespace Quezacotl
         #endregion
 
 
-        #region GF
+        #region Gf
 
         public static void ReadGF(int GfId_List, byte[] Init)
         {
@@ -535,7 +595,7 @@ namespace Quezacotl
             int selectedGfOffset = GfDataOffset + (GfId_List * 68);
             OffsetToGfSelected = selectedGfOffset;
 
-            //GetSelectedGfData.Name = BuildString((ushort)BitConverter.ToUInt32(Init, selectedGfOffset));
+            GetSelectedGfData.Name = FF8Text.BuildString((ushort)BitConverter.ToUInt16(Init, selectedGfOffset));
             GetSelectedGfData.Exp = BitConverter.ToUInt32(Init, selectedGfOffset + 12);
             GetSelectedGfData.Unknown1 = Init[selectedGfOffset + 16];
             GetSelectedGfData.Available = Init[selectedGfOffset + 17];
@@ -586,70 +646,20 @@ namespace Quezacotl
 
         #endregion
 
-        //#region CHARACTERS
+        #region Characters
 
-        //public static void ReadCharacters(int CharactersID_List, byte[] Kernel)
-        //{
-        //    GetSelectedCharactersData = new CharactersData();
-        //    int selectedCharactersOffset = CharactersDataOffset + (CharactersID_List * 36);
-        //    OffsetToCharactersSelected = selectedCharactersOffset;
-
-        //    GetSelectedCharactersData.CrisisLevel = Kernel[selectedCharactersOffset + 2];
-        //    selectedCharactersOffset += 3;
-        //    GetSelectedCharactersData.Gender = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.LimitID = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.LimitParam = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.EXP1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.EXP2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.HP1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.HP2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.HP3 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.HP4 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.STR1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.STR2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.STR3 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.STR4 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.VIT1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.VIT2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.VIT3 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.VIT4 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.MAG1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.MAG2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.MAG3 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.MAG4 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPR1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPR2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPR3 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPR4 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPD1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPD2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPD3 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.SPD4 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.LUCK1 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.LUCK2 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.LUCK3 = Kernel[selectedCharactersOffset++];
-        //    GetSelectedCharactersData.LUCK4 = Kernel[selectedCharactersOffset++];
-        //}
-
-        #endregion
-
-
-        #endregion
-
-
-        private static string BuildString(int index)
+        public static void ReadCharacters(int CharactersId_List, byte[] Init)
         {
-            if (_charstable == null)
-                _charstable = Chartable.Split(',');
-            StringBuilder sb = new StringBuilder();
-            while (true)
-            {
-                if (Init[index] == 0x00)
-                    return sb.ToString();
-                char c = _charstable[Init[index++] - 31].ToCharArray()[0];
-                sb.Append(c);
-            }
+            GetSelectedCharactersData = new CharactersData();
+            int selectedCharactersOffset = CharactersDataOffset + (CharactersId_List * 152);
+            OffsetToCharactersSelected = selectedCharactersOffset;
+
+            GetSelectedCharactersData.Exp = BitConverter.ToUInt32(Init, selectedCharactersOffset + 4);
         }
+
+        #endregion
+
+        #endregion
 
     }
 }
