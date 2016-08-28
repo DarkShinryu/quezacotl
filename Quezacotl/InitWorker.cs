@@ -347,7 +347,7 @@ namespace Quezacotl
         /// </summary>
         /// <param name="a"></param>
         /// <param name="add"></param>
-        private static void GfCompToInit(uint a, int add, byte mode)
+        private static void GfCompToInit(int a, int add, byte mode)
         {
             byte[] compBytes = BitConverter.GetBytes(a);
             switch (mode)
@@ -362,7 +362,7 @@ namespace Quezacotl
         }
 
         /// <summary>
-        /// This is for GF Compatibility
+        /// This is for Names
         /// </summary>
         /// <param name="a"></param>
         /// <param name="add"></param>
@@ -880,56 +880,52 @@ namespace Quezacotl
                     Init[OffsetToCharacterSelected + 111] = Convert.ToByte(variable); //Unk 3
                     return;
                 case 107:
-                    return;
-                    ushort a = BitConverter.ToUInt16(Init, OffsetToCharacterSelected + 112);
-                    byte[] temp = BitConverter.GetBytes(a ^= Convert.ToUInt16(variable));
-                    Array.Copy(temp, 0, Init, OffsetToCharacterSelected + 112, 2);
-                    //GfCompToInit(Convert.ToUInt16(variable), + 112, (byte)Mode.Mode_Characters); //GF Compatibility 1
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 112, (byte)Mode.Mode_Characters); //GF Compatibility 1
                     return;
                 case 108:
-                    GfCompToInit(Convert.ToUInt16(variable), 114, (byte)Mode.Mode_Characters); //GF Compatibility 2
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 114, (byte)Mode.Mode_Characters); //GF Compatibility 2
                     return;
                 case 109:
-                    GfCompToInit(Convert.ToUInt16(variable), 116, (byte)Mode.Mode_Characters); //GF Compatibility 3
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 116, (byte)Mode.Mode_Characters); //GF Compatibility 3
                     return;
                 case 110:
-                    GfCompToInit(Convert.ToUInt16(variable), 118, (byte)Mode.Mode_Characters); //GF Compatibility 4
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 118, (byte)Mode.Mode_Characters); //GF Compatibility 4
                     return;
                 case 111:
-                    GfCompToInit(Convert.ToUInt16(variable), 120, (byte)Mode.Mode_Characters); //GF Compatibility 5
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 120, (byte)Mode.Mode_Characters); //GF Compatibility 5
                     return;
                 case 112:
-                    GfCompToInit(Convert.ToUInt16(variable), 122, (byte)Mode.Mode_Characters); //GF Compatibility 6
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 122, (byte)Mode.Mode_Characters); //GF Compatibility 6
                     return;
                 case 113:
-                    GfCompToInit(Convert.ToUInt16(variable), 124, (byte)Mode.Mode_Characters); //GF Compatibility 7
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 124, (byte)Mode.Mode_Characters); //GF Compatibility 7
                     return;
                 case 114:
-                    GfCompToInit(Convert.ToUInt16(variable), 126, (byte)Mode.Mode_Characters); //GF Compatibility 8
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 126, (byte)Mode.Mode_Characters); //GF Compatibility 8
                     return;
                 case 115:
-                    GfCompToInit(Convert.ToUInt16(variable), 128, (byte)Mode.Mode_Characters); //GF Compatibility 9
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 128, (byte)Mode.Mode_Characters); //GF Compatibility 9
                     return;
                 case 116:
-                    GfCompToInit(Convert.ToUInt16(variable), 130, (byte)Mode.Mode_Characters); //GF Compatibility 10
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 130, (byte)Mode.Mode_Characters); //GF Compatibility 10
                     return;
                 case 117:
-                    GfCompToInit(Convert.ToUInt16(variable), 132, (byte)Mode.Mode_Characters); //GF Compatibility 11
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 132, (byte)Mode.Mode_Characters); //GF Compatibility 11
                     return;
                 case 118:
-                    GfCompToInit(Convert.ToUInt16(variable), 134, (byte)Mode.Mode_Characters); //GF Compatibility 12
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 134, (byte)Mode.Mode_Characters); //GF Compatibility 12
                     return;
                 case 119:
-                    GfCompToInit(Convert.ToUInt16(variable), 136, (byte)Mode.Mode_Characters); //GF Compatibility 13
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 136, (byte)Mode.Mode_Characters); //GF Compatibility 13
                     return;
                 case 120:
-                    GfCompToInit(Convert.ToUInt16(variable), 138, (byte)Mode.Mode_Characters); //GF Compatibility 14
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 138, (byte)Mode.Mode_Characters); //GF Compatibility 14
                     return;
                 case 121:
-                    GfCompToInit(Convert.ToUInt16(variable), 140, (byte)Mode.Mode_Characters); //GF Compatibility 15
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 140, (byte)Mode.Mode_Characters); //GF Compatibility 15
                     return;
                 case 122:
-                    GfCompToInit(Convert.ToUInt16(variable), 142, (byte)Mode.Mode_Characters); //GF Compatibility 16
+                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 142, (byte)Mode.Mode_Characters); //GF Compatibility 16
                     return;
                 case 123:
                     KillsToInit(Convert.ToUInt16(variable), 144, (byte)Mode.Mode_Characters); //Kills

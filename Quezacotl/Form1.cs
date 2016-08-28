@@ -17,6 +17,7 @@ namespace Quezacotl
         private const byte _bp_numerical = 0x00;
         private const byte _bp_checked = 0x01;
         private const byte _bp_string = 0x02;
+        private const byte _bp_hex = 0x03;
 
         public Form1()
         {
@@ -385,6 +386,13 @@ namespace Quezacotl
                     buttonSave.Enabled = true;
                     buttonSaveAs.Enabled = true;
 
+                    listViewCharactersList.Items[0].Selected = true;
+                    listViewGfList.Items[0].Selected = true;
+
+                    toolTip1.SetToolTip(numericUpDownCharsExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
+                        "This is here only to help you calculate the current level, it does nothing to init.out.");
+
+
                     toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
                     toolStripStatusLabelInit.Text = Path.GetFileName(_existingFilename) + " loaded";
                     statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
@@ -627,9 +635,9 @@ namespace Quezacotl
                         toolTip1.SetToolTip(control, $"Default: {Convert.ToString(value)}");
                         break;
                     }
-                case 3:
+                case _bp_hex:
                     {
-                        toolTip1.SetToolTip(control, $"Default: {Convert.ToDouble(value)}");
+                        toolTip1.SetToolTip(control, $"Default: 0x{Convert.ToSByte(value).ToString("X2")}");
                         break;
                     }
                 default:
@@ -639,6 +647,101 @@ namespace Quezacotl
 
 
         #endregion
+
+        #region Level calculator
+
+        private void CharacterLevel()
+        {
+            if (InitWorker.Init == null || InitWorker.BackupInit == null)
+                return;
+
+            uint level = ((uint)numericUpDownCharsExp.Value / (uint)numericUpDownCharsExpLvUp.Value) + 1;
+            if (level > 100)
+                level = 100;
+
+            labelCharsLevelValue.Text = level.ToString();
+        }
+
+        private void numericUpDownCharExp_ValueChanged(object sender, EventArgs e)
+        {
+            CharacterLevel();
+        }
+
+        private void numericUpDownCharExpLvUp_ValueChanged(object sender, EventArgs e)
+        {
+            CharacterLevel();
+        }
+
+        #endregion
+
+        #region Characters Gf edit all together
+
+        private void checkBoxCharsGfAll_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxCharsGfAll.Checked == true)
+            {
+                checkBoxCharsGf1.Checked = true;
+                checkBoxCharsGf2.Checked = true;
+                checkBoxCharsGf3.Checked = true;
+                checkBoxCharsGf4.Checked = true;
+                checkBoxCharsGf5.Checked = true;
+                checkBoxCharsGf6.Checked = true;
+                checkBoxCharsGf7.Checked = true;
+                checkBoxCharsGf8.Checked = true;
+                checkBoxCharsGf9.Checked = true;
+                checkBoxCharsGf10.Checked = true;
+                checkBoxCharsGf11.Checked = true;
+                checkBoxCharsGf12.Checked = true;
+                checkBoxCharsGf13.Checked = true;
+                checkBoxCharsGf14.Checked = true;
+                checkBoxCharsGf15.Checked = true;
+                checkBoxCharsGf16.Checked = true;
+            }
+            else if (checkBoxCharsGfAll.Checked == false)
+            {
+                checkBoxCharsGf1.Checked = false;
+                checkBoxCharsGf2.Checked = false;
+                checkBoxCharsGf3.Checked = false;
+                checkBoxCharsGf4.Checked = false;
+                checkBoxCharsGf5.Checked = false;
+                checkBoxCharsGf6.Checked = false;
+                checkBoxCharsGf7.Checked = false;
+                checkBoxCharsGf8.Checked = false;
+                checkBoxCharsGf9.Checked = false;
+                checkBoxCharsGf10.Checked = false;
+                checkBoxCharsGf11.Checked = false;
+                checkBoxCharsGf12.Checked = false;
+                checkBoxCharsGf13.Checked = false;
+                checkBoxCharsGf14.Checked = false;
+                checkBoxCharsGf15.Checked = false;
+                checkBoxCharsGf16.Checked = false;
+            }
+        }
+
+        private void buttonCharsGfApplyCompAll_Click(object sender, EventArgs e)
+        {
+            numericUpDownGfComp1.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp2.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp3.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp4.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp5.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp6.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp7.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp8.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp9.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp10.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp11.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp12.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp13.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp14.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp15.Value = numericUpDownCharsAllGfComp.Value;
+            numericUpDownGfComp16.Value = numericUpDownCharsAllGfComp.Value;
+        }
+
+        #endregion
+
+
+        #region GUI to init data
 
         private void listViewGfList_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -965,6 +1068,151 @@ namespace Quezacotl
                 ToolTip(numericUpDownCharsExp, 0, InitWorker.GetSelectedCharactersData.Exp);
                 ToolTip(comboBoxCharsBody, 2, comboBoxCharsBody.Items[InitWorker.GetSelectedCharactersData.ModelId]);
                 ToolTip(comboBoxCharsWeapon, 2, comboBoxCharsWeapon.Items[InitWorker.GetSelectedCharactersData.WeaponId]);
+                ToolTip(numericUpDownCharsStrBonus, 0, InitWorker.GetSelectedCharactersData.Str);
+                ToolTip(numericUpDownCharsVitBonus, 0, InitWorker.GetSelectedCharactersData.Vit);
+                ToolTip(numericUpDownCharsMagBonus, 0, InitWorker.GetSelectedCharactersData.Mag);
+                ToolTip(numericUpDownCharsSprBonus, 0, InitWorker.GetSelectedCharactersData.Spr);
+                ToolTip(numericUpDownCharsSpdBonus, 0, InitWorker.GetSelectedCharactersData.Spd);
+                ToolTip(numericUpDownCharsLuckBonus, 0, InitWorker.GetSelectedCharactersData.Luck);
+                ToolTip(comboBoxCharsMagic1, 2, comboBoxCharsMagic1.Items[InitWorker.GetSelectedCharactersData.Magic1]);
+                ToolTip(numericUpDownCharsMagicQ1, 0, InitWorker.GetSelectedCharactersData.Magic1Quantity);
+                ToolTip(comboBoxCharsMagic2, 2, comboBoxCharsMagic2.Items[InitWorker.GetSelectedCharactersData.Magic2]);
+                ToolTip(numericUpDownCharsMagicQ2, 0, InitWorker.GetSelectedCharactersData.Magic2Quantity);
+                ToolTip(comboBoxCharsMagic3, 2, comboBoxCharsMagic3.Items[InitWorker.GetSelectedCharactersData.Magic3]);
+                ToolTip(numericUpDownCharsMagicQ3, 0, InitWorker.GetSelectedCharactersData.Magic3Quantity);
+                ToolTip(comboBoxCharsMagic4, 2, comboBoxCharsMagic4.Items[InitWorker.GetSelectedCharactersData.Magic4]);
+                ToolTip(numericUpDownCharsMagicQ4, 0, InitWorker.GetSelectedCharactersData.Magic4Quantity);
+                ToolTip(comboBoxCharsMagic5, 2, comboBoxCharsMagic5.Items[InitWorker.GetSelectedCharactersData.Magic5]);
+                ToolTip(numericUpDownCharsMagicQ5, 0, InitWorker.GetSelectedCharactersData.Magic5Quantity);
+                ToolTip(comboBoxCharsMagic6, 2, comboBoxCharsMagic6.Items[InitWorker.GetSelectedCharactersData.Magic6]);
+                ToolTip(numericUpDownCharsMagicQ6, 0, InitWorker.GetSelectedCharactersData.Magic6Quantity);
+                ToolTip(comboBoxCharsMagic7, 2, comboBoxCharsMagic7.Items[InitWorker.GetSelectedCharactersData.Magic7]);
+                ToolTip(numericUpDownCharsMagicQ7, 0, InitWorker.GetSelectedCharactersData.Magic7Quantity);
+                ToolTip(comboBoxCharsMagic8, 2, comboBoxCharsMagic8.Items[InitWorker.GetSelectedCharactersData.Magic8]);
+                ToolTip(numericUpDownCharsMagicQ8, 0, InitWorker.GetSelectedCharactersData.Magic8Quantity);
+                ToolTip(comboBoxCharsMagic9, 2, comboBoxCharsMagic9.Items[InitWorker.GetSelectedCharactersData.Magic9]);
+                ToolTip(numericUpDownCharsMagicQ9, 0, InitWorker.GetSelectedCharactersData.Magic9Quantity);
+                ToolTip(comboBoxCharsMagic10, 2, comboBoxCharsMagic10.Items[InitWorker.GetSelectedCharactersData.Magic10]);
+                ToolTip(numericUpDownCharsMagicQ10, 0, InitWorker.GetSelectedCharactersData.Magic10Quantity);
+                ToolTip(comboBoxCharsMagic11, 2, comboBoxCharsMagic11.Items[InitWorker.GetSelectedCharactersData.Magic11]);
+                ToolTip(numericUpDownCharsMagicQ11, 0, InitWorker.GetSelectedCharactersData.Magic11Quantity);
+                ToolTip(comboBoxCharsMagic12, 2, comboBoxCharsMagic12.Items[InitWorker.GetSelectedCharactersData.Magic12]);
+                ToolTip(numericUpDownCharsMagicQ12, 0, InitWorker.GetSelectedCharactersData.Magic12Quantity);
+                ToolTip(comboBoxCharsMagic13, 2, comboBoxCharsMagic13.Items[InitWorker.GetSelectedCharactersData.Magic13]);
+                ToolTip(numericUpDownCharsMagicQ13, 0, InitWorker.GetSelectedCharactersData.Magic13Quantity);
+                ToolTip(comboBoxCharsMagic14, 2, comboBoxCharsMagic14.Items[InitWorker.GetSelectedCharactersData.Magic14]);
+                ToolTip(numericUpDownCharsMagicQ14, 0, InitWorker.GetSelectedCharactersData.Magic14Quantity);
+                ToolTip(comboBoxCharsMagic15, 2, comboBoxCharsMagic15.Items[InitWorker.GetSelectedCharactersData.Magic15]);
+                ToolTip(numericUpDownCharsMagicQ15, 0, InitWorker.GetSelectedCharactersData.Magic15Quantity);
+                ToolTip(comboBoxCharsMagic16, 2, comboBoxCharsMagic16.Items[InitWorker.GetSelectedCharactersData.Magic16]);
+                ToolTip(numericUpDownCharsMagicQ16, 0, InitWorker.GetSelectedCharactersData.Magic16Quantity);
+                ToolTip(comboBoxCharsMagic17, 2, comboBoxCharsMagic17.Items[InitWorker.GetSelectedCharactersData.Magic17]);
+                ToolTip(numericUpDownCharsMagicQ17, 0, InitWorker.GetSelectedCharactersData.Magic17Quantity);
+                ToolTip(comboBoxCharsMagic18, 2, comboBoxCharsMagic18.Items[InitWorker.GetSelectedCharactersData.Magic18]);
+                ToolTip(numericUpDownCharsMagicQ18, 0, InitWorker.GetSelectedCharactersData.Magic18Quantity);
+                ToolTip(comboBoxCharsMagic19, 2, comboBoxCharsMagic19.Items[InitWorker.GetSelectedCharactersData.Magic19]);
+                ToolTip(numericUpDownCharsMagicQ19, 0, InitWorker.GetSelectedCharactersData.Magic19Quantity);
+                ToolTip(comboBoxCharsMagic20, 2, comboBoxCharsMagic20.Items[InitWorker.GetSelectedCharactersData.Magic20]);
+                ToolTip(numericUpDownCharsMagicQ20, 0, InitWorker.GetSelectedCharactersData.Magic20Quantity);
+                ToolTip(comboBoxCharsMagic21, 2, comboBoxCharsMagic21.Items[InitWorker.GetSelectedCharactersData.Magic21]);
+                ToolTip(numericUpDownCharsMagicQ21, 0, InitWorker.GetSelectedCharactersData.Magic21Quantity);
+                ToolTip(comboBoxCharsMagic22, 2, comboBoxCharsMagic22.Items[InitWorker.GetSelectedCharactersData.Magic22]);
+                ToolTip(numericUpDownCharsMagicQ22, 0, InitWorker.GetSelectedCharactersData.Magic22Quantity);
+                ToolTip(comboBoxCharsMagic23, 2, comboBoxCharsMagic23.Items[InitWorker.GetSelectedCharactersData.Magic23]);
+                ToolTip(numericUpDownCharsMagicQ23, 0, InitWorker.GetSelectedCharactersData.Magic23Quantity);
+                ToolTip(comboBoxCharsMagic24, 2, comboBoxCharsMagic24.Items[InitWorker.GetSelectedCharactersData.Magic24]);
+                ToolTip(numericUpDownCharsMagicQ24, 0, InitWorker.GetSelectedCharactersData.Magic24Quantity);
+                ToolTip(comboBoxCharsMagic25, 2, comboBoxCharsMagic25.Items[InitWorker.GetSelectedCharactersData.Magic25]);
+                ToolTip(numericUpDownCharsMagicQ25, 0, InitWorker.GetSelectedCharactersData.Magic25Quantity);
+                ToolTip(comboBoxCharsMagic26, 2, comboBoxCharsMagic26.Items[InitWorker.GetSelectedCharactersData.Magic26]);
+                ToolTip(numericUpDownCharsMagicQ26, 0, InitWorker.GetSelectedCharactersData.Magic26Quantity);
+                ToolTip(comboBoxCharsMagic27, 2, comboBoxCharsMagic27.Items[InitWorker.GetSelectedCharactersData.Magic27]);
+                ToolTip(numericUpDownCharsMagicQ27, 0, InitWorker.GetSelectedCharactersData.Magic27Quantity);
+                ToolTip(comboBoxCharsMagic28, 2, comboBoxCharsMagic28.Items[InitWorker.GetSelectedCharactersData.Magic28]);
+                ToolTip(numericUpDownCharsMagicQ28, 0, InitWorker.GetSelectedCharactersData.Magic28Quantity);
+                ToolTip(comboBoxCharsMagic29, 2, comboBoxCharsMagic29.Items[InitWorker.GetSelectedCharactersData.Magic29]);
+                ToolTip(numericUpDownCharsMagicQ29, 0, InitWorker.GetSelectedCharactersData.Magic29Quantity);
+                ToolTip(comboBoxCharsMagic30, 2, comboBoxCharsMagic30.Items[InitWorker.GetSelectedCharactersData.Magic30]);
+                ToolTip(numericUpDownCharsMagicQ30, 0, InitWorker.GetSelectedCharactersData.Magic30Quantity);
+                ToolTip(comboBoxCharsMagic31, 2, comboBoxCharsMagic31.Items[InitWorker.GetSelectedCharactersData.Magic31]);
+                ToolTip(numericUpDownCharsMagicQ31, 0, InitWorker.GetSelectedCharactersData.Magic31Quantity);
+                ToolTip(comboBoxCharsMagic32, 2, comboBoxCharsMagic32.Items[InitWorker.GetSelectedCharactersData.Magic32]);
+                ToolTip(numericUpDownCharsMagicQ32, 0, InitWorker.GetSelectedCharactersData.Magic32Quantity);
+                ToolTip(comboBoxCharsComm1, 2, comboBoxCharsComm1.Items[InitWorker.GetSelectedCharactersData.Command1]);
+                ToolTip(comboBoxCharsComm2, 2, comboBoxCharsComm2.Items[InitWorker.GetSelectedCharactersData.Command2]);
+                ToolTip(comboBoxCharsComm3, 2, comboBoxCharsComm3.Items[InitWorker.GetSelectedCharactersData.Command3]);
+                ToolTip(hexUpDownCharUnk1, 3, InitWorker.GetSelectedCharactersData.Unknown1);
+                ToolTip(comboBoxCharsAb1, 2, comboBoxCharsAb1.Items[InitWorker.GetSelectedCharactersData.Ability1]);
+                ToolTip(comboBoxCharsAb2, 2, comboBoxCharsAb2.Items[InitWorker.GetSelectedCharactersData.Ability2]);
+                ToolTip(comboBoxCharsAb3, 2, comboBoxCharsAb3.Items[InitWorker.GetSelectedCharactersData.Ability3]);
+                ToolTip(comboBoxCharsAb4, 2, comboBoxCharsAb4.Items[InitWorker.GetSelectedCharactersData.Ability4]);
+                ToolTip(checkBoxCharsGf1, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf2, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf3, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf4, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf5, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf6, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf7, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf8, 1, (InitWorker.GetSelectedCharactersData.JunGf1 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf9, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf10, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf11, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf12, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf13, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf14, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf15, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxCharsGf16, 1, (InitWorker.GetSelectedCharactersData.JunGf2 & 0x80) >= 1 ? true : false);
+                ToolTip(hexUpDownCharUnk2, 3, InitWorker.GetSelectedCharactersData.Unknown2);
+                ToolTip(checkBoxCharsAltMod, 1, (InitWorker.GetSelectedCharactersData.AltModel & 0x01) >= 1 ? true : false);
+                ToolTip(comboBoxCharsJunHp, 2, comboBoxCharsJunHp.Items[InitWorker.GetSelectedCharactersData.JunHP]);
+                ToolTip(comboBoxCharsJunStr, 2, comboBoxCharsJunStr.Items[InitWorker.GetSelectedCharactersData.JunStr]);
+                ToolTip(comboBoxCharsJunVit, 2, comboBoxCharsJunVit.Items[InitWorker.GetSelectedCharactersData.JunVit]);
+                ToolTip(comboBoxCharsJunMag, 2, comboBoxCharsJunMag.Items[InitWorker.GetSelectedCharactersData.JunMag]);
+                ToolTip(comboBoxCharsJunSpr, 2, comboBoxCharsJunSpr.Items[InitWorker.GetSelectedCharactersData.JunSpr]);
+                ToolTip(comboBoxCharsJunSpd, 2, comboBoxCharsJunSpd.Items[InitWorker.GetSelectedCharactersData.JunSpd]);
+                ToolTip(comboBoxCharsJunEva, 2, comboBoxCharsJunEva.Items[InitWorker.GetSelectedCharactersData.JunEva]);
+                ToolTip(comboBoxCharsJunHit, 2, comboBoxCharsJunHit.Items[InitWorker.GetSelectedCharactersData.JunHit]);
+                ToolTip(comboBoxCharsJunLuck, 2, comboBoxCharsJunLuck.Items[InitWorker.GetSelectedCharactersData.JunLuck]);
+                ToolTip(comboBoxCharsElemAtk, 2, comboBoxCharsElemAtk.Items[InitWorker.GetSelectedCharactersData.JunEleAtk]);
+                ToolTip(comboBoxCharsStatusAtk, 2, comboBoxCharsStatusAtk.Items[InitWorker.GetSelectedCharactersData.JunStatusAtk]);
+                ToolTip(comboBoxCharsElemDef1, 2, comboBoxCharsElemDef1.Items[InitWorker.GetSelectedCharactersData.JunEleDef1]);
+                ToolTip(comboBoxCharsElemDef2, 2, comboBoxCharsElemDef2.Items[InitWorker.GetSelectedCharactersData.JunEleDef2]);
+                ToolTip(comboBoxCharsElemDef3, 2, comboBoxCharsElemDef3.Items[InitWorker.GetSelectedCharactersData.JunEleDef3]);
+                ToolTip(comboBoxCharsElemDef4, 2, comboBoxCharsElemDef4.Items[InitWorker.GetSelectedCharactersData.JunEleDef4]);
+                ToolTip(comboBoxCharsStatusDef1, 2, comboBoxCharsStatusDef1.Items[InitWorker.GetSelectedCharactersData.JunStatusDef1]);
+                ToolTip(comboBoxCharsStatusDef2, 2, comboBoxCharsStatusDef2.Items[InitWorker.GetSelectedCharactersData.JunStatusDef2]);
+                ToolTip(comboBoxCharsStatusDef3, 2, comboBoxCharsStatusDef3.Items[InitWorker.GetSelectedCharactersData.JunStatusDef3]);
+                ToolTip(comboBoxCharsStatusDef4, 2, comboBoxCharsStatusDef4.Items[InitWorker.GetSelectedCharactersData.JunStatusDef4]);
+                ToolTip(hexUpDownCharUnk3, 3, InitWorker.GetSelectedCharactersData.Unknown3);
+                ToolTip(numericUpDownGfComp1, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp1) / 5);
+                ToolTip(numericUpDownGfComp2, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp2) / 5);
+                ToolTip(numericUpDownGfComp3, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp3) / 5);
+                ToolTip(numericUpDownGfComp4, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp4) / 5);
+                ToolTip(numericUpDownGfComp5, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp5) / 5);
+                ToolTip(numericUpDownGfComp6, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp6) / 5);
+                ToolTip(numericUpDownGfComp7, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp7) / 5);
+                ToolTip(numericUpDownGfComp8, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp8) / 5);
+                ToolTip(numericUpDownGfComp9, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp9) / 5);
+                ToolTip(numericUpDownGfComp10, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp10) / 5);
+                ToolTip(numericUpDownGfComp11, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp11) / 5);
+                ToolTip(numericUpDownGfComp12, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp12) / 5);
+                ToolTip(numericUpDownGfComp13, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp13) / 5);
+                ToolTip(numericUpDownGfComp14, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp14) / 5);
+                ToolTip(numericUpDownGfComp15, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp15) / 5);
+                ToolTip(numericUpDownGfComp16, 0, (6000 - InitWorker.GetSelectedCharactersData.GfComp16) / 5);
+                ToolTip(numericUpDownCharsKills, 0, InitWorker.GetSelectedCharactersData.Kills);
+                ToolTip(numericUpDownCharsKOs, 0, InitWorker.GetSelectedCharactersData.KOs);
+                ToolTip(checkBoxCharsAvailable, 1, (InitWorker.GetSelectedCharactersData.Exist & 0x01) >= 1 ? true : false);
+                ToolTip(hexUpDownCharUnk4, 3, InitWorker.GetSelectedCharactersData.Unknown4);
+                ToolTip(checkBoxCharStatus1, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxCharStatus2, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxCharStatus3, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxCharStatus4, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxCharStatus5, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxCharStatus6, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxCharStatus7, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxCharStatus8, 1, (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x80) >= 1 ? true : false);
+                ToolTip(hexUpDownCharUnk5, 3, InitWorker.GetSelectedCharactersData.Unknown5);
             }
             catch (Exception Exception)
             {
@@ -979,6 +1227,151 @@ namespace Quezacotl
                 numericUpDownCharsExp.Value = InitWorker.GetSelectedCharactersData.Exp;
                 comboBoxCharsBody.SelectedIndex = InitWorker.GetSelectedCharactersData.ModelId;
                 comboBoxCharsWeapon.SelectedIndex = InitWorker.GetSelectedCharactersData.WeaponId;
+                numericUpDownCharsStrBonus.Value = InitWorker.GetSelectedCharactersData.Str;
+                numericUpDownCharsVitBonus.Value = InitWorker.GetSelectedCharactersData.Vit;
+                numericUpDownCharsMagBonus.Value = InitWorker.GetSelectedCharactersData.Mag;
+                numericUpDownCharsSprBonus.Value = InitWorker.GetSelectedCharactersData.Spr;
+                numericUpDownCharsSpdBonus.Value = InitWorker.GetSelectedCharactersData.Spr;
+                numericUpDownCharsLuckBonus.Value = InitWorker.GetSelectedCharactersData.Luck;
+                comboBoxCharsMagic1.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic1;
+                numericUpDownCharsMagicQ1.Value = InitWorker.GetSelectedCharactersData.Magic1Quantity;
+                comboBoxCharsMagic2.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic2;
+                numericUpDownCharsMagicQ2.Value = InitWorker.GetSelectedCharactersData.Magic2Quantity;
+                comboBoxCharsMagic3.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic3;
+                numericUpDownCharsMagicQ3.Value = InitWorker.GetSelectedCharactersData.Magic3Quantity;
+                comboBoxCharsMagic4.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic4;
+                numericUpDownCharsMagicQ4.Value = InitWorker.GetSelectedCharactersData.Magic4Quantity;
+                comboBoxCharsMagic5.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic5;
+                numericUpDownCharsMagicQ5.Value = InitWorker.GetSelectedCharactersData.Magic5Quantity;
+                comboBoxCharsMagic6.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic6;
+                numericUpDownCharsMagicQ6.Value = InitWorker.GetSelectedCharactersData.Magic6Quantity;
+                comboBoxCharsMagic7.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic7;
+                numericUpDownCharsMagicQ7.Value = InitWorker.GetSelectedCharactersData.Magic7Quantity;
+                comboBoxCharsMagic8.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic8;
+                numericUpDownCharsMagicQ8.Value = InitWorker.GetSelectedCharactersData.Magic8Quantity;
+                comboBoxCharsMagic9.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic9;
+                numericUpDownCharsMagicQ9.Value = InitWorker.GetSelectedCharactersData.Magic9Quantity;
+                comboBoxCharsMagic10.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic10;
+                numericUpDownCharsMagicQ10.Value = InitWorker.GetSelectedCharactersData.Magic10Quantity;
+                comboBoxCharsMagic11.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic11;
+                numericUpDownCharsMagicQ11.Value = InitWorker.GetSelectedCharactersData.Magic11Quantity;
+                comboBoxCharsMagic12.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic12;
+                numericUpDownCharsMagicQ12.Value = InitWorker.GetSelectedCharactersData.Magic12Quantity;
+                comboBoxCharsMagic13.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic13;
+                numericUpDownCharsMagicQ13.Value = InitWorker.GetSelectedCharactersData.Magic13Quantity;
+                comboBoxCharsMagic14.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic14;
+                numericUpDownCharsMagicQ14.Value = InitWorker.GetSelectedCharactersData.Magic14Quantity;
+                comboBoxCharsMagic15.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic15;
+                numericUpDownCharsMagicQ15.Value = InitWorker.GetSelectedCharactersData.Magic15Quantity;
+                comboBoxCharsMagic16.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic16;
+                numericUpDownCharsMagicQ16.Value = InitWorker.GetSelectedCharactersData.Magic16Quantity;
+                comboBoxCharsMagic17.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic17;
+                numericUpDownCharsMagicQ17.Value = InitWorker.GetSelectedCharactersData.Magic17Quantity;
+                comboBoxCharsMagic18.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic18;
+                numericUpDownCharsMagicQ18.Value = InitWorker.GetSelectedCharactersData.Magic18Quantity;
+                comboBoxCharsMagic19.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic19;
+                numericUpDownCharsMagicQ19.Value = InitWorker.GetSelectedCharactersData.Magic19Quantity;
+                comboBoxCharsMagic20.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic20;
+                numericUpDownCharsMagicQ20.Value = InitWorker.GetSelectedCharactersData.Magic20Quantity;
+                comboBoxCharsMagic21.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic21;
+                numericUpDownCharsMagicQ21.Value = InitWorker.GetSelectedCharactersData.Magic21Quantity;
+                comboBoxCharsMagic22.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic22;
+                numericUpDownCharsMagicQ22.Value = InitWorker.GetSelectedCharactersData.Magic22Quantity;
+                comboBoxCharsMagic23.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic23;
+                numericUpDownCharsMagicQ23.Value = InitWorker.GetSelectedCharactersData.Magic23Quantity;
+                comboBoxCharsMagic24.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic24;
+                numericUpDownCharsMagicQ24.Value = InitWorker.GetSelectedCharactersData.Magic24Quantity;
+                comboBoxCharsMagic25.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic25;
+                numericUpDownCharsMagicQ25.Value = InitWorker.GetSelectedCharactersData.Magic25Quantity;
+                comboBoxCharsMagic26.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic26;
+                numericUpDownCharsMagicQ26.Value = InitWorker.GetSelectedCharactersData.Magic26Quantity;
+                comboBoxCharsMagic27.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic27;
+                numericUpDownCharsMagicQ27.Value = InitWorker.GetSelectedCharactersData.Magic27Quantity;
+                comboBoxCharsMagic28.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic28;
+                numericUpDownCharsMagicQ28.Value = InitWorker.GetSelectedCharactersData.Magic28Quantity;
+                comboBoxCharsMagic29.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic29;
+                numericUpDownCharsMagicQ29.Value = InitWorker.GetSelectedCharactersData.Magic29Quantity;
+                comboBoxCharsMagic30.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic30;
+                numericUpDownCharsMagicQ30.Value = InitWorker.GetSelectedCharactersData.Magic30Quantity;
+                comboBoxCharsMagic31.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic31;
+                numericUpDownCharsMagicQ31.Value = InitWorker.GetSelectedCharactersData.Magic31Quantity;
+                comboBoxCharsMagic32.SelectedIndex = InitWorker.GetSelectedCharactersData.Magic32;
+                numericUpDownCharsMagicQ32.Value = InitWorker.GetSelectedCharactersData.Magic32Quantity;
+                comboBoxCharsComm1.SelectedIndex = InitWorker.GetSelectedCharactersData.Command1;
+                comboBoxCharsComm2.SelectedIndex = InitWorker.GetSelectedCharactersData.Command2;
+                comboBoxCharsComm3.SelectedIndex = InitWorker.GetSelectedCharactersData.Command3;
+                hexUpDownCharUnk1.Value = InitWorker.GetSelectedCharactersData.Unknown1;
+                comboBoxCharsAb1.SelectedIndex = InitWorker.GetSelectedCharactersData.Ability1;
+                comboBoxCharsAb2.SelectedIndex = InitWorker.GetSelectedCharactersData.Ability2;
+                comboBoxCharsAb3.SelectedIndex = InitWorker.GetSelectedCharactersData.Ability3;
+                comboBoxCharsAb4.SelectedIndex = InitWorker.GetSelectedCharactersData.Ability4;
+                checkBoxCharsGf1.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x01) >= 1 ? true : false;
+                checkBoxCharsGf2.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x02) >= 1 ? true : false;
+                checkBoxCharsGf3.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x04) >= 1 ? true : false;
+                checkBoxCharsGf4.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x08) >= 1 ? true : false;
+                checkBoxCharsGf5.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x10) >= 1 ? true : false;
+                checkBoxCharsGf6.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x20) >= 1 ? true : false;
+                checkBoxCharsGf7.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x40) >= 1 ? true : false;
+                checkBoxCharsGf8.Checked = (InitWorker.GetSelectedCharactersData.JunGf1 & 0x80) >= 1 ? true : false;
+                checkBoxCharsGf9.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x01) >= 1 ? true : false;
+                checkBoxCharsGf10.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x02) >= 1 ? true : false;
+                checkBoxCharsGf11.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x04) >= 1 ? true : false;
+                checkBoxCharsGf12.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x08) >= 1 ? true : false;
+                checkBoxCharsGf13.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x10) >= 1 ? true : false;
+                checkBoxCharsGf14.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x20) >= 1 ? true : false;
+                checkBoxCharsGf15.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x40) >= 1 ? true : false;
+                checkBoxCharsGf16.Checked = (InitWorker.GetSelectedCharactersData.JunGf2 & 0x80) >= 1 ? true : false;
+                hexUpDownCharUnk2.Value = InitWorker.GetSelectedCharactersData.Unknown2;
+                checkBoxCharsAltMod.Checked = (InitWorker.GetSelectedCharactersData.AltModel & 0x01) >= 1 ? true : false;
+                comboBoxCharsJunHp.SelectedIndex = InitWorker.GetSelectedCharactersData.JunHP;
+                comboBoxCharsJunStr.SelectedIndex = InitWorker.GetSelectedCharactersData.JunStr;
+                comboBoxCharsJunVit.SelectedIndex = InitWorker.GetSelectedCharactersData.JunVit;
+                comboBoxCharsJunMag.SelectedIndex = InitWorker.GetSelectedCharactersData.JunMag;
+                comboBoxCharsJunSpr.SelectedIndex = InitWorker.GetSelectedCharactersData.JunSpr;
+                comboBoxCharsJunSpd.SelectedIndex = InitWorker.GetSelectedCharactersData.JunSpd;
+                comboBoxCharsJunEva.SelectedIndex = InitWorker.GetSelectedCharactersData.JunEva;
+                comboBoxCharsJunHit.SelectedIndex = InitWorker.GetSelectedCharactersData.JunHit;
+                comboBoxCharsJunLuck.SelectedIndex = InitWorker.GetSelectedCharactersData.JunLuck;
+                comboBoxCharsElemAtk.SelectedIndex = InitWorker.GetSelectedCharactersData.JunEleAtk;
+                comboBoxCharsStatusAtk.SelectedIndex = InitWorker.GetSelectedCharactersData.JunStatusAtk;
+                comboBoxCharsElemDef1.SelectedIndex = InitWorker.GetSelectedCharactersData.JunEleDef1;
+                comboBoxCharsElemDef2.SelectedIndex = InitWorker.GetSelectedCharactersData.JunEleDef2;
+                comboBoxCharsElemDef3.SelectedIndex = InitWorker.GetSelectedCharactersData.JunEleDef3;
+                comboBoxCharsElemDef4.SelectedIndex = InitWorker.GetSelectedCharactersData.JunEleDef4;
+                comboBoxCharsStatusDef1.SelectedIndex = InitWorker.GetSelectedCharactersData.JunStatusDef1;
+                comboBoxCharsStatusDef2.SelectedIndex = InitWorker.GetSelectedCharactersData.JunStatusDef2;
+                comboBoxCharsStatusDef3.SelectedIndex = InitWorker.GetSelectedCharactersData.JunStatusDef3;
+                comboBoxCharsStatusDef4.SelectedIndex = InitWorker.GetSelectedCharactersData.JunStatusDef4;
+                hexUpDownCharUnk3.Value = InitWorker.GetSelectedCharactersData.Unknown3;
+                numericUpDownGfComp1.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp1) / 5;
+                numericUpDownGfComp2.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp2) / 5;
+                numericUpDownGfComp3.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp3) / 5;
+                numericUpDownGfComp4.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp4) / 5;
+                numericUpDownGfComp5.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp5) / 5;
+                numericUpDownGfComp6.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp6) / 5;
+                numericUpDownGfComp7.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp7) / 5;
+                numericUpDownGfComp8.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp8) / 5;
+                numericUpDownGfComp9.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp9) / 5;
+                numericUpDownGfComp10.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp10) / 5;
+                numericUpDownGfComp11.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp11) / 5;
+                numericUpDownGfComp12.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp12) / 5;
+                numericUpDownGfComp13.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp13) / 5;
+                numericUpDownGfComp14.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp14) / 5;
+                numericUpDownGfComp15.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp15) / 5;
+                numericUpDownGfComp16.Value = (6000 - InitWorker.GetSelectedCharactersData.GfComp16) / 5;
+                numericUpDownCharsKills.Value = InitWorker.GetSelectedCharactersData.Kills;
+                numericUpDownCharsKOs.Value = InitWorker.GetSelectedCharactersData.KOs;
+                checkBoxCharsAvailable.Checked = (InitWorker.GetSelectedCharactersData.Exist & 0x01) >= 1 ? true : false;
+                hexUpDownCharUnk4.Value = InitWorker.GetSelectedCharactersData.Unknown4;
+                checkBoxCharStatus1.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x01) >= 1 ? true : false;
+                checkBoxCharStatus2.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x02) >= 1 ? true : false;
+                checkBoxCharStatus3.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x04) >= 1 ? true : false;
+                checkBoxCharStatus4.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x08) >= 1 ? true : false;
+                checkBoxCharStatus5.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x10) >= 1 ? true : false;
+                checkBoxCharStatus6.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x20) >= 1 ? true : false;
+                checkBoxCharStatus7.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x40) >= 1 ? true : false;
+                checkBoxCharStatus8.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x80) >= 1 ? true : false;
+                hexUpDownCharUnk5.Value = InitWorker.GetSelectedCharactersData.Unknown5;
             }
             catch (Exception Exception)
             {
@@ -987,25 +1380,6 @@ namespace Quezacotl
             _loaded = true;
         }
 
-        private void numericUpDownCharExpLvUp_ValueChanged(object sender, EventArgs e)
-        {
-            CharacterLevel();
-        }
-
-        private void CharacterLevel()
-        {
-            int level = ((int)numericUpDownCharsExp.Value / (int)numericUpDownCharsExpLvUp.Value) + 1;
-            if (level > 100)
-                level = 100;
-            else
-                level = ((int)numericUpDownCharsExp.Value / (int)numericUpDownCharsExpLvUp.Value) + 1;
-
-            labelCharsLv.Text = "Level: " + level.ToString();
-        }
-
-        private void numericUpDownCharExp_ValueChanged(object sender, EventArgs e)
-        {
-            CharacterLevel();
-        }
+        #endregion
     }
 }
