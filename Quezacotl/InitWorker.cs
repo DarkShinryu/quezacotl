@@ -868,7 +868,7 @@ namespace Quezacotl
                     Init[OffsetToCharacterSelected + 107] = Convert.ToByte(variable); //JunStatusDef1
                     return;
                 case 103:
-                    Init[OffsetToCharacterSelected + 118] = Convert.ToByte(variable); //JunStatusDef2
+                    Init[OffsetToCharacterSelected + 108] = Convert.ToByte(variable); //JunStatusDef2
                     return;
                 case 104:
                     Init[OffsetToCharacterSelected + 109] = Convert.ToByte(variable); //JunStatusDef3
@@ -934,13 +934,13 @@ namespace Quezacotl
                     KOsToInit(Convert.ToUInt16(variable), 146, (byte)Mode.Mode_Characters); //KOs
                     return;
                 case 125:
-                    Init[OffsetToCharacterSelected + 148] = Convert.ToByte(variable); //Exist
+                    Init[OffsetToCharacterSelected + 148] = (byte)(Init[OffsetToCharacterSelected + 148] ^ Convert.ToByte(variable)); //Exist
                     return;
                 case 126:
                     Init[OffsetToCharacterSelected + 149] = Convert.ToByte(variable); //Unk 4
                     return;
                 case 127:
-                    Init[OffsetToCharacterSelected + 150] = Convert.ToByte(variable); //Current Status
+                    Init[OffsetToCharacterSelected + 150] = (byte)(Init[OffsetToCharacterSelected + 150] ^ Convert.ToByte(variable)); //Current Status
                     return;
                 case 128:
                     Init[OffsetToCharacterSelected + 151] = Convert.ToByte(variable); //Unk 5

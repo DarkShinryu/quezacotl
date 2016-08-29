@@ -1102,7 +1102,7 @@
             this.numericUpDownCharsHpBonus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.numericUpDownCharsHpBonus.Location = new System.Drawing.Point(81, 24);
             this.numericUpDownCharsHpBonus.Maximum = new decimal(new int[] {
-            255,
+            65535,
             0,
             0,
             0});
