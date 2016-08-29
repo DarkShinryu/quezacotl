@@ -3,9 +3,9 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Quezacotl.Properties;
 
 namespace Quezacotl
 {
@@ -19,9 +19,19 @@ namespace Quezacotl
         private const byte _bp_string = 0x02;
         private const byte _bp_hex = 0x03;
 
+        [DllImport("user32.dll")] //used in Listview spacing method
+        public static extern int SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
+
+        [DllImport("uxtheme.dll", CharSet = CharSet.Unicode, ExactSpelling = true)] //used in Listview selection style method
+        internal static extern int SetWindowTheme(IntPtr hWnd, string appName, string partList);
+
         public Form1()
         {
             InitializeComponent();
+            ListViewLoadImages();
+
+            ListViewItem_SetSpacing(listViewExCharactersList, 32 + 113, 64 + 4);
+            ListViewItem_SetSpacing(listViewExGfList, 32 + 2, 64 + 4);
 
             buttonSave.Enabled = false;
             buttonSaveAs.Enabled = false;
@@ -344,17 +354,171 @@ namespace Quezacotl
             #endregion
         }
 
-        #region Listview selection style
-
-        [DllImport("uxtheme.dll", CharSet = CharSet.Unicode, ExactSpelling = true)]
-        internal static extern int SetWindowTheme(IntPtr hWnd, string appName, string partList);
+        #region Listviews selection style
 
         // You can subclass ListView and override this method
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
-            SetWindowTheme(listViewCharactersList.Handle, "explorer", null);
-            SetWindowTheme(listViewGfList.Handle, "explorer", null);
+            SetWindowTheme(listViewExCharactersList.Handle, "explorer", null);
+            SetWindowTheme(listViewExGfList.Handle, "explorer", null);
+        }
+
+        #endregion
+
+        #region Listviews spacing
+
+        public int MakeLong(short lowPart, short highPart)
+        {
+            return (int)(((ushort)lowPart) | (uint)(highPart << 16));
+        }
+
+        public void ListViewItem_SetSpacing(ListView listview, short leftPadding, short topPadding)
+        {
+            const int LVM_FIRST = 0x1000;
+            const int LVM_SETICONSPACING = LVM_FIRST + 53;
+            SendMessage(listview.Handle, LVM_SETICONSPACING, IntPtr.Zero, (IntPtr)MakeLong(leftPadding, topPadding));
+        }
+
+        #endregion
+
+        #region Listviews load images
+
+        private void ListViewLoadImages()
+        {
+            //Characters
+            imageListChar.ImageSize = new Size(32, 48);
+            imageListChar.Images.Add(Resources.char0);
+            imageListChar.Images.SetKeyName(0, "Squall");
+            imageListChar.Images.Add(Resources.char1);
+            imageListChar.Images.SetKeyName(1, "Zell");
+            imageListChar.Images.Add(Resources.char2);
+            imageListChar.Images.SetKeyName(2, "Irvine");
+            imageListChar.Images.Add(Resources.char3);
+            imageListChar.Images.SetKeyName(3, "Quistis");
+            imageListChar.Images.Add(Resources.char4);
+            imageListChar.Images.SetKeyName(4, "Rinoa");
+            imageListChar.Images.Add(Resources.char5);
+            imageListChar.Images.SetKeyName(5, "Selphie");
+            imageListChar.Images.Add(Resources.char6);
+            imageListChar.Images.SetKeyName(6, "Seifer");
+            imageListChar.Images.Add(Resources.char7);
+            imageListChar.Images.SetKeyName(7, "Edea");
+            listViewExCharactersList.Items[0].ImageKey = "Squall";
+            listViewExCharactersList.Items[1].ImageKey = "Zell";
+            listViewExCharactersList.Items[2].ImageKey = "Irvine";
+            listViewExCharactersList.Items[3].ImageKey = "Quistis";
+            listViewExCharactersList.Items[4].ImageKey = "Rinoa";
+            listViewExCharactersList.Items[5].ImageKey = "Selphie";
+            listViewExCharactersList.Items[6].ImageKey = "Seifer";
+            listViewExCharactersList.Items[7].ImageKey = "Edea";
+
+            //GF Big
+            imageListGfBig.ImageSize = new Size(32, 48);
+            imageListGfBig.Images.Add(Resources.gf0);
+            imageListGfBig.Images.SetKeyName(0, "Quezacotl");
+            imageListGfBig.Images.Add(Resources.gf1);
+            imageListGfBig.Images.SetKeyName(1, "Shiva");
+            imageListGfBig.Images.Add(Resources.gf2);
+            imageListGfBig.Images.SetKeyName(2, "Ifrit");
+            imageListGfBig.Images.Add(Resources.gf3);
+            imageListGfBig.Images.SetKeyName(3, "Siren");
+            imageListGfBig.Images.Add(Resources.gf4);
+            imageListGfBig.Images.SetKeyName(4, "Brothers");
+            imageListGfBig.Images.Add(Resources.gf5);
+            imageListGfBig.Images.SetKeyName(5, "Diablos");
+            imageListGfBig.Images.Add(Resources.gf6);
+            imageListGfBig.Images.SetKeyName(6, "Carbuncle");
+            imageListGfBig.Images.Add(Resources.gf7);
+            imageListGfBig.Images.SetKeyName(7, "Leviathan");
+            imageListGfBig.Images.Add(Resources.gf8);
+            imageListGfBig.Images.SetKeyName(8, "Pandemona");
+            imageListGfBig.Images.Add(Resources.gf9);
+            imageListGfBig.Images.SetKeyName(9, "Cerberus");
+            imageListGfBig.Images.Add(Resources.gf10);
+            imageListGfBig.Images.SetKeyName(10, "Alexander");
+            imageListGfBig.Images.Add(Resources.gf11);
+            imageListGfBig.Images.SetKeyName(11, "Doomtrain");
+            imageListGfBig.Images.Add(Resources.gf12);
+            imageListGfBig.Images.SetKeyName(12, "Bahamuth");
+            imageListGfBig.Images.Add(Resources.gf13);
+            imageListGfBig.Images.SetKeyName(13, "Cactuar");
+            imageListGfBig.Images.Add(Resources.gf14);
+            imageListGfBig.Images.SetKeyName(14, "Tonberry");
+            imageListGfBig.Images.Add(Resources.gf15);
+            imageListGfBig.Images.SetKeyName(15, "Eden");
+            imageListGfBig.Images.Add(Resources.gf16);
+            imageListGfBig.Images.SetKeyName(16, "Griever");
+            listViewExGfList.Items[0].ImageKey = "Quezacotl";
+            listViewExGfList.Items[1].ImageKey = "Shiva";
+            listViewExGfList.Items[2].ImageKey = "Ifrit";
+            listViewExGfList.Items[3].ImageKey = "Siren";
+            listViewExGfList.Items[4].ImageKey = "Brothers";
+            listViewExGfList.Items[5].ImageKey = "Diablos";
+            listViewExGfList.Items[6].ImageKey = "Carbuncle";
+            listViewExGfList.Items[7].ImageKey = "Leviathan";
+            listViewExGfList.Items[8].ImageKey = "Pandemona";
+            listViewExGfList.Items[9].ImageKey = "Cerberus";
+            listViewExGfList.Items[10].ImageKey = "Alexander";
+            listViewExGfList.Items[14].ImageKey = "Doomtrain";
+            listViewExGfList.Items[11].ImageKey = "Bahamuth";
+            listViewExGfList.Items[12].ImageKey = "Cactuar";
+            listViewExGfList.Items[13].ImageKey = "Tonberry";
+            listViewExGfList.Items[15].ImageKey = "Eden";
+            listViewExGfList.Items[16].ImageKey = "Griever";
+
+            //GF Small
+            imageListGfSmall.ImageSize = new Size(24, 36);
+            imageListGfSmall.Images.Add(Resources.gf0);
+            imageListGfSmall.Images.SetKeyName(0, "Quezacotl");
+            imageListGfSmall.Images.Add(Resources.gf1);
+            imageListGfSmall.Images.SetKeyName(1, "Shiva");
+            imageListGfSmall.Images.Add(Resources.gf2);
+            imageListGfSmall.Images.SetKeyName(2, "Ifrit");
+            imageListGfSmall.Images.Add(Resources.gf3);
+            imageListGfSmall.Images.SetKeyName(3, "Siren");
+            imageListGfSmall.Images.Add(Resources.gf4);
+            imageListGfSmall.Images.SetKeyName(4, "Brothers");
+            imageListGfSmall.Images.Add(Resources.gf5);
+            imageListGfSmall.Images.SetKeyName(5, "Diablos");
+            imageListGfSmall.Images.Add(Resources.gf6);
+            imageListGfSmall.Images.SetKeyName(6, "Carbuncle");
+            imageListGfSmall.Images.Add(Resources.gf7);
+            imageListGfSmall.Images.SetKeyName(7, "Leviathan");
+            imageListGfSmall.Images.Add(Resources.gf8);
+            imageListGfSmall.Images.SetKeyName(8, "Pandemona");
+            imageListGfSmall.Images.Add(Resources.gf9);
+            imageListGfSmall.Images.SetKeyName(9, "Cerberus");
+            imageListGfSmall.Images.Add(Resources.gf10);
+            imageListGfSmall.Images.SetKeyName(10, "Alexander");
+            imageListGfSmall.Images.Add(Resources.gf11);
+            imageListGfSmall.Images.SetKeyName(11, "Doomtrain");
+            imageListGfSmall.Images.Add(Resources.gf12);
+            imageListGfSmall.Images.SetKeyName(12, "Bahamuth");
+            imageListGfSmall.Images.Add(Resources.gf13);
+            imageListGfSmall.Images.SetKeyName(13, "Cactuar");
+            imageListGfSmall.Images.Add(Resources.gf14);
+            imageListGfSmall.Images.SetKeyName(14, "Tonberry");
+            imageListGfSmall.Images.Add(Resources.gf15);
+            imageListGfSmall.Images.SetKeyName(15, "Eden");
+            imageListGfSmall.Images.Add(Resources.gf16);
+            imageListGfSmall.Images.SetKeyName(16, "Griever");
+            checkBoxCharsGf1.ImageKey = "Quezacotl";
+            checkBoxCharsGf2.ImageKey = "Shiva";
+            checkBoxCharsGf3.ImageKey = "Ifrit";
+            checkBoxCharsGf4.ImageKey = "Siren";
+            checkBoxCharsGf5.ImageKey = "Brothers";
+            checkBoxCharsGf6.ImageKey = "Diablos";
+            checkBoxCharsGf7.ImageKey = "Carbuncle";
+            checkBoxCharsGf8.ImageKey = "Leviathan";
+            checkBoxCharsGf9.ImageKey = "Pandemona";
+            checkBoxCharsGf10.ImageKey = "Cerberus";
+            checkBoxCharsGf11.ImageKey = "Alexander";
+            checkBoxCharsGf12.ImageKey = "Doomtrain";
+            checkBoxCharsGf13.ImageKey = "Bahamuth";
+            checkBoxCharsGf14.ImageKey = "Cactuar";
+            checkBoxCharsGf15.ImageKey = "Tonberry";
+            checkBoxCharsGf16.ImageKey = "Eden";
         }
 
         #endregion
@@ -386,12 +550,13 @@ namespace Quezacotl
                     buttonSave.Enabled = true;
                     buttonSaveAs.Enabled = true;
 
-                    listViewCharactersList.Items[0].Selected = true;
-                    listViewGfList.Items[0].Selected = true;
+                    listViewExCharactersList.Items[0].Selected = true;
+                    listViewExGfList.Items[0].Selected = true;
+
+                    CheckIfAllGfsAreChecked();
 
                     toolTip1.SetToolTip(numericUpDownCharsExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
                         "This is here only to help you calculate the current level, it does nothing to init.out.");
-
 
                     toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
                     toolStripStatusLabelInit.Text = Path.GetFileName(_existingFilename) + " loaded";
@@ -676,7 +841,7 @@ namespace Quezacotl
 
         #region Characters Gf edit all together
 
-        private void checkBoxCharsGfAll_CheckedChanged(object sender, EventArgs e)
+        private void CheckBoxCharsGfAll_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxCharsGfAll.Checked == true)
             {
@@ -718,7 +883,24 @@ namespace Quezacotl
             }
         }
 
-        private void buttonCharsGfApplyCompAll_Click(object sender, EventArgs e)
+        private void CheckIfAllGfsAreChecked()
+        {
+            if (checkBoxCharsGf1.Checked == true && checkBoxCharsGf2.Checked == true &&
+                checkBoxCharsGf3.Checked == true && checkBoxCharsGf4.Checked == true &&
+                checkBoxCharsGf5.Checked == true && checkBoxCharsGf6.Checked == true &&
+                checkBoxCharsGf7.Checked == true && checkBoxCharsGf8.Checked == true &&
+                checkBoxCharsGf9.Checked == true && checkBoxCharsGf10.Checked == true &&
+                checkBoxCharsGf11.Checked == true && checkBoxCharsGf12.Checked == true &&
+                checkBoxCharsGf13.Checked == true && checkBoxCharsGf14.Checked == true &&
+                checkBoxCharsGf15.Checked == true && checkBoxCharsGf16.Checked == true)
+
+                checkBoxCharsGfAll.Checked = true;
+
+            else
+                checkBoxCharsGfAll.Checked = false;
+        }
+
+        private void ButtonCharsGfApplyCompAll_Click(object sender, EventArgs e)
         {
             numericUpDownGfComp1.Value = numericUpDownCharsAllGfComp.Value;
             numericUpDownGfComp2.Value = numericUpDownCharsAllGfComp.Value;
@@ -741,346 +923,17 @@ namespace Quezacotl
         #endregion
 
 
-        #region GUI to init data
+        #region Init data to gui
 
-        private void listViewGfList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            _loaded = false;
-            if (InitWorker.Init == null || InitWorker.BackupInit == null)
-                return;
-
-            int GfList = 0;
-            if (listViewGfList.SelectedItems.Count > 0)
-                GfList = listViewGfList.SelectedIndices[0];
-
-            InitWorker.ReadGF(GfList, InitWorker.BackupInit);
-            try
-            {
-                ToolTip(numericUpDownGfExp, 0, InitWorker.GetSelectedGfData.Exp);
-                ToolTip(hexUpDownGfUnknown, 0, InitWorker.GetSelectedGfData.Unknown1);
-                ToolTip(checkBoxGfAvailable, 1, (InitWorker.GetSelectedGfData.Available & 0x01) >= 1 ? true : false);
-                ToolTip(numericUpDownGfHp, 0, InitWorker.GetSelectedGfData.CurrentHp);
-                ToolTip(checkBoxGfAb001, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb002, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb003, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb004, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb005, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb006, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb007, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb008, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb009, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb010, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb011, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb012, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb013, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb014, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb015, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb016, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb017, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb018, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb019, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb020, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb021, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb022, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb023, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb024, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb025, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb026, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb027, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb028, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb029, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb030, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb031, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb032, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb033, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb034, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb035, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb036, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb037, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb038, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb039, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb040, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb041, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb042, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb043, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb044, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb045, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb046, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb047, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb048, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb049, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb050, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb051, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb052, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb053, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb054, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb055, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb056, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb057, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb058, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb059, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb060, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb061, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb062, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb063, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb064, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb065, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb066, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb067, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb068, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb069, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb070, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb071, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb072, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb073, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb074, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb075, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb076, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb077, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb078, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb079, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb080, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb081, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb082, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb083, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb084, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb085, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb086, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb087, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb088, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb089, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb090, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb091, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb092, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb093, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb094, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb095, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb096, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb097, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb098, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb099, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb100, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb101, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb102, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb103, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb104, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb105, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb106, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb107, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb108, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb109, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb110, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb111, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb112, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x80) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb113, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x01) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb114, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x02) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb115, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x04) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb116, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x08) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb117, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x10) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb118, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x20) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb119, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x40) >= 1 ? true : false);
-                ToolTip(checkBoxGfAb120, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x80) >= 1 ? true : false);
-                ToolTip(numericUpDownGfAp1, 0, InitWorker.GetSelectedGfData.ApAbility1);
-                ToolTip(numericUpDownGfAp2, 0, InitWorker.GetSelectedGfData.ApAbility2);
-                ToolTip(numericUpDownGfAp3, 0, InitWorker.GetSelectedGfData.ApAbility3);
-                ToolTip(numericUpDownGfAp4, 0, InitWorker.GetSelectedGfData.ApAbility4);
-                ToolTip(numericUpDownGfAp5, 0, InitWorker.GetSelectedGfData.ApAbility5);
-                ToolTip(numericUpDownGfAp6, 0, InitWorker.GetSelectedGfData.ApAbility6);
-                ToolTip(numericUpDownGfAp7, 0, InitWorker.GetSelectedGfData.ApAbility7);
-                ToolTip(numericUpDownGfAp8, 0, InitWorker.GetSelectedGfData.ApAbility8);
-                ToolTip(numericUpDownGfAp9, 0, InitWorker.GetSelectedGfData.ApAbility9);
-                ToolTip(numericUpDownGfAp10, 0, InitWorker.GetSelectedGfData.ApAbility10);
-                ToolTip(numericUpDownGfAp11, 0, InitWorker.GetSelectedGfData.ApAbility11);
-                ToolTip(numericUpDownGfAp12, 0, InitWorker.GetSelectedGfData.ApAbility12);
-                ToolTip(numericUpDownGfAp13, 0, InitWorker.GetSelectedGfData.ApAbility13);
-                ToolTip(numericUpDownGfAp14, 0, InitWorker.GetSelectedGfData.ApAbility14);
-                ToolTip(numericUpDownGfAp15, 0, InitWorker.GetSelectedGfData.ApAbility15);
-                ToolTip(numericUpDownGfAp16, 0, InitWorker.GetSelectedGfData.ApAbility16);
-                ToolTip(numericUpDownGfAp17, 0, InitWorker.GetSelectedGfData.ApAbility17);
-                ToolTip(numericUpDownGfAp18, 0, InitWorker.GetSelectedGfData.ApAbility18);
-                ToolTip(numericUpDownGfAp19, 0, InitWorker.GetSelectedGfData.ApAbility19);
-                ToolTip(numericUpDownGfAp20, 0, InitWorker.GetSelectedGfData.ApAbility20);
-                ToolTip(numericUpDownGfAp21, 0, InitWorker.GetSelectedGfData.ApAbility21);
-                ToolTip(numericUpDownGfAp22, 0, InitWorker.GetSelectedGfData.ApAbility22);
-                ToolTip(numericUpDownGfKills, 0, InitWorker.GetSelectedGfData.Kills);
-                ToolTip(numericUpDownGfKOs, 0, InitWorker.GetSelectedGfData.KOs);
-                ToolTip(comboBoxGfLearningAbility, 2, comboBoxGfLearningAbility.Items[InitWorker.GetSelectedGfData.LearningAbility]);
-            }
-            catch (Exception Exception)
-            {
-                MessageBox.Show(Exception.ToString());
-            }
-
-            InitWorker.ReadGF(GfList, InitWorker.Init);
-            try
-            {
-                textBoxGfName.Text = InitWorker.GetSelectedGfData.Name;
-                numericUpDownGfExp.Value = InitWorker.GetSelectedGfData.Exp;
-                hexUpDownGfUnknown.Value = InitWorker.GetSelectedGfData.Unknown1;
-                checkBoxGfAvailable.Checked = (InitWorker.GetSelectedGfData.Available & 0x01) >= 1 ? true : false;
-                numericUpDownGfHp.Value = InitWorker.GetSelectedGfData.CurrentHp;
-                checkBoxGfAb001.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb002.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb003.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb004.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb005.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb006.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb007.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb008.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb009.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb010.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb011.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb012.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb013.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb014.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb015.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb016.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb017.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb018.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb019.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb020.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb021.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb022.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb023.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb024.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb025.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb026.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb027.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb028.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb029.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb030.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb031.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb032.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb033.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb034.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb035.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb036.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb037.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb038.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb039.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb040.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb041.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb042.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb043.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb044.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb045.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb046.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb047.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb048.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb049.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb050.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb051.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb052.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb053.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb054.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb055.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb056.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb057.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb058.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb059.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb060.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb061.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb062.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb063.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb064.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb065.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb066.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb067.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb068.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb069.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb070.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb071.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb072.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb073.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb074.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb075.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb076.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb077.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb078.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb079.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb080.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb081.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb082.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb083.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb084.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb085.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb086.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb087.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb088.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb089.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb090.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb091.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb092.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb093.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb094.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb095.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb096.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb097.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb098.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb099.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb100.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb101.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb102.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb103.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb104.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb105.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb106.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb107.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb108.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb109.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb110.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb111.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb112.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x80) >= 1 ? true : false;
-                checkBoxGfAb113.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x01) >= 1 ? true : false;
-                checkBoxGfAb114.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x02) >= 1 ? true : false;
-                checkBoxGfAb115.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x04) >= 1 ? true : false;
-                checkBoxGfAb116.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x08) >= 1 ? true : false;
-                checkBoxGfAb117.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x10) >= 1 ? true : false;
-                checkBoxGfAb118.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x20) >= 1 ? true : false;
-                checkBoxGfAb119.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x40) >= 1 ? true : false;
-                checkBoxGfAb120.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x80) >= 1 ? true : false;
-                numericUpDownGfAp1.Value = InitWorker.GetSelectedGfData.ApAbility1;
-                numericUpDownGfAp2.Value = InitWorker.GetSelectedGfData.ApAbility2;
-                numericUpDownGfAp3.Value = InitWorker.GetSelectedGfData.ApAbility3;
-                numericUpDownGfAp4.Value = InitWorker.GetSelectedGfData.ApAbility4;
-                numericUpDownGfAp5.Value = InitWorker.GetSelectedGfData.ApAbility5;
-                numericUpDownGfAp6.Value = InitWorker.GetSelectedGfData.ApAbility6;
-                numericUpDownGfAp7.Value = InitWorker.GetSelectedGfData.ApAbility7;
-                numericUpDownGfAp8.Value = InitWorker.GetSelectedGfData.ApAbility8;
-                numericUpDownGfAp9.Value = InitWorker.GetSelectedGfData.ApAbility9;
-                numericUpDownGfAp10.Value = InitWorker.GetSelectedGfData.ApAbility10;
-                numericUpDownGfAp11.Value = InitWorker.GetSelectedGfData.ApAbility11;
-                numericUpDownGfAp12.Value = InitWorker.GetSelectedGfData.ApAbility12;
-                numericUpDownGfAp13.Value = InitWorker.GetSelectedGfData.ApAbility13;
-                numericUpDownGfAp14.Value = InitWorker.GetSelectedGfData.ApAbility14;
-                numericUpDownGfAp15.Value = InitWorker.GetSelectedGfData.ApAbility15;
-                numericUpDownGfAp16.Value = InitWorker.GetSelectedGfData.ApAbility16;
-                numericUpDownGfAp17.Value = InitWorker.GetSelectedGfData.ApAbility17;
-                numericUpDownGfAp18.Value = InitWorker.GetSelectedGfData.ApAbility18;
-                numericUpDownGfAp19.Value = InitWorker.GetSelectedGfData.ApAbility19;
-                numericUpDownGfAp20.Value = InitWorker.GetSelectedGfData.ApAbility20;
-                numericUpDownGfAp21.Value = InitWorker.GetSelectedGfData.ApAbility21;
-                numericUpDownGfAp22.Value = InitWorker.GetSelectedGfData.ApAbility22;
-                numericUpDownGfKills.Value = InitWorker.GetSelectedGfData.Kills;
-                numericUpDownGfKOs.Value = InitWorker.GetSelectedGfData.KOs;
-                comboBoxGfLearningAbility.SelectedIndex = InitWorker.GetSelectedGfData.LearningAbility;
-            }
-            catch (Exception Exception)
-            {
-                MessageBox.Show(Exception.ToString());
-            }
-            _loaded = true;
-        }
-
-        private void listViewCharactersList_SelectedIndexChanged(object sender, EventArgs e)
+        private void listViewExCharactersList_SelectedIndexChanged(object sender, EventArgs e)
         {
             _loaded = false;
             if (InitWorker.Init == null || InitWorker.BackupInit == null)
                 return;
 
             int CharList = 0;
-            if (listViewCharactersList.SelectedItems.Count > 0)
-                CharList = listViewCharactersList.SelectedIndices[0];
+            if (listViewExCharactersList.SelectedItems.Count > 0)
+                CharList = listViewExCharactersList.SelectedIndices[0];
 
             InitWorker.ReadCharacters(CharList, InitWorker.BackupInit);
             try
@@ -1394,6 +1247,336 @@ namespace Quezacotl
                 checkBoxCharStatus7.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x40) >= 1 ? true : false;
                 checkBoxCharStatus8.Checked = (InitWorker.GetSelectedCharactersData.CurrentStatus & 0x80) >= 1 ? true : false;
                 hexUpDownCharUnk5.Value = InitWorker.GetSelectedCharactersData.Unknown5;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+        private void listViewExGfList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _loaded = false;
+            if (InitWorker.Init == null || InitWorker.BackupInit == null)
+                return;
+
+            int GfList = 0;
+            if (listViewExGfList.SelectedItems.Count > 0)
+                GfList = listViewExGfList.SelectedIndices[0];
+
+            InitWorker.ReadGF(GfList, InitWorker.BackupInit);
+            try
+            {
+                ToolTip(numericUpDownGfExp, 0, InitWorker.GetSelectedGfData.Exp);
+                ToolTip(hexUpDownGfUnknown, 0, InitWorker.GetSelectedGfData.Unknown1);
+                ToolTip(checkBoxGfAvailable, 1, (InitWorker.GetSelectedGfData.Available & 0x01) >= 1 ? true : false);
+                ToolTip(numericUpDownGfHp, 0, InitWorker.GetSelectedGfData.CurrentHp);
+                ToolTip(checkBoxGfAb001, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb002, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb003, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb004, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb005, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb006, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb007, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb008, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb009, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb010, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb011, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb012, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb013, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb014, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb015, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb016, 1, (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb017, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb018, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb019, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb020, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb021, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb022, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb023, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb024, 1, (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb025, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb026, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb027, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb028, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb029, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb030, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb031, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb032, 1, (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb033, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb034, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb035, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb036, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb037, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb038, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb039, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb040, 1, (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb041, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb042, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb043, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb044, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb045, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb046, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb047, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb048, 1, (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb049, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb050, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb051, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb052, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb053, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb054, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb055, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb056, 1, (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb057, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb058, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb059, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb060, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb061, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb062, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb063, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb064, 1, (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb065, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb066, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb067, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb068, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb069, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb070, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb071, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb072, 1, (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb073, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb074, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb075, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb076, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb077, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb078, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb079, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb080, 1, (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb081, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb082, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb083, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb084, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb085, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb086, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb087, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb088, 1, (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb089, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb090, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb091, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb092, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb093, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb094, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb095, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb096, 1, (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb097, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb098, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb099, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb100, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb101, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb102, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb103, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb104, 1, (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb105, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb106, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb107, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb108, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb109, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb110, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb111, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb112, 1, (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb113, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb114, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb115, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb116, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb117, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb118, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb119, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxGfAb120, 1, (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownGfAp1, 0, InitWorker.GetSelectedGfData.ApAbility1);
+                ToolTip(numericUpDownGfAp2, 0, InitWorker.GetSelectedGfData.ApAbility2);
+                ToolTip(numericUpDownGfAp3, 0, InitWorker.GetSelectedGfData.ApAbility3);
+                ToolTip(numericUpDownGfAp4, 0, InitWorker.GetSelectedGfData.ApAbility4);
+                ToolTip(numericUpDownGfAp5, 0, InitWorker.GetSelectedGfData.ApAbility5);
+                ToolTip(numericUpDownGfAp6, 0, InitWorker.GetSelectedGfData.ApAbility6);
+                ToolTip(numericUpDownGfAp7, 0, InitWorker.GetSelectedGfData.ApAbility7);
+                ToolTip(numericUpDownGfAp8, 0, InitWorker.GetSelectedGfData.ApAbility8);
+                ToolTip(numericUpDownGfAp9, 0, InitWorker.GetSelectedGfData.ApAbility9);
+                ToolTip(numericUpDownGfAp10, 0, InitWorker.GetSelectedGfData.ApAbility10);
+                ToolTip(numericUpDownGfAp11, 0, InitWorker.GetSelectedGfData.ApAbility11);
+                ToolTip(numericUpDownGfAp12, 0, InitWorker.GetSelectedGfData.ApAbility12);
+                ToolTip(numericUpDownGfAp13, 0, InitWorker.GetSelectedGfData.ApAbility13);
+                ToolTip(numericUpDownGfAp14, 0, InitWorker.GetSelectedGfData.ApAbility14);
+                ToolTip(numericUpDownGfAp15, 0, InitWorker.GetSelectedGfData.ApAbility15);
+                ToolTip(numericUpDownGfAp16, 0, InitWorker.GetSelectedGfData.ApAbility16);
+                ToolTip(numericUpDownGfAp17, 0, InitWorker.GetSelectedGfData.ApAbility17);
+                ToolTip(numericUpDownGfAp18, 0, InitWorker.GetSelectedGfData.ApAbility18);
+                ToolTip(numericUpDownGfAp19, 0, InitWorker.GetSelectedGfData.ApAbility19);
+                ToolTip(numericUpDownGfAp20, 0, InitWorker.GetSelectedGfData.ApAbility20);
+                ToolTip(numericUpDownGfAp21, 0, InitWorker.GetSelectedGfData.ApAbility21);
+                ToolTip(numericUpDownGfAp22, 0, InitWorker.GetSelectedGfData.ApAbility22);
+                ToolTip(numericUpDownGfKills, 0, InitWorker.GetSelectedGfData.Kills);
+                ToolTip(numericUpDownGfKOs, 0, InitWorker.GetSelectedGfData.KOs);
+                ToolTip(comboBoxGfLearningAbility, 2, comboBoxGfLearningAbility.Items[InitWorker.GetSelectedGfData.LearningAbility]);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            InitWorker.ReadGF(GfList, InitWorker.Init);
+            try
+            {
+                textBoxGfName.Text = InitWorker.GetSelectedGfData.Name;
+                numericUpDownGfExp.Value = InitWorker.GetSelectedGfData.Exp;
+                hexUpDownGfUnknown.Value = InitWorker.GetSelectedGfData.Unknown1;
+                checkBoxGfAvailable.Checked = (InitWorker.GetSelectedGfData.Available & 0x01) >= 1 ? true : false;
+                numericUpDownGfHp.Value = InitWorker.GetSelectedGfData.CurrentHp;
+                checkBoxGfAb001.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb002.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb003.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb004.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb005.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb006.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb007.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb008.Checked = (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb009.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb010.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb011.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb012.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb013.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb014.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb015.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb016.Checked = (InitWorker.GetSelectedGfData.LearnedAbility2 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb017.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb018.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb019.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb020.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb021.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb022.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb023.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb024.Checked = (InitWorker.GetSelectedGfData.LearnedAbility3 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb025.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb026.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb027.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb028.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb029.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb030.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb031.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb032.Checked = (InitWorker.GetSelectedGfData.LearnedAbility4 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb033.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb034.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb035.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb036.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb037.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb038.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb039.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb040.Checked = (InitWorker.GetSelectedGfData.LearnedAbility5 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb041.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb042.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb043.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb044.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb045.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb046.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb047.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb048.Checked = (InitWorker.GetSelectedGfData.LearnedAbility6 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb049.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb050.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb051.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb052.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb053.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb054.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb055.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb056.Checked = (InitWorker.GetSelectedGfData.LearnedAbility7 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb057.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb058.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb059.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb060.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb061.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb062.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb063.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb064.Checked = (InitWorker.GetSelectedGfData.LearnedAbility8 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb065.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb066.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb067.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb068.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb069.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb070.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb071.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb072.Checked = (InitWorker.GetSelectedGfData.LearnedAbility9 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb073.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb074.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb075.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb076.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb077.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb078.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb079.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb080.Checked = (InitWorker.GetSelectedGfData.LearnedAbility10 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb081.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb082.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb083.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb084.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb085.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb086.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb087.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb088.Checked = (InitWorker.GetSelectedGfData.LearnedAbility11 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb089.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb090.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb091.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb092.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb093.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb094.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb095.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb096.Checked = (InitWorker.GetSelectedGfData.LearnedAbility12 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb097.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb098.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb099.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb100.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb101.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb102.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb103.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb104.Checked = (InitWorker.GetSelectedGfData.LearnedAbility13 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb105.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb106.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb107.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb108.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb109.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb110.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb111.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb112.Checked = (InitWorker.GetSelectedGfData.LearnedAbility14 & 0x80) >= 1 ? true : false;
+                checkBoxGfAb113.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x01) >= 1 ? true : false;
+                checkBoxGfAb114.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x02) >= 1 ? true : false;
+                checkBoxGfAb115.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x04) >= 1 ? true : false;
+                checkBoxGfAb116.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x08) >= 1 ? true : false;
+                checkBoxGfAb117.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x10) >= 1 ? true : false;
+                checkBoxGfAb118.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x20) >= 1 ? true : false;
+                checkBoxGfAb119.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x40) >= 1 ? true : false;
+                checkBoxGfAb120.Checked = (InitWorker.GetSelectedGfData.LearnedAbility15 & 0x80) >= 1 ? true : false;
+                numericUpDownGfAp1.Value = InitWorker.GetSelectedGfData.ApAbility1;
+                numericUpDownGfAp2.Value = InitWorker.GetSelectedGfData.ApAbility2;
+                numericUpDownGfAp3.Value = InitWorker.GetSelectedGfData.ApAbility3;
+                numericUpDownGfAp4.Value = InitWorker.GetSelectedGfData.ApAbility4;
+                numericUpDownGfAp5.Value = InitWorker.GetSelectedGfData.ApAbility5;
+                numericUpDownGfAp6.Value = InitWorker.GetSelectedGfData.ApAbility6;
+                numericUpDownGfAp7.Value = InitWorker.GetSelectedGfData.ApAbility7;
+                numericUpDownGfAp8.Value = InitWorker.GetSelectedGfData.ApAbility8;
+                numericUpDownGfAp9.Value = InitWorker.GetSelectedGfData.ApAbility9;
+                numericUpDownGfAp10.Value = InitWorker.GetSelectedGfData.ApAbility10;
+                numericUpDownGfAp11.Value = InitWorker.GetSelectedGfData.ApAbility11;
+                numericUpDownGfAp12.Value = InitWorker.GetSelectedGfData.ApAbility12;
+                numericUpDownGfAp13.Value = InitWorker.GetSelectedGfData.ApAbility13;
+                numericUpDownGfAp14.Value = InitWorker.GetSelectedGfData.ApAbility14;
+                numericUpDownGfAp15.Value = InitWorker.GetSelectedGfData.ApAbility15;
+                numericUpDownGfAp16.Value = InitWorker.GetSelectedGfData.ApAbility16;
+                numericUpDownGfAp17.Value = InitWorker.GetSelectedGfData.ApAbility17;
+                numericUpDownGfAp18.Value = InitWorker.GetSelectedGfData.ApAbility18;
+                numericUpDownGfAp19.Value = InitWorker.GetSelectedGfData.ApAbility19;
+                numericUpDownGfAp20.Value = InitWorker.GetSelectedGfData.ApAbility20;
+                numericUpDownGfAp21.Value = InitWorker.GetSelectedGfData.ApAbility21;
+                numericUpDownGfAp22.Value = InitWorker.GetSelectedGfData.ApAbility22;
+                numericUpDownGfKills.Value = InitWorker.GetSelectedGfData.Kills;
+                numericUpDownGfKOs.Value = InitWorker.GetSelectedGfData.KOs;
+                comboBoxGfLearningAbility.SelectedIndex = InitWorker.GetSelectedGfData.LearningAbility;
             }
             catch (Exception Exception)
             {

@@ -29,31 +29,32 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("", 0);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("", 1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("", 2);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("", 3);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("", 4);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("", 5);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("", 6);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("", 7);
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("", 0);
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("", 1);
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("", 2);
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("", 3);
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("", 4);
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("", 5);
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("", 6);
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("", 7);
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("", 8);
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("", 9);
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("", 10);
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("", 11);
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("", 12);
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("", 13);
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("", 14);
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("", 15);
             this.buttonSave = new System.Windows.Forms.Button();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -81,9 +82,13 @@
             this.numericUpDownCharsHpBonus = new System.Windows.Forms.NumericUpDown();
             this.labelCharsSprBonus = new System.Windows.Forms.Label();
             this.groupBoxCharsUnknown = new System.Windows.Forms.GroupBox();
+            this.hexUpDownCharUnk5 = new Quezacotl.HexUpDown();
+            this.hexUpDownCharUnk2 = new Quezacotl.HexUpDown();
             this.labelCharUnk5 = new System.Windows.Forms.Label();
             this.labelCharUnk2 = new System.Windows.Forms.Label();
+            this.hexUpDownCharUnk4 = new Quezacotl.HexUpDown();
             this.labelCharUnk4 = new System.Windows.Forms.Label();
+            this.hexUpDownCharUnk3 = new Quezacotl.HexUpDown();
             this.labelCharUnk3 = new System.Windows.Forms.Label();
             this.groupBoxCharStatus = new System.Windows.Forms.GroupBox();
             this.checkBoxCharStatus8 = new System.Windows.Forms.CheckBox();
@@ -114,46 +119,48 @@
             this.panelCharsLevel = new System.Windows.Forms.Panel();
             this.labelCharsLevelValue = new System.Windows.Forms.Label();
             this.tabPageChars2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.numericUpDownGfComp16 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp15 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp14 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf12 = new System.Windows.Forms.CheckBox();
+            this.imageListGfSmall = new System.Windows.Forms.ImageList(this.components);
+            this.checkBoxCharsGf13 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf14 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf15 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf9 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp10 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp12 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp11 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf11 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp13 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf10 = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanelCharsGf1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.checkBoxCharsGf1 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp1 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf2 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp8 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf4 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp6 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf5 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp7 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsGf8 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownGfComp2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownGfComp5 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxCharsGf7 = new System.Windows.Forms.CheckBox();
             this.numericUpDownCharsAllGfComp = new System.Windows.Forms.NumericUpDown();
             this.checkBoxCharsGfAll = new System.Windows.Forms.CheckBox();
             this.buttonCharsGfApply = new System.Windows.Forms.Button();
-            this.numericUpDownGfComp16 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp12 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp14 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp15 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp13 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownGfComp1 = new System.Windows.Forms.NumericUpDown();
-            this.checkBoxCharsGf9 = new System.Windows.Forms.CheckBox();
-            this.imageListGfSmall = new System.Windows.Forms.ImageList(this.components);
-            this.checkBoxCharsGf16 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf15 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf14 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf13 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf12 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf11 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf10 = new System.Windows.Forms.CheckBox();
-            this.checkBoxCharsGf2 = new System.Windows.Forms.CheckBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.checkBoxCharsGf1 = new System.Windows.Forms.CheckBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.tabPageChars3 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -298,6 +305,7 @@
             this.comboBoxCharsAb3 = new System.Windows.Forms.ComboBox();
             this.labelCharsAb1 = new System.Windows.Forms.Label();
             this.groupBoxCharsCommands = new System.Windows.Forms.GroupBox();
+            this.hexUpDownCharUnk1 = new Quezacotl.HexUpDown();
             this.labelCharsComm4 = new System.Windows.Forms.Label();
             this.labelCharsComm3 = new System.Windows.Forms.Label();
             this.labelCharsComm2 = new System.Windows.Forms.Label();
@@ -421,7 +429,7 @@
             this.checkBoxDuelMove1 = new System.Windows.Forms.CheckBox();
             this.checkBoxDuelAuto = new System.Windows.Forms.CheckBox();
             this.checkBoxCharsGunBladeAuto = new System.Windows.Forms.CheckBox();
-            this.listViewCharactersList = new System.Windows.Forms.ListView();
+            this.listViewExCharactersList = new ListViewEx();
             this.imageListChar = new System.Windows.Forms.ImageList(this.components);
             this.tabPageGf = new System.Windows.Forms.TabPage();
             this.groupBoxGf = new System.Windows.Forms.GroupBox();
@@ -593,6 +601,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxGfLearningAbility = new System.Windows.Forms.ComboBox();
+            this.hexUpDownGfUnknown = new Quezacotl.HexUpDown();
             this.numericUpDownGfKOs = new System.Windows.Forms.NumericUpDown();
             this.labelGfLearningAbility = new System.Windows.Forms.Label();
             this.labelGfUnknown = new System.Windows.Forms.Label();
@@ -606,7 +615,7 @@
             this.numericUpDownGfExp = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownGfKills = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownGfHp = new System.Windows.Forms.NumericUpDown();
-            this.listViewGfList = new System.Windows.Forms.ListView();
+            this.listViewExGfList = new ListViewEx();
             this.imageListGfBig = new System.Windows.Forms.ImageList(this.components);
             this.tabPageMisc = new System.Windows.Forms.TabPage();
             this.label28 = new System.Windows.Forms.Label();
@@ -618,12 +627,11 @@
             this.buttonAbout = new System.Windows.Forms.Button();
             this.buttonOpen = new System.Windows.Forms.Button();
             this.buttonSaveAs = new System.Windows.Forms.Button();
-            this.hexUpDownCharUnk5 = new Quezacotl.HexUpDown();
-            this.hexUpDownCharUnk2 = new Quezacotl.HexUpDown();
-            this.hexUpDownCharUnk4 = new Quezacotl.HexUpDown();
-            this.hexUpDownCharUnk3 = new Quezacotl.HexUpDown();
-            this.hexUpDownCharUnk1 = new Quezacotl.HexUpDown();
-            this.hexUpDownGfUnknown = new Quezacotl.HexUpDown();
+            this.numericUpDownGfExpLvUp = new System.Windows.Forms.NumericUpDown();
+            this.labelGfLevel = new System.Windows.Forms.Label();
+            this.labelGfExpLvUp = new System.Windows.Forms.Label();
+            this.panelGfLevel = new System.Windows.Forms.Panel();
+            this.labelGfLevelValue = new System.Windows.Forms.Label();
             this.statusStrip.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageCharacters.SuspendLayout();
@@ -638,6 +646,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsStrBonus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsHpBonus)).BeginInit();
             this.groupBoxCharsUnknown.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk3)).BeginInit();
             this.groupBoxCharStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsKOs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsKills)).BeginInit();
@@ -646,23 +658,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsCurrentHp)).BeginInit();
             this.panelCharsLevel.SuspendLayout();
             this.tabPageChars2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsAllGfComp)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp13)).BeginInit();
+            this.tableLayoutPanelCharsGf1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsAllGfComp)).BeginInit();
             this.tabPageChars3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ32)).BeginInit();
@@ -732,6 +746,7 @@
             this.tabPageChars4.SuspendLayout();
             this.groupBoxCharsAbilities.SuspendLayout();
             this.groupBoxCharsCommands.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk1)).BeginInit();
             this.tabPageChars5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxCharsJunStats.SuspendLayout();
@@ -775,6 +790,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfAp6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfAp16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfAp4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownGfUnknown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKOs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKills)).BeginInit();
@@ -782,12 +798,8 @@
             this.tabPageMisc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownGfUnknown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExpLvUp)).BeginInit();
+            this.panelGfLevel.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonSave
@@ -813,7 +825,7 @@
             this.toolStripStatusLabelTooltips});
             this.statusStrip.Location = new System.Drawing.Point(0, 891);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(658, 22);
+            this.statusStrip.Size = new System.Drawing.Size(670, 22);
             this.statusStrip.SizingGrip = false;
             this.statusStrip.TabIndex = 4;
             this.statusStrip.Text = "statusStrip1";
@@ -833,7 +845,7 @@
             this.toolStripStatusLabelRightAlign.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripStatusLabelRightAlign.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.toolStripStatusLabelRightAlign.Name = "toolStripStatusLabelRightAlign";
-            this.toolStripStatusLabelRightAlign.Size = new System.Drawing.Size(364, 17);
+            this.toolStripStatusLabelRightAlign.Size = new System.Drawing.Size(376, 17);
             this.toolStripStatusLabelRightAlign.Spring = true;
             // 
             // toolStripStatusLabelInit
@@ -868,7 +880,7 @@
             this.tabControlMain.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(666, 855);
+            this.tabControlMain.Size = new System.Drawing.Size(677, 855);
             this.tabControlMain.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControlMain.TabIndex = 3;
             // 
@@ -876,12 +888,12 @@
             // 
             this.tabPageCharacters.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPageCharacters.Controls.Add(this.tabControlCharacters);
-            this.tabPageCharacters.Controls.Add(this.listViewCharactersList);
+            this.tabPageCharacters.Controls.Add(this.listViewExCharactersList);
             this.tabPageCharacters.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageCharacters.Location = new System.Drawing.Point(4, 28);
             this.tabPageCharacters.Name = "tabPageCharacters";
             this.tabPageCharacters.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCharacters.Size = new System.Drawing.Size(658, 823);
+            this.tabPageCharacters.Size = new System.Drawing.Size(669, 823);
             this.tabPageCharacters.TabIndex = 0;
             this.tabPageCharacters.Text = "Characters";
             // 
@@ -1138,6 +1150,32 @@
             this.groupBoxCharsUnknown.TabStop = false;
             this.groupBoxCharsUnknown.Text = "Unknown";
             // 
+            // hexUpDownCharUnk5
+            // 
+            this.hexUpDownCharUnk5.Hexadecimal = true;
+            this.hexUpDownCharUnk5.Location = new System.Drawing.Point(486, 22);
+            this.hexUpDownCharUnk5.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.hexUpDownCharUnk5.Name = "hexUpDownCharUnk5";
+            this.hexUpDownCharUnk5.Size = new System.Drawing.Size(45, 23);
+            this.hexUpDownCharUnk5.TabIndex = 21;
+            // 
+            // hexUpDownCharUnk2
+            // 
+            this.hexUpDownCharUnk2.Hexadecimal = true;
+            this.hexUpDownCharUnk2.Location = new System.Drawing.Point(107, 22);
+            this.hexUpDownCharUnk2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.hexUpDownCharUnk2.Name = "hexUpDownCharUnk2";
+            this.hexUpDownCharUnk2.Size = new System.Drawing.Size(45, 23);
+            this.hexUpDownCharUnk2.TabIndex = 21;
+            // 
             // labelCharUnk5
             // 
             this.labelCharUnk5.AutoSize = true;
@@ -1160,6 +1198,19 @@
             this.labelCharUnk2.TabIndex = 12;
             this.labelCharUnk2.Text = "1:";
             // 
+            // hexUpDownCharUnk4
+            // 
+            this.hexUpDownCharUnk4.Hexadecimal = true;
+            this.hexUpDownCharUnk4.Location = new System.Drawing.Point(361, 22);
+            this.hexUpDownCharUnk4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.hexUpDownCharUnk4.Name = "hexUpDownCharUnk4";
+            this.hexUpDownCharUnk4.Size = new System.Drawing.Size(45, 23);
+            this.hexUpDownCharUnk4.TabIndex = 21;
+            // 
             // labelCharUnk4
             // 
             this.labelCharUnk4.AutoSize = true;
@@ -1170,6 +1221,19 @@
             this.labelCharUnk4.Size = new System.Drawing.Size(16, 13);
             this.labelCharUnk4.TabIndex = 12;
             this.labelCharUnk4.Text = "3:";
+            // 
+            // hexUpDownCharUnk3
+            // 
+            this.hexUpDownCharUnk3.Hexadecimal = true;
+            this.hexUpDownCharUnk3.Location = new System.Drawing.Point(232, 22);
+            this.hexUpDownCharUnk3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.hexUpDownCharUnk3.Name = "hexUpDownCharUnk3";
+            this.hexUpDownCharUnk3.Size = new System.Drawing.Size(45, 23);
+            this.hexUpDownCharUnk3.TabIndex = 21;
             // 
             // labelCharUnk3
             // 
@@ -1588,45 +1652,11 @@
             // tabPageChars2
             // 
             this.tabPageChars2.BackColor = System.Drawing.Color.White;
+            this.tabPageChars2.Controls.Add(this.tableLayoutPanel1);
+            this.tabPageChars2.Controls.Add(this.tableLayoutPanelCharsGf1);
             this.tabPageChars2.Controls.Add(this.numericUpDownCharsAllGfComp);
             this.tabPageChars2.Controls.Add(this.checkBoxCharsGfAll);
             this.tabPageChars2.Controls.Add(this.buttonCharsGfApply);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp16);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp8);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp12);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp4);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp14);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp6);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp10);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp2);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp15);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp7);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp11);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp3);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp13);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp5);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp9);
-            this.tabPageChars2.Controls.Add(this.numericUpDownGfComp1);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf9);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf16);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf8);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf15);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf7);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf14);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf6);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf13);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf5);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf12);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf4);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf11);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf3);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf10);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf2);
-            this.tabPageChars2.Controls.Add(this.label25);
-            this.tabPageChars2.Controls.Add(this.checkBoxCharsGf1);
-            this.tabPageChars2.Controls.Add(this.label21);
-            this.tabPageChars2.Controls.Add(this.label26);
-            this.tabPageChars2.Controls.Add(this.label17);
             this.tabPageChars2.Location = new System.Drawing.Point(4, 24);
             this.tabPageChars2.Name = "tabPageChars2";
             this.tabPageChars2.Padding = new System.Windows.Forms.Padding(3);
@@ -1634,10 +1664,705 @@
             this.tabPageChars2.TabIndex = 1;
             this.tabPageChars2.Text = "G-Forces";
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.Controls.Add(this.label62, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label63, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp16, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp15, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp14, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf12, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf13, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf14, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf15, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf9, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp9, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp10, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp12, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp11, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf11, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.numericUpDownGfComp13, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf16, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxCharsGf10, 0, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(346, 28);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(10);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 9;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(239, 480);
+            this.tableLayoutPanel1.TabIndex = 24;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label62.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label62.Location = new System.Drawing.Point(9, 9);
+            this.label62.Margin = new System.Windows.Forms.Padding(8);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(125, 14);
+            this.label62.TabIndex = 12;
+            this.label62.Text = "Junctioned GFs";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label63.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label63.Location = new System.Drawing.Point(151, 9);
+            this.label63.Margin = new System.Windows.Forms.Padding(8);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(79, 14);
+            this.label63.TabIndex = 12;
+            this.label63.Text = "Compatibility";
+            // 
+            // numericUpDownGfComp16
+            // 
+            this.numericUpDownGfComp16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp16.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp16.Location = new System.Drawing.Point(165, 440);
+            this.numericUpDownGfComp16.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp16.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp16.Name = "numericUpDownGfComp16";
+            this.numericUpDownGfComp16.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp16.TabIndex = 20;
+            // 
+            // numericUpDownGfComp15
+            // 
+            this.numericUpDownGfComp15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp15.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp15.Location = new System.Drawing.Point(165, 384);
+            this.numericUpDownGfComp15.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp15.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp15.Name = "numericUpDownGfComp15";
+            this.numericUpDownGfComp15.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp15.TabIndex = 20;
+            // 
+            // numericUpDownGfComp14
+            // 
+            this.numericUpDownGfComp14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp14.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp14.Location = new System.Drawing.Point(165, 328);
+            this.numericUpDownGfComp14.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp14.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp14.Name = "numericUpDownGfComp14";
+            this.numericUpDownGfComp14.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp14.TabIndex = 20;
+            // 
+            // checkBoxCharsGf12
+            // 
+            this.checkBoxCharsGf12.AutoSize = true;
+            this.checkBoxCharsGf12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf12.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf12.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf12.Location = new System.Drawing.Point(4, 203);
+            this.checkBoxCharsGf12.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf12.Name = "checkBoxCharsGf12";
+            this.checkBoxCharsGf12.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf12.TabIndex = 13;
+            this.checkBoxCharsGf12.Text = "Doomtrain";
+            this.checkBoxCharsGf12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf12.UseVisualStyleBackColor = true;
+            // 
+            // imageListGfSmall
+            // 
+            this.imageListGfSmall.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageListGfSmall.ImageSize = new System.Drawing.Size(24, 36);
+            this.imageListGfSmall.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // checkBoxCharsGf13
+            // 
+            this.checkBoxCharsGf13.AutoSize = true;
+            this.checkBoxCharsGf13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf13.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf13.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf13.Location = new System.Drawing.Point(4, 259);
+            this.checkBoxCharsGf13.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf13.Name = "checkBoxCharsGf13";
+            this.checkBoxCharsGf13.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf13.TabIndex = 13;
+            this.checkBoxCharsGf13.Text = "Bahamut";
+            this.checkBoxCharsGf13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf13.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCharsGf14
+            // 
+            this.checkBoxCharsGf14.AutoSize = true;
+            this.checkBoxCharsGf14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf14.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf14.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf14.Location = new System.Drawing.Point(4, 315);
+            this.checkBoxCharsGf14.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf14.Name = "checkBoxCharsGf14";
+            this.checkBoxCharsGf14.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf14.TabIndex = 13;
+            this.checkBoxCharsGf14.Text = "Cactuar";
+            this.checkBoxCharsGf14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf14.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCharsGf15
+            // 
+            this.checkBoxCharsGf15.AutoSize = true;
+            this.checkBoxCharsGf15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf15.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf15.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf15.Location = new System.Drawing.Point(4, 371);
+            this.checkBoxCharsGf15.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf15.Name = "checkBoxCharsGf15";
+            this.checkBoxCharsGf15.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf15.TabIndex = 13;
+            this.checkBoxCharsGf15.Text = "Tonberry";
+            this.checkBoxCharsGf15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf15.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCharsGf9
+            // 
+            this.checkBoxCharsGf9.AutoSize = true;
+            this.checkBoxCharsGf9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf9.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf9.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf9.Location = new System.Drawing.Point(4, 35);
+            this.checkBoxCharsGf9.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf9.Name = "checkBoxCharsGf9";
+            this.checkBoxCharsGf9.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf9.TabIndex = 13;
+            this.checkBoxCharsGf9.Text = "Pandemona";
+            this.checkBoxCharsGf9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf9.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownGfComp9
+            // 
+            this.numericUpDownGfComp9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp9.Location = new System.Drawing.Point(165, 48);
+            this.numericUpDownGfComp9.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp9.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp9.Name = "numericUpDownGfComp9";
+            this.numericUpDownGfComp9.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp9.TabIndex = 20;
+            // 
+            // numericUpDownGfComp10
+            // 
+            this.numericUpDownGfComp10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp10.Location = new System.Drawing.Point(165, 104);
+            this.numericUpDownGfComp10.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp10.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp10.Name = "numericUpDownGfComp10";
+            this.numericUpDownGfComp10.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp10.TabIndex = 20;
+            // 
+            // numericUpDownGfComp12
+            // 
+            this.numericUpDownGfComp12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp12.Location = new System.Drawing.Point(165, 216);
+            this.numericUpDownGfComp12.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp12.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp12.Name = "numericUpDownGfComp12";
+            this.numericUpDownGfComp12.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp12.TabIndex = 20;
+            // 
+            // numericUpDownGfComp11
+            // 
+            this.numericUpDownGfComp11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp11.Location = new System.Drawing.Point(165, 160);
+            this.numericUpDownGfComp11.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp11.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp11.Name = "numericUpDownGfComp11";
+            this.numericUpDownGfComp11.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp11.TabIndex = 20;
+            // 
+            // checkBoxCharsGf11
+            // 
+            this.checkBoxCharsGf11.AutoSize = true;
+            this.checkBoxCharsGf11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf11.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf11.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf11.Location = new System.Drawing.Point(4, 147);
+            this.checkBoxCharsGf11.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf11.Name = "checkBoxCharsGf11";
+            this.checkBoxCharsGf11.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf11.TabIndex = 13;
+            this.checkBoxCharsGf11.Text = "Alexander";
+            this.checkBoxCharsGf11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf11.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownGfComp13
+            // 
+            this.numericUpDownGfComp13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp13.Location = new System.Drawing.Point(165, 272);
+            this.numericUpDownGfComp13.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp13.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp13.Name = "numericUpDownGfComp13";
+            this.numericUpDownGfComp13.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp13.TabIndex = 20;
+            // 
+            // checkBoxCharsGf16
+            // 
+            this.checkBoxCharsGf16.AutoSize = true;
+            this.checkBoxCharsGf16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf16.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf16.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf16.Location = new System.Drawing.Point(4, 427);
+            this.checkBoxCharsGf16.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf16.Name = "checkBoxCharsGf16";
+            this.checkBoxCharsGf16.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf16.TabIndex = 13;
+            this.checkBoxCharsGf16.Text = "Eden";
+            this.checkBoxCharsGf16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf16.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCharsGf10
+            // 
+            this.checkBoxCharsGf10.AutoSize = true;
+            this.checkBoxCharsGf10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf10.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf10.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf10.Location = new System.Drawing.Point(4, 91);
+            this.checkBoxCharsGf10.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf10.Name = "checkBoxCharsGf10";
+            this.checkBoxCharsGf10.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf10.TabIndex = 13;
+            this.checkBoxCharsGf10.Text = "Cerberus";
+            this.checkBoxCharsGf10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf10.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanelCharsGf1
+            // 
+            this.tableLayoutPanelCharsGf1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanelCharsGf1.ColumnCount = 2;
+            this.tableLayoutPanelCharsGf1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanelCharsGf1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.label17, 0, 0);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.label21, 1, 0);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf1, 0, 1);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp1, 1, 1);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf2, 0, 2);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp8, 1, 8);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf3, 0, 3);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf4, 0, 4);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp4, 1, 4);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp6, 1, 6);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf5, 0, 5);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp7, 1, 7);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf6, 0, 6);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf8, 0, 8);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp2, 1, 2);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp3, 1, 3);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.numericUpDownGfComp5, 1, 5);
+            this.tableLayoutPanelCharsGf1.Controls.Add(this.checkBoxCharsGf7, 0, 7);
+            this.tableLayoutPanelCharsGf1.Location = new System.Drawing.Point(49, 28);
+            this.tableLayoutPanelCharsGf1.Margin = new System.Windows.Forms.Padding(10);
+            this.tableLayoutPanelCharsGf1.Name = "tableLayoutPanelCharsGf1";
+            this.tableLayoutPanelCharsGf1.RowCount = 9;
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanelCharsGf1.Size = new System.Drawing.Size(239, 480);
+            this.tableLayoutPanelCharsGf1.TabIndex = 24;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label17.Location = new System.Drawing.Point(9, 9);
+            this.label17.Margin = new System.Windows.Forms.Padding(8);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(125, 14);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "Junctioned GFs";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label21.Location = new System.Drawing.Point(151, 9);
+            this.label21.Margin = new System.Windows.Forms.Padding(8);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(79, 14);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "Compatibility";
+            // 
+            // checkBoxCharsGf1
+            // 
+            this.checkBoxCharsGf1.AutoSize = true;
+            this.checkBoxCharsGf1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf1.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf1.Location = new System.Drawing.Point(4, 35);
+            this.checkBoxCharsGf1.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf1.Name = "checkBoxCharsGf1";
+            this.checkBoxCharsGf1.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf1.TabIndex = 13;
+            this.checkBoxCharsGf1.Text = "Quezacotl";
+            this.checkBoxCharsGf1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf1.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownGfComp1
+            // 
+            this.numericUpDownGfComp1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp1.Location = new System.Drawing.Point(165, 48);
+            this.numericUpDownGfComp1.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp1.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp1.Name = "numericUpDownGfComp1";
+            this.numericUpDownGfComp1.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp1.TabIndex = 20;
+            // 
+            // checkBoxCharsGf2
+            // 
+            this.checkBoxCharsGf2.AutoSize = true;
+            this.checkBoxCharsGf2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf2.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf2.Location = new System.Drawing.Point(4, 91);
+            this.checkBoxCharsGf2.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf2.Name = "checkBoxCharsGf2";
+            this.checkBoxCharsGf2.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf2.TabIndex = 13;
+            this.checkBoxCharsGf2.Text = "Shiva";
+            this.checkBoxCharsGf2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf2.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownGfComp8
+            // 
+            this.numericUpDownGfComp8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp8.Location = new System.Drawing.Point(165, 440);
+            this.numericUpDownGfComp8.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp8.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp8.Name = "numericUpDownGfComp8";
+            this.numericUpDownGfComp8.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp8.TabIndex = 20;
+            // 
+            // checkBoxCharsGf3
+            // 
+            this.checkBoxCharsGf3.AutoSize = true;
+            this.checkBoxCharsGf3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf3.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf3.Location = new System.Drawing.Point(4, 147);
+            this.checkBoxCharsGf3.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf3.Name = "checkBoxCharsGf3";
+            this.checkBoxCharsGf3.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf3.TabIndex = 13;
+            this.checkBoxCharsGf3.Text = "Ifrit";
+            this.checkBoxCharsGf3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCharsGf4
+            // 
+            this.checkBoxCharsGf4.AutoSize = true;
+            this.checkBoxCharsGf4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf4.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf4.Location = new System.Drawing.Point(4, 203);
+            this.checkBoxCharsGf4.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf4.Name = "checkBoxCharsGf4";
+            this.checkBoxCharsGf4.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf4.TabIndex = 13;
+            this.checkBoxCharsGf4.Text = "Siren";
+            this.checkBoxCharsGf4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf4.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownGfComp4
+            // 
+            this.numericUpDownGfComp4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp4.Location = new System.Drawing.Point(165, 216);
+            this.numericUpDownGfComp4.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp4.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp4.Name = "numericUpDownGfComp4";
+            this.numericUpDownGfComp4.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp4.TabIndex = 20;
+            // 
+            // numericUpDownGfComp6
+            // 
+            this.numericUpDownGfComp6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp6.Location = new System.Drawing.Point(165, 328);
+            this.numericUpDownGfComp6.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp6.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp6.Name = "numericUpDownGfComp6";
+            this.numericUpDownGfComp6.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp6.TabIndex = 20;
+            // 
+            // checkBoxCharsGf5
+            // 
+            this.checkBoxCharsGf5.AutoSize = true;
+            this.checkBoxCharsGf5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf5.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf5.Location = new System.Drawing.Point(4, 259);
+            this.checkBoxCharsGf5.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf5.Name = "checkBoxCharsGf5";
+            this.checkBoxCharsGf5.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf5.TabIndex = 13;
+            this.checkBoxCharsGf5.Text = "Brothers";
+            this.checkBoxCharsGf5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf5.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownGfComp7
+            // 
+            this.numericUpDownGfComp7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp7.Location = new System.Drawing.Point(165, 384);
+            this.numericUpDownGfComp7.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp7.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp7.Name = "numericUpDownGfComp7";
+            this.numericUpDownGfComp7.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp7.TabIndex = 20;
+            // 
+            // checkBoxCharsGf6
+            // 
+            this.checkBoxCharsGf6.AutoSize = true;
+            this.checkBoxCharsGf6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf6.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf6.Location = new System.Drawing.Point(4, 315);
+            this.checkBoxCharsGf6.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf6.Name = "checkBoxCharsGf6";
+            this.checkBoxCharsGf6.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf6.TabIndex = 13;
+            this.checkBoxCharsGf6.Text = "Diablos";
+            this.checkBoxCharsGf6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf6.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCharsGf8
+            // 
+            this.checkBoxCharsGf8.AutoSize = true;
+            this.checkBoxCharsGf8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf8.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf8.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf8.Location = new System.Drawing.Point(4, 427);
+            this.checkBoxCharsGf8.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf8.Name = "checkBoxCharsGf8";
+            this.checkBoxCharsGf8.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf8.TabIndex = 13;
+            this.checkBoxCharsGf8.Text = "Leviathan";
+            this.checkBoxCharsGf8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf8.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDownGfComp2
+            // 
+            this.numericUpDownGfComp2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp2.Location = new System.Drawing.Point(165, 104);
+            this.numericUpDownGfComp2.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp2.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp2.Name = "numericUpDownGfComp2";
+            this.numericUpDownGfComp2.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp2.TabIndex = 20;
+            // 
+            // numericUpDownGfComp3
+            // 
+            this.numericUpDownGfComp3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp3.Location = new System.Drawing.Point(165, 160);
+            this.numericUpDownGfComp3.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp3.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp3.Name = "numericUpDownGfComp3";
+            this.numericUpDownGfComp3.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp3.TabIndex = 20;
+            // 
+            // numericUpDownGfComp5
+            // 
+            this.numericUpDownGfComp5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownGfComp5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfComp5.Location = new System.Drawing.Point(165, 272);
+            this.numericUpDownGfComp5.Maximum = new decimal(new int[] {
+            1200,
+            0,
+            0,
+            0});
+            this.numericUpDownGfComp5.Minimum = new decimal(new int[] {
+            11907,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownGfComp5.Name = "numericUpDownGfComp5";
+            this.numericUpDownGfComp5.Size = new System.Drawing.Size(50, 23);
+            this.numericUpDownGfComp5.TabIndex = 20;
+            // 
+            // checkBoxCharsGf7
+            // 
+            this.checkBoxCharsGf7.AutoSize = true;
+            this.checkBoxCharsGf7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxCharsGf7.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGf7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkBoxCharsGf7.ImageList = this.imageListGfSmall;
+            this.checkBoxCharsGf7.Location = new System.Drawing.Point(4, 371);
+            this.checkBoxCharsGf7.MinimumSize = new System.Drawing.Size(100, 50);
+            this.checkBoxCharsGf7.Name = "checkBoxCharsGf7";
+            this.checkBoxCharsGf7.Size = new System.Drawing.Size(135, 50);
+            this.checkBoxCharsGf7.TabIndex = 13;
+            this.checkBoxCharsGf7.Text = "Carbuncle";
+            this.checkBoxCharsGf7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.checkBoxCharsGf7.UseVisualStyleBackColor = true;
+            // 
             // numericUpDownCharsAllGfComp
             // 
+            this.numericUpDownCharsAllGfComp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCharsAllGfComp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownCharsAllGfComp.Location = new System.Drawing.Point(520, 496);
+            this.numericUpDownCharsAllGfComp.Location = new System.Drawing.Point(511, 522);
             this.numericUpDownCharsAllGfComp.Maximum = new decimal(new int[] {
             1200,
             0,
@@ -1654,635 +2379,27 @@
             // 
             // checkBoxCharsGfAll
             // 
+            this.checkBoxCharsGfAll.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxCharsGfAll.AutoSize = true;
             this.checkBoxCharsGfAll.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGfAll.Location = new System.Drawing.Point(362, 499);
+            this.checkBoxCharsGfAll.Location = new System.Drawing.Point(53, 528);
+            this.checkBoxCharsGfAll.Margin = new System.Windows.Forms.Padding(10);
             this.checkBoxCharsGfAll.Name = "checkBoxCharsGfAll";
-            this.checkBoxCharsGfAll.Size = new System.Drawing.Size(39, 17);
+            this.checkBoxCharsGfAll.Size = new System.Drawing.Size(87, 17);
             this.checkBoxCharsGfAll.TabIndex = 21;
-            this.checkBoxCharsGfAll.Text = "All";
+            this.checkBoxCharsGfAll.Text = "All G-Forces";
             this.checkBoxCharsGfAll.UseVisualStyleBackColor = true;
-            this.checkBoxCharsGfAll.CheckedChanged += new System.EventHandler(this.checkBoxCharsGfAll_CheckedChanged);
+            this.checkBoxCharsGfAll.CheckedChanged += new System.EventHandler(this.CheckBoxCharsGfAll_CheckedChanged);
             // 
             // buttonCharsGfApply
             // 
-            this.buttonCharsGfApply.Location = new System.Drawing.Point(489, 525);
+            this.buttonCharsGfApply.Location = new System.Drawing.Point(511, 551);
             this.buttonCharsGfApply.Name = "buttonCharsGfApply";
-            this.buttonCharsGfApply.Size = new System.Drawing.Size(112, 23);
+            this.buttonCharsGfApply.Size = new System.Drawing.Size(50, 23);
             this.buttonCharsGfApply.TabIndex = 23;
-            this.buttonCharsGfApply.Text = "Apply All Comp.";
+            this.buttonCharsGfApply.Text = "Apply";
             this.buttonCharsGfApply.UseVisualStyleBackColor = true;
-            this.buttonCharsGfApply.Click += new System.EventHandler(this.buttonCharsGfApplyCompAll_Click);
-            // 
-            // numericUpDownGfComp16
-            // 
-            this.numericUpDownGfComp16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp16.Location = new System.Drawing.Point(520, 440);
-            this.numericUpDownGfComp16.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp16.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp16.Name = "numericUpDownGfComp16";
-            this.numericUpDownGfComp16.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp16.TabIndex = 20;
-            // 
-            // numericUpDownGfComp8
-            // 
-            this.numericUpDownGfComp8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp8.Location = new System.Drawing.Point(187, 440);
-            this.numericUpDownGfComp8.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp8.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp8.Name = "numericUpDownGfComp8";
-            this.numericUpDownGfComp8.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp8.TabIndex = 20;
-            // 
-            // numericUpDownGfComp12
-            // 
-            this.numericUpDownGfComp12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp12.Location = new System.Drawing.Point(520, 216);
-            this.numericUpDownGfComp12.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp12.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp12.Name = "numericUpDownGfComp12";
-            this.numericUpDownGfComp12.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp12.TabIndex = 20;
-            // 
-            // numericUpDownGfComp4
-            // 
-            this.numericUpDownGfComp4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp4.Location = new System.Drawing.Point(187, 216);
-            this.numericUpDownGfComp4.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp4.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp4.Name = "numericUpDownGfComp4";
-            this.numericUpDownGfComp4.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp4.TabIndex = 20;
-            // 
-            // numericUpDownGfComp14
-            // 
-            this.numericUpDownGfComp14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp14.Location = new System.Drawing.Point(520, 328);
-            this.numericUpDownGfComp14.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp14.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp14.Name = "numericUpDownGfComp14";
-            this.numericUpDownGfComp14.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp14.TabIndex = 20;
-            // 
-            // numericUpDownGfComp6
-            // 
-            this.numericUpDownGfComp6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp6.Location = new System.Drawing.Point(187, 328);
-            this.numericUpDownGfComp6.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp6.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp6.Name = "numericUpDownGfComp6";
-            this.numericUpDownGfComp6.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp6.TabIndex = 20;
-            // 
-            // numericUpDownGfComp10
-            // 
-            this.numericUpDownGfComp10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp10.Location = new System.Drawing.Point(520, 104);
-            this.numericUpDownGfComp10.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp10.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp10.Name = "numericUpDownGfComp10";
-            this.numericUpDownGfComp10.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp10.TabIndex = 20;
-            // 
-            // numericUpDownGfComp2
-            // 
-            this.numericUpDownGfComp2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp2.Location = new System.Drawing.Point(187, 104);
-            this.numericUpDownGfComp2.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp2.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp2.Name = "numericUpDownGfComp2";
-            this.numericUpDownGfComp2.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp2.TabIndex = 20;
-            // 
-            // numericUpDownGfComp15
-            // 
-            this.numericUpDownGfComp15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp15.Location = new System.Drawing.Point(520, 384);
-            this.numericUpDownGfComp15.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp15.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp15.Name = "numericUpDownGfComp15";
-            this.numericUpDownGfComp15.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp15.TabIndex = 20;
-            // 
-            // numericUpDownGfComp7
-            // 
-            this.numericUpDownGfComp7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp7.Location = new System.Drawing.Point(187, 384);
-            this.numericUpDownGfComp7.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp7.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp7.Name = "numericUpDownGfComp7";
-            this.numericUpDownGfComp7.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp7.TabIndex = 20;
-            // 
-            // numericUpDownGfComp11
-            // 
-            this.numericUpDownGfComp11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp11.Location = new System.Drawing.Point(520, 160);
-            this.numericUpDownGfComp11.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp11.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp11.Name = "numericUpDownGfComp11";
-            this.numericUpDownGfComp11.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp11.TabIndex = 20;
-            // 
-            // numericUpDownGfComp3
-            // 
-            this.numericUpDownGfComp3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp3.Location = new System.Drawing.Point(187, 160);
-            this.numericUpDownGfComp3.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp3.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp3.Name = "numericUpDownGfComp3";
-            this.numericUpDownGfComp3.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp3.TabIndex = 20;
-            // 
-            // numericUpDownGfComp13
-            // 
-            this.numericUpDownGfComp13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp13.Location = new System.Drawing.Point(520, 272);
-            this.numericUpDownGfComp13.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp13.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp13.Name = "numericUpDownGfComp13";
-            this.numericUpDownGfComp13.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp13.TabIndex = 20;
-            // 
-            // numericUpDownGfComp5
-            // 
-            this.numericUpDownGfComp5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp5.Location = new System.Drawing.Point(187, 272);
-            this.numericUpDownGfComp5.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp5.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp5.Name = "numericUpDownGfComp5";
-            this.numericUpDownGfComp5.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp5.TabIndex = 20;
-            // 
-            // numericUpDownGfComp9
-            // 
-            this.numericUpDownGfComp9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp9.Location = new System.Drawing.Point(520, 48);
-            this.numericUpDownGfComp9.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp9.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp9.Name = "numericUpDownGfComp9";
-            this.numericUpDownGfComp9.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp9.TabIndex = 20;
-            // 
-            // numericUpDownGfComp1
-            // 
-            this.numericUpDownGfComp1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfComp1.Location = new System.Drawing.Point(187, 48);
-            this.numericUpDownGfComp1.Maximum = new decimal(new int[] {
-            1200,
-            0,
-            0,
-            0});
-            this.numericUpDownGfComp1.Minimum = new decimal(new int[] {
-            11907,
-            0,
-            0,
-            -2147483648});
-            this.numericUpDownGfComp1.Name = "numericUpDownGfComp1";
-            this.numericUpDownGfComp1.Size = new System.Drawing.Size(50, 23);
-            this.numericUpDownGfComp1.TabIndex = 20;
-            // 
-            // checkBoxCharsGf9
-            // 
-            this.checkBoxCharsGf9.AutoSize = true;
-            this.checkBoxCharsGf9.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf9.ImageIndex = 8;
-            this.checkBoxCharsGf9.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf9.Location = new System.Drawing.Point(362, 35);
-            this.checkBoxCharsGf9.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf9.Name = "checkBoxCharsGf9";
-            this.checkBoxCharsGf9.Size = new System.Drawing.Size(111, 50);
-            this.checkBoxCharsGf9.TabIndex = 13;
-            this.checkBoxCharsGf9.Text = "Pandemona";
-            this.checkBoxCharsGf9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf9.UseVisualStyleBackColor = true;
-            // 
-            // imageListGfSmall
-            // 
-            this.imageListGfSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListGfSmall.ImageStream")));
-            this.imageListGfSmall.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListGfSmall.Images.SetKeyName(0, "gf0.png");
-            this.imageListGfSmall.Images.SetKeyName(1, "gf1.png");
-            this.imageListGfSmall.Images.SetKeyName(2, "gf2.png");
-            this.imageListGfSmall.Images.SetKeyName(3, "gf3.png");
-            this.imageListGfSmall.Images.SetKeyName(4, "gf4.png");
-            this.imageListGfSmall.Images.SetKeyName(5, "gf5.png");
-            this.imageListGfSmall.Images.SetKeyName(6, "gf6.png");
-            this.imageListGfSmall.Images.SetKeyName(7, "gf7.png");
-            this.imageListGfSmall.Images.SetKeyName(8, "gf8.png");
-            this.imageListGfSmall.Images.SetKeyName(9, "gf9.png");
-            this.imageListGfSmall.Images.SetKeyName(10, "gf10.png");
-            this.imageListGfSmall.Images.SetKeyName(11, "gf11.png");
-            this.imageListGfSmall.Images.SetKeyName(12, "gf12.png");
-            this.imageListGfSmall.Images.SetKeyName(13, "gf13.png");
-            this.imageListGfSmall.Images.SetKeyName(14, "gf14.png");
-            this.imageListGfSmall.Images.SetKeyName(15, "gf15.png");
-            this.imageListGfSmall.Images.SetKeyName(16, "gf16.png");
-            // 
-            // checkBoxCharsGf16
-            // 
-            this.checkBoxCharsGf16.AutoSize = true;
-            this.checkBoxCharsGf16.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf16.ImageIndex = 15;
-            this.checkBoxCharsGf16.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf16.Location = new System.Drawing.Point(362, 427);
-            this.checkBoxCharsGf16.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf16.Name = "checkBoxCharsGf16";
-            this.checkBoxCharsGf16.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf16.TabIndex = 13;
-            this.checkBoxCharsGf16.Text = "Eden";
-            this.checkBoxCharsGf16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf16.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf8
-            // 
-            this.checkBoxCharsGf8.AutoSize = true;
-            this.checkBoxCharsGf8.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf8.ImageIndex = 7;
-            this.checkBoxCharsGf8.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf8.Location = new System.Drawing.Point(49, 427);
-            this.checkBoxCharsGf8.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf8.Name = "checkBoxCharsGf8";
-            this.checkBoxCharsGf8.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf8.TabIndex = 13;
-            this.checkBoxCharsGf8.Text = "Leviathan";
-            this.checkBoxCharsGf8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf8.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf15
-            // 
-            this.checkBoxCharsGf15.AutoSize = true;
-            this.checkBoxCharsGf15.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf15.ImageIndex = 14;
-            this.checkBoxCharsGf15.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf15.Location = new System.Drawing.Point(362, 371);
-            this.checkBoxCharsGf15.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf15.Name = "checkBoxCharsGf15";
-            this.checkBoxCharsGf15.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf15.TabIndex = 13;
-            this.checkBoxCharsGf15.Text = "Tonberry";
-            this.checkBoxCharsGf15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf15.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf7
-            // 
-            this.checkBoxCharsGf7.AutoSize = true;
-            this.checkBoxCharsGf7.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf7.ImageIndex = 6;
-            this.checkBoxCharsGf7.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf7.Location = new System.Drawing.Point(49, 371);
-            this.checkBoxCharsGf7.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf7.Name = "checkBoxCharsGf7";
-            this.checkBoxCharsGf7.Size = new System.Drawing.Size(102, 50);
-            this.checkBoxCharsGf7.TabIndex = 13;
-            this.checkBoxCharsGf7.Text = "Carbuncle";
-            this.checkBoxCharsGf7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf7.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf14
-            // 
-            this.checkBoxCharsGf14.AutoSize = true;
-            this.checkBoxCharsGf14.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf14.ImageIndex = 13;
-            this.checkBoxCharsGf14.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf14.Location = new System.Drawing.Point(362, 315);
-            this.checkBoxCharsGf14.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf14.Name = "checkBoxCharsGf14";
-            this.checkBoxCharsGf14.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf14.TabIndex = 13;
-            this.checkBoxCharsGf14.Text = "Cactuar";
-            this.checkBoxCharsGf14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf14.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf6
-            // 
-            this.checkBoxCharsGf6.AutoSize = true;
-            this.checkBoxCharsGf6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf6.ImageIndex = 5;
-            this.checkBoxCharsGf6.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf6.Location = new System.Drawing.Point(49, 315);
-            this.checkBoxCharsGf6.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf6.Name = "checkBoxCharsGf6";
-            this.checkBoxCharsGf6.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf6.TabIndex = 13;
-            this.checkBoxCharsGf6.Text = "Diablos";
-            this.checkBoxCharsGf6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf6.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf13
-            // 
-            this.checkBoxCharsGf13.AutoSize = true;
-            this.checkBoxCharsGf13.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf13.ImageIndex = 12;
-            this.checkBoxCharsGf13.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf13.Location = new System.Drawing.Point(362, 259);
-            this.checkBoxCharsGf13.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf13.Name = "checkBoxCharsGf13";
-            this.checkBoxCharsGf13.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf13.TabIndex = 13;
-            this.checkBoxCharsGf13.Text = "Bahamut";
-            this.checkBoxCharsGf13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf13.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf5
-            // 
-            this.checkBoxCharsGf5.AutoSize = true;
-            this.checkBoxCharsGf5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf5.ImageIndex = 4;
-            this.checkBoxCharsGf5.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf5.Location = new System.Drawing.Point(49, 259);
-            this.checkBoxCharsGf5.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf5.Name = "checkBoxCharsGf5";
-            this.checkBoxCharsGf5.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf5.TabIndex = 13;
-            this.checkBoxCharsGf5.Text = "Brothers";
-            this.checkBoxCharsGf5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf5.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf12
-            // 
-            this.checkBoxCharsGf12.AutoSize = true;
-            this.checkBoxCharsGf12.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf12.ImageIndex = 11;
-            this.checkBoxCharsGf12.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf12.Location = new System.Drawing.Point(362, 203);
-            this.checkBoxCharsGf12.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf12.Name = "checkBoxCharsGf12";
-            this.checkBoxCharsGf12.Size = new System.Drawing.Size(105, 50);
-            this.checkBoxCharsGf12.TabIndex = 13;
-            this.checkBoxCharsGf12.Text = "Doomtrain";
-            this.checkBoxCharsGf12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf12.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf4
-            // 
-            this.checkBoxCharsGf4.AutoSize = true;
-            this.checkBoxCharsGf4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf4.ImageIndex = 3;
-            this.checkBoxCharsGf4.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf4.Location = new System.Drawing.Point(49, 203);
-            this.checkBoxCharsGf4.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf4.Name = "checkBoxCharsGf4";
-            this.checkBoxCharsGf4.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf4.TabIndex = 13;
-            this.checkBoxCharsGf4.Text = "Siren";
-            this.checkBoxCharsGf4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf4.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf11
-            // 
-            this.checkBoxCharsGf11.AutoSize = true;
-            this.checkBoxCharsGf11.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf11.ImageIndex = 10;
-            this.checkBoxCharsGf11.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf11.Location = new System.Drawing.Point(362, 147);
-            this.checkBoxCharsGf11.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf11.Name = "checkBoxCharsGf11";
-            this.checkBoxCharsGf11.Size = new System.Drawing.Size(101, 50);
-            this.checkBoxCharsGf11.TabIndex = 13;
-            this.checkBoxCharsGf11.Text = "Alexander";
-            this.checkBoxCharsGf11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf11.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf3
-            // 
-            this.checkBoxCharsGf3.AutoSize = true;
-            this.checkBoxCharsGf3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf3.ImageIndex = 2;
-            this.checkBoxCharsGf3.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf3.Location = new System.Drawing.Point(49, 147);
-            this.checkBoxCharsGf3.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf3.Name = "checkBoxCharsGf3";
-            this.checkBoxCharsGf3.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf3.TabIndex = 13;
-            this.checkBoxCharsGf3.Text = "Ifrit";
-            this.checkBoxCharsGf3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf3.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf10
-            // 
-            this.checkBoxCharsGf10.AutoSize = true;
-            this.checkBoxCharsGf10.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf10.ImageIndex = 9;
-            this.checkBoxCharsGf10.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf10.Location = new System.Drawing.Point(362, 91);
-            this.checkBoxCharsGf10.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf10.Name = "checkBoxCharsGf10";
-            this.checkBoxCharsGf10.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf10.TabIndex = 13;
-            this.checkBoxCharsGf10.Text = "Cerberus";
-            this.checkBoxCharsGf10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf10.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCharsGf2
-            // 
-            this.checkBoxCharsGf2.AutoSize = true;
-            this.checkBoxCharsGf2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf2.ImageIndex = 1;
-            this.checkBoxCharsGf2.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf2.Location = new System.Drawing.Point(49, 91);
-            this.checkBoxCharsGf2.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf2.Name = "checkBoxCharsGf2";
-            this.checkBoxCharsGf2.Size = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf2.TabIndex = 13;
-            this.checkBoxCharsGf2.Text = "Shiva";
-            this.checkBoxCharsGf2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf2.UseVisualStyleBackColor = true;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label25.Location = new System.Drawing.Point(507, 11);
-            this.label25.Margin = new System.Windows.Forms.Padding(8);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(79, 15);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "Compatibility";
-            // 
-            // checkBoxCharsGf1
-            // 
-            this.checkBoxCharsGf1.AutoSize = true;
-            this.checkBoxCharsGf1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGf1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.checkBoxCharsGf1.ImageIndex = 0;
-            this.checkBoxCharsGf1.ImageList = this.imageListGfSmall;
-            this.checkBoxCharsGf1.Location = new System.Drawing.Point(49, 35);
-            this.checkBoxCharsGf1.MinimumSize = new System.Drawing.Size(100, 50);
-            this.checkBoxCharsGf1.Name = "checkBoxCharsGf1";
-            this.checkBoxCharsGf1.Size = new System.Drawing.Size(101, 50);
-            this.checkBoxCharsGf1.TabIndex = 13;
-            this.checkBoxCharsGf1.Text = "Quezacotl";
-            this.checkBoxCharsGf1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.checkBoxCharsGf1.UseVisualStyleBackColor = true;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label21.Location = new System.Drawing.Point(174, 11);
-            this.label21.Margin = new System.Windows.Forms.Padding(8);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(79, 15);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "Compatibility";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label26.Location = new System.Drawing.Point(368, 11);
-            this.label26.Margin = new System.Windows.Forms.Padding(8);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(94, 15);
-            this.label26.TabIndex = 12;
-            this.label26.Text = "Junctionned GFs";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label17.Location = new System.Drawing.Point(52, 11);
-            this.label17.Margin = new System.Windows.Forms.Padding(8);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(94, 15);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Junctionned GFs";
+            this.buttonCharsGfApply.Click += new System.EventHandler(this.ButtonCharsGfApplyCompAll_Click);
             // 
             // tabPageChars3
             // 
@@ -5717,16 +5834,16 @@
             this.comboBoxCharsAb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCharsAb1.FormattingEnabled = true;
             this.comboBoxCharsAb1.Items.AddRange(new object[] {
-            "-",
+            "None",
             "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
             "Elem-Atk-J",
             "ST-Atk-J",
             "Elem-Def-J",
@@ -5737,11 +5854,11 @@
             "ST-Def-Jx4",
             "Abilityx3",
             "Abilityx4",
-            "Magic(20)",
+            "Magic",
             "GF",
             "Draw",
             "Item",
-            "???",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -5756,7 +5873,7 @@
             "Kamikaze",
             "Devour",
             "MiniMog",
-            "HP+20%(39)",
+            "HP+20%",
             "HP+40%",
             "HP+80%",
             "Str+20%",
@@ -5778,10 +5895,10 @@
             "Mug",
             "MedData",
             "Counter",
-            "ReturnDamage",
+            "Return Damage",
             "Cover",
             "Initiative",
-            "MoveHP-Up",
+            "Move-HPUp",
             "HPBonus",
             "StrBonus",
             "VitBonus",
@@ -5791,16 +5908,16 @@
             "Auto-Shell",
             "Auto-Reflect",
             "Auto-Haste",
-            "Auto-Potion",
+            "Auto Potion",
             "Expendx2-1",
             "Expendx3-1",
             "Ribbon",
-            "Alert(78)",
+            "Alert",
             "Move-Find",
             "Enc-Half",
             "Enc-None",
             "RareItem",
-            "SumMag+10%(83)",
+            "SumMag+10%",
             "SumMag+20%",
             "SumMag+30%",
             "SumMag+40%",
@@ -5809,12 +5926,12 @@
             "GFHP+30%",
             "GFHP+40%",
             "Boost",
-            "Haggle(92)",
+            "Haggle",
             "Sell-High",
             "Familiar",
             "CallShop",
             "JunkShop",
-            "TMag-RF",
+            "T Mag-RF",
             "IMag-RF",
             "FMag-RF",
             "LMag-RF",
@@ -5829,10 +5946,10 @@
             "ForbidMed-RF",
             "GFRecovMed-RF",
             "GFAblMed-RF",
-            "MidMag-RF",
+            "Mid Mag-RF",
             "HighMag-RF",
             "MedLVUp",
-            "CardMod"});
+            "Card Mod"});
             this.comboBoxCharsAb1.Location = new System.Drawing.Point(152, 23);
             this.comboBoxCharsAb1.Name = "comboBoxCharsAb1";
             this.comboBoxCharsAb1.Size = new System.Drawing.Size(142, 23);
@@ -5865,16 +5982,16 @@
             this.comboBoxCharsAb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCharsAb2.FormattingEnabled = true;
             this.comboBoxCharsAb2.Items.AddRange(new object[] {
-            "-",
+            "None",
             "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
             "Elem-Atk-J",
             "ST-Atk-J",
             "Elem-Def-J",
@@ -5885,11 +6002,11 @@
             "ST-Def-Jx4",
             "Abilityx3",
             "Abilityx4",
-            "Magic(20)",
+            "Magic",
             "GF",
             "Draw",
             "Item",
-            "???",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -5904,7 +6021,7 @@
             "Kamikaze",
             "Devour",
             "MiniMog",
-            "HP+20%(39)",
+            "HP+20%",
             "HP+40%",
             "HP+80%",
             "Str+20%",
@@ -5926,10 +6043,10 @@
             "Mug",
             "MedData",
             "Counter",
-            "ReturnDamage",
+            "Return Damage",
             "Cover",
             "Initiative",
-            "MoveHP-Up",
+            "Move-HPUp",
             "HPBonus",
             "StrBonus",
             "VitBonus",
@@ -5939,16 +6056,16 @@
             "Auto-Shell",
             "Auto-Reflect",
             "Auto-Haste",
-            "Auto-Potion",
+            "Auto Potion",
             "Expendx2-1",
             "Expendx3-1",
             "Ribbon",
-            "Alert(78)",
+            "Alert",
             "Move-Find",
             "Enc-Half",
             "Enc-None",
             "RareItem",
-            "SumMag+10%(83)",
+            "SumMag+10%",
             "SumMag+20%",
             "SumMag+30%",
             "SumMag+40%",
@@ -5957,12 +6074,12 @@
             "GFHP+30%",
             "GFHP+40%",
             "Boost",
-            "Haggle(92)",
+            "Haggle",
             "Sell-High",
             "Familiar",
             "CallShop",
             "JunkShop",
-            "TMag-RF",
+            "T Mag-RF",
             "IMag-RF",
             "FMag-RF",
             "LMag-RF",
@@ -5977,10 +6094,10 @@
             "ForbidMed-RF",
             "GFRecovMed-RF",
             "GFAblMed-RF",
-            "MidMag-RF",
+            "Mid Mag-RF",
             "HighMag-RF",
             "MedLVUp",
-            "CardMod"});
+            "Card Mod"});
             this.comboBoxCharsAb2.Location = new System.Drawing.Point(152, 54);
             this.comboBoxCharsAb2.Name = "comboBoxCharsAb2";
             this.comboBoxCharsAb2.Size = new System.Drawing.Size(142, 23);
@@ -6002,16 +6119,16 @@
             this.comboBoxCharsAb4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCharsAb4.FormattingEnabled = true;
             this.comboBoxCharsAb4.Items.AddRange(new object[] {
-            "-",
+            "None",
             "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
             "Elem-Atk-J",
             "ST-Atk-J",
             "Elem-Def-J",
@@ -6022,11 +6139,11 @@
             "ST-Def-Jx4",
             "Abilityx3",
             "Abilityx4",
-            "Magic(20)",
+            "Magic",
             "GF",
             "Draw",
             "Item",
-            "???",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -6041,7 +6158,7 @@
             "Kamikaze",
             "Devour",
             "MiniMog",
-            "HP+20%(39)",
+            "HP+20%",
             "HP+40%",
             "HP+80%",
             "Str+20%",
@@ -6063,10 +6180,10 @@
             "Mug",
             "MedData",
             "Counter",
-            "ReturnDamage",
+            "Return Damage",
             "Cover",
             "Initiative",
-            "MoveHP-Up",
+            "Move-HPUp",
             "HPBonus",
             "StrBonus",
             "VitBonus",
@@ -6076,16 +6193,16 @@
             "Auto-Shell",
             "Auto-Reflect",
             "Auto-Haste",
-            "Auto-Potion",
+            "Auto Potion",
             "Expendx2-1",
             "Expendx3-1",
             "Ribbon",
-            "Alert(78)",
+            "Alert",
             "Move-Find",
             "Enc-Half",
             "Enc-None",
             "RareItem",
-            "SumMag+10%(83)",
+            "SumMag+10%",
             "SumMag+20%",
             "SumMag+30%",
             "SumMag+40%",
@@ -6094,12 +6211,12 @@
             "GFHP+30%",
             "GFHP+40%",
             "Boost",
-            "Haggle(92)",
+            "Haggle",
             "Sell-High",
             "Familiar",
             "CallShop",
             "JunkShop",
-            "TMag-RF",
+            "T Mag-RF",
             "IMag-RF",
             "FMag-RF",
             "LMag-RF",
@@ -6114,10 +6231,10 @@
             "ForbidMed-RF",
             "GFRecovMed-RF",
             "GFAblMed-RF",
-            "MidMag-RF",
+            "Mid Mag-RF",
             "HighMag-RF",
             "MedLVUp",
-            "CardMod"});
+            "Card Mod"});
             this.comboBoxCharsAb4.Location = new System.Drawing.Point(152, 115);
             this.comboBoxCharsAb4.Name = "comboBoxCharsAb4";
             this.comboBoxCharsAb4.Size = new System.Drawing.Size(142, 23);
@@ -6128,16 +6245,16 @@
             this.comboBoxCharsAb3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCharsAb3.FormattingEnabled = true;
             this.comboBoxCharsAb3.Items.AddRange(new object[] {
-            "-",
+            "None",
             "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
             "Elem-Atk-J",
             "ST-Atk-J",
             "Elem-Def-J",
@@ -6148,11 +6265,11 @@
             "ST-Def-Jx4",
             "Abilityx3",
             "Abilityx4",
-            "Magic(20)",
+            "Magic",
             "GF",
             "Draw",
             "Item",
-            "???",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -6167,7 +6284,7 @@
             "Kamikaze",
             "Devour",
             "MiniMog",
-            "HP+20%(39)",
+            "HP+20%",
             "HP+40%",
             "HP+80%",
             "Str+20%",
@@ -6189,10 +6306,10 @@
             "Mug",
             "MedData",
             "Counter",
-            "ReturnDamage",
+            "Return Damage",
             "Cover",
             "Initiative",
-            "MoveHP-Up",
+            "Move-HPUp",
             "HPBonus",
             "StrBonus",
             "VitBonus",
@@ -6202,16 +6319,16 @@
             "Auto-Shell",
             "Auto-Reflect",
             "Auto-Haste",
-            "Auto-Potion",
+            "Auto Potion",
             "Expendx2-1",
             "Expendx3-1",
             "Ribbon",
-            "Alert(78)",
+            "Alert",
             "Move-Find",
             "Enc-Half",
             "Enc-None",
             "RareItem",
-            "SumMag+10%(83)",
+            "SumMag+10%",
             "SumMag+20%",
             "SumMag+30%",
             "SumMag+40%",
@@ -6220,12 +6337,12 @@
             "GFHP+30%",
             "GFHP+40%",
             "Boost",
-            "Haggle(92)",
+            "Haggle",
             "Sell-High",
             "Familiar",
             "CallShop",
             "JunkShop",
-            "TMag-RF",
+            "T Mag-RF",
             "IMag-RF",
             "FMag-RF",
             "LMag-RF",
@@ -6240,10 +6357,10 @@
             "ForbidMed-RF",
             "GFRecovMed-RF",
             "GFAblMed-RF",
-            "MidMag-RF",
+            "Mid Mag-RF",
             "HighMag-RF",
             "MedLVUp",
-            "CardMod"});
+            "Card Mod"});
             this.comboBoxCharsAb3.Location = new System.Drawing.Point(152, 85);
             this.comboBoxCharsAb3.Name = "comboBoxCharsAb3";
             this.comboBoxCharsAb3.Size = new System.Drawing.Size(142, 23);
@@ -6277,6 +6394,14 @@
             this.groupBoxCharsCommands.TabIndex = 0;
             this.groupBoxCharsCommands.TabStop = false;
             this.groupBoxCharsCommands.Text = "Commands";
+            // 
+            // hexUpDownCharUnk1
+            // 
+            this.hexUpDownCharUnk1.Hexadecimal = true;
+            this.hexUpDownCharUnk1.Location = new System.Drawing.Point(152, 115);
+            this.hexUpDownCharUnk1.Name = "hexUpDownCharUnk1";
+            this.hexUpDownCharUnk1.Size = new System.Drawing.Size(142, 23);
+            this.hexUpDownCharUnk1.TabIndex = 1;
             // 
             // labelCharsComm4
             // 
@@ -6327,16 +6452,16 @@
             this.comboBoxCharsComm3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCharsComm3.FormattingEnabled = true;
             this.comboBoxCharsComm3.Items.AddRange(new object[] {
-            "-",
+            "None",
             "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
             "Elem-Atk-J",
             "ST-Atk-J",
             "Elem-Def-J",
@@ -6347,11 +6472,11 @@
             "ST-Def-Jx4",
             "Abilityx3",
             "Abilityx4",
-            "Magic(20)",
+            "Magic",
             "GF",
             "Draw",
             "Item",
-            "???",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -6366,7 +6491,7 @@
             "Kamikaze",
             "Devour",
             "MiniMog",
-            "HP+20%(39)",
+            "HP+20%",
             "HP+40%",
             "HP+80%",
             "Str+20%",
@@ -6388,10 +6513,10 @@
             "Mug",
             "MedData",
             "Counter",
-            "ReturnDamage",
+            "Return Damage",
             "Cover",
             "Initiative",
-            "MoveHP-Up",
+            "Move-HPUp",
             "HPBonus",
             "StrBonus",
             "VitBonus",
@@ -6401,16 +6526,16 @@
             "Auto-Shell",
             "Auto-Reflect",
             "Auto-Haste",
-            "Auto-Potion",
+            "Auto Potion",
             "Expendx2-1",
             "Expendx3-1",
             "Ribbon",
-            "Alert(78)",
+            "Alert",
             "Move-Find",
             "Enc-Half",
             "Enc-None",
             "RareItem",
-            "SumMag+10%(83)",
+            "SumMag+10%",
             "SumMag+20%",
             "SumMag+30%",
             "SumMag+40%",
@@ -6419,12 +6544,12 @@
             "GFHP+30%",
             "GFHP+40%",
             "Boost",
-            "Haggle(92)",
+            "Haggle",
             "Sell-High",
             "Familiar",
             "CallShop",
             "JunkShop",
-            "TMag-RF",
+            "T Mag-RF",
             "IMag-RF",
             "FMag-RF",
             "LMag-RF",
@@ -6439,10 +6564,10 @@
             "ForbidMed-RF",
             "GFRecovMed-RF",
             "GFAblMed-RF",
-            "MidMag-RF",
+            "Mid Mag-RF",
             "HighMag-RF",
             "MedLVUp",
-            "CardMod"});
+            "Card Mod"});
             this.comboBoxCharsComm3.Location = new System.Drawing.Point(152, 84);
             this.comboBoxCharsComm3.Name = "comboBoxCharsComm3";
             this.comboBoxCharsComm3.Size = new System.Drawing.Size(142, 23);
@@ -6453,16 +6578,16 @@
             this.comboBoxCharsComm2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCharsComm2.FormattingEnabled = true;
             this.comboBoxCharsComm2.Items.AddRange(new object[] {
-            "-",
+            "None",
             "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
             "Elem-Atk-J",
             "ST-Atk-J",
             "Elem-Def-J",
@@ -6473,11 +6598,11 @@
             "ST-Def-Jx4",
             "Abilityx3",
             "Abilityx4",
-            "Magic(20)",
+            "Magic",
             "GF",
             "Draw",
             "Item",
-            "???",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -6492,7 +6617,7 @@
             "Kamikaze",
             "Devour",
             "MiniMog",
-            "HP+20%(39)",
+            "HP+20%",
             "HP+40%",
             "HP+80%",
             "Str+20%",
@@ -6514,10 +6639,10 @@
             "Mug",
             "MedData",
             "Counter",
-            "ReturnDamage",
+            "Return Damage",
             "Cover",
             "Initiative",
-            "MoveHP-Up",
+            "Move-HPUp",
             "HPBonus",
             "StrBonus",
             "VitBonus",
@@ -6527,16 +6652,16 @@
             "Auto-Shell",
             "Auto-Reflect",
             "Auto-Haste",
-            "Auto-Potion",
+            "Auto Potion",
             "Expendx2-1",
             "Expendx3-1",
             "Ribbon",
-            "Alert(78)",
+            "Alert",
             "Move-Find",
             "Enc-Half",
             "Enc-None",
             "RareItem",
-            "SumMag+10%(83)",
+            "SumMag+10%",
             "SumMag+20%",
             "SumMag+30%",
             "SumMag+40%",
@@ -6545,12 +6670,12 @@
             "GFHP+30%",
             "GFHP+40%",
             "Boost",
-            "Haggle(92)",
+            "Haggle",
             "Sell-High",
             "Familiar",
             "CallShop",
             "JunkShop",
-            "TMag-RF",
+            "T Mag-RF",
             "IMag-RF",
             "FMag-RF",
             "LMag-RF",
@@ -6565,10 +6690,10 @@
             "ForbidMed-RF",
             "GFRecovMed-RF",
             "GFAblMed-RF",
-            "MidMag-RF",
+            "Mid Mag-RF",
             "HighMag-RF",
             "MedLVUp",
-            "CardMod"});
+            "Card Mod"});
             this.comboBoxCharsComm2.Location = new System.Drawing.Point(152, 53);
             this.comboBoxCharsComm2.Name = "comboBoxCharsComm2";
             this.comboBoxCharsComm2.Size = new System.Drawing.Size(142, 23);
@@ -6579,16 +6704,16 @@
             this.comboBoxCharsComm1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCharsComm1.FormattingEnabled = true;
             this.comboBoxCharsComm1.Items.AddRange(new object[] {
-            "-",
+            "None",
             "HP-J",
-            "Str-J",
-            "Vit-J",
-            "Mag-J",
-            "Spr-J",
-            "Spd-J",
-            "Eva-J",
-            "Hit-J",
-            "Luck-J",
+            "STR-J",
+            "VIT-J",
+            "MAG-J",
+            "SPR-J",
+            "SPD-J",
+            "EVA-J",
+            "HIT-J",
+            "LUCK-J",
             "Elem-Atk-J",
             "ST-Atk-J",
             "Elem-Def-J",
@@ -6599,11 +6724,11 @@
             "ST-Def-Jx4",
             "Abilityx3",
             "Abilityx4",
-            "Magic(20)",
+            "Magic",
             "GF",
             "Draw",
             "Item",
-            "???",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -6618,7 +6743,7 @@
             "Kamikaze",
             "Devour",
             "MiniMog",
-            "HP+20%(39)",
+            "HP+20%",
             "HP+40%",
             "HP+80%",
             "Str+20%",
@@ -6640,10 +6765,10 @@
             "Mug",
             "MedData",
             "Counter",
-            "ReturnDamage",
+            "Return Damage",
             "Cover",
             "Initiative",
-            "MoveHP-Up",
+            "Move-HPUp",
             "HPBonus",
             "StrBonus",
             "VitBonus",
@@ -6653,16 +6778,16 @@
             "Auto-Shell",
             "Auto-Reflect",
             "Auto-Haste",
-            "Auto-Potion",
+            "Auto Potion",
             "Expendx2-1",
             "Expendx3-1",
             "Ribbon",
-            "Alert(78)",
+            "Alert",
             "Move-Find",
             "Enc-Half",
             "Enc-None",
             "RareItem",
-            "SumMag+10%(83)",
+            "SumMag+10%",
             "SumMag+20%",
             "SumMag+30%",
             "SumMag+40%",
@@ -6671,12 +6796,12 @@
             "GFHP+30%",
             "GFHP+40%",
             "Boost",
-            "Haggle(92)",
+            "Haggle",
             "Sell-High",
             "Familiar",
             "CallShop",
             "JunkShop",
-            "TMag-RF",
+            "T Mag-RF",
             "IMag-RF",
             "FMag-RF",
             "LMag-RF",
@@ -6691,10 +6816,10 @@
             "ForbidMed-RF",
             "GFRecovMed-RF",
             "GFAblMed-RF",
-            "MidMag-RF",
+            "Mid Mag-RF",
             "HighMag-RF",
             "MedLVUp",
-            "CardMod"});
+            "Card Mod"});
             this.comboBoxCharsComm1.Location = new System.Drawing.Point(152, 22);
             this.comboBoxCharsComm1.Name = "comboBoxCharsComm1";
             this.comboBoxCharsComm1.Size = new System.Drawing.Size(142, 23);
@@ -9227,12 +9352,19 @@
             this.checkBoxCharsGunBladeAuto.UseVisualStyleBackColor = true;
             this.checkBoxCharsGunBladeAuto.Visible = false;
             // 
-            // listViewCharactersList
+            // listViewExCharactersList
             // 
-            this.listViewCharactersList.AutoArrange = false;
-            this.listViewCharactersList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listViewCharactersList.HideSelection = false;
-            this.listViewCharactersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            this.listViewExCharactersList.AutoArrange = false;
+            this.listViewExCharactersList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listViewExCharactersList.HideSelection = false;
+            listViewItem2.IndentCount = 1;
+            listViewItem3.IndentCount = 2;
+            listViewItem4.IndentCount = 3;
+            listViewItem5.IndentCount = 4;
+            listViewItem6.IndentCount = 5;
+            listViewItem7.IndentCount = 6;
+            listViewItem8.IndentCount = 7;
+            this.listViewExCharactersList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2,
             listViewItem3,
@@ -9241,65 +9373,63 @@
             listViewItem6,
             listViewItem7,
             listViewItem8});
-            this.listViewCharactersList.LargeImageList = this.imageListChar;
-            this.listViewCharactersList.Location = new System.Drawing.Point(8, 3);
-            this.listViewCharactersList.MultiSelect = false;
-            this.listViewCharactersList.Name = "listViewCharactersList";
-            this.listViewCharactersList.Size = new System.Drawing.Size(642, 59);
-            this.listViewCharactersList.TabIndex = 1;
-            this.listViewCharactersList.TileSize = new System.Drawing.Size(40, 55);
-            this.listViewCharactersList.UseCompatibleStateImageBehavior = false;
-            this.listViewCharactersList.View = System.Windows.Forms.View.Tile;
-            this.listViewCharactersList.SelectedIndexChanged += new System.EventHandler(this.listViewCharactersList_SelectedIndexChanged);
+            this.listViewExCharactersList.LargeImageList = this.imageListChar;
+            this.listViewExCharactersList.Location = new System.Drawing.Point(8, 3);
+            this.listViewExCharactersList.MultiSelect = false;
+            this.listViewExCharactersList.Name = "listViewExCharactersList";
+            this.listViewExCharactersList.Scrollable = false;
+            this.listViewExCharactersList.Size = new System.Drawing.Size(642, 59);
+            this.listViewExCharactersList.TabIndex = 1;
+            this.listViewExCharactersList.TileSize = new System.Drawing.Size(38, 57);
+            this.listViewExCharactersList.UseCompatibleStateImageBehavior = false;
+            this.listViewExCharactersList.View = System.Windows.Forms.View.Tile;
+            this.listViewExCharactersList.SelectedIndexChanged += new System.EventHandler(this.listViewExCharactersList_SelectedIndexChanged);
             // 
             // imageListChar
             // 
-            this.imageListChar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListChar.ImageStream")));
+            this.imageListChar.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageListChar.ImageSize = new System.Drawing.Size(32, 48);
             this.imageListChar.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListChar.Images.SetKeyName(0, "char0.png");
-            this.imageListChar.Images.SetKeyName(1, "char1.png");
-            this.imageListChar.Images.SetKeyName(2, "char2.png");
-            this.imageListChar.Images.SetKeyName(3, "char3.png");
-            this.imageListChar.Images.SetKeyName(4, "char4.png");
-            this.imageListChar.Images.SetKeyName(5, "char5.png");
-            this.imageListChar.Images.SetKeyName(6, "char6.png");
-            this.imageListChar.Images.SetKeyName(7, "char7.png");
             // 
             // tabPageGf
             // 
             this.tabPageGf.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPageGf.Controls.Add(this.groupBoxGf);
-            this.tabPageGf.Controls.Add(this.listViewGfList);
+            this.tabPageGf.Controls.Add(this.listViewExGfList);
             this.tabPageGf.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageGf.Location = new System.Drawing.Point(4, 28);
             this.tabPageGf.Name = "tabPageGf";
             this.tabPageGf.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGf.Size = new System.Drawing.Size(658, 823);
+            this.tabPageGf.Size = new System.Drawing.Size(669, 823);
             this.tabPageGf.TabIndex = 1;
             this.tabPageGf.Text = "G-Forces";
             // 
             // groupBoxGf
             // 
             this.groupBoxGf.BackColor = System.Drawing.Color.White;
-            this.groupBoxGf.Controls.Add(this.tabControl1);
+            this.groupBoxGf.Controls.Add(this.numericUpDownGfExpLvUp);
+            this.groupBoxGf.Controls.Add(this.labelGfLevel);
+            this.groupBoxGf.Controls.Add(this.labelGfExpLvUp);
+            this.groupBoxGf.Controls.Add(this.panelGfLevel);
             this.groupBoxGf.Controls.Add(this.comboBoxGfLearningAbility);
             this.groupBoxGf.Controls.Add(this.hexUpDownGfUnknown);
             this.groupBoxGf.Controls.Add(this.numericUpDownGfKOs);
             this.groupBoxGf.Controls.Add(this.labelGfLearningAbility);
             this.groupBoxGf.Controls.Add(this.labelGfUnknown);
-            this.groupBoxGf.Controls.Add(this.labelGfKills);
             this.groupBoxGf.Controls.Add(this.labelGfKOs);
             this.groupBoxGf.Controls.Add(this.labelGfExp);
             this.groupBoxGf.Controls.Add(this.labelGfHp);
             this.groupBoxGf.Controls.Add(this.labelGfName);
             this.groupBoxGf.Controls.Add(this.textBoxGfName);
             this.groupBoxGf.Controls.Add(this.checkBoxGfAvailable);
-            this.groupBoxGf.Controls.Add(this.numericUpDownGfExp);
-            this.groupBoxGf.Controls.Add(this.numericUpDownGfKills);
             this.groupBoxGf.Controls.Add(this.numericUpDownGfHp);
-            this.groupBoxGf.Location = new System.Drawing.Point(8, 62);
+            this.groupBoxGf.Controls.Add(this.numericUpDownGfKills);
+            this.groupBoxGf.Controls.Add(this.labelGfKills);
+            this.groupBoxGf.Controls.Add(this.numericUpDownGfExp);
+            this.groupBoxGf.Controls.Add(this.tabControl1);
+            this.groupBoxGf.Location = new System.Drawing.Point(6, 62);
             this.groupBoxGf.Name = "groupBoxGf";
-            this.groupBoxGf.Size = new System.Drawing.Size(642, 748);
+            this.groupBoxGf.Size = new System.Drawing.Size(657, 748);
             this.groupBoxGf.TabIndex = 4;
             this.groupBoxGf.TabStop = false;
             // 
@@ -9307,10 +9437,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPageGfAp);
-            this.tabControl1.Location = new System.Drawing.Point(5, 152);
+            this.tabControl1.Location = new System.Drawing.Point(9, 152);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(633, 590);
+            this.tabControl1.Size = new System.Drawing.Size(639, 590);
             this.tabControl1.TabIndex = 9;
             // 
             // tabPage1
@@ -9439,7 +9569,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(625, 562);
+            this.tabPage1.Size = new System.Drawing.Size(631, 562);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Learned Abilities";
             // 
@@ -10933,7 +11063,7 @@
             this.tabPageGfAp.Location = new System.Drawing.Point(4, 24);
             this.tabPageGfAp.Name = "tabPageGfAp";
             this.tabPageGfAp.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGfAp.Size = new System.Drawing.Size(625, 562);
+            this.tabPageGfAp.Size = new System.Drawing.Size(631, 562);
             this.tabPageGfAp.TabIndex = 1;
             this.tabPageGfAp.Text = "AP";
             // 
@@ -11495,7 +11625,7 @@
             "GF",
             "Draw",
             "Item",
-            "Empty*",
+            "Empty",
             "Card",
             "Doom",
             "MadRush",
@@ -11587,15 +11717,28 @@
             "HighMag-RF",
             "MedLVUp",
             "Card Mod"});
-            this.comboBoxGfLearningAbility.Location = new System.Drawing.Point(446, 25);
+            this.comboBoxGfLearningAbility.Location = new System.Drawing.Point(454, 23);
             this.comboBoxGfLearningAbility.Name = "comboBoxGfLearningAbility";
             this.comboBoxGfLearningAbility.Size = new System.Drawing.Size(185, 21);
             this.comboBoxGfLearningAbility.TabIndex = 8;
             // 
+            // hexUpDownGfUnknown
+            // 
+            this.hexUpDownGfUnknown.Hexadecimal = true;
+            this.hexUpDownGfUnknown.Location = new System.Drawing.Point(419, 145);
+            this.hexUpDownGfUnknown.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.hexUpDownGfUnknown.Name = "hexUpDownGfUnknown";
+            this.hexUpDownGfUnknown.Size = new System.Drawing.Size(220, 23);
+            this.hexUpDownGfUnknown.TabIndex = 7;
+            // 
             // numericUpDownGfKOs
             // 
             this.numericUpDownGfKOs.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfKOs.Location = new System.Drawing.Point(75, 116);
+            this.numericUpDownGfKOs.Location = new System.Drawing.Point(419, 83);
             this.numericUpDownGfKOs.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -11609,7 +11752,7 @@
             // 
             this.labelGfLearningAbility.AutoSize = true;
             this.labelGfLearningAbility.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelGfLearningAbility.Location = new System.Drawing.Point(345, 28);
+            this.labelGfLearningAbility.Location = new System.Drawing.Point(353, 26);
             this.labelGfLearningAbility.Margin = new System.Windows.Forms.Padding(8);
             this.labelGfLearningAbility.Name = "labelGfLearningAbility";
             this.labelGfLearningAbility.Size = new System.Drawing.Size(90, 13);
@@ -11620,7 +11763,7 @@
             // 
             this.labelGfUnknown.AutoSize = true;
             this.labelGfUnknown.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelGfUnknown.Location = new System.Drawing.Point(345, 119);
+            this.labelGfUnknown.Location = new System.Drawing.Point(353, 150);
             this.labelGfUnknown.Margin = new System.Windows.Forms.Padding(8);
             this.labelGfUnknown.Name = "labelGfUnknown";
             this.labelGfUnknown.Size = new System.Drawing.Size(61, 13);
@@ -11631,7 +11774,7 @@
             // 
             this.labelGfKills.AutoSize = true;
             this.labelGfKills.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelGfKills.Location = new System.Drawing.Point(345, 88);
+            this.labelGfKills.Location = new System.Drawing.Point(17, 86);
             this.labelGfKills.Margin = new System.Windows.Forms.Padding(8);
             this.labelGfKills.Name = "labelGfKills";
             this.labelGfKills.Size = new System.Drawing.Size(30, 13);
@@ -11642,7 +11785,7 @@
             // 
             this.labelGfKOs.AutoSize = true;
             this.labelGfKOs.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelGfKOs.Location = new System.Drawing.Point(9, 119);
+            this.labelGfKOs.Location = new System.Drawing.Point(353, 86);
             this.labelGfKOs.Margin = new System.Windows.Forms.Padding(8);
             this.labelGfKOs.Name = "labelGfKOs";
             this.labelGfKOs.Size = new System.Drawing.Size(30, 13);
@@ -11653,7 +11796,7 @@
             // 
             this.labelGfExp.AutoSize = true;
             this.labelGfExp.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelGfExp.Location = new System.Drawing.Point(9, 88);
+            this.labelGfExp.Location = new System.Drawing.Point(17, 117);
             this.labelGfExp.Margin = new System.Windows.Forms.Padding(8);
             this.labelGfExp.Name = "labelGfExp";
             this.labelGfExp.Size = new System.Drawing.Size(28, 13);
@@ -11664,7 +11807,7 @@
             // 
             this.labelGfHp.AutoSize = true;
             this.labelGfHp.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelGfHp.Location = new System.Drawing.Point(345, 57);
+            this.labelGfHp.Location = new System.Drawing.Point(353, 55);
             this.labelGfHp.Margin = new System.Windows.Forms.Padding(8);
             this.labelGfHp.Name = "labelGfHp";
             this.labelGfHp.Size = new System.Drawing.Size(24, 13);
@@ -11675,7 +11818,7 @@
             // 
             this.labelGfName.AutoSize = true;
             this.labelGfName.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelGfName.Location = new System.Drawing.Point(9, 57);
+            this.labelGfName.Location = new System.Drawing.Point(17, 55);
             this.labelGfName.Margin = new System.Windows.Forms.Padding(8);
             this.labelGfName.Name = "labelGfName";
             this.labelGfName.Size = new System.Drawing.Size(39, 13);
@@ -11685,7 +11828,7 @@
             // textBoxGfName
             // 
             this.textBoxGfName.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGfName.Location = new System.Drawing.Point(75, 54);
+            this.textBoxGfName.Location = new System.Drawing.Point(83, 52);
             this.textBoxGfName.MaxLength = 12;
             this.textBoxGfName.Name = "textBoxGfName";
             this.textBoxGfName.Size = new System.Drawing.Size(220, 23);
@@ -11705,7 +11848,7 @@
             // numericUpDownGfExp
             // 
             this.numericUpDownGfExp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfExp.Location = new System.Drawing.Point(75, 85);
+            this.numericUpDownGfExp.Location = new System.Drawing.Point(83, 83);
             this.numericUpDownGfExp.Maximum = new decimal(new int[] {
             -1,
             0,
@@ -11718,7 +11861,7 @@
             // numericUpDownGfKills
             // 
             this.numericUpDownGfKills.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfKills.Location = new System.Drawing.Point(411, 85);
+            this.numericUpDownGfKills.Location = new System.Drawing.Point(83, 114);
             this.numericUpDownGfKills.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -11731,7 +11874,7 @@
             // numericUpDownGfHp
             // 
             this.numericUpDownGfHp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numericUpDownGfHp.Location = new System.Drawing.Point(411, 54);
+            this.numericUpDownGfHp.Location = new System.Drawing.Point(419, 52);
             this.numericUpDownGfHp.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -11741,13 +11884,13 @@
             this.numericUpDownGfHp.Size = new System.Drawing.Size(220, 23);
             this.numericUpDownGfHp.TabIndex = 6;
             // 
-            // listViewGfList
+            // listViewExGfList
             // 
-            this.listViewGfList.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listViewGfList.AutoArrange = false;
-            this.listViewGfList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listViewGfList.HideSelection = false;
-            this.listViewGfList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            this.listViewExGfList.AutoArrange = false;
+            this.listViewExGfList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listViewExGfList.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.listViewExGfList.HideSelection = false;
+            this.listViewExGfList.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem9,
             listViewItem10,
             listViewItem11,
@@ -11763,40 +11906,26 @@
             listViewItem21,
             listViewItem22,
             listViewItem23,
-            listViewItem24});
-            this.listViewGfList.LargeImageList = this.imageListGfBig;
-            this.listViewGfList.Location = new System.Drawing.Point(8, 3);
-            this.listViewGfList.MultiSelect = false;
-            this.listViewGfList.Name = "listViewGfList";
-            this.listViewGfList.Size = new System.Drawing.Size(642, 59);
-            this.listViewGfList.SmallImageList = this.imageListGfSmall;
-            this.listViewGfList.TabIndex = 2;
-            this.listViewGfList.TileSize = new System.Drawing.Size(40, 55);
-            this.listViewGfList.UseCompatibleStateImageBehavior = false;
-            this.listViewGfList.View = System.Windows.Forms.View.Tile;
-            this.listViewGfList.SelectedIndexChanged += new System.EventHandler(this.listViewGfList_SelectedIndexChanged);
+            listViewItem24,
+            listViewItem25});
+            this.listViewExGfList.LargeImageList = this.imageListGfBig;
+            this.listViewExGfList.Location = new System.Drawing.Point(8, 3);
+            this.listViewExGfList.MultiSelect = false;
+            this.listViewExGfList.Name = "listViewExGfList";
+            this.listViewExGfList.Scrollable = false;
+            this.listViewExGfList.Size = new System.Drawing.Size(652, 59);
+            this.listViewExGfList.SmallImageList = this.imageListGfSmall;
+            this.listViewExGfList.TabIndex = 7;
+            this.listViewExGfList.TileSize = new System.Drawing.Size(38, 57);
+            this.listViewExGfList.UseCompatibleStateImageBehavior = false;
+            this.listViewExGfList.View = System.Windows.Forms.View.Tile;
+            this.listViewExGfList.SelectedIndexChanged += new System.EventHandler(this.listViewExGfList_SelectedIndexChanged);
             // 
             // imageListGfBig
             // 
-            this.imageListGfBig.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListGfBig.ImageStream")));
+            this.imageListGfBig.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageListGfBig.ImageSize = new System.Drawing.Size(32, 48);
             this.imageListGfBig.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListGfBig.Images.SetKeyName(0, "gf0.png");
-            this.imageListGfBig.Images.SetKeyName(1, "gf1.png");
-            this.imageListGfBig.Images.SetKeyName(2, "gf2.png");
-            this.imageListGfBig.Images.SetKeyName(3, "gf3.png");
-            this.imageListGfBig.Images.SetKeyName(4, "gf4.png");
-            this.imageListGfBig.Images.SetKeyName(5, "gf5.png");
-            this.imageListGfBig.Images.SetKeyName(6, "gf6.png");
-            this.imageListGfBig.Images.SetKeyName(7, "gf7.png");
-            this.imageListGfBig.Images.SetKeyName(8, "gf8.png");
-            this.imageListGfBig.Images.SetKeyName(9, "gf9.png");
-            this.imageListGfBig.Images.SetKeyName(10, "gf10.png");
-            this.imageListGfBig.Images.SetKeyName(11, "gf11.png");
-            this.imageListGfBig.Images.SetKeyName(12, "gf12.png");
-            this.imageListGfBig.Images.SetKeyName(13, "gf13.png");
-            this.imageListGfBig.Images.SetKeyName(14, "gf14.png");
-            this.imageListGfBig.Images.SetKeyName(15, "gf15.png");
-            this.imageListGfBig.Images.SetKeyName(16, "gf16.png");
             // 
             // tabPageMisc
             // 
@@ -11808,7 +11937,7 @@
             this.tabPageMisc.Location = new System.Drawing.Point(4, 28);
             this.tabPageMisc.Name = "tabPageMisc";
             this.tabPageMisc.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMisc.Size = new System.Drawing.Size(658, 823);
+            this.tabPageMisc.Size = new System.Drawing.Size(669, 823);
             this.tabPageMisc.TabIndex = 2;
             this.tabPageMisc.Text = "Misc";
             // 
@@ -11910,84 +12039,72 @@
             this.buttonSaveAs.UseVisualStyleBackColor = true;
             this.buttonSaveAs.Click += new System.EventHandler(this.buttonSaveAs_Click);
             // 
-            // hexUpDownCharUnk5
+            // numericUpDownGfExpLvUp
             // 
-            this.hexUpDownCharUnk5.Hexadecimal = true;
-            this.hexUpDownCharUnk5.Location = new System.Drawing.Point(486, 22);
-            this.hexUpDownCharUnk5.Maximum = new decimal(new int[] {
-            255,
+            this.numericUpDownGfExpLvUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownGfExpLvUp.Location = new System.Drawing.Point(419, 114);
+            this.numericUpDownGfExpLvUp.Maximum = new decimal(new int[] {
+            1316134911,
+            2328,
+            0,
+            0});
+            this.numericUpDownGfExpLvUp.Name = "numericUpDownGfExpLvUp";
+            this.numericUpDownGfExpLvUp.Size = new System.Drawing.Size(102, 23);
+            this.numericUpDownGfExpLvUp.TabIndex = 30;
+            this.numericUpDownGfExpLvUp.Value = new decimal(new int[] {
+            1000,
             0,
             0,
             0});
-            this.hexUpDownCharUnk5.Name = "hexUpDownCharUnk5";
-            this.hexUpDownCharUnk5.Size = new System.Drawing.Size(45, 23);
-            this.hexUpDownCharUnk5.TabIndex = 21;
             // 
-            // hexUpDownCharUnk2
+            // labelGfLevel
             // 
-            this.hexUpDownCharUnk2.Hexadecimal = true;
-            this.hexUpDownCharUnk2.Location = new System.Drawing.Point(107, 22);
-            this.hexUpDownCharUnk2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.hexUpDownCharUnk2.Name = "hexUpDownCharUnk2";
-            this.hexUpDownCharUnk2.Size = new System.Drawing.Size(45, 23);
-            this.hexUpDownCharUnk2.TabIndex = 21;
+            this.labelGfLevel.AutoSize = true;
+            this.labelGfLevel.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelGfLevel.Location = new System.Drawing.Point(562, 119);
+            this.labelGfLevel.Margin = new System.Windows.Forms.Padding(8);
+            this.labelGfLevel.Name = "labelGfLevel";
+            this.labelGfLevel.Size = new System.Drawing.Size(35, 13);
+            this.labelGfLevel.TabIndex = 28;
+            this.labelGfLevel.Text = "Level:";
             // 
-            // hexUpDownCharUnk4
+            // labelGfExpLvUp
             // 
-            this.hexUpDownCharUnk4.Hexadecimal = true;
-            this.hexUpDownCharUnk4.Location = new System.Drawing.Point(361, 22);
-            this.hexUpDownCharUnk4.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.hexUpDownCharUnk4.Name = "hexUpDownCharUnk4";
-            this.hexUpDownCharUnk4.Size = new System.Drawing.Size(45, 23);
-            this.hexUpDownCharUnk4.TabIndex = 21;
+            this.labelGfExpLvUp.AutoSize = true;
+            this.labelGfExpLvUp.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelGfExpLvUp.Location = new System.Drawing.Point(353, 119);
+            this.labelGfExpLvUp.Margin = new System.Windows.Forms.Padding(8);
+            this.labelGfExpLvUp.Name = "labelGfExpLvUp";
+            this.labelGfExpLvUp.Size = new System.Drawing.Size(60, 13);
+            this.labelGfExpLvUp.TabIndex = 29;
+            this.labelGfExpLvUp.Text = "EXP LV Up:";
             // 
-            // hexUpDownCharUnk3
+            // panelGfLevel
             // 
-            this.hexUpDownCharUnk3.Hexadecimal = true;
-            this.hexUpDownCharUnk3.Location = new System.Drawing.Point(232, 22);
-            this.hexUpDownCharUnk3.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.hexUpDownCharUnk3.Name = "hexUpDownCharUnk3";
-            this.hexUpDownCharUnk3.Size = new System.Drawing.Size(45, 23);
-            this.hexUpDownCharUnk3.TabIndex = 21;
+            this.panelGfLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelGfLevel.Controls.Add(this.labelGfLevelValue);
+            this.panelGfLevel.Location = new System.Drawing.Point(608, 114);
+            this.panelGfLevel.Name = "panelGfLevel";
+            this.panelGfLevel.Size = new System.Drawing.Size(31, 23);
+            this.panelGfLevel.TabIndex = 31;
             // 
-            // hexUpDownCharUnk1
+            // labelGfLevelValue
             // 
-            this.hexUpDownCharUnk1.Hexadecimal = true;
-            this.hexUpDownCharUnk1.Location = new System.Drawing.Point(152, 115);
-            this.hexUpDownCharUnk1.Name = "hexUpDownCharUnk1";
-            this.hexUpDownCharUnk1.Size = new System.Drawing.Size(142, 23);
-            this.hexUpDownCharUnk1.TabIndex = 1;
-            // 
-            // hexUpDownGfUnknown
-            // 
-            this.hexUpDownGfUnknown.Hexadecimal = true;
-            this.hexUpDownGfUnknown.Location = new System.Drawing.Point(411, 114);
-            this.hexUpDownGfUnknown.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.hexUpDownGfUnknown.Name = "hexUpDownGfUnknown";
-            this.hexUpDownGfUnknown.Size = new System.Drawing.Size(220, 23);
-            this.hexUpDownGfUnknown.TabIndex = 7;
+            this.labelGfLevelValue.AutoSize = true;
+            this.labelGfLevelValue.Font = new System.Drawing.Font("Arial", 9F);
+            this.labelGfLevelValue.Location = new System.Drawing.Point(0, 3);
+            this.labelGfLevelValue.Margin = new System.Windows.Forms.Padding(0);
+            this.labelGfLevelValue.Name = "labelGfLevelValue";
+            this.labelGfLevelValue.Size = new System.Drawing.Size(14, 15);
+            this.labelGfLevelValue.TabIndex = 26;
+            this.labelGfLevelValue.Text = "1";
+            this.labelGfLevelValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 913);
+            this.ClientSize = new System.Drawing.Size(670, 913);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.buttonSaveAs);
@@ -12019,6 +12136,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsHpBonus)).EndInit();
             this.groupBoxCharsUnknown.ResumeLayout(false);
             this.groupBoxCharsUnknown.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk3)).EndInit();
             this.groupBoxCharStatus.ResumeLayout(false);
             this.groupBoxCharStatus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsKOs)).EndInit();
@@ -12030,23 +12151,27 @@
             this.panelCharsLevel.PerformLayout();
             this.tabPageChars2.ResumeLayout(false);
             this.tabPageChars2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsAllGfComp)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp13)).EndInit();
+            this.tableLayoutPanelCharsGf1.ResumeLayout(false);
+            this.tableLayoutPanelCharsGf1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfComp5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsAllGfComp)).EndInit();
             this.tabPageChars3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCharsMagicQ32)).EndInit();
@@ -12150,6 +12275,7 @@
             this.groupBoxCharsAbilities.PerformLayout();
             this.groupBoxCharsCommands.ResumeLayout(false);
             this.groupBoxCharsCommands.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk1)).EndInit();
             this.tabPageChars5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -12200,6 +12326,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfAp6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfAp16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfAp4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownGfUnknown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKOs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKills)).EndInit();
@@ -12208,12 +12335,9 @@
             this.tabPageMisc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownCharUnk1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hexUpDownGfUnknown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExpLvUp)).EndInit();
+            this.panelGfLevel.ResumeLayout(false);
+            this.panelGfLevel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -12230,8 +12354,6 @@
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPageCharacters;
         private System.Windows.Forms.TabPage tabPageGf;
-        private System.Windows.Forms.ListView listViewCharactersList;
-        private System.Windows.Forms.ListView listViewGfList;
         private System.Windows.Forms.GroupBox groupBoxGf;
         private System.Windows.Forms.Label labelGfName;
         private System.Windows.Forms.TextBox textBoxGfName;
@@ -12510,9 +12632,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownGfComp5;
         private System.Windows.Forms.NumericUpDown numericUpDownGfComp9;
         private System.Windows.Forms.NumericUpDown numericUpDownGfComp1;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ImageList imageListChar;
         private System.Windows.Forms.Button buttonOpen;
         private System.Windows.Forms.Button buttonSaveAs;
@@ -12790,6 +12910,17 @@
         private System.Windows.Forms.CheckBox checkBoxCharsGfAll;
         private System.Windows.Forms.NumericUpDown numericUpDownCharsAllGfComp;
         private System.Windows.Forms.Button buttonCharsGfApply;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCharsGf1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private ListViewEx listViewExCharactersList;
+        private ListViewEx listViewExGfList;
+        private System.Windows.Forms.NumericUpDown numericUpDownGfExpLvUp;
+        private System.Windows.Forms.Label labelGfLevel;
+        private System.Windows.Forms.Label labelGfExpLvUp;
+        private System.Windows.Forms.Panel panelGfLevel;
+        private System.Windows.Forms.Label labelGfLevelValue;
     }
 }
 
