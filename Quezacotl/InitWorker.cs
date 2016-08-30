@@ -16,11 +16,22 @@ namespace Quezacotl
         public static int CharacterDataOffset = -1;
         public static int OffsetToCharacterSelected = -1;
 
+        public static int ShopsDataOffset = -1;
+        public static int OffsetToShopsSelected = -1;
+
+        public static int ConfigDataOffset = -1;
+        public static int OffsetToConfigSelected = -1;
+
         public static int MiscDataOffset = -1;
         public static int OffsetToMiscSelected = -1;
 
+        public static int ItemsDataOffset = -1;
+        public static int OffsetToItemsSelected = -1;
+
         public static GfData GetSelectedGfData;
         public static CharactersData GetSelectedCharactersData;
+        public static MiscData GetSelectedMiscData;
+        public static ItemsData GetSelectedItemsData;
 
 
         public struct GfData
@@ -209,8 +220,431 @@ namespace Quezacotl
 
         public struct MiscData
         {
-
+            public byte PartyMem1;
+            public byte PartyMem2;
+            public byte PartyMem3;
+            public UInt32 KnownWeapons;
+            public string GrieverName;
+            public UInt32 Gil;
+            public UInt32 GilLaguna;
+            public byte limitQuistis1;
+            public byte limitQuistis2;
+            public byte limitZell1;
+            public byte limitZell2;
+            public byte limitIrvine;
+            public byte limitSelphie;
+            public byte limitAngeloCompleted;
+            public byte limitAngeloKnown;
+            public byte limitAngeloPoints1;
+            public byte limitAngeloPoints2;
+            public byte limitAngeloPoints3;
+            public byte limitAngeloPoints4;
+            public byte limitAngeloPoints5;
+            public byte limitAngeloPoints6;
+            public byte limitAngeloPoints7;
+            public byte limitAngeloPoints8;
         }
+
+        public struct ItemsData
+        {
+            public byte Item1;
+            public byte Item2;
+            public byte Item3;
+            public byte Item4;
+            public byte Item5;
+            public byte Item6;
+            public byte Item7;
+            public byte Item8;
+            public byte Item9;
+            public byte Item10;
+            public byte Item11;
+            public byte Item12;
+            public byte Item13;
+            public byte Item14;
+            public byte Item15;
+            public byte Item16;
+            public byte Item17;
+            public byte Item18;
+            public byte Item19;
+            public byte Item20;
+            public byte Item21;
+            public byte Item22;
+            public byte Item23;
+            public byte Item24;
+            public byte Item25;
+            public byte Item26;
+            public byte Item27;
+            public byte Item28;
+            public byte Item29;
+            public byte Item30;
+            public byte Item31;
+            public byte Item32;
+            public byte Item33;
+            public byte Item34;
+            public byte Item35;
+            public byte Item36;
+            public byte Item37;
+            public byte Item38;
+            public byte Item39;
+            public byte Item40;
+            public byte Item41;
+            public byte Item42;
+            public byte Item43;
+            public byte Item44;
+            public byte Item45;
+            public byte Item46;
+            public byte Item47;
+            public byte Item48;
+            public byte Item49;
+            public byte Item50;
+            public byte Item51;
+            public byte Item52;
+            public byte Item53;
+            public byte Item54;
+            public byte Item55;
+            public byte Item56;
+            public byte Item57;
+            public byte Item58;
+            public byte Item59;
+            public byte Item60;
+            public byte Item61;
+            public byte Item62;
+            public byte Item63;
+            public byte Item64;
+            public byte Item65;
+            public byte Item66;
+            public byte Item67;
+            public byte Item68;
+            public byte Item69;
+            public byte Item70;
+            public byte Item71;
+            public byte Item72;
+            public byte Item73;
+            public byte Item74;
+            public byte Item75;
+            public byte Item76;
+            public byte Item77;
+            public byte Item78;
+            public byte Item79;
+            public byte Item80;
+            public byte Item81;
+            public byte Item82;
+            public byte Item83;
+            public byte Item84;
+            public byte Item85;
+            public byte Item86;
+            public byte Item87;
+            public byte Item88;
+            public byte Item89;
+            public byte Item90;
+            public byte Item91;
+            public byte Item92;
+            public byte Item93;
+            public byte Item94;
+            public byte Item95;
+            public byte Item96;
+            public byte Item97;
+            public byte Item98;
+            public byte Item99;
+            public byte Item100;
+            public byte Item101;
+            public byte Item102;
+            public byte Item103;
+            public byte Item104;
+            public byte Item105;
+            public byte Item106;
+            public byte Item107;
+            public byte Item108;
+            public byte Item109;
+            public byte Item110;
+            public byte Item111;
+            public byte Item112;
+            public byte Item113;
+            public byte Item114;
+            public byte Item115;
+            public byte Item116;
+            public byte Item117;
+            public byte Item118;
+            public byte Item119;
+            public byte Item120;
+            public byte Item121;
+            public byte Item122;
+            public byte Item123;
+            public byte Item124;
+            public byte Item125;
+            public byte Item126;
+            public byte Item127;
+            public byte Item128;
+            public byte Item129;
+            public byte Item130;
+            public byte Item131;
+            public byte Item132;
+            public byte Item133;
+            public byte Item134;
+            public byte Item135;
+            public byte Item136;
+            public byte Item137;
+            public byte Item138;
+            public byte Item139;
+            public byte Item140;
+            public byte Item141;
+            public byte Item142;
+            public byte Item143;
+            public byte Item144;
+            public byte Item145;
+            public byte Item146;
+            public byte Item147;
+            public byte Item148;
+            public byte Item149;
+            public byte Item150;
+            public byte Item151;
+            public byte Item152;
+            public byte Item153;
+            public byte Item154;
+            public byte Item155;
+            public byte Item156;
+            public byte Item157;
+            public byte Item158;
+            public byte Item159;
+            public byte Item160;
+            public byte Item161;
+            public byte Item162;
+            public byte Item163;
+            public byte Item164;
+            public byte Item165;
+            public byte Item166;
+            public byte Item167;
+            public byte Item168;
+            public byte Item169;
+            public byte Item170;
+            public byte Item171;
+            public byte Item172;
+            public byte Item173;
+            public byte Item174;
+            public byte Item175;
+            public byte Item176;
+            public byte Item177;
+            public byte Item178;
+            public byte Item179;
+            public byte Item180;
+            public byte Item181;
+            public byte Item182;
+            public byte Item183;
+            public byte Item184;
+            public byte Item185;
+            public byte Item186;
+            public byte Item187;
+            public byte Item188;
+            public byte Item189;
+            public byte Item190;
+            public byte Item191;
+            public byte Item192;
+            public byte Item193;
+            public byte Item194;
+            public byte Item195;
+            public byte Item196;
+            public byte Item197;
+            public byte Item198;
+            public byte Item1Quantity;
+            public byte Item2Quantity;
+            public byte Item3Quantity;
+            public byte Item4Quantity;
+            public byte Item5Quantity;
+            public byte Item6Quantity;
+            public byte Item7Quantity;
+            public byte Item8Quantity;
+            public byte Item9Quantity;
+            public byte Item10Quantity;
+            public byte Item11Quantity;
+            public byte Item12Quantity;
+            public byte Item13Quantity;
+            public byte Item14Quantity;
+            public byte Item15Quantity;
+            public byte Item16Quantity;
+            public byte Item17Quantity;
+            public byte Item18Quantity;
+            public byte Item19Quantity;
+            public byte Item20Quantity;
+            public byte Item21Quantity;
+            public byte Item22Quantity;
+            public byte Item23Quantity;
+            public byte Item24Quantity;
+            public byte Item25Quantity;
+            public byte Item26Quantity;
+            public byte Item27Quantity;
+            public byte Item28Quantity;
+            public byte Item29Quantity;
+            public byte Item30Quantity;
+            public byte Item31Quantity;
+            public byte Item32Quantity;
+            public byte Item33Quantity;
+            public byte Item34Quantity;
+            public byte Item35Quantity;
+            public byte Item36Quantity;
+            public byte Item37Quantity;
+            public byte Item38Quantity;
+            public byte Item39Quantity;
+            public byte Item40Quantity;
+            public byte Item41Quantity;
+            public byte Item42Quantity;
+            public byte Item43Quantity;
+            public byte Item44Quantity;
+            public byte Item45Quantity;
+            public byte Item46Quantity;
+            public byte Item47Quantity;
+            public byte Item48Quantity;
+            public byte Item49Quantity;
+            public byte Item50Quantity;
+            public byte Item51Quantity;
+            public byte Item52Quantity;
+            public byte Item53Quantity;
+            public byte Item54Quantity;
+            public byte Item55Quantity;
+            public byte Item56Quantity;
+            public byte Item57Quantity;
+            public byte Item58Quantity;
+            public byte Item59Quantity;
+            public byte Item60Quantity;
+            public byte Item61Quantity;
+            public byte Item62Quantity;
+            public byte Item63Quantity;
+            public byte Item64Quantity;
+            public byte Item65Quantity;
+            public byte Item66Quantity;
+            public byte Item67Quantity;
+            public byte Item68Quantity;
+            public byte Item69Quantity;
+            public byte Item70Quantity;
+            public byte Item71Quantity;
+            public byte Item72Quantity;
+            public byte Item73Quantity;
+            public byte Item74Quantity;
+            public byte Item75Quantity;
+            public byte Item76Quantity;
+            public byte Item77Quantity;
+            public byte Item78Quantity;
+            public byte Item79Quantity;
+            public byte Item80Quantity;
+            public byte Item81Quantity;
+            public byte Item82Quantity;
+            public byte Item83Quantity;
+            public byte Item84Quantity;
+            public byte Item85Quantity;
+            public byte Item86Quantity;
+            public byte Item87Quantity;
+            public byte Item88Quantity;
+            public byte Item89Quantity;
+            public byte Item90Quantity;
+            public byte Item91Quantity;
+            public byte Item92Quantity;
+            public byte Item93Quantity;
+            public byte Item94Quantity;
+            public byte Item95Quantity;
+            public byte Item96Quantity;
+            public byte Item97Quantity;
+            public byte Item98Quantity;
+            public byte Item99Quantity;
+            public byte Item100Quantity;
+            public byte Item101Quantity;
+            public byte Item102Quantity;
+            public byte Item103Quantity;
+            public byte Item104Quantity;
+            public byte Item105Quantity;
+            public byte Item106Quantity;
+            public byte Item107Quantity;
+            public byte Item108Quantity;
+            public byte Item109Quantity;
+            public byte Item110Quantity;
+            public byte Item111Quantity;
+            public byte Item112Quantity;
+            public byte Item113Quantity;
+            public byte Item114Quantity;
+            public byte Item115Quantity;
+            public byte Item116Quantity;
+            public byte Item117Quantity;
+            public byte Item118Quantity;
+            public byte Item119Quantity;
+            public byte Item120Quantity;
+            public byte Item121Quantity;
+            public byte Item122Quantity;
+            public byte Item123Quantity;
+            public byte Item124Quantity;
+            public byte Item125Quantity;
+            public byte Item126Quantity;
+            public byte Item127Quantity;
+            public byte Item128Quantity;
+            public byte Item129Quantity;
+            public byte Item130Quantity;
+            public byte Item131Quantity;
+            public byte Item132Quantity;
+            public byte Item133Quantity;
+            public byte Item134Quantity;
+            public byte Item135Quantity;
+            public byte Item136Quantity;
+            public byte Item137Quantity;
+            public byte Item138Quantity;
+            public byte Item139Quantity;
+            public byte Item140Quantity;
+            public byte Item141Quantity;
+            public byte Item142Quantity;
+            public byte Item143Quantity;
+            public byte Item144Quantity;
+            public byte Item145Quantity;
+            public byte Item146Quantity;
+            public byte Item147Quantity;
+            public byte Item148Quantity;
+            public byte Item149Quantity;
+            public byte Item150Quantity;
+            public byte Item151Quantity;
+            public byte Item152Quantity;
+            public byte Item153Quantity;
+            public byte Item154Quantity;
+            public byte Item155Quantity;
+            public byte Item156Quantity;
+            public byte Item157Quantity;
+            public byte Item158Quantity;
+            public byte Item159Quantity;
+            public byte Item160Quantity;
+            public byte Item161Quantity;
+            public byte Item162Quantity;
+            public byte Item163Quantity;
+            public byte Item164Quantity;
+            public byte Item165Quantity;
+            public byte Item166Quantity;
+            public byte Item167Quantity;
+            public byte Item168Quantity;
+            public byte Item169Quantity;
+            public byte Item170Quantity;
+            public byte Item171Quantity;
+            public byte Item172Quantity;
+            public byte Item173Quantity;
+            public byte Item174Quantity;
+            public byte Item175Quantity;
+            public byte Item176Quantity;
+            public byte Item177Quantity;
+            public byte Item178Quantity;
+            public byte Item179Quantity;
+            public byte Item180Quantity;
+            public byte Item181Quantity;
+            public byte Item182Quantity;
+            public byte Item183Quantity;
+            public byte Item184Quantity;
+            public byte Item185Quantity;
+            public byte Item186Quantity;
+            public byte Item187Quantity;
+            public byte Item188Quantity;
+            public byte Item189Quantity;
+            public byte Item190Quantity;
+            public byte Item191Quantity;
+            public byte Item192Quantity;
+            public byte Item193Quantity;
+            public byte Item194Quantity;
+            public byte Item195Quantity;
+            public byte Item196Quantity;
+            public byte Item197Quantity;
+            public byte Item198Quantity;
+        }
+
         #endregion
 
 
@@ -951,6 +1385,1211 @@ namespace Quezacotl
         #endregion
 
 
+        #region Write Items Variables
+
+        public static void UpdateVariable_Items(int index, object variable)
+        {
+            if (!Form1._loaded || Init == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Init[OffsetToItemsSelected + 0] = Convert.ToByte(variable); //Item 1
+                    return;
+                case 1:
+                    Init[OffsetToItemsSelected + 1] = Convert.ToByte(variable); //Item 1 Quantity
+                    return;
+                case 2:
+                    Init[OffsetToItemsSelected + 2] = Convert.ToByte(variable); //Item 2
+                    return;
+                case 3:
+                    Init[OffsetToItemsSelected + 3] = Convert.ToByte(variable); //Item 2 Quantity
+                    return;
+                case 4:
+                    Init[OffsetToItemsSelected + 4] = Convert.ToByte(variable); //Item 3
+                    return;
+                case 5:
+                    Init[OffsetToItemsSelected + 5] = Convert.ToByte(variable); //Item 3 Quantity
+                    return;
+                case 6:
+                    Init[OffsetToItemsSelected + 6] = Convert.ToByte(variable); //Item 4
+                    return;
+                case 7:
+                    Init[OffsetToItemsSelected + 7] = Convert.ToByte(variable); //Item 4 Quantity
+                    return;
+                case 8:
+                    Init[OffsetToItemsSelected + 8] = Convert.ToByte(variable); //Item 5
+                    return;
+                case 9:
+                    Init[OffsetToItemsSelected + 9] = Convert.ToByte(variable); //Item 5 Quantity
+                    return;
+                case 10:
+                    Init[OffsetToItemsSelected + 10] = Convert.ToByte(variable); //Item 6
+                    return;
+                case 11:
+                    Init[OffsetToItemsSelected + 11] = Convert.ToByte(variable); //Item 6 Quantity
+                    return;
+                case 12:
+                    Init[OffsetToItemsSelected + 12] = Convert.ToByte(variable); //Item 7
+                    return;
+                case 13:
+                    Init[OffsetToItemsSelected + 13] = Convert.ToByte(variable); //Item 7 Quantity
+                    return;
+                case 14:
+                    Init[OffsetToItemsSelected + 14] = Convert.ToByte(variable); //Item 8
+                    return;
+                case 15:
+                    Init[OffsetToItemsSelected + 15] = Convert.ToByte(variable); //Item 8 Quantity
+                    return;
+                case 16:
+                    Init[OffsetToItemsSelected + 16] = Convert.ToByte(variable); //Item 9
+                    return;
+                case 17:
+                    Init[OffsetToItemsSelected + 17] = Convert.ToByte(variable); //Item 9 Quantity
+                    return;
+                case 18:
+                    Init[OffsetToItemsSelected + 18] = Convert.ToByte(variable); //Item 10
+                    return;
+                case 19:
+                    Init[OffsetToItemsSelected + 19] = Convert.ToByte(variable); //Item 10 Quantity
+                    return;
+                case 20:
+                    Init[OffsetToItemsSelected + 20] = Convert.ToByte(variable); //Item 11
+                    return;
+                case 21:
+                    Init[OffsetToItemsSelected + 21] = Convert.ToByte(variable); //Item 11 Quantity
+                    return;
+                case 22:
+                    Init[OffsetToItemsSelected + 22] = Convert.ToByte(variable); //Item 12
+                    return;
+                case 23:
+                    Init[OffsetToItemsSelected + 23] = Convert.ToByte(variable); //Item 12 Quantity
+                    return;
+                case 24:
+                    Init[OffsetToItemsSelected + 24] = Convert.ToByte(variable); //Item 13
+                    return;
+                case 25:
+                    Init[OffsetToItemsSelected + 25] = Convert.ToByte(variable); //Item 13 Quantity
+                    return;
+                case 26:
+                    Init[OffsetToItemsSelected + 26] = Convert.ToByte(variable); //Item 14
+                    return;
+                case 27:
+                    Init[OffsetToItemsSelected + 27] = Convert.ToByte(variable); //Item 14 Quantity
+                    return;
+                case 28:
+                    Init[OffsetToItemsSelected + 28] = Convert.ToByte(variable); //Item 15
+                    return;
+                case 29:
+                    Init[OffsetToItemsSelected + 29] = Convert.ToByte(variable); //Item 15 Quantity
+                    return;
+                case 30:
+                    Init[OffsetToItemsSelected + 30] = Convert.ToByte(variable); //Item 16
+                    return;
+                case 31:
+                    Init[OffsetToItemsSelected + 31] = Convert.ToByte(variable); //Item 16 Quantity
+                    return;
+                case 32:
+                    Init[OffsetToItemsSelected + 32] = Convert.ToByte(variable); //Item 17
+                    return;
+                case 33:
+                    Init[OffsetToItemsSelected + 33] = Convert.ToByte(variable); //Item 17 Quantity
+                    return;
+                case 34:
+                    Init[OffsetToItemsSelected + 34] = Convert.ToByte(variable); //Item 18
+                    return;
+                case 35:
+                    Init[OffsetToItemsSelected + 35] = Convert.ToByte(variable); //Item 18 Quantity
+                    return;
+                case 36:
+                    Init[OffsetToItemsSelected + 36] = Convert.ToByte(variable); //Item 19
+                    return;
+                case 37:
+                    Init[OffsetToItemsSelected + 37] = Convert.ToByte(variable); //Item 19 Quantity
+                    return;
+                case 38:
+                    Init[OffsetToItemsSelected + 38] = Convert.ToByte(variable); //Item 20
+                    return;
+                case 39:
+                    Init[OffsetToItemsSelected + 39] = Convert.ToByte(variable); //Item 20 Quantity
+                    return;
+                case 40:
+                    Init[OffsetToItemsSelected + 40] = Convert.ToByte(variable); //Item 21
+                    return;
+                case 41:
+                    Init[OffsetToItemsSelected + 41] = Convert.ToByte(variable); //Item 21 Quantity
+                    return;
+                case 42:
+                    Init[OffsetToItemsSelected + 42] = Convert.ToByte(variable); //Item 22
+                    return;
+                case 43:
+                    Init[OffsetToItemsSelected + 43] = Convert.ToByte(variable); //Item 22 Quantity
+                    return;
+                case 44:
+                    Init[OffsetToItemsSelected + 44] = Convert.ToByte(variable); //Item 23
+                    return;
+                case 45:
+                    Init[OffsetToItemsSelected + 45] = Convert.ToByte(variable); //Item 23 Quantity
+                    return;
+                case 46:
+                    Init[OffsetToItemsSelected + 46] = Convert.ToByte(variable); //Item 24
+                    return;
+                case 47:
+                    Init[OffsetToItemsSelected + 47] = Convert.ToByte(variable); //Item 24 Quantity
+                    return;
+                case 48:
+                    Init[OffsetToItemsSelected + 48] = Convert.ToByte(variable); //Item 25
+                    return;
+                case 49:
+                    Init[OffsetToItemsSelected + 49] = Convert.ToByte(variable); //Item 25 Quantity
+                    return;
+                case 50:
+                    Init[OffsetToItemsSelected + 50] = Convert.ToByte(variable); //Item 26
+                    return;
+                case 51:
+                    Init[OffsetToItemsSelected + 51] = Convert.ToByte(variable); //Item 26 Quantity
+                    return;
+                case 52:
+                    Init[OffsetToItemsSelected + 52] = Convert.ToByte(variable); //Item 27
+                    return;
+                case 53:
+                    Init[OffsetToItemsSelected + 53] = Convert.ToByte(variable); //Item 27 Quantity
+                    return;
+                case 54:
+                    Init[OffsetToItemsSelected + 54] = Convert.ToByte(variable); //Item 28
+                    return;
+                case 55:
+                    Init[OffsetToItemsSelected + 55] = Convert.ToByte(variable); //Item 28 Quantity
+                    return;
+                case 56:
+                    Init[OffsetToItemsSelected + 56] = Convert.ToByte(variable); //Item 29
+                    return;
+                case 57:
+                    Init[OffsetToItemsSelected + 57] = Convert.ToByte(variable); //Item 29 Quantity
+                    return;
+                case 58:
+                    Init[OffsetToItemsSelected + 58] = Convert.ToByte(variable); //Item 30
+                    return;
+                case 59:
+                    Init[OffsetToItemsSelected + 59] = Convert.ToByte(variable); //Item 30 Quantity
+                    return;
+                case 60:
+                    Init[OffsetToItemsSelected + 60] = Convert.ToByte(variable); //Item 31
+                    return;
+                case 61:
+                    Init[OffsetToItemsSelected + 61] = Convert.ToByte(variable); //Item 31 Quantity
+                    return;
+                case 62:
+                    Init[OffsetToItemsSelected + 62] = Convert.ToByte(variable); //Item 32
+                    return;
+                case 63:
+                    Init[OffsetToItemsSelected + 63] = Convert.ToByte(variable); //Item 32 Quantity
+                    return;
+                case 64:
+                    Init[OffsetToItemsSelected + 64] = Convert.ToByte(variable); //Item 33
+                    return;
+                case 65:
+                    Init[OffsetToItemsSelected + 65] = Convert.ToByte(variable); //Item 33 Quantity
+                    return;
+                case 66:
+                    Init[OffsetToItemsSelected + 66] = Convert.ToByte(variable); //Item 34
+                    return;
+                case 67:
+                    Init[OffsetToItemsSelected + 67] = Convert.ToByte(variable); //Item 34 Quantity
+                    return;
+                case 68:
+                    Init[OffsetToItemsSelected + 68] = Convert.ToByte(variable); //Item 35
+                    return;
+                case 69:
+                    Init[OffsetToItemsSelected + 69] = Convert.ToByte(variable); //Item 35 Quantity
+                    return;
+                case 70:
+                    Init[OffsetToItemsSelected + 70] = Convert.ToByte(variable); //Item 36
+                    return;
+                case 71:
+                    Init[OffsetToItemsSelected + 71] = Convert.ToByte(variable); //Item 36 Quantity
+                    return;
+                case 72:
+                    Init[OffsetToItemsSelected + 72] = Convert.ToByte(variable); //Item 37
+                    return;
+                case 73:
+                    Init[OffsetToItemsSelected + 73] = Convert.ToByte(variable); //Item 37 Quantity
+                    return;
+                case 74:
+                    Init[OffsetToItemsSelected + 74] = Convert.ToByte(variable); //Item 38
+                    return;
+                case 75:
+                    Init[OffsetToItemsSelected + 75] = Convert.ToByte(variable); //Item 38 Quantity
+                    return;
+                case 76:
+                    Init[OffsetToItemsSelected + 76] = Convert.ToByte(variable); //Item 39
+                    return;
+                case 77:
+                    Init[OffsetToItemsSelected + 77] = Convert.ToByte(variable); //Item 39 Quantity
+                    return;
+                case 78:
+                    Init[OffsetToItemsSelected + 78] = Convert.ToByte(variable); //Item 40
+                    return;
+                case 79:
+                    Init[OffsetToItemsSelected + 79] = Convert.ToByte(variable); //Item 40 Quantity
+                    return;
+                case 80:
+                    Init[OffsetToItemsSelected + 80] = Convert.ToByte(variable); //Item 41
+                    return;
+                case 81:
+                    Init[OffsetToItemsSelected + 81] = Convert.ToByte(variable); //Item 41 Quantity
+                    return;
+                case 82:
+                    Init[OffsetToItemsSelected + 82] = Convert.ToByte(variable); //Item 42
+                    return;
+                case 83:
+                    Init[OffsetToItemsSelected + 83] = Convert.ToByte(variable); //Item 42 Quantity
+                    return;
+                case 84:
+                    Init[OffsetToItemsSelected + 84] = Convert.ToByte(variable); //Item 43
+                    return;
+                case 85:
+                    Init[OffsetToItemsSelected + 85] = Convert.ToByte(variable); //Item 43 Quantity
+                    return;
+                case 86:
+                    Init[OffsetToItemsSelected + 86] = Convert.ToByte(variable); //Item 44
+                    return;
+                case 87:
+                    Init[OffsetToItemsSelected + 87] = Convert.ToByte(variable); //Item 44 Quantity
+                    return;
+                case 88:
+                    Init[OffsetToItemsSelected + 88] = Convert.ToByte(variable); //Item 45
+                    return;
+                case 89:
+                    Init[OffsetToItemsSelected + 89] = Convert.ToByte(variable); //Item 45 Quantity
+                    return;
+                case 90:
+                    Init[OffsetToItemsSelected + 90] = Convert.ToByte(variable); //Item 46
+                    return;
+                case 91:
+                    Init[OffsetToItemsSelected + 91] = Convert.ToByte(variable); //Item 46 Quantity
+                    return;
+                case 92:
+                    Init[OffsetToItemsSelected + 92] = Convert.ToByte(variable); //Item 47
+                    return;
+                case 93:
+                    Init[OffsetToItemsSelected + 93] = Convert.ToByte(variable); //Item 47 Quantity
+                    return;
+                case 94:
+                    Init[OffsetToItemsSelected + 94] = Convert.ToByte(variable); //Item 48
+                    return;
+                case 95:
+                    Init[OffsetToItemsSelected + 95] = Convert.ToByte(variable); //Item 48 Quantity
+                    return;
+                case 96:
+                    Init[OffsetToItemsSelected + 96] = Convert.ToByte(variable); //Item 49
+                    return;
+                case 97:
+                    Init[OffsetToItemsSelected + 97] = Convert.ToByte(variable); //Item 49 Quantity
+                    return;
+                case 98:
+                    Init[OffsetToItemsSelected + 98] = Convert.ToByte(variable); //Item 50
+                    return;
+                case 99:
+                    Init[OffsetToItemsSelected + 99] = Convert.ToByte(variable); //Item 50 Quantity
+                    return;
+                case 100:
+                    Init[OffsetToItemsSelected + 100] = Convert.ToByte(variable); //Item 51
+                    return;
+                case 101:
+                    Init[OffsetToItemsSelected + 101] = Convert.ToByte(variable); //Item 51 Quantity
+                    return;
+                case 102:
+                    Init[OffsetToItemsSelected + 102] = Convert.ToByte(variable); //Item 52
+                    return;
+                case 103:
+                    Init[OffsetToItemsSelected + 103] = Convert.ToByte(variable); //Item 52 Quantity
+                    return;
+                case 104:
+                    Init[OffsetToItemsSelected + 104] = Convert.ToByte(variable); //Item 53
+                    return;
+                case 105:
+                    Init[OffsetToItemsSelected + 105] = Convert.ToByte(variable); //Item 53 Quantity
+                    return;
+                case 106:
+                    Init[OffsetToItemsSelected + 106] = Convert.ToByte(variable); //Item 54
+                    return;
+                case 107:
+                    Init[OffsetToItemsSelected + 107] = Convert.ToByte(variable); //Item 54 Quantity
+                    return;
+                case 108:
+                    Init[OffsetToItemsSelected + 108] = Convert.ToByte(variable); //Item 55
+                    return;
+                case 109:
+                    Init[OffsetToItemsSelected + 109] = Convert.ToByte(variable); //Item 55 Quantity
+                    return;
+                case 110:
+                    Init[OffsetToItemsSelected + 110] = Convert.ToByte(variable); //Item 56
+                    return;
+                case 111:
+                    Init[OffsetToItemsSelected + 111] = Convert.ToByte(variable); //Item 56 Quantity
+                    return;
+                case 112:
+                    Init[OffsetToItemsSelected + 112] = Convert.ToByte(variable); //Item 57
+                    return;
+                case 113:
+                    Init[OffsetToItemsSelected + 113] = Convert.ToByte(variable); //Item 57 Quantity
+                    return;
+                case 114:
+                    Init[OffsetToItemsSelected + 114] = Convert.ToByte(variable); //Item 58
+                    return;
+                case 115:
+                    Init[OffsetToItemsSelected + 115] = Convert.ToByte(variable); //Item 58 Quantity
+                    return;
+                case 116:
+                    Init[OffsetToItemsSelected + 116] = Convert.ToByte(variable); //Item 59
+                    return;
+                case 117:
+                    Init[OffsetToItemsSelected + 117] = Convert.ToByte(variable); //Item 59 Quantity
+                    return;
+                case 118:
+                    Init[OffsetToItemsSelected + 118] = Convert.ToByte(variable);
+                    return;
+                case 119:
+                    Init[OffsetToItemsSelected + 119] = Convert.ToByte(variable);
+                    return;
+                case 120:
+                    Init[OffsetToItemsSelected + 120] = Convert.ToByte(variable);
+                    return;
+                case 121:
+                    Init[OffsetToItemsSelected + 121] = Convert.ToByte(variable);
+                    return;
+                case 122:
+                    Init[OffsetToItemsSelected + 122] = Convert.ToByte(variable);
+                    return;
+                case 123:
+                    Init[OffsetToItemsSelected + 123] = Convert.ToByte(variable);
+                    return;
+                case 124:
+                    Init[OffsetToItemsSelected + 124] = Convert.ToByte(variable);
+                    return;
+                case 125:
+                    Init[OffsetToItemsSelected + 125] = Convert.ToByte(variable);
+                    return;
+                case 126:
+                    Init[OffsetToItemsSelected + 126] = Convert.ToByte(variable);
+                    return;
+                case 127:
+                    Init[OffsetToItemsSelected + 127] = Convert.ToByte(variable);
+                    return;
+                case 128:
+                    Init[OffsetToItemsSelected + 128] = Convert.ToByte(variable);
+                    return;
+                case 129:
+                    Init[OffsetToItemsSelected + 129] = Convert.ToByte(variable);
+                    return;
+                case 130:
+                    Init[OffsetToItemsSelected + 130] = Convert.ToByte(variable);
+                    return;
+                case 131:
+                    Init[OffsetToItemsSelected + 131] = Convert.ToByte(variable);
+                    return;
+                case 132:
+                    Init[OffsetToItemsSelected + 132] = Convert.ToByte(variable);
+                    return;
+                case 133:
+                    Init[OffsetToItemsSelected + 133] = Convert.ToByte(variable);
+                    return;
+                case 134:
+                    Init[OffsetToItemsSelected + 134] = Convert.ToByte(variable);
+                    return;
+                case 135:
+                    Init[OffsetToItemsSelected + 135] = Convert.ToByte(variable);
+                    return;
+                case 136:
+                    Init[OffsetToItemsSelected + 136] = Convert.ToByte(variable);
+                    return;
+                case 137:
+                    Init[OffsetToItemsSelected + 137] = Convert.ToByte(variable);
+                    return;
+                case 138:
+                    Init[OffsetToItemsSelected + 138] = Convert.ToByte(variable);
+                    return;
+                case 139:
+                    Init[OffsetToItemsSelected + 139] = Convert.ToByte(variable);
+                    return;
+                case 140:
+                    Init[OffsetToItemsSelected + 140] = Convert.ToByte(variable);
+                    return;
+                case 141:
+                    Init[OffsetToItemsSelected + 141] = Convert.ToByte(variable);
+                    return;
+                case 142:
+                    Init[OffsetToItemsSelected + 142] = Convert.ToByte(variable);
+                    return;
+                case 143:
+                    Init[OffsetToItemsSelected + 143] = Convert.ToByte(variable);
+                    return;
+                case 144:
+                    Init[OffsetToItemsSelected + 144] = Convert.ToByte(variable);
+                    return;
+                case 145:
+                    Init[OffsetToItemsSelected + 145] = Convert.ToByte(variable);
+                    return;
+                case 146:
+                    Init[OffsetToItemsSelected + 146] = Convert.ToByte(variable);
+                    return;
+                case 147:
+                    Init[OffsetToItemsSelected + 147] = Convert.ToByte(variable);
+                    return;
+                case 148:
+                    Init[OffsetToItemsSelected + 148] = Convert.ToByte(variable);
+                    return;
+                case 149:
+                    Init[OffsetToItemsSelected + 149] = Convert.ToByte(variable);
+                    return;
+                case 150:
+                    Init[OffsetToItemsSelected + 150] = Convert.ToByte(variable);
+                    return;
+                case 151:
+                    Init[OffsetToItemsSelected + 151] = Convert.ToByte(variable);
+                    return;
+                case 152:
+                    Init[OffsetToItemsSelected + 152] = Convert.ToByte(variable);
+                    return;
+                case 153:
+                    Init[OffsetToItemsSelected + 153] = Convert.ToByte(variable);
+                    return;
+                case 154:
+                    Init[OffsetToItemsSelected + 154] = Convert.ToByte(variable);
+                    return;
+                case 155:
+                    Init[OffsetToItemsSelected + 155] = Convert.ToByte(variable);
+                    return;
+                case 156:
+                    Init[OffsetToItemsSelected + 156] = Convert.ToByte(variable);
+                    return;
+                case 157:
+                    Init[OffsetToItemsSelected + 157] = Convert.ToByte(variable);
+                    return;
+                case 158:
+                    Init[OffsetToItemsSelected + 158] = Convert.ToByte(variable);
+                    return;
+                case 159:
+                    Init[OffsetToItemsSelected + 159] = Convert.ToByte(variable);
+                    return;
+                case 160:
+                    Init[OffsetToItemsSelected + 160] = Convert.ToByte(variable);
+                    return;
+                case 161:
+                    Init[OffsetToItemsSelected + 161] = Convert.ToByte(variable);
+                    return;
+                case 162:
+                    Init[OffsetToItemsSelected + 162] = Convert.ToByte(variable);
+                    return;
+                case 163:
+                    Init[OffsetToItemsSelected + 163] = Convert.ToByte(variable);
+                    return;
+                case 164:
+                    Init[OffsetToItemsSelected + 164] = Convert.ToByte(variable);
+                    return;
+                case 165:
+                    Init[OffsetToItemsSelected + 165] = Convert.ToByte(variable);
+                    return;
+                case 166:
+                    Init[OffsetToItemsSelected + 166] = Convert.ToByte(variable);
+                    return;
+                case 167:
+                    Init[OffsetToItemsSelected + 167] = Convert.ToByte(variable);
+                    return;
+                case 168:
+                    Init[OffsetToItemsSelected + 168] = Convert.ToByte(variable);
+                    return;
+                case 169:
+                    Init[OffsetToItemsSelected + 169] = Convert.ToByte(variable);
+                    return;
+                case 170:
+                    Init[OffsetToItemsSelected + 170] = Convert.ToByte(variable);
+                    return;
+                case 171:
+                    Init[OffsetToItemsSelected + 171] = Convert.ToByte(variable);
+                    return;
+                case 172:
+                    Init[OffsetToItemsSelected + 172] = Convert.ToByte(variable);
+                    return;
+                case 173:
+                    Init[OffsetToItemsSelected + 173] = Convert.ToByte(variable);
+                    return;
+                case 174:
+                    Init[OffsetToItemsSelected + 174] = Convert.ToByte(variable);
+                    return;
+                case 175:
+                    Init[OffsetToItemsSelected + 175] = Convert.ToByte(variable);
+                    return;
+                case 176:
+                    Init[OffsetToItemsSelected + 176] = Convert.ToByte(variable);
+                    return;
+                case 177:
+                    Init[OffsetToItemsSelected + 177] = Convert.ToByte(variable);
+                    return;
+                case 178:
+                    Init[OffsetToItemsSelected + 178] = Convert.ToByte(variable);
+                    return;
+                case 179:
+                    Init[OffsetToItemsSelected + 179] = Convert.ToByte(variable);
+                    return;
+                case 180:
+                    Init[OffsetToItemsSelected + 180] = Convert.ToByte(variable);
+                    return;
+                case 181:
+                    Init[OffsetToItemsSelected + 181] = Convert.ToByte(variable);
+                    return;
+                case 182:
+                    Init[OffsetToItemsSelected + 182] = Convert.ToByte(variable);
+                    return;
+                case 183:
+                    Init[OffsetToItemsSelected + 183] = Convert.ToByte(variable);
+                    return;
+                case 184:
+                    Init[OffsetToItemsSelected + 184] = Convert.ToByte(variable);
+                    return;
+                case 185:
+                    Init[OffsetToItemsSelected + 185] = Convert.ToByte(variable);
+                    return;
+                case 186:
+                    Init[OffsetToItemsSelected + 186] = Convert.ToByte(variable);
+                    return;
+                case 187:
+                    Init[OffsetToItemsSelected + 187] = Convert.ToByte(variable);
+                    return;
+                case 188:
+                    Init[OffsetToItemsSelected + 188] = Convert.ToByte(variable);
+                    return;
+                case 189:
+                    Init[OffsetToItemsSelected + 189] = Convert.ToByte(variable);
+                    return;
+                case 190:
+                    Init[OffsetToItemsSelected + 190] = Convert.ToByte(variable);
+                    return;
+                case 191:
+                    Init[OffsetToItemsSelected + 191] = Convert.ToByte(variable);
+                    return;
+                case 192:
+                    Init[OffsetToItemsSelected + 192] = Convert.ToByte(variable);
+                    return;
+                case 193:
+                    Init[OffsetToItemsSelected + 193] = Convert.ToByte(variable);
+                    return;
+                case 194:
+                    Init[OffsetToItemsSelected + 194] = Convert.ToByte(variable);
+                    return;
+                case 195:
+                    Init[OffsetToItemsSelected + 195] = Convert.ToByte(variable);
+                    return;
+                case 196:
+                    Init[OffsetToItemsSelected + 196] = Convert.ToByte(variable);
+                    return;
+                case 197:
+                    Init[OffsetToItemsSelected + 197] = Convert.ToByte(variable);
+                    return;
+                case 198:
+                    Init[OffsetToItemsSelected + 198] = Convert.ToByte(variable);
+                    return;
+                case 199:
+                    Init[OffsetToItemsSelected + 199] = Convert.ToByte(variable);
+                    return;
+                case 200:
+                    Init[OffsetToItemsSelected + 200] = Convert.ToByte(variable);
+                    return;
+                case 201:
+                    Init[OffsetToItemsSelected + 201] = Convert.ToByte(variable);
+                    return;
+                case 202:
+                    Init[OffsetToItemsSelected + 202] = Convert.ToByte(variable);
+                    return;
+                case 203:
+                    Init[OffsetToItemsSelected + 203] = Convert.ToByte(variable);
+                    return;
+                case 204:
+                    Init[OffsetToItemsSelected + 204] = Convert.ToByte(variable);
+                    return;
+                case 205:
+                    Init[OffsetToItemsSelected + 205] = Convert.ToByte(variable);
+                    return;
+                case 206:
+                    Init[OffsetToItemsSelected + 206] = Convert.ToByte(variable);
+                    return;
+                case 207:
+                    Init[OffsetToItemsSelected + 207] = Convert.ToByte(variable);
+                    return;
+                case 208:
+                    Init[OffsetToItemsSelected + 208] = Convert.ToByte(variable);
+                    return;
+                case 209:
+                    Init[OffsetToItemsSelected + 209] = Convert.ToByte(variable);
+                    return;
+                case 210:
+                    Init[OffsetToItemsSelected + 210] = Convert.ToByte(variable);
+                    return;
+                case 211:
+                    Init[OffsetToItemsSelected + 211] = Convert.ToByte(variable);
+                    return;
+                case 212:
+                    Init[OffsetToItemsSelected + 212] = Convert.ToByte(variable);
+                    return;
+                case 213:
+                    Init[OffsetToItemsSelected + 213] = Convert.ToByte(variable);
+                    return;
+                case 214:
+                    Init[OffsetToItemsSelected + 214] = Convert.ToByte(variable);
+                    return;
+                case 215:
+                    Init[OffsetToItemsSelected + 215] = Convert.ToByte(variable);
+                    return;
+                case 216:
+                    Init[OffsetToItemsSelected + 216] = Convert.ToByte(variable);
+                    return;
+                case 217:
+                    Init[OffsetToItemsSelected + 217] = Convert.ToByte(variable);
+                    return;
+                case 218:
+                    Init[OffsetToItemsSelected + 218] = Convert.ToByte(variable);
+                    return;
+                case 219:
+                    Init[OffsetToItemsSelected + 219] = Convert.ToByte(variable);
+                    return;
+                case 220:
+                    Init[OffsetToItemsSelected + 220] = Convert.ToByte(variable);
+                    return;
+                case 221:
+                    Init[OffsetToItemsSelected + 221] = Convert.ToByte(variable);
+                    return;
+                case 222:
+                    Init[OffsetToItemsSelected + 222] = Convert.ToByte(variable);
+                    return;
+                case 223:
+                    Init[OffsetToItemsSelected + 223] = Convert.ToByte(variable);
+                    return;
+                case 224:
+                    Init[OffsetToItemsSelected + 224] = Convert.ToByte(variable);
+                    return;
+                case 225:
+                    Init[OffsetToItemsSelected + 225] = Convert.ToByte(variable);
+                    return;
+                case 226:
+                    Init[OffsetToItemsSelected + 226] = Convert.ToByte(variable);
+                    return;
+                case 227:
+                    Init[OffsetToItemsSelected + 227] = Convert.ToByte(variable);
+                    return;
+                case 228:
+                    Init[OffsetToItemsSelected + 228] = Convert.ToByte(variable);
+                    return;
+                case 229:
+                    Init[OffsetToItemsSelected + 229] = Convert.ToByte(variable);
+                    return;
+                case 230:
+                    Init[OffsetToItemsSelected + 230] = Convert.ToByte(variable);
+                    return;
+                case 231:
+                    Init[OffsetToItemsSelected + 231] = Convert.ToByte(variable);
+                    return;
+                case 232:
+                    Init[OffsetToItemsSelected + 232] = Convert.ToByte(variable);
+                    return;
+                case 233:
+                    Init[OffsetToItemsSelected + 233] = Convert.ToByte(variable);
+                    return;
+                case 234:
+                    Init[OffsetToItemsSelected + 234] = Convert.ToByte(variable);
+                    return;
+                case 235:
+                    Init[OffsetToItemsSelected + 235] = Convert.ToByte(variable);
+                    return;
+                case 236:
+                    Init[OffsetToItemsSelected + 236] = Convert.ToByte(variable);
+                    return;
+                case 237:
+                    Init[OffsetToItemsSelected + 237] = Convert.ToByte(variable);
+                    return;
+                case 238:
+                    Init[OffsetToItemsSelected + 238] = Convert.ToByte(variable);
+                    return;
+                case 239:
+                    Init[OffsetToItemsSelected + 239] = Convert.ToByte(variable);
+                    return;
+                case 240:
+                    Init[OffsetToItemsSelected + 240] = Convert.ToByte(variable);
+                    return;
+                case 241:
+                    Init[OffsetToItemsSelected + 241] = Convert.ToByte(variable);
+                    return;
+                case 242:
+                    Init[OffsetToItemsSelected + 242] = Convert.ToByte(variable);
+                    return;
+                case 243:
+                    Init[OffsetToItemsSelected + 243] = Convert.ToByte(variable);
+                    return;
+                case 244:
+                    Init[OffsetToItemsSelected + 244] = Convert.ToByte(variable);
+                    return;
+                case 245:
+                    Init[OffsetToItemsSelected + 245] = Convert.ToByte(variable);
+                    return;
+                case 246:
+                    Init[OffsetToItemsSelected + 246] = Convert.ToByte(variable);
+                    return;
+                case 247:
+                    Init[OffsetToItemsSelected + 247] = Convert.ToByte(variable);
+                    return;
+                case 248:
+                    Init[OffsetToItemsSelected + 248] = Convert.ToByte(variable);
+                    return;
+                case 249:
+                    Init[OffsetToItemsSelected + 249] = Convert.ToByte(variable);
+                    return;
+                case 250:
+                    Init[OffsetToItemsSelected + 250] = Convert.ToByte(variable);
+                    return;
+                case 251:
+                    Init[OffsetToItemsSelected + 251] = Convert.ToByte(variable);
+                    return;
+                case 252:
+                    Init[OffsetToItemsSelected + 252] = Convert.ToByte(variable);
+                    return;
+                case 253:
+                    Init[OffsetToItemsSelected + 253] = Convert.ToByte(variable);
+                    return;
+                case 254:
+                    Init[OffsetToItemsSelected + 254] = Convert.ToByte(variable);
+                    return;
+                case 255:
+                    Init[OffsetToItemsSelected + 255] = Convert.ToByte(variable);
+                    return;
+                case 256:
+                    Init[OffsetToItemsSelected + 256] = Convert.ToByte(variable);
+                    return;
+                case 257:
+                    Init[OffsetToItemsSelected + 257] = Convert.ToByte(variable);
+                    return;
+                case 258:
+                    Init[OffsetToItemsSelected + 258] = Convert.ToByte(variable);
+                    return;
+                case 259:
+                    Init[OffsetToItemsSelected + 259] = Convert.ToByte(variable);
+                    return;
+                case 260:
+                    Init[OffsetToItemsSelected + 260] = Convert.ToByte(variable);
+                    return;
+                case 261:
+                    Init[OffsetToItemsSelected + 261] = Convert.ToByte(variable);
+                    return;
+                case 262:
+                    Init[OffsetToItemsSelected + 262] = Convert.ToByte(variable);
+                    return;
+                case 263:
+                    Init[OffsetToItemsSelected + 263] = Convert.ToByte(variable);
+                    return;
+                case 264:
+                    Init[OffsetToItemsSelected + 264] = Convert.ToByte(variable);
+                    return;
+                case 265:
+                    Init[OffsetToItemsSelected + 265] = Convert.ToByte(variable);
+                    return;
+                case 266:
+                    Init[OffsetToItemsSelected + 266] = Convert.ToByte(variable);
+                    return;
+                case 267:
+                    Init[OffsetToItemsSelected + 267] = Convert.ToByte(variable);
+                    return;
+                case 268:
+                    Init[OffsetToItemsSelected + 268] = Convert.ToByte(variable);
+                    return;
+                case 269:
+                    Init[OffsetToItemsSelected + 269] = Convert.ToByte(variable);
+                    return;
+                case 270:
+                    Init[OffsetToItemsSelected + 270] = Convert.ToByte(variable);
+                    return;
+                case 271:
+                    Init[OffsetToItemsSelected + 271] = Convert.ToByte(variable);
+                    return;
+                case 272:
+                    Init[OffsetToItemsSelected + 272] = Convert.ToByte(variable);
+                    return;
+                case 273:
+                    Init[OffsetToItemsSelected + 273] = Convert.ToByte(variable);
+                    return;
+                case 274:
+                    Init[OffsetToItemsSelected + 274] = Convert.ToByte(variable);
+                    return;
+                case 275:
+                    Init[OffsetToItemsSelected + 275] = Convert.ToByte(variable);
+                    return;
+                case 276:
+                    Init[OffsetToItemsSelected + 276] = Convert.ToByte(variable);
+                    return;
+                case 277:
+                    Init[OffsetToItemsSelected + 277] = Convert.ToByte(variable);
+                    return;
+                case 278:
+                    Init[OffsetToItemsSelected + 278] = Convert.ToByte(variable);
+                    return;
+                case 279:
+                    Init[OffsetToItemsSelected + 279] = Convert.ToByte(variable);
+                    return;
+                case 280:
+                    Init[OffsetToItemsSelected + 280] = Convert.ToByte(variable);
+                    return;
+                case 281:
+                    Init[OffsetToItemsSelected + 281] = Convert.ToByte(variable);
+                    return;
+                case 282:
+                    Init[OffsetToItemsSelected + 282] = Convert.ToByte(variable);
+                    return;
+                case 283:
+                    Init[OffsetToItemsSelected + 283] = Convert.ToByte(variable);
+                    return;
+                case 284:
+                    Init[OffsetToItemsSelected + 284] = Convert.ToByte(variable);
+                    return;
+                case 285:
+                    Init[OffsetToItemsSelected + 285] = Convert.ToByte(variable);
+                    return;
+                case 286:
+                    Init[OffsetToItemsSelected + 286] = Convert.ToByte(variable);
+                    return;
+                case 287:
+                    Init[OffsetToItemsSelected + 287] = Convert.ToByte(variable);
+                    return;
+                case 288:
+                    Init[OffsetToItemsSelected + 288] = Convert.ToByte(variable);
+                    return;
+                case 289:
+                    Init[OffsetToItemsSelected + 289] = Convert.ToByte(variable);
+                    return;
+                case 290:
+                    Init[OffsetToItemsSelected + 290] = Convert.ToByte(variable);
+                    return;
+                case 291:
+                    Init[OffsetToItemsSelected + 291] = Convert.ToByte(variable);
+                    return;
+                case 292:
+                    Init[OffsetToItemsSelected + 292] = Convert.ToByte(variable);
+                    return;
+                case 293:
+                    Init[OffsetToItemsSelected + 293] = Convert.ToByte(variable);
+                    return;
+                case 294:
+                    Init[OffsetToItemsSelected + 294] = Convert.ToByte(variable);
+                    return;
+                case 295:
+                    Init[OffsetToItemsSelected + 295] = Convert.ToByte(variable);
+                    return;
+                case 296:
+                    Init[OffsetToItemsSelected + 296] = Convert.ToByte(variable);
+                    return;
+                case 297:
+                    Init[OffsetToItemsSelected + 297] = Convert.ToByte(variable);
+                    return;
+                case 298:
+                    Init[OffsetToItemsSelected + 298] = Convert.ToByte(variable);
+                    return;
+                case 299:
+                    Init[OffsetToItemsSelected + 299] = Convert.ToByte(variable);
+                    return;
+                case 300:
+                    Init[OffsetToItemsSelected + 300] = Convert.ToByte(variable);
+                    return;
+                case 301:
+                    Init[OffsetToItemsSelected + 301] = Convert.ToByte(variable);
+                    return;
+                case 302:
+                    Init[OffsetToItemsSelected + 302] = Convert.ToByte(variable);
+                    return;
+                case 303:
+                    Init[OffsetToItemsSelected + 303] = Convert.ToByte(variable);
+                    return;
+                case 304:
+                    Init[OffsetToItemsSelected + 304] = Convert.ToByte(variable);
+                    return;
+                case 305:
+                    Init[OffsetToItemsSelected + 305] = Convert.ToByte(variable);
+                    return;
+                case 306:
+                    Init[OffsetToItemsSelected + 306] = Convert.ToByte(variable);
+                    return;
+                case 307:
+                    Init[OffsetToItemsSelected + 307] = Convert.ToByte(variable);
+                    return;
+                case 308:
+                    Init[OffsetToItemsSelected + 308] = Convert.ToByte(variable);
+                    return;
+                case 309:
+                    Init[OffsetToItemsSelected + 309] = Convert.ToByte(variable);
+                    return;
+                case 310:
+                    Init[OffsetToItemsSelected + 310] = Convert.ToByte(variable);
+                    return;
+                case 311:
+                    Init[OffsetToItemsSelected + 311] = Convert.ToByte(variable);
+                    return;
+                case 312:
+                    Init[OffsetToItemsSelected + 312] = Convert.ToByte(variable);
+                    return;
+                case 313:
+                    Init[OffsetToItemsSelected + 313] = Convert.ToByte(variable);
+                    return;
+                case 314:
+                    Init[OffsetToItemsSelected + 314] = Convert.ToByte(variable);
+                    return;
+                case 315:
+                    Init[OffsetToItemsSelected + 315] = Convert.ToByte(variable);
+                    return;
+                case 316:
+                    Init[OffsetToItemsSelected + 316] = Convert.ToByte(variable);
+                    return;
+                case 317:
+                    Init[OffsetToItemsSelected + 317] = Convert.ToByte(variable);
+                    return;
+                case 318:
+                    Init[OffsetToItemsSelected + 318] = Convert.ToByte(variable);
+                    return;
+                case 319:
+                    Init[OffsetToItemsSelected + 319] = Convert.ToByte(variable);
+                    return;
+                case 320:
+                    Init[OffsetToItemsSelected + 320] = Convert.ToByte(variable);
+                    return;
+                case 321:
+                    Init[OffsetToItemsSelected + 321] = Convert.ToByte(variable);
+                    return;
+                case 322:
+                    Init[OffsetToItemsSelected + 322] = Convert.ToByte(variable);
+                    return;
+                case 323:
+                    Init[OffsetToItemsSelected + 323] = Convert.ToByte(variable);
+                    return;
+                case 324:
+                    Init[OffsetToItemsSelected + 324] = Convert.ToByte(variable);
+                    return;
+                case 325:
+                    Init[OffsetToItemsSelected + 325] = Convert.ToByte(variable);
+                    return;
+                case 326:
+                    Init[OffsetToItemsSelected + 326] = Convert.ToByte(variable);
+                    return;
+                case 327:
+                    Init[OffsetToItemsSelected + 327] = Convert.ToByte(variable);
+                    return;
+                case 328:
+                    Init[OffsetToItemsSelected + 328] = Convert.ToByte(variable);
+                    return;
+                case 329:
+                    Init[OffsetToItemsSelected + 329] = Convert.ToByte(variable);
+                    return;
+                case 330:
+                    Init[OffsetToItemsSelected + 330] = Convert.ToByte(variable);
+                    return;
+                case 331:
+                    Init[OffsetToItemsSelected + 331] = Convert.ToByte(variable);
+                    return;
+                case 332:
+                    Init[OffsetToItemsSelected + 332] = Convert.ToByte(variable);
+                    return;
+                case 333:
+                    Init[OffsetToItemsSelected + 333] = Convert.ToByte(variable);
+                    return;
+                case 334:
+                    Init[OffsetToItemsSelected + 334] = Convert.ToByte(variable);
+                    return;
+                case 335:
+                    Init[OffsetToItemsSelected + 335] = Convert.ToByte(variable);
+                    return;
+                case 336:
+                    Init[OffsetToItemsSelected + 336] = Convert.ToByte(variable);
+                    return;
+                case 337:
+                    Init[OffsetToItemsSelected + 337] = Convert.ToByte(variable);
+                    return;
+                case 338:
+                    Init[OffsetToItemsSelected + 338] = Convert.ToByte(variable);
+                    return;
+                case 339:
+                    Init[OffsetToItemsSelected + 339] = Convert.ToByte(variable);
+                    return;
+                case 340:
+                    Init[OffsetToItemsSelected + 340] = Convert.ToByte(variable);
+                    return;
+                case 341:
+                    Init[OffsetToItemsSelected + 341] = Convert.ToByte(variable);
+                    return;
+                case 342:
+                    Init[OffsetToItemsSelected + 342] = Convert.ToByte(variable);
+                    return;
+                case 343:
+                    Init[OffsetToItemsSelected + 343] = Convert.ToByte(variable);
+                    return;
+                case 344:
+                    Init[OffsetToItemsSelected + 344] = Convert.ToByte(variable);
+                    return;
+                case 345:
+                    Init[OffsetToItemsSelected + 345] = Convert.ToByte(variable);
+                    return;
+                case 346:
+                    Init[OffsetToItemsSelected + 346] = Convert.ToByte(variable);
+                    return;
+                case 347:
+                    Init[OffsetToItemsSelected + 347] = Convert.ToByte(variable);
+                    return;
+                case 348:
+                    Init[OffsetToItemsSelected + 348] = Convert.ToByte(variable);
+                    return;
+                case 349:
+                    Init[OffsetToItemsSelected + 349] = Convert.ToByte(variable);
+                    return;
+                case 350:
+                    Init[OffsetToItemsSelected + 350] = Convert.ToByte(variable);
+                    return;
+                case 351:
+                    Init[OffsetToItemsSelected + 351] = Convert.ToByte(variable);
+                    return;
+                case 352:
+                    Init[OffsetToItemsSelected + 352] = Convert.ToByte(variable);
+                    return;
+                case 353:
+                    Init[OffsetToItemsSelected + 353] = Convert.ToByte(variable);
+                    return;
+                case 354:
+                    Init[OffsetToItemsSelected + 354] = Convert.ToByte(variable);
+                    return;
+                case 355:
+                    Init[OffsetToItemsSelected + 355] = Convert.ToByte(variable);
+                    return;
+                case 356:
+                    Init[OffsetToItemsSelected + 356] = Convert.ToByte(variable);
+                    return;
+                case 357:
+                    Init[OffsetToItemsSelected + 357] = Convert.ToByte(variable);
+                    return;
+                case 358:
+                    Init[OffsetToItemsSelected + 358] = Convert.ToByte(variable);
+                    return;
+                case 359:
+                    Init[OffsetToItemsSelected + 359] = Convert.ToByte(variable);
+                    return;
+                case 360:
+                    Init[OffsetToItemsSelected + 360] = Convert.ToByte(variable);
+                    return;
+                case 361:
+                    Init[OffsetToItemsSelected + 361] = Convert.ToByte(variable);
+                    return;
+                case 362:
+                    Init[OffsetToItemsSelected + 362] = Convert.ToByte(variable);
+                    return;
+                case 363:
+                    Init[OffsetToItemsSelected + 363] = Convert.ToByte(variable);
+                    return;
+                case 364:
+                    Init[OffsetToItemsSelected + 364] = Convert.ToByte(variable);
+                    return;
+                case 365:
+                    Init[OffsetToItemsSelected + 365] = Convert.ToByte(variable);
+                    return;
+                case 366:
+                    Init[OffsetToItemsSelected + 366] = Convert.ToByte(variable);
+                    return;
+                case 367:
+                    Init[OffsetToItemsSelected + 367] = Convert.ToByte(variable);
+                    return;
+                case 368:
+                    Init[OffsetToItemsSelected + 368] = Convert.ToByte(variable);
+                    return;
+                case 369:
+                    Init[OffsetToItemsSelected + 369] = Convert.ToByte(variable);
+                    return;
+                case 370:
+                    Init[OffsetToItemsSelected + 370] = Convert.ToByte(variable);
+                    return;
+                case 371:
+                    Init[OffsetToItemsSelected + 371] = Convert.ToByte(variable);
+                    return;
+                case 372:
+                    Init[OffsetToItemsSelected + 372] = Convert.ToByte(variable);
+                    return;
+                case 373:
+                    Init[OffsetToItemsSelected + 373] = Convert.ToByte(variable);
+                    return;
+                case 374:
+                    Init[OffsetToItemsSelected + 374] = Convert.ToByte(variable);
+                    return;
+                case 375:
+                    Init[OffsetToItemsSelected + 375] = Convert.ToByte(variable);
+                    return;
+                case 376:
+                    Init[OffsetToItemsSelected + 376] = Convert.ToByte(variable);
+                    return;
+                case 377:
+                    Init[OffsetToItemsSelected + 377] = Convert.ToByte(variable);
+                    return;
+                case 378:
+                    Init[OffsetToItemsSelected + 378] = Convert.ToByte(variable);
+                    return;
+                case 379:
+                    Init[OffsetToItemsSelected + 379] = Convert.ToByte(variable);
+                    return;
+                case 380:
+                    Init[OffsetToItemsSelected + 380] = Convert.ToByte(variable);
+                    return;
+                case 381:
+                    Init[OffsetToItemsSelected + 381] = Convert.ToByte(variable);
+                    return;
+                case 382:
+                    Init[OffsetToItemsSelected + 382] = Convert.ToByte(variable);
+                    return;
+                case 383:
+                    Init[OffsetToItemsSelected + 383] = Convert.ToByte(variable);
+                    return;
+                case 384:
+                    Init[OffsetToItemsSelected + 384] = Convert.ToByte(variable);
+                    return;
+                case 385:
+                    Init[OffsetToItemsSelected + 385] = Convert.ToByte(variable);
+                    return;
+                case 386:
+                    Init[OffsetToItemsSelected + 386] = Convert.ToByte(variable);
+                    return;
+                case 387:
+                    Init[OffsetToItemsSelected + 387] = Convert.ToByte(variable);
+                    return;
+                case 388:
+                    Init[OffsetToItemsSelected + 388] = Convert.ToByte(variable);
+                    return;
+                case 389:
+                    Init[OffsetToItemsSelected + 389] = Convert.ToByte(variable);
+                    return;
+                case 390:
+                    Init[OffsetToItemsSelected + 390] = Convert.ToByte(variable);
+                    return;
+                case 391:
+                    Init[OffsetToItemsSelected + 391] = Convert.ToByte(variable);
+                    return;
+                case 392:
+                    Init[OffsetToItemsSelected + 392] = Convert.ToByte(variable);
+                    return;
+                case 393:
+                    Init[OffsetToItemsSelected + 393] = Convert.ToByte(variable);
+                    return;
+                case 394:
+                    Init[OffsetToItemsSelected + 394] = Convert.ToByte(variable);
+                    return;
+                case 395:
+                    Init[OffsetToItemsSelected + 395] = Convert.ToByte(variable);
+                    return;
+            }
+        }
+
+
+
+
+        #endregion
+
+
         #region READ INIT VARIABLES
 
         #region Init Offsets
@@ -962,7 +2601,10 @@ namespace Quezacotl
 
             GfDataOffset = 0;
             CharacterDataOffset = 1088;
-            MiscDataOffset = 2264;
+            ShopsDataOffset = 2264;
+            ConfigDataOffset = 2664;
+            MiscDataOffset = 2684;
+            ItemsDataOffset = 2804;
         }
 
         #endregion
@@ -1164,6 +2806,415 @@ namespace Quezacotl
             GetSelectedCharactersData.Unknown4 = Init[selectedCharactersOffset + 149];
             GetSelectedCharactersData.CurrentStatus = Init[selectedCharactersOffset + 150];
             GetSelectedCharactersData.Unknown5 = Init[selectedCharactersOffset + 151];
+        }
+
+        #endregion
+
+        #region Items
+
+        public static void ReadItems(byte[] Init)
+        {
+            GetSelectedItemsData = new ItemsData();
+            int selectedItemsOffset = ItemsDataOffset;
+            OffsetToItemsSelected = selectedItemsOffset;
+
+
+            GetSelectedItemsData.Item1 = Init[selectedItemsOffset + 0];
+            GetSelectedItemsData.Item1Quantity = Init[selectedItemsOffset + 1];
+            GetSelectedItemsData.Item2 = Init[selectedItemsOffset + 2];
+            GetSelectedItemsData.Item2Quantity = Init[selectedItemsOffset + 3];
+            GetSelectedItemsData.Item3 = Init[selectedItemsOffset + 4];
+            GetSelectedItemsData.Item3Quantity = Init[selectedItemsOffset + 5];
+            GetSelectedItemsData.Item4 = Init[selectedItemsOffset + 6];
+            GetSelectedItemsData.Item4Quantity = Init[selectedItemsOffset + 7];
+            GetSelectedItemsData.Item5 = Init[selectedItemsOffset + 8];
+            GetSelectedItemsData.Item5Quantity = Init[selectedItemsOffset + 9];
+            GetSelectedItemsData.Item6 = Init[selectedItemsOffset + 10];
+            GetSelectedItemsData.Item6Quantity = Init[selectedItemsOffset + 11];
+            GetSelectedItemsData.Item7 = Init[selectedItemsOffset + 12];
+            GetSelectedItemsData.Item7Quantity = Init[selectedItemsOffset + 13];
+            GetSelectedItemsData.Item8 = Init[selectedItemsOffset + 14];
+            GetSelectedItemsData.Item8Quantity = Init[selectedItemsOffset + 15];
+            GetSelectedItemsData.Item9 = Init[selectedItemsOffset + 16];
+            GetSelectedItemsData.Item9Quantity = Init[selectedItemsOffset + 17];
+            GetSelectedItemsData.Item10 = Init[selectedItemsOffset + 18];
+            GetSelectedItemsData.Item10Quantity = Init[selectedItemsOffset + 19];
+            GetSelectedItemsData.Item11 = Init[selectedItemsOffset + 20];
+            GetSelectedItemsData.Item11Quantity = Init[selectedItemsOffset + 21];
+            GetSelectedItemsData.Item12 = Init[selectedItemsOffset + 22];
+            GetSelectedItemsData.Item12Quantity = Init[selectedItemsOffset + 23];
+            GetSelectedItemsData.Item13 = Init[selectedItemsOffset + 24];
+            GetSelectedItemsData.Item13Quantity = Init[selectedItemsOffset + 25];
+            GetSelectedItemsData.Item14 = Init[selectedItemsOffset + 26];
+            GetSelectedItemsData.Item14Quantity = Init[selectedItemsOffset + 27];
+            GetSelectedItemsData.Item15 = Init[selectedItemsOffset + 28];
+            GetSelectedItemsData.Item15Quantity = Init[selectedItemsOffset + 29];
+            GetSelectedItemsData.Item16 = Init[selectedItemsOffset + 30];
+            GetSelectedItemsData.Item16Quantity = Init[selectedItemsOffset + 31];
+            GetSelectedItemsData.Item17 = Init[selectedItemsOffset + 32];
+            GetSelectedItemsData.Item17Quantity = Init[selectedItemsOffset + 33];
+            GetSelectedItemsData.Item18 = Init[selectedItemsOffset + 34];
+            GetSelectedItemsData.Item18Quantity = Init[selectedItemsOffset + 35];
+            GetSelectedItemsData.Item19 = Init[selectedItemsOffset + 36];
+            GetSelectedItemsData.Item19Quantity = Init[selectedItemsOffset + 37];
+            GetSelectedItemsData.Item20 = Init[selectedItemsOffset + 38];
+            GetSelectedItemsData.Item20Quantity = Init[selectedItemsOffset + 39];
+            GetSelectedItemsData.Item21 = Init[selectedItemsOffset + 40];
+            GetSelectedItemsData.Item21Quantity = Init[selectedItemsOffset + 41];
+            GetSelectedItemsData.Item22 = Init[selectedItemsOffset + 42];
+            GetSelectedItemsData.Item22Quantity = Init[selectedItemsOffset + 43];
+            GetSelectedItemsData.Item23 = Init[selectedItemsOffset + 44];
+            GetSelectedItemsData.Item23Quantity = Init[selectedItemsOffset + 45];
+            GetSelectedItemsData.Item24 = Init[selectedItemsOffset + 46];
+            GetSelectedItemsData.Item24Quantity = Init[selectedItemsOffset + 47];
+            GetSelectedItemsData.Item25 = Init[selectedItemsOffset + 48];
+            GetSelectedItemsData.Item25Quantity = Init[selectedItemsOffset + 49];
+            GetSelectedItemsData.Item26 = Init[selectedItemsOffset + 50];
+            GetSelectedItemsData.Item26Quantity = Init[selectedItemsOffset + 51];
+            GetSelectedItemsData.Item27 = Init[selectedItemsOffset + 52];
+            GetSelectedItemsData.Item27Quantity = Init[selectedItemsOffset + 53];
+            GetSelectedItemsData.Item28 = Init[selectedItemsOffset + 54];
+            GetSelectedItemsData.Item28Quantity = Init[selectedItemsOffset + 55];
+            GetSelectedItemsData.Item29 = Init[selectedItemsOffset + 56];
+            GetSelectedItemsData.Item29Quantity = Init[selectedItemsOffset + 57];
+            GetSelectedItemsData.Item30 = Init[selectedItemsOffset + 58];
+            GetSelectedItemsData.Item30Quantity = Init[selectedItemsOffset + 59];
+            GetSelectedItemsData.Item31 = Init[selectedItemsOffset + 60];
+            GetSelectedItemsData.Item31Quantity = Init[selectedItemsOffset + 61];
+            GetSelectedItemsData.Item32 = Init[selectedItemsOffset + 62];
+            GetSelectedItemsData.Item32Quantity = Init[selectedItemsOffset + 63];
+            GetSelectedItemsData.Item33 = Init[selectedItemsOffset + 64];
+            GetSelectedItemsData.Item33Quantity = Init[selectedItemsOffset + 65];
+            GetSelectedItemsData.Item34 = Init[selectedItemsOffset + 66];
+            GetSelectedItemsData.Item34Quantity = Init[selectedItemsOffset + 67];
+            GetSelectedItemsData.Item35 = Init[selectedItemsOffset + 68];
+            GetSelectedItemsData.Item35Quantity = Init[selectedItemsOffset + 69];
+            GetSelectedItemsData.Item36 = Init[selectedItemsOffset + 70];
+            GetSelectedItemsData.Item36Quantity = Init[selectedItemsOffset + 71];
+            GetSelectedItemsData.Item37 = Init[selectedItemsOffset + 72];
+            GetSelectedItemsData.Item37Quantity = Init[selectedItemsOffset + 73];
+            GetSelectedItemsData.Item38 = Init[selectedItemsOffset + 74];
+            GetSelectedItemsData.Item38Quantity = Init[selectedItemsOffset + 75];
+            GetSelectedItemsData.Item39 = Init[selectedItemsOffset + 76];
+            GetSelectedItemsData.Item39Quantity = Init[selectedItemsOffset + 77];
+            GetSelectedItemsData.Item40 = Init[selectedItemsOffset + 78];
+            GetSelectedItemsData.Item40Quantity = Init[selectedItemsOffset + 79];
+            GetSelectedItemsData.Item41 = Init[selectedItemsOffset + 80];
+            GetSelectedItemsData.Item41Quantity = Init[selectedItemsOffset + 81];
+            GetSelectedItemsData.Item42 = Init[selectedItemsOffset + 82];
+            GetSelectedItemsData.Item42Quantity = Init[selectedItemsOffset + 83];
+            GetSelectedItemsData.Item43 = Init[selectedItemsOffset + 84];
+            GetSelectedItemsData.Item43Quantity = Init[selectedItemsOffset + 85];
+            GetSelectedItemsData.Item44 = Init[selectedItemsOffset + 86];
+            GetSelectedItemsData.Item44Quantity = Init[selectedItemsOffset + 87];
+            GetSelectedItemsData.Item45 = Init[selectedItemsOffset + 88];
+            GetSelectedItemsData.Item45Quantity = Init[selectedItemsOffset + 89];
+            GetSelectedItemsData.Item46 = Init[selectedItemsOffset + 90];
+            GetSelectedItemsData.Item46Quantity = Init[selectedItemsOffset + 91];
+            GetSelectedItemsData.Item47 = Init[selectedItemsOffset + 92];
+            GetSelectedItemsData.Item47Quantity = Init[selectedItemsOffset + 93];
+            GetSelectedItemsData.Item48 = Init[selectedItemsOffset + 94];
+            GetSelectedItemsData.Item48Quantity = Init[selectedItemsOffset + 95];
+            GetSelectedItemsData.Item49 = Init[selectedItemsOffset + 96];
+            GetSelectedItemsData.Item49Quantity = Init[selectedItemsOffset + 97];
+            GetSelectedItemsData.Item50 = Init[selectedItemsOffset + 98];
+            GetSelectedItemsData.Item50Quantity = Init[selectedItemsOffset + 99];
+            GetSelectedItemsData.Item51 = Init[selectedItemsOffset + 100];
+            GetSelectedItemsData.Item51Quantity = Init[selectedItemsOffset + 101];
+            GetSelectedItemsData.Item52 = Init[selectedItemsOffset + 102];
+            GetSelectedItemsData.Item52Quantity = Init[selectedItemsOffset + 103];
+            GetSelectedItemsData.Item53 = Init[selectedItemsOffset + 104];
+            GetSelectedItemsData.Item53Quantity = Init[selectedItemsOffset + 105];
+            GetSelectedItemsData.Item54 = Init[selectedItemsOffset + 106];
+            GetSelectedItemsData.Item54Quantity = Init[selectedItemsOffset + 107];
+            GetSelectedItemsData.Item55 = Init[selectedItemsOffset + 108];
+            GetSelectedItemsData.Item55Quantity = Init[selectedItemsOffset + 109];
+            GetSelectedItemsData.Item56 = Init[selectedItemsOffset + 110];
+            GetSelectedItemsData.Item56Quantity = Init[selectedItemsOffset + 111];
+            GetSelectedItemsData.Item57 = Init[selectedItemsOffset + 112];
+            GetSelectedItemsData.Item57Quantity = Init[selectedItemsOffset + 113];
+            GetSelectedItemsData.Item58 = Init[selectedItemsOffset + 114];
+            GetSelectedItemsData.Item58Quantity = Init[selectedItemsOffset + 115];
+            GetSelectedItemsData.Item59 = Init[selectedItemsOffset + 116];
+            GetSelectedItemsData.Item59Quantity = Init[selectedItemsOffset + 117];
+            GetSelectedItemsData.Item60 = Init[selectedItemsOffset + 118];
+            GetSelectedItemsData.Item60Quantity = Init[selectedItemsOffset + 119];
+            GetSelectedItemsData.Item61 = Init[selectedItemsOffset + 120];
+            GetSelectedItemsData.Item61Quantity = Init[selectedItemsOffset + 121];
+            GetSelectedItemsData.Item62 = Init[selectedItemsOffset + 122];
+            GetSelectedItemsData.Item62Quantity = Init[selectedItemsOffset + 123];
+            GetSelectedItemsData.Item63 = Init[selectedItemsOffset + 124];
+            GetSelectedItemsData.Item63Quantity = Init[selectedItemsOffset + 125];
+            GetSelectedItemsData.Item64 = Init[selectedItemsOffset + 126];
+            GetSelectedItemsData.Item64Quantity = Init[selectedItemsOffset + 127];
+            GetSelectedItemsData.Item65 = Init[selectedItemsOffset + 128];
+            GetSelectedItemsData.Item65Quantity = Init[selectedItemsOffset + 129];
+            GetSelectedItemsData.Item66 = Init[selectedItemsOffset + 130];
+            GetSelectedItemsData.Item66Quantity = Init[selectedItemsOffset + 131];
+            GetSelectedItemsData.Item67 = Init[selectedItemsOffset + 132];
+            GetSelectedItemsData.Item67Quantity = Init[selectedItemsOffset + 133];
+            GetSelectedItemsData.Item68 = Init[selectedItemsOffset + 134];
+            GetSelectedItemsData.Item68Quantity = Init[selectedItemsOffset + 135];
+            GetSelectedItemsData.Item69 = Init[selectedItemsOffset + 136];
+            GetSelectedItemsData.Item69Quantity = Init[selectedItemsOffset + 137];
+            GetSelectedItemsData.Item70 = Init[selectedItemsOffset + 138];
+            GetSelectedItemsData.Item70Quantity = Init[selectedItemsOffset + 139];
+            GetSelectedItemsData.Item71 = Init[selectedItemsOffset + 140];
+            GetSelectedItemsData.Item71Quantity = Init[selectedItemsOffset + 141];
+            GetSelectedItemsData.Item72 = Init[selectedItemsOffset + 142];
+            GetSelectedItemsData.Item72Quantity = Init[selectedItemsOffset + 143];
+            GetSelectedItemsData.Item73 = Init[selectedItemsOffset + 144];
+            GetSelectedItemsData.Item73Quantity = Init[selectedItemsOffset + 145];
+            GetSelectedItemsData.Item74 = Init[selectedItemsOffset + 146];
+            GetSelectedItemsData.Item74Quantity = Init[selectedItemsOffset + 147];
+            GetSelectedItemsData.Item75 = Init[selectedItemsOffset + 148];
+            GetSelectedItemsData.Item75Quantity = Init[selectedItemsOffset + 149];
+            GetSelectedItemsData.Item76 = Init[selectedItemsOffset + 150];
+            GetSelectedItemsData.Item76Quantity = Init[selectedItemsOffset + 151];
+            GetSelectedItemsData.Item77 = Init[selectedItemsOffset + 152];
+            GetSelectedItemsData.Item77Quantity = Init[selectedItemsOffset + 153];
+            GetSelectedItemsData.Item78 = Init[selectedItemsOffset + 154];
+            GetSelectedItemsData.Item78Quantity = Init[selectedItemsOffset + 155];
+            GetSelectedItemsData.Item79 = Init[selectedItemsOffset + 156];
+            GetSelectedItemsData.Item79Quantity = Init[selectedItemsOffset + 157];
+            GetSelectedItemsData.Item80 = Init[selectedItemsOffset + 158];
+            GetSelectedItemsData.Item80Quantity = Init[selectedItemsOffset + 159];
+            GetSelectedItemsData.Item81 = Init[selectedItemsOffset + 160];
+            GetSelectedItemsData.Item81Quantity = Init[selectedItemsOffset + 161];
+            GetSelectedItemsData.Item82 = Init[selectedItemsOffset + 162];
+            GetSelectedItemsData.Item82Quantity = Init[selectedItemsOffset + 163];
+            GetSelectedItemsData.Item83 = Init[selectedItemsOffset + 164];
+            GetSelectedItemsData.Item83Quantity = Init[selectedItemsOffset + 165];
+            GetSelectedItemsData.Item84 = Init[selectedItemsOffset + 166];
+            GetSelectedItemsData.Item84Quantity = Init[selectedItemsOffset + 167];
+            GetSelectedItemsData.Item85 = Init[selectedItemsOffset + 168];
+            GetSelectedItemsData.Item85Quantity = Init[selectedItemsOffset + 169];
+            GetSelectedItemsData.Item86 = Init[selectedItemsOffset + 170];
+            GetSelectedItemsData.Item86Quantity = Init[selectedItemsOffset + 171];
+            GetSelectedItemsData.Item87 = Init[selectedItemsOffset + 172];
+            GetSelectedItemsData.Item87Quantity = Init[selectedItemsOffset + 173];
+            GetSelectedItemsData.Item88 = Init[selectedItemsOffset + 174];
+            GetSelectedItemsData.Item88Quantity = Init[selectedItemsOffset + 175];
+            GetSelectedItemsData.Item89 = Init[selectedItemsOffset + 176];
+            GetSelectedItemsData.Item89Quantity = Init[selectedItemsOffset + 177];
+            GetSelectedItemsData.Item90 = Init[selectedItemsOffset + 178];
+            GetSelectedItemsData.Item90Quantity = Init[selectedItemsOffset + 179];
+            GetSelectedItemsData.Item91 = Init[selectedItemsOffset + 180];
+            GetSelectedItemsData.Item91Quantity = Init[selectedItemsOffset + 181];
+            GetSelectedItemsData.Item92 = Init[selectedItemsOffset + 182];
+            GetSelectedItemsData.Item92Quantity = Init[selectedItemsOffset + 183];
+            GetSelectedItemsData.Item93 = Init[selectedItemsOffset + 184];
+            GetSelectedItemsData.Item93Quantity = Init[selectedItemsOffset + 185];
+            GetSelectedItemsData.Item94 = Init[selectedItemsOffset + 186];
+            GetSelectedItemsData.Item94Quantity = Init[selectedItemsOffset + 187];
+            GetSelectedItemsData.Item95 = Init[selectedItemsOffset + 188];
+            GetSelectedItemsData.Item95Quantity = Init[selectedItemsOffset + 189];
+            GetSelectedItemsData.Item96 = Init[selectedItemsOffset + 190];
+            GetSelectedItemsData.Item96Quantity = Init[selectedItemsOffset + 191];
+            GetSelectedItemsData.Item97 = Init[selectedItemsOffset + 192];
+            GetSelectedItemsData.Item97Quantity = Init[selectedItemsOffset + 193];
+            GetSelectedItemsData.Item98 = Init[selectedItemsOffset + 194];
+            GetSelectedItemsData.Item98Quantity = Init[selectedItemsOffset + 195];
+            GetSelectedItemsData.Item99 = Init[selectedItemsOffset + 196];
+            GetSelectedItemsData.Item99Quantity = Init[selectedItemsOffset + 197];
+            GetSelectedItemsData.Item100 = Init[selectedItemsOffset + 198];
+            GetSelectedItemsData.Item100Quantity = Init[selectedItemsOffset + 199];
+            GetSelectedItemsData.Item101 = Init[selectedItemsOffset + 200];
+            GetSelectedItemsData.Item101Quantity = Init[selectedItemsOffset + 201];
+            GetSelectedItemsData.Item102 = Init[selectedItemsOffset + 202];
+            GetSelectedItemsData.Item102Quantity = Init[selectedItemsOffset + 203];
+            GetSelectedItemsData.Item103 = Init[selectedItemsOffset + 204];
+            GetSelectedItemsData.Item103Quantity = Init[selectedItemsOffset + 205];
+            GetSelectedItemsData.Item104 = Init[selectedItemsOffset + 206];
+            GetSelectedItemsData.Item104Quantity = Init[selectedItemsOffset + 207];
+            GetSelectedItemsData.Item105 = Init[selectedItemsOffset + 208];
+            GetSelectedItemsData.Item105Quantity = Init[selectedItemsOffset + 209];
+            GetSelectedItemsData.Item106 = Init[selectedItemsOffset + 210];
+            GetSelectedItemsData.Item106Quantity = Init[selectedItemsOffset + 211];
+            GetSelectedItemsData.Item107 = Init[selectedItemsOffset + 212];
+            GetSelectedItemsData.Item107Quantity = Init[selectedItemsOffset + 213];
+            GetSelectedItemsData.Item108 = Init[selectedItemsOffset + 214];
+            GetSelectedItemsData.Item108Quantity = Init[selectedItemsOffset + 215];
+            GetSelectedItemsData.Item109 = Init[selectedItemsOffset + 216];
+            GetSelectedItemsData.Item109Quantity = Init[selectedItemsOffset + 217];
+            GetSelectedItemsData.Item110 = Init[selectedItemsOffset + 218];
+            GetSelectedItemsData.Item110Quantity = Init[selectedItemsOffset + 219];
+            GetSelectedItemsData.Item111 = Init[selectedItemsOffset + 220];
+            GetSelectedItemsData.Item111Quantity = Init[selectedItemsOffset + 221];
+            GetSelectedItemsData.Item112 = Init[selectedItemsOffset + 222];
+            GetSelectedItemsData.Item112Quantity = Init[selectedItemsOffset + 223];
+            GetSelectedItemsData.Item113 = Init[selectedItemsOffset + 224];
+            GetSelectedItemsData.Item113Quantity = Init[selectedItemsOffset + 225];
+            GetSelectedItemsData.Item114 = Init[selectedItemsOffset + 226];
+            GetSelectedItemsData.Item114Quantity = Init[selectedItemsOffset + 227];
+            GetSelectedItemsData.Item115 = Init[selectedItemsOffset + 228];
+            GetSelectedItemsData.Item115Quantity = Init[selectedItemsOffset + 229];
+            GetSelectedItemsData.Item116 = Init[selectedItemsOffset + 230];
+            GetSelectedItemsData.Item116Quantity = Init[selectedItemsOffset + 231];
+            GetSelectedItemsData.Item117 = Init[selectedItemsOffset + 232];
+            GetSelectedItemsData.Item117Quantity = Init[selectedItemsOffset + 233];
+            GetSelectedItemsData.Item118 = Init[selectedItemsOffset + 234];
+            GetSelectedItemsData.Item118Quantity = Init[selectedItemsOffset + 235];
+            GetSelectedItemsData.Item119 = Init[selectedItemsOffset + 236];
+            GetSelectedItemsData.Item119Quantity = Init[selectedItemsOffset + 237];
+            GetSelectedItemsData.Item120 = Init[selectedItemsOffset + 238];
+            GetSelectedItemsData.Item120Quantity = Init[selectedItemsOffset + 239];
+            GetSelectedItemsData.Item121 = Init[selectedItemsOffset + 240];
+            GetSelectedItemsData.Item121Quantity = Init[selectedItemsOffset + 241];
+            GetSelectedItemsData.Item122 = Init[selectedItemsOffset + 242];
+            GetSelectedItemsData.Item122Quantity = Init[selectedItemsOffset + 243];
+            GetSelectedItemsData.Item123 = Init[selectedItemsOffset + 244];
+            GetSelectedItemsData.Item123Quantity = Init[selectedItemsOffset + 245];
+            GetSelectedItemsData.Item124 = Init[selectedItemsOffset + 246];
+            GetSelectedItemsData.Item124Quantity = Init[selectedItemsOffset + 247];
+            GetSelectedItemsData.Item125 = Init[selectedItemsOffset + 248];
+            GetSelectedItemsData.Item125Quantity = Init[selectedItemsOffset + 249];
+            GetSelectedItemsData.Item126 = Init[selectedItemsOffset + 250];
+            GetSelectedItemsData.Item126Quantity = Init[selectedItemsOffset + 251];
+            GetSelectedItemsData.Item127 = Init[selectedItemsOffset + 252];
+            GetSelectedItemsData.Item127Quantity = Init[selectedItemsOffset + 253];
+            GetSelectedItemsData.Item128 = Init[selectedItemsOffset + 254];
+            GetSelectedItemsData.Item128Quantity = Init[selectedItemsOffset + 255];
+            GetSelectedItemsData.Item129 = Init[selectedItemsOffset + 256];
+            GetSelectedItemsData.Item129Quantity = Init[selectedItemsOffset + 257];
+            GetSelectedItemsData.Item130 = Init[selectedItemsOffset + 258];
+            GetSelectedItemsData.Item130Quantity = Init[selectedItemsOffset + 259];
+            GetSelectedItemsData.Item131 = Init[selectedItemsOffset + 260];
+            GetSelectedItemsData.Item131Quantity = Init[selectedItemsOffset + 261];
+            GetSelectedItemsData.Item132 = Init[selectedItemsOffset + 262];
+            GetSelectedItemsData.Item132Quantity = Init[selectedItemsOffset + 263];
+            GetSelectedItemsData.Item133 = Init[selectedItemsOffset + 264];
+            GetSelectedItemsData.Item133Quantity = Init[selectedItemsOffset + 265];
+            GetSelectedItemsData.Item134 = Init[selectedItemsOffset + 266];
+            GetSelectedItemsData.Item134Quantity = Init[selectedItemsOffset + 267];
+            GetSelectedItemsData.Item135 = Init[selectedItemsOffset + 268];
+            GetSelectedItemsData.Item135Quantity = Init[selectedItemsOffset + 269];
+            GetSelectedItemsData.Item136 = Init[selectedItemsOffset + 270];
+            GetSelectedItemsData.Item136Quantity = Init[selectedItemsOffset + 271];
+            GetSelectedItemsData.Item137 = Init[selectedItemsOffset + 272];
+            GetSelectedItemsData.Item137Quantity = Init[selectedItemsOffset + 273];
+            GetSelectedItemsData.Item138 = Init[selectedItemsOffset + 274];
+            GetSelectedItemsData.Item138Quantity = Init[selectedItemsOffset + 275];
+            GetSelectedItemsData.Item139 = Init[selectedItemsOffset + 276];
+            GetSelectedItemsData.Item139Quantity = Init[selectedItemsOffset + 277];
+            GetSelectedItemsData.Item140 = Init[selectedItemsOffset + 278];
+            GetSelectedItemsData.Item140Quantity = Init[selectedItemsOffset + 279];
+            GetSelectedItemsData.Item141 = Init[selectedItemsOffset + 280];
+            GetSelectedItemsData.Item141Quantity = Init[selectedItemsOffset + 281];
+            GetSelectedItemsData.Item142 = Init[selectedItemsOffset + 282];
+            GetSelectedItemsData.Item142Quantity = Init[selectedItemsOffset + 283];
+            GetSelectedItemsData.Item143 = Init[selectedItemsOffset + 284];
+            GetSelectedItemsData.Item143Quantity = Init[selectedItemsOffset + 285];
+            GetSelectedItemsData.Item144 = Init[selectedItemsOffset + 286];
+            GetSelectedItemsData.Item144Quantity = Init[selectedItemsOffset + 287];
+            GetSelectedItemsData.Item145 = Init[selectedItemsOffset + 288];
+            GetSelectedItemsData.Item145Quantity = Init[selectedItemsOffset + 289];
+            GetSelectedItemsData.Item146 = Init[selectedItemsOffset + 290];
+            GetSelectedItemsData.Item146Quantity = Init[selectedItemsOffset + 291];
+            GetSelectedItemsData.Item147 = Init[selectedItemsOffset + 292];
+            GetSelectedItemsData.Item147Quantity = Init[selectedItemsOffset + 293];
+            GetSelectedItemsData.Item148 = Init[selectedItemsOffset + 294];
+            GetSelectedItemsData.Item148Quantity = Init[selectedItemsOffset + 295];
+            GetSelectedItemsData.Item149 = Init[selectedItemsOffset + 296];
+            GetSelectedItemsData.Item149Quantity = Init[selectedItemsOffset + 297];
+            GetSelectedItemsData.Item150 = Init[selectedItemsOffset + 298];
+            GetSelectedItemsData.Item150Quantity = Init[selectedItemsOffset + 299];
+            GetSelectedItemsData.Item151 = Init[selectedItemsOffset + 300];
+            GetSelectedItemsData.Item151Quantity = Init[selectedItemsOffset + 301];
+            GetSelectedItemsData.Item152 = Init[selectedItemsOffset + 302];
+            GetSelectedItemsData.Item152Quantity = Init[selectedItemsOffset + 303];
+            GetSelectedItemsData.Item153 = Init[selectedItemsOffset + 304];
+            GetSelectedItemsData.Item153Quantity = Init[selectedItemsOffset + 305];
+            GetSelectedItemsData.Item154 = Init[selectedItemsOffset + 306];
+            GetSelectedItemsData.Item154Quantity = Init[selectedItemsOffset + 307];
+            GetSelectedItemsData.Item155 = Init[selectedItemsOffset + 308];
+            GetSelectedItemsData.Item155Quantity = Init[selectedItemsOffset + 309];
+            GetSelectedItemsData.Item156 = Init[selectedItemsOffset + 310];
+            GetSelectedItemsData.Item156Quantity = Init[selectedItemsOffset + 311];
+            GetSelectedItemsData.Item157 = Init[selectedItemsOffset + 312];
+            GetSelectedItemsData.Item157Quantity = Init[selectedItemsOffset + 313];
+            GetSelectedItemsData.Item158 = Init[selectedItemsOffset + 314];
+            GetSelectedItemsData.Item158Quantity = Init[selectedItemsOffset + 315];
+            GetSelectedItemsData.Item159 = Init[selectedItemsOffset + 316];
+            GetSelectedItemsData.Item159Quantity = Init[selectedItemsOffset + 317];
+            GetSelectedItemsData.Item160 = Init[selectedItemsOffset + 318];
+            GetSelectedItemsData.Item160Quantity = Init[selectedItemsOffset + 319];
+            GetSelectedItemsData.Item161 = Init[selectedItemsOffset + 320];
+            GetSelectedItemsData.Item161Quantity = Init[selectedItemsOffset + 321];
+            GetSelectedItemsData.Item162 = Init[selectedItemsOffset + 322];
+            GetSelectedItemsData.Item162Quantity = Init[selectedItemsOffset + 323];
+            GetSelectedItemsData.Item163 = Init[selectedItemsOffset + 324];
+            GetSelectedItemsData.Item163Quantity = Init[selectedItemsOffset + 325];
+            GetSelectedItemsData.Item164 = Init[selectedItemsOffset + 326];
+            GetSelectedItemsData.Item164Quantity = Init[selectedItemsOffset + 327];
+            GetSelectedItemsData.Item165 = Init[selectedItemsOffset + 328];
+            GetSelectedItemsData.Item165Quantity = Init[selectedItemsOffset + 329];
+            GetSelectedItemsData.Item166 = Init[selectedItemsOffset + 330];
+            GetSelectedItemsData.Item166Quantity = Init[selectedItemsOffset + 331];
+            GetSelectedItemsData.Item167 = Init[selectedItemsOffset + 332];
+            GetSelectedItemsData.Item167Quantity = Init[selectedItemsOffset + 333];
+            GetSelectedItemsData.Item168 = Init[selectedItemsOffset + 334];
+            GetSelectedItemsData.Item168Quantity = Init[selectedItemsOffset + 335];
+            GetSelectedItemsData.Item169 = Init[selectedItemsOffset + 336];
+            GetSelectedItemsData.Item169Quantity = Init[selectedItemsOffset + 337];
+            GetSelectedItemsData.Item170 = Init[selectedItemsOffset + 338];
+            GetSelectedItemsData.Item170Quantity = Init[selectedItemsOffset + 339];
+            GetSelectedItemsData.Item171 = Init[selectedItemsOffset + 340];
+            GetSelectedItemsData.Item171Quantity = Init[selectedItemsOffset + 341];
+            GetSelectedItemsData.Item172 = Init[selectedItemsOffset + 342];
+            GetSelectedItemsData.Item172Quantity = Init[selectedItemsOffset + 343];
+            GetSelectedItemsData.Item173 = Init[selectedItemsOffset + 344];
+            GetSelectedItemsData.Item173Quantity = Init[selectedItemsOffset + 345];
+            GetSelectedItemsData.Item174 = Init[selectedItemsOffset + 346];
+            GetSelectedItemsData.Item174Quantity = Init[selectedItemsOffset + 347];
+            GetSelectedItemsData.Item175 = Init[selectedItemsOffset + 348];
+            GetSelectedItemsData.Item175Quantity = Init[selectedItemsOffset + 349];
+            GetSelectedItemsData.Item176 = Init[selectedItemsOffset + 350];
+            GetSelectedItemsData.Item176Quantity = Init[selectedItemsOffset + 351];
+            GetSelectedItemsData.Item177 = Init[selectedItemsOffset + 352];
+            GetSelectedItemsData.Item177Quantity = Init[selectedItemsOffset + 353];
+            GetSelectedItemsData.Item178 = Init[selectedItemsOffset + 354];
+            GetSelectedItemsData.Item178Quantity = Init[selectedItemsOffset + 355];
+            GetSelectedItemsData.Item179 = Init[selectedItemsOffset + 356];
+            GetSelectedItemsData.Item179Quantity = Init[selectedItemsOffset + 357];
+            GetSelectedItemsData.Item180 = Init[selectedItemsOffset + 358];
+            GetSelectedItemsData.Item180Quantity = Init[selectedItemsOffset + 359];
+            GetSelectedItemsData.Item181 = Init[selectedItemsOffset + 360];
+            GetSelectedItemsData.Item181Quantity = Init[selectedItemsOffset + 361];
+            GetSelectedItemsData.Item182 = Init[selectedItemsOffset + 362];
+            GetSelectedItemsData.Item182Quantity = Init[selectedItemsOffset + 363];
+            GetSelectedItemsData.Item183 = Init[selectedItemsOffset + 364];
+            GetSelectedItemsData.Item183Quantity = Init[selectedItemsOffset + 365];
+            GetSelectedItemsData.Item184 = Init[selectedItemsOffset + 366];
+            GetSelectedItemsData.Item184Quantity = Init[selectedItemsOffset + 367];
+            GetSelectedItemsData.Item185 = Init[selectedItemsOffset + 368];
+            GetSelectedItemsData.Item185Quantity = Init[selectedItemsOffset + 369];
+            GetSelectedItemsData.Item186 = Init[selectedItemsOffset + 370];
+            GetSelectedItemsData.Item186Quantity = Init[selectedItemsOffset + 371];
+            GetSelectedItemsData.Item187 = Init[selectedItemsOffset + 372];
+            GetSelectedItemsData.Item187Quantity = Init[selectedItemsOffset + 373];
+            GetSelectedItemsData.Item188 = Init[selectedItemsOffset + 374];
+            GetSelectedItemsData.Item188Quantity = Init[selectedItemsOffset + 375];
+            GetSelectedItemsData.Item189 = Init[selectedItemsOffset + 376];
+            GetSelectedItemsData.Item189Quantity = Init[selectedItemsOffset + 377];
+            GetSelectedItemsData.Item190 = Init[selectedItemsOffset + 378];
+            GetSelectedItemsData.Item190Quantity = Init[selectedItemsOffset + 379];
+            GetSelectedItemsData.Item191 = Init[selectedItemsOffset + 380];
+            GetSelectedItemsData.Item191Quantity = Init[selectedItemsOffset + 381];
+            GetSelectedItemsData.Item192 = Init[selectedItemsOffset + 382];
+            GetSelectedItemsData.Item192Quantity = Init[selectedItemsOffset + 383];
+            GetSelectedItemsData.Item193 = Init[selectedItemsOffset + 384];
+            GetSelectedItemsData.Item193Quantity = Init[selectedItemsOffset + 385];
+            GetSelectedItemsData.Item194 = Init[selectedItemsOffset + 386];
+            GetSelectedItemsData.Item194Quantity = Init[selectedItemsOffset + 387];
+            GetSelectedItemsData.Item195 = Init[selectedItemsOffset + 388];
+            GetSelectedItemsData.Item195Quantity = Init[selectedItemsOffset + 389];
+            GetSelectedItemsData.Item196 = Init[selectedItemsOffset + 390];
+            GetSelectedItemsData.Item196Quantity = Init[selectedItemsOffset + 391];
+            GetSelectedItemsData.Item197 = Init[selectedItemsOffset + 392];
+            GetSelectedItemsData.Item197Quantity = Init[selectedItemsOffset + 393];
+            GetSelectedItemsData.Item198 = Init[selectedItemsOffset + 394];
+            GetSelectedItemsData.Item198Quantity = Init[selectedItemsOffset + 395];
         }
 
         #endregion

@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 
 class ListViewEx : ListView
-{
+{   
     protected override void WndProc(ref Message m)
     {
         // Swallow mouse messages that are not in the client area
