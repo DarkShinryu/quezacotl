@@ -501,6 +501,81 @@ namespace Quezacotl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to None
+        ///Fire
+        ///Fira
+        ///Firaga
+        ///Blizzard
+        ///Blizzara
+        ///Blizzaga
+        ///Thunder
+        ///Thundara
+        ///Thundaga
+        ///Water
+        ///Aero
+        ///Bio
+        ///Demi
+        ///Holy
+        ///Flare
+        ///Meteor
+        ///Quake
+        ///Tornado
+        ///Ultima
+        ///Apocalypse
+        ///Cure
+        ///Cura
+        ///Curaga
+        ///Life
+        ///Full-Life
+        ///Regen
+        ///Esuna
+        ///Dispel
+        ///Protect
+        ///Shell
+        ///Reflect
+        ///Aura
+        ///Double
+        ///Triple
+        ///Haste
+        ///Slow
+        ///Stop
+        ///Blind
+        ///Confuse
+        ///Sleep
+        ///Silence
+        ///Break
+        ///Death
+        ///Drain
+        ///Pain
+        ///Berserk
+        ///Float
+        ///Zombie
+        ///Meltdown
+        ///Scan
+        ///Full Cure
+        ///Wall
+        ///Rapture
+        ///Percent
+        ///Catastrophe
+        ///The End.
+        /// </summary>
+        internal static string List_Magic {
+            get {
+                return ResourceManager.GetString("List_Magic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loading {
+            get {
+                object obj = ResourceManager.GetObject("loading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap mtl00 {

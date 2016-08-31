@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Quezacotl.Properties;
+using System.Threading;
+using System.ComponentModel;
 
 namespace Quezacotl
 {
@@ -28,6 +30,113 @@ namespace Quezacotl
         public Form1()
         {
             InitializeComponent();
+
+
+            #region Load Magic List
+
+            string[] magicList = Resources.List_Magic.Split('\n');
+            foreach (var line in magicList)
+            {
+                comboBoxCharsMagic1.BeginUpdate();
+                comboBoxCharsMagic1.Items.Add(line);
+                comboBoxCharsMagic1.EndUpdate();
+                comboBoxCharsMagic2.BeginUpdate();
+                comboBoxCharsMagic2.Items.Add(line);
+                comboBoxCharsMagic2.EndUpdate();
+                comboBoxCharsMagic3.BeginUpdate();
+                comboBoxCharsMagic3.Items.Add(line);
+                comboBoxCharsMagic3.EndUpdate();
+                comboBoxCharsMagic4.BeginUpdate();
+                comboBoxCharsMagic4.Items.Add(line);
+                comboBoxCharsMagic4.EndUpdate();
+                comboBoxCharsMagic5.BeginUpdate();
+                comboBoxCharsMagic5.Items.Add(line);
+                comboBoxCharsMagic5.EndUpdate();
+                comboBoxCharsMagic6.BeginUpdate();
+                comboBoxCharsMagic6.Items.Add(line);
+                comboBoxCharsMagic6.EndUpdate();
+                comboBoxCharsMagic7.BeginUpdate();
+                comboBoxCharsMagic7.Items.Add(line);
+                comboBoxCharsMagic7.EndUpdate();
+                comboBoxCharsMagic8.BeginUpdate();
+                comboBoxCharsMagic8.Items.Add(line);
+                comboBoxCharsMagic8.EndUpdate();
+                comboBoxCharsMagic9.BeginUpdate();
+                comboBoxCharsMagic9.Items.Add(line);
+                comboBoxCharsMagic9.EndUpdate();
+                comboBoxCharsMagic10.BeginUpdate();
+                comboBoxCharsMagic10.Items.Add(line);
+                comboBoxCharsMagic10.EndUpdate();
+                comboBoxCharsMagic11.BeginUpdate();
+                comboBoxCharsMagic11.Items.Add(line);
+                comboBoxCharsMagic11.EndUpdate();
+                comboBoxCharsMagic12.BeginUpdate();
+                comboBoxCharsMagic12.Items.Add(line);
+                comboBoxCharsMagic12.EndUpdate();
+                comboBoxCharsMagic13.BeginUpdate();
+                comboBoxCharsMagic13.Items.Add(line);
+                comboBoxCharsMagic13.EndUpdate();
+                comboBoxCharsMagic14.BeginUpdate();
+                comboBoxCharsMagic14.Items.Add(line);
+                comboBoxCharsMagic14.EndUpdate();
+                comboBoxCharsMagic15.BeginUpdate();
+                comboBoxCharsMagic15.Items.Add(line);
+                comboBoxCharsMagic15.EndUpdate();
+                comboBoxCharsMagic16.BeginUpdate();
+                comboBoxCharsMagic16.Items.Add(line);
+                comboBoxCharsMagic16.EndUpdate();
+                comboBoxCharsMagic17.BeginUpdate();
+                comboBoxCharsMagic17.Items.Add(line);
+                comboBoxCharsMagic17.EndUpdate();
+                comboBoxCharsMagic18.BeginUpdate();
+                comboBoxCharsMagic18.Items.Add(line);
+                comboBoxCharsMagic18.EndUpdate();
+                comboBoxCharsMagic19.BeginUpdate();
+                comboBoxCharsMagic19.Items.Add(line);
+                comboBoxCharsMagic19.EndUpdate();
+                comboBoxCharsMagic20.BeginUpdate();
+                comboBoxCharsMagic20.Items.Add(line);
+                comboBoxCharsMagic20.EndUpdate();
+                comboBoxCharsMagic21.BeginUpdate();
+                comboBoxCharsMagic21.Items.Add(line);
+                comboBoxCharsMagic21.EndUpdate();
+                comboBoxCharsMagic22.BeginUpdate();
+                comboBoxCharsMagic22.Items.Add(line);
+                comboBoxCharsMagic22.EndUpdate();
+                comboBoxCharsMagic23.BeginUpdate();
+                comboBoxCharsMagic23.Items.Add(line);
+                comboBoxCharsMagic23.EndUpdate();
+                comboBoxCharsMagic24.BeginUpdate();
+                comboBoxCharsMagic24.Items.Add(line);
+                comboBoxCharsMagic24.EndUpdate();
+                comboBoxCharsMagic25.BeginUpdate();
+                comboBoxCharsMagic25.Items.Add(line);
+                comboBoxCharsMagic25.EndUpdate();
+                comboBoxCharsMagic26.BeginUpdate();
+                comboBoxCharsMagic26.Items.Add(line);
+                comboBoxCharsMagic26.EndUpdate();
+                comboBoxCharsMagic27.BeginUpdate();
+                comboBoxCharsMagic27.Items.Add(line);
+                comboBoxCharsMagic27.EndUpdate();
+                comboBoxCharsMagic28.BeginUpdate();
+                comboBoxCharsMagic28.Items.Add(line);
+                comboBoxCharsMagic28.EndUpdate();
+                comboBoxCharsMagic29.BeginUpdate();
+                comboBoxCharsMagic29.Items.Add(line);
+                comboBoxCharsMagic29.EndUpdate();
+                comboBoxCharsMagic30.BeginUpdate();
+                comboBoxCharsMagic30.Items.Add(line);
+                comboBoxCharsMagic30.EndUpdate();
+                comboBoxCharsMagic31.BeginUpdate();
+                comboBoxCharsMagic31.Items.Add(line);
+                comboBoxCharsMagic31.EndUpdate();
+                comboBoxCharsMagic32.BeginUpdate();
+                comboBoxCharsMagic32.Items.Add(line);
+                comboBoxCharsMagic32.EndUpdate();
+            }
+
+            #endregion
+
             ListViewLoadImages();
 
             ListViewItem_SetSpacing(listViewExCharactersList, 32 + 113, 64 + 4);
@@ -755,7 +864,10 @@ namespace Quezacotl
 
             #endregion
         }
-
+        public void LoadingScreen()
+        {
+            Application.Run(new LoadingScreen());
+        }
         #region Listviews selection style
 
         // You can subclass ListView and override this method
@@ -2815,5 +2927,24 @@ namespace Quezacotl
         }
 
         #endregion
+
+        public void LoadTabsObjects()
+        {
+            for (int i = 1; i < tabControlMain.TabPages.Count; i++)
+                tabControlMain.SelectedIndex = i;
+            tabControlMain.SelectedIndex = 0;
+
+            for (int i = 1; i < tabControlCharacters.TabPages.Count; i++)
+                tabControlCharacters.SelectedIndex = i;
+            tabControlCharacters.SelectedIndex = 0;
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Thread t = new Thread(new ThreadStart(LoadingScreen));
+            t.Start();
+            t.Abort();
+        }
     }
 }
