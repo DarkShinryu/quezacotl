@@ -453,7 +453,7 @@
             this.numericUpDownGfKills = new System.Windows.Forms.NumericUpDown();
             this.labelGfKills = new System.Windows.Forms.Label();
             this.numericUpDownGfExp = new System.Windows.Forms.NumericUpDown();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlGf = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.checkBoxGfAb082 = new System.Windows.Forms.CheckBox();
             this.checkBoxGfAb042 = new System.Windows.Forms.CheckBox();
@@ -1173,7 +1173,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfHp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKills)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExp)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.tabControlGf.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPageGfAp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfAp19)).BeginInit();
@@ -8172,7 +8172,7 @@
             this.groupBoxGf.Controls.Add(this.numericUpDownGfKills);
             this.groupBoxGf.Controls.Add(this.labelGfKills);
             this.groupBoxGf.Controls.Add(this.numericUpDownGfExp);
-            this.groupBoxGf.Controls.Add(this.tabControl1);
+            this.groupBoxGf.Controls.Add(this.tabControlGf);
             this.groupBoxGf.Location = new System.Drawing.Point(6, 62);
             this.groupBoxGf.Name = "groupBoxGf";
             this.groupBoxGf.Size = new System.Drawing.Size(657, 748);
@@ -8529,15 +8529,15 @@
             this.numericUpDownGfExp.Size = new System.Drawing.Size(220, 23);
             this.numericUpDownGfExp.TabIndex = 6;
             // 
-            // tabControl1
+            // tabControlGf
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPageGfAp);
-            this.tabControl1.Location = new System.Drawing.Point(9, 152);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(639, 590);
-            this.tabControl1.TabIndex = 9;
+            this.tabControlGf.Controls.Add(this.tabPage1);
+            this.tabControlGf.Controls.Add(this.tabPageGfAp);
+            this.tabControlGf.Location = new System.Drawing.Point(9, 152);
+            this.tabControlGf.Name = "tabControlGf";
+            this.tabControlGf.SelectedIndex = 0;
+            this.tabControlGf.Size = new System.Drawing.Size(639, 590);
+            this.tabControlGf.TabIndex = 9;
             // 
             // tabPage1
             // 
@@ -55875,7 +55875,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfHp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKills)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExp)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlGf.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPageGfAp.ResumeLayout(false);
@@ -56143,7 +56143,7 @@
         private System.Windows.Forms.Label labelGfLearningAbility;
         private System.Windows.Forms.Button buttonAbout;
         private System.Windows.Forms.TabPage tabPageMisc;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlGf;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.CheckBox checkBoxGfAb002;
         private System.Windows.Forms.CheckBox checkBoxGfAb001;

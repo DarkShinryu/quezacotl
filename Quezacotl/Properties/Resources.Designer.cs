@@ -578,6 +578,16 @@ namespace Quezacotl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loading_font {
+            get {
+                object obj = ResourceManager.GetObject("loading_font", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mtl00 {
             get {
                 object obj = ResourceManager.GetObject("mtl00", resourceCulture);

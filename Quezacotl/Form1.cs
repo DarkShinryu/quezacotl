@@ -7,7 +7,6 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Quezacotl.Properties;
 using System.Threading;
-using System.ComponentModel;
 
 namespace Quezacotl
 {
@@ -30,7 +29,6 @@ namespace Quezacotl
         public Form1()
         {
             InitializeComponent();
-
 
             #region Load Magic List
 
@@ -864,10 +862,7 @@ namespace Quezacotl
 
             #endregion
         }
-        public void LoadingScreen()
-        {
-            Application.Run(new LoadingScreen());
-        }
+
         #region Listviews selection style
 
         // You can subclass ListView and override this method
@@ -2926,9 +2921,11 @@ namespace Quezacotl
             _loaded = true;
         }
 
+
+
         #endregion
 
-        public void LoadTabsObjects()
+        private void Form1_Load(object sender, EventArgs e)
         {
             for (int i = 1; i < tabControlMain.TabPages.Count; i++)
                 tabControlMain.SelectedIndex = i;
@@ -2937,14 +2934,10 @@ namespace Quezacotl
             for (int i = 1; i < tabControlCharacters.TabPages.Count; i++)
                 tabControlCharacters.SelectedIndex = i;
             tabControlCharacters.SelectedIndex = 0;
-        }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Thread t = new Thread(new ThreadStart(LoadingScreen));
-            t.Start();
-            t.Abort();
+            for (int i = 1; i < tabControlGf.TabPages.Count; i++)
+                tabControlGf.SelectedIndex = i;
+            tabControlGf.SelectedIndex = 0;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Quezacotl
 {
-    partial class LoadingScreen
+    partial class SplashForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,60 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBarLoad = new System.Windows.Forms.ProgressBar();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // progressBarLoad
+            // progressBar1
             // 
-            this.progressBarLoad.Location = new System.Drawing.Point(254, 309);
-            this.progressBarLoad.Name = "progressBarLoad";
-            this.progressBarLoad.Size = new System.Drawing.Size(278, 23);
-            this.progressBarLoad.Step = 1;
-            this.progressBarLoad.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBarLoad.TabIndex = 0;
+            this.progressBar1.ForeColor = System.Drawing.Color.LimeGreen;
+            this.progressBar1.Location = new System.Drawing.Point(-4, 65);
+            this.progressBar1.MarqueeAnimationSpeed = 40;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(377, 23);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Action Comics", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(322, 275);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(305, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 29);
+            this.label1.Size = new System.Drawing.Size(65, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Loading...";
             // 
-            // LoadingScreen
+            // SplashForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quezacotl.Properties.Resources.loading;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Quezacotl.Properties.Resources.loading_font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(544, 344);
+            this.ClientSize = new System.Drawing.Size(370, 87);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.progressBarLoad);
+            this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(546, 346);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(546, 346);
-            this.Name = "LoadingScreen";
+            this.Name = "SplashForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.TopMost = true;
-            this.Load += new System.EventHandler(this.LoadingScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.ProgressBar progressBarLoad;
     }
 }
