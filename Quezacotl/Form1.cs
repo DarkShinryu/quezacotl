@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Quezacotl.Properties;
-using System.Threading;
 
 namespace Quezacotl
 {
@@ -20,9 +19,6 @@ namespace Quezacotl
         private const byte _bp_checked = 0x01;
         private const byte _bp_string = 0x02;
         private const byte _bp_hex = 0x03;
-
-        [DllImport("user32.dll")] //used in Listview spacing method
-        public static extern int SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
 
         [DllImport("uxtheme.dll", CharSet = CharSet.Unicode, ExactSpelling = true)] //used in Listview selection style method
         internal static extern int SetWindowTheme(IntPtr hWnd, string appName, string partList);
@@ -136,14 +132,610 @@ namespace Quezacotl
 
             #endregion
 
+            #region Load Items List
+
+            string[] itemList = Resources.List_Items.Split('\n');
+            foreach (var line in itemList)
+            {
+                comboBoxItem1.BeginUpdate();
+                comboBoxItem1.Items.Add(line);
+                comboBoxItem1.EndUpdate();
+                comboBoxItem2.BeginUpdate();
+                comboBoxItem2.Items.Add(line);
+                comboBoxItem2.EndUpdate();
+                comboBoxItem3.BeginUpdate();
+                comboBoxItem3.Items.Add(line);
+                comboBoxItem3.EndUpdate();
+                comboBoxItem4.BeginUpdate();
+                comboBoxItem4.Items.Add(line);
+                comboBoxItem4.EndUpdate();
+                comboBoxItem5.BeginUpdate();
+                comboBoxItem5.Items.Add(line);
+                comboBoxItem5.EndUpdate();
+                comboBoxItem6.BeginUpdate();
+                comboBoxItem6.Items.Add(line);
+                comboBoxItem6.EndUpdate();
+                comboBoxItem7.BeginUpdate();
+                comboBoxItem7.Items.Add(line);
+                comboBoxItem7.EndUpdate();
+                comboBoxItem8.BeginUpdate();
+                comboBoxItem8.Items.Add(line);
+                comboBoxItem8.EndUpdate();
+                comboBoxItem9.BeginUpdate();
+                comboBoxItem9.Items.Add(line);
+                comboBoxItem9.EndUpdate();
+                comboBoxItem10.BeginUpdate();
+                comboBoxItem10.Items.Add(line);
+                comboBoxItem10.EndUpdate();
+                comboBoxItem11.BeginUpdate();
+                comboBoxItem11.Items.Add(line);
+                comboBoxItem11.EndUpdate();
+                comboBoxItem12.BeginUpdate();
+                comboBoxItem12.Items.Add(line);
+                comboBoxItem12.EndUpdate();
+                comboBoxItem13.BeginUpdate();
+                comboBoxItem13.Items.Add(line);
+                comboBoxItem13.EndUpdate();
+                comboBoxItem14.BeginUpdate();
+                comboBoxItem14.Items.Add(line);
+                comboBoxItem14.EndUpdate();
+                comboBoxItem15.BeginUpdate();
+                comboBoxItem15.Items.Add(line);
+                comboBoxItem15.EndUpdate();
+                comboBoxItem16.BeginUpdate();
+                comboBoxItem16.Items.Add(line);
+                comboBoxItem16.EndUpdate();
+                comboBoxItem17.BeginUpdate();
+                comboBoxItem17.Items.Add(line);
+                comboBoxItem17.EndUpdate();
+                comboBoxItem18.BeginUpdate();
+                comboBoxItem18.Items.Add(line);
+                comboBoxItem18.EndUpdate();
+                comboBoxItem19.BeginUpdate();
+                comboBoxItem19.Items.Add(line);
+                comboBoxItem19.EndUpdate();
+                comboBoxItem20.BeginUpdate();
+                comboBoxItem20.Items.Add(line);
+                comboBoxItem20.EndUpdate();
+                comboBoxItem21.BeginUpdate();
+                comboBoxItem21.Items.Add(line);
+                comboBoxItem21.EndUpdate();
+                comboBoxItem22.BeginUpdate();
+                comboBoxItem22.Items.Add(line);
+                comboBoxItem22.EndUpdate();
+                comboBoxItem23.BeginUpdate();
+                comboBoxItem23.Items.Add(line);
+                comboBoxItem23.EndUpdate();
+                comboBoxItem24.BeginUpdate();
+                comboBoxItem24.Items.Add(line);
+                comboBoxItem24.EndUpdate();
+                comboBoxItem25.BeginUpdate();
+                comboBoxItem25.Items.Add(line);
+                comboBoxItem25.EndUpdate();
+                comboBoxItem26.BeginUpdate();
+                comboBoxItem26.Items.Add(line);
+                comboBoxItem26.EndUpdate();
+                comboBoxItem27.BeginUpdate();
+                comboBoxItem27.Items.Add(line);
+                comboBoxItem27.EndUpdate();
+                comboBoxItem28.BeginUpdate();
+                comboBoxItem28.Items.Add(line);
+                comboBoxItem28.EndUpdate();
+                comboBoxItem29.BeginUpdate();
+                comboBoxItem29.Items.Add(line);
+                comboBoxItem29.EndUpdate();
+                comboBoxItem30.BeginUpdate();
+                comboBoxItem30.Items.Add(line);
+                comboBoxItem30.EndUpdate();
+                comboBoxItem31.BeginUpdate();
+                comboBoxItem31.Items.Add(line);
+                comboBoxItem31.EndUpdate();
+                comboBoxItem32.BeginUpdate();
+                comboBoxItem32.Items.Add(line);
+                comboBoxItem32.EndUpdate();
+                comboBoxItem33.BeginUpdate();
+                comboBoxItem33.Items.Add(line);
+                comboBoxItem33.EndUpdate();
+                comboBoxItem34.BeginUpdate();
+                comboBoxItem34.Items.Add(line);
+                comboBoxItem34.EndUpdate();
+                comboBoxItem35.BeginUpdate();
+                comboBoxItem35.Items.Add(line);
+                comboBoxItem35.EndUpdate();
+                comboBoxItem36.BeginUpdate();
+                comboBoxItem36.Items.Add(line);
+                comboBoxItem36.EndUpdate();
+                comboBoxItem37.BeginUpdate();
+                comboBoxItem37.Items.Add(line);
+                comboBoxItem37.EndUpdate();
+                comboBoxItem38.BeginUpdate();
+                comboBoxItem38.Items.Add(line);
+                comboBoxItem38.EndUpdate();
+                comboBoxItem39.BeginUpdate();
+                comboBoxItem39.Items.Add(line);
+                comboBoxItem39.EndUpdate();
+                comboBoxItem40.BeginUpdate();
+                comboBoxItem40.Items.Add(line);
+                comboBoxItem40.EndUpdate();
+                comboBoxItem41.BeginUpdate();
+                comboBoxItem41.Items.Add(line);
+                comboBoxItem41.EndUpdate();
+                comboBoxItem42.BeginUpdate();
+                comboBoxItem42.Items.Add(line);
+                comboBoxItem42.EndUpdate();
+                comboBoxItem43.BeginUpdate();
+                comboBoxItem43.Items.Add(line);
+                comboBoxItem43.EndUpdate();
+                comboBoxItem44.BeginUpdate();
+                comboBoxItem44.Items.Add(line);
+                comboBoxItem44.EndUpdate();
+                comboBoxItem45.BeginUpdate();
+                comboBoxItem45.Items.Add(line);
+                comboBoxItem45.EndUpdate();
+                comboBoxItem46.BeginUpdate();
+                comboBoxItem46.Items.Add(line);
+                comboBoxItem46.EndUpdate();
+                comboBoxItem47.BeginUpdate();
+                comboBoxItem47.Items.Add(line);
+                comboBoxItem47.EndUpdate();
+                comboBoxItem48.BeginUpdate();
+                comboBoxItem48.Items.Add(line);
+                comboBoxItem48.EndUpdate();
+                comboBoxItem49.BeginUpdate();
+                comboBoxItem49.Items.Add(line);
+                comboBoxItem49.EndUpdate();
+                comboBoxItem50.BeginUpdate();
+                comboBoxItem50.Items.Add(line);
+                comboBoxItem50.EndUpdate();
+                comboBoxItem51.BeginUpdate();
+                comboBoxItem51.Items.Add(line);
+                comboBoxItem51.EndUpdate();
+                comboBoxItem52.BeginUpdate();
+                comboBoxItem52.Items.Add(line);
+                comboBoxItem52.EndUpdate();
+                comboBoxItem53.BeginUpdate();
+                comboBoxItem53.Items.Add(line);
+                comboBoxItem53.EndUpdate();
+                comboBoxItem54.BeginUpdate();
+                comboBoxItem54.Items.Add(line);
+                comboBoxItem54.EndUpdate();
+                comboBoxItem55.BeginUpdate();
+                comboBoxItem55.Items.Add(line);
+                comboBoxItem55.EndUpdate();
+                comboBoxItem56.BeginUpdate();
+                comboBoxItem56.Items.Add(line);
+                comboBoxItem56.EndUpdate();
+                comboBoxItem57.BeginUpdate();
+                comboBoxItem57.Items.Add(line);
+                comboBoxItem57.EndUpdate();
+                comboBoxItem58.BeginUpdate();
+                comboBoxItem58.Items.Add(line);
+                comboBoxItem58.EndUpdate();
+                comboBoxItem59.BeginUpdate();
+                comboBoxItem59.Items.Add(line);
+                comboBoxItem59.EndUpdate();
+                comboBoxItem60.BeginUpdate();
+                comboBoxItem60.Items.Add(line);
+                comboBoxItem60.EndUpdate();
+                comboBoxItem61.BeginUpdate();
+                comboBoxItem61.Items.Add(line);
+                comboBoxItem61.EndUpdate();
+                comboBoxItem62.BeginUpdate();
+                comboBoxItem62.Items.Add(line);
+                comboBoxItem62.EndUpdate();
+                comboBoxItem63.BeginUpdate();
+                comboBoxItem63.Items.Add(line);
+                comboBoxItem63.EndUpdate();
+                comboBoxItem64.BeginUpdate();
+                comboBoxItem64.Items.Add(line);
+                comboBoxItem64.EndUpdate();
+                comboBoxItem65.BeginUpdate();
+                comboBoxItem65.Items.Add(line);
+                comboBoxItem65.EndUpdate();
+                comboBoxItem66.BeginUpdate();
+                comboBoxItem66.Items.Add(line);
+                comboBoxItem66.EndUpdate();
+                comboBoxItem67.BeginUpdate();
+                comboBoxItem67.Items.Add(line);
+                comboBoxItem67.EndUpdate();
+                comboBoxItem68.BeginUpdate();
+                comboBoxItem68.Items.Add(line);
+                comboBoxItem68.EndUpdate();
+                comboBoxItem69.BeginUpdate();
+                comboBoxItem69.Items.Add(line);
+                comboBoxItem69.EndUpdate();
+                comboBoxItem70.BeginUpdate();
+                comboBoxItem70.Items.Add(line);
+                comboBoxItem70.EndUpdate();
+                comboBoxItem71.BeginUpdate();
+                comboBoxItem71.Items.Add(line);
+                comboBoxItem71.EndUpdate();
+                comboBoxItem72.BeginUpdate();
+                comboBoxItem72.Items.Add(line);
+                comboBoxItem72.EndUpdate();
+                comboBoxItem73.BeginUpdate();
+                comboBoxItem73.Items.Add(line);
+                comboBoxItem73.EndUpdate();
+                comboBoxItem74.BeginUpdate();
+                comboBoxItem74.Items.Add(line);
+                comboBoxItem74.EndUpdate();
+                comboBoxItem75.BeginUpdate();
+                comboBoxItem75.Items.Add(line);
+                comboBoxItem75.EndUpdate();
+                comboBoxItem76.BeginUpdate();
+                comboBoxItem76.Items.Add(line);
+                comboBoxItem76.EndUpdate();
+                comboBoxItem77.BeginUpdate();
+                comboBoxItem77.Items.Add(line);
+                comboBoxItem77.EndUpdate();
+                comboBoxItem78.BeginUpdate();
+                comboBoxItem78.Items.Add(line);
+                comboBoxItem78.EndUpdate();
+                comboBoxItem79.BeginUpdate();
+                comboBoxItem79.Items.Add(line);
+                comboBoxItem79.EndUpdate();
+                comboBoxItem80.BeginUpdate();
+                comboBoxItem80.Items.Add(line);
+                comboBoxItem80.EndUpdate();
+                comboBoxItem81.BeginUpdate();
+                comboBoxItem81.Items.Add(line);
+                comboBoxItem81.EndUpdate();
+                comboBoxItem82.BeginUpdate();
+                comboBoxItem82.Items.Add(line);
+                comboBoxItem82.EndUpdate();
+                comboBoxItem83.BeginUpdate();
+                comboBoxItem83.Items.Add(line);
+                comboBoxItem83.EndUpdate();
+                comboBoxItem84.BeginUpdate();
+                comboBoxItem84.Items.Add(line);
+                comboBoxItem84.EndUpdate();
+                comboBoxItem85.BeginUpdate();
+                comboBoxItem85.Items.Add(line);
+                comboBoxItem85.EndUpdate();
+                comboBoxItem86.BeginUpdate();
+                comboBoxItem86.Items.Add(line);
+                comboBoxItem86.EndUpdate();
+                comboBoxItem87.BeginUpdate();
+                comboBoxItem87.Items.Add(line);
+                comboBoxItem87.EndUpdate();
+                comboBoxItem88.BeginUpdate();
+                comboBoxItem88.Items.Add(line);
+                comboBoxItem88.EndUpdate();
+                comboBoxItem89.BeginUpdate();
+                comboBoxItem89.Items.Add(line);
+                comboBoxItem89.EndUpdate();
+                comboBoxItem90.BeginUpdate();
+                comboBoxItem90.Items.Add(line);
+                comboBoxItem90.EndUpdate();
+                comboBoxItem91.BeginUpdate();
+                comboBoxItem91.Items.Add(line);
+                comboBoxItem91.EndUpdate();
+                comboBoxItem92.BeginUpdate();
+                comboBoxItem92.Items.Add(line);
+                comboBoxItem92.EndUpdate();
+                comboBoxItem93.BeginUpdate();
+                comboBoxItem93.Items.Add(line);
+                comboBoxItem93.EndUpdate();
+                comboBoxItem94.BeginUpdate();
+                comboBoxItem94.Items.Add(line);
+                comboBoxItem94.EndUpdate();
+                comboBoxItem95.BeginUpdate();
+                comboBoxItem95.Items.Add(line);
+                comboBoxItem95.EndUpdate();
+                comboBoxItem96.BeginUpdate();
+                comboBoxItem96.Items.Add(line);
+                comboBoxItem96.EndUpdate();
+                comboBoxItem97.BeginUpdate();
+                comboBoxItem97.Items.Add(line);
+                comboBoxItem97.EndUpdate();
+                comboBoxItem98.BeginUpdate();
+                comboBoxItem98.Items.Add(line);
+                comboBoxItem98.EndUpdate();
+                comboBoxItem99.BeginUpdate();
+                comboBoxItem99.Items.Add(line);
+                comboBoxItem99.EndUpdate();
+                comboBoxItem100.BeginUpdate();
+                comboBoxItem100.Items.Add(line);
+                comboBoxItem100.EndUpdate();
+                comboBoxItem101.BeginUpdate();
+                comboBoxItem101.Items.Add(line);
+                comboBoxItem101.EndUpdate();
+                comboBoxItem102.BeginUpdate();
+                comboBoxItem102.Items.Add(line);
+                comboBoxItem102.EndUpdate();
+                comboBoxItem103.BeginUpdate();
+                comboBoxItem103.Items.Add(line);
+                comboBoxItem103.EndUpdate();
+                comboBoxItem104.BeginUpdate();
+                comboBoxItem104.Items.Add(line);
+                comboBoxItem104.EndUpdate();
+                comboBoxItem105.BeginUpdate();
+                comboBoxItem105.Items.Add(line);
+                comboBoxItem105.EndUpdate();
+                comboBoxItem106.BeginUpdate();
+                comboBoxItem106.Items.Add(line);
+                comboBoxItem106.EndUpdate();
+                comboBoxItem107.BeginUpdate();
+                comboBoxItem107.Items.Add(line);
+                comboBoxItem107.EndUpdate();
+                comboBoxItem108.BeginUpdate();
+                comboBoxItem108.Items.Add(line);
+                comboBoxItem108.EndUpdate();
+                comboBoxItem109.BeginUpdate();
+                comboBoxItem109.Items.Add(line);
+                comboBoxItem109.EndUpdate();
+                comboBoxItem110.BeginUpdate();
+                comboBoxItem110.Items.Add(line);
+                comboBoxItem110.EndUpdate();
+                comboBoxItem111.BeginUpdate();
+                comboBoxItem111.Items.Add(line);
+                comboBoxItem111.EndUpdate();
+                comboBoxItem112.BeginUpdate();
+                comboBoxItem112.Items.Add(line);
+                comboBoxItem112.EndUpdate();
+                comboBoxItem113.BeginUpdate();
+                comboBoxItem113.Items.Add(line);
+                comboBoxItem113.EndUpdate();
+                comboBoxItem114.BeginUpdate();
+                comboBoxItem114.Items.Add(line);
+                comboBoxItem114.EndUpdate();
+                comboBoxItem115.BeginUpdate();
+                comboBoxItem115.Items.Add(line);
+                comboBoxItem115.EndUpdate();
+                comboBoxItem116.BeginUpdate();
+                comboBoxItem116.Items.Add(line);
+                comboBoxItem116.EndUpdate();
+                comboBoxItem117.BeginUpdate();
+                comboBoxItem117.Items.Add(line);
+                comboBoxItem117.EndUpdate();
+                comboBoxItem118.BeginUpdate();
+                comboBoxItem118.Items.Add(line);
+                comboBoxItem118.EndUpdate();
+                comboBoxItem119.BeginUpdate();
+                comboBoxItem119.Items.Add(line);
+                comboBoxItem119.EndUpdate();
+                comboBoxItem120.BeginUpdate();
+                comboBoxItem120.Items.Add(line);
+                comboBoxItem120.EndUpdate();
+                comboBoxItem121.BeginUpdate();
+                comboBoxItem121.Items.Add(line);
+                comboBoxItem121.EndUpdate();
+                comboBoxItem122.BeginUpdate();
+                comboBoxItem122.Items.Add(line);
+                comboBoxItem122.EndUpdate();
+                comboBoxItem123.BeginUpdate();
+                comboBoxItem123.Items.Add(line);
+                comboBoxItem123.EndUpdate();
+                comboBoxItem124.BeginUpdate();
+                comboBoxItem124.Items.Add(line);
+                comboBoxItem124.EndUpdate();
+                comboBoxItem125.BeginUpdate();
+                comboBoxItem125.Items.Add(line);
+                comboBoxItem125.EndUpdate();
+                comboBoxItem126.BeginUpdate();
+                comboBoxItem126.Items.Add(line);
+                comboBoxItem126.EndUpdate();
+                comboBoxItem127.BeginUpdate();
+                comboBoxItem127.Items.Add(line);
+                comboBoxItem127.EndUpdate();
+                comboBoxItem128.BeginUpdate();
+                comboBoxItem128.Items.Add(line);
+                comboBoxItem128.EndUpdate();
+                comboBoxItem129.BeginUpdate();
+                comboBoxItem129.Items.Add(line);
+                comboBoxItem129.EndUpdate();
+                comboBoxItem130.BeginUpdate();
+                comboBoxItem130.Items.Add(line);
+                comboBoxItem130.EndUpdate();
+                comboBoxItem131.BeginUpdate();
+                comboBoxItem131.Items.Add(line);
+                comboBoxItem131.EndUpdate();
+                comboBoxItem132.BeginUpdate();
+                comboBoxItem132.Items.Add(line);
+                comboBoxItem132.EndUpdate();
+                comboBoxItem133.BeginUpdate();
+                comboBoxItem133.Items.Add(line);
+                comboBoxItem133.EndUpdate();
+                comboBoxItem134.BeginUpdate();
+                comboBoxItem134.Items.Add(line);
+                comboBoxItem134.EndUpdate();
+                comboBoxItem135.BeginUpdate();
+                comboBoxItem135.Items.Add(line);
+                comboBoxItem135.EndUpdate();
+                comboBoxItem136.BeginUpdate();
+                comboBoxItem136.Items.Add(line);
+                comboBoxItem136.EndUpdate();
+                comboBoxItem137.BeginUpdate();
+                comboBoxItem137.Items.Add(line);
+                comboBoxItem137.EndUpdate();
+                comboBoxItem138.BeginUpdate();
+                comboBoxItem138.Items.Add(line);
+                comboBoxItem138.EndUpdate();
+                comboBoxItem139.BeginUpdate();
+                comboBoxItem139.Items.Add(line);
+                comboBoxItem139.EndUpdate();
+                comboBoxItem140.BeginUpdate();
+                comboBoxItem140.Items.Add(line);
+                comboBoxItem140.EndUpdate();
+                comboBoxItem141.BeginUpdate();
+                comboBoxItem141.Items.Add(line);
+                comboBoxItem141.EndUpdate();
+                comboBoxItem142.BeginUpdate();
+                comboBoxItem142.Items.Add(line);
+                comboBoxItem142.EndUpdate();
+                comboBoxItem143.BeginUpdate();
+                comboBoxItem143.Items.Add(line);
+                comboBoxItem143.EndUpdate();
+                comboBoxItem144.BeginUpdate();
+                comboBoxItem144.Items.Add(line);
+                comboBoxItem144.EndUpdate();
+                comboBoxItem145.BeginUpdate();
+                comboBoxItem145.Items.Add(line);
+                comboBoxItem145.EndUpdate();
+                comboBoxItem146.BeginUpdate();
+                comboBoxItem146.Items.Add(line);
+                comboBoxItem146.EndUpdate();
+                comboBoxItem147.BeginUpdate();
+                comboBoxItem147.Items.Add(line);
+                comboBoxItem147.EndUpdate();
+                comboBoxItem148.BeginUpdate();
+                comboBoxItem148.Items.Add(line);
+                comboBoxItem148.EndUpdate();
+                comboBoxItem149.BeginUpdate();
+                comboBoxItem149.Items.Add(line);
+                comboBoxItem149.EndUpdate();
+                comboBoxItem150.BeginUpdate();
+                comboBoxItem150.Items.Add(line);
+                comboBoxItem150.EndUpdate();
+                comboBoxItem151.BeginUpdate();
+                comboBoxItem151.Items.Add(line);
+                comboBoxItem151.EndUpdate();
+                comboBoxItem152.BeginUpdate();
+                comboBoxItem152.Items.Add(line);
+                comboBoxItem152.EndUpdate();
+                comboBoxItem153.BeginUpdate();
+                comboBoxItem153.Items.Add(line);
+                comboBoxItem153.EndUpdate();
+                comboBoxItem154.BeginUpdate();
+                comboBoxItem154.Items.Add(line);
+                comboBoxItem154.EndUpdate();
+                comboBoxItem155.BeginUpdate();
+                comboBoxItem155.Items.Add(line);
+                comboBoxItem155.EndUpdate();
+                comboBoxItem156.BeginUpdate();
+                comboBoxItem156.Items.Add(line);
+                comboBoxItem156.EndUpdate();
+                comboBoxItem157.BeginUpdate();
+                comboBoxItem157.Items.Add(line);
+                comboBoxItem157.EndUpdate();
+                comboBoxItem158.BeginUpdate();
+                comboBoxItem158.Items.Add(line);
+                comboBoxItem158.EndUpdate();
+                comboBoxItem159.BeginUpdate();
+                comboBoxItem159.Items.Add(line);
+                comboBoxItem159.EndUpdate();
+                comboBoxItem160.BeginUpdate();
+                comboBoxItem160.Items.Add(line);
+                comboBoxItem160.EndUpdate();
+                comboBoxItem161.BeginUpdate();
+                comboBoxItem161.Items.Add(line);
+                comboBoxItem161.EndUpdate();
+                comboBoxItem162.BeginUpdate();
+                comboBoxItem162.Items.Add(line);
+                comboBoxItem162.EndUpdate();
+                comboBoxItem163.BeginUpdate();
+                comboBoxItem163.Items.Add(line);
+                comboBoxItem163.EndUpdate();
+                comboBoxItem164.BeginUpdate();
+                comboBoxItem164.Items.Add(line);
+                comboBoxItem164.EndUpdate();
+                comboBoxItem165.BeginUpdate();
+                comboBoxItem165.Items.Add(line);
+                comboBoxItem165.EndUpdate();
+                comboBoxItem166.BeginUpdate();
+                comboBoxItem166.Items.Add(line);
+                comboBoxItem166.EndUpdate();
+                comboBoxItem167.BeginUpdate();
+                comboBoxItem167.Items.Add(line);
+                comboBoxItem167.EndUpdate();
+                comboBoxItem168.BeginUpdate();
+                comboBoxItem168.Items.Add(line);
+                comboBoxItem168.EndUpdate();
+                comboBoxItem169.BeginUpdate();
+                comboBoxItem169.Items.Add(line);
+                comboBoxItem169.EndUpdate();
+                comboBoxItem170.BeginUpdate();
+                comboBoxItem170.Items.Add(line);
+                comboBoxItem170.EndUpdate();
+                comboBoxItem171.BeginUpdate();
+                comboBoxItem171.Items.Add(line);
+                comboBoxItem171.EndUpdate();
+                comboBoxItem172.BeginUpdate();
+                comboBoxItem172.Items.Add(line);
+                comboBoxItem172.EndUpdate();
+                comboBoxItem173.BeginUpdate();
+                comboBoxItem173.Items.Add(line);
+                comboBoxItem173.EndUpdate();
+                comboBoxItem174.BeginUpdate();
+                comboBoxItem174.Items.Add(line);
+                comboBoxItem174.EndUpdate();
+                comboBoxItem175.BeginUpdate();
+                comboBoxItem175.Items.Add(line);
+                comboBoxItem175.EndUpdate();
+                comboBoxItem176.BeginUpdate();
+                comboBoxItem176.Items.Add(line);
+                comboBoxItem176.EndUpdate();
+                comboBoxItem177.BeginUpdate();
+                comboBoxItem177.Items.Add(line);
+                comboBoxItem177.EndUpdate();
+                comboBoxItem178.BeginUpdate();
+                comboBoxItem178.Items.Add(line);
+                comboBoxItem178.EndUpdate();
+                comboBoxItem179.BeginUpdate();
+                comboBoxItem179.Items.Add(line);
+                comboBoxItem179.EndUpdate();
+                comboBoxItem180.BeginUpdate();
+                comboBoxItem180.Items.Add(line);
+                comboBoxItem180.EndUpdate();
+                comboBoxItem181.BeginUpdate();
+                comboBoxItem181.Items.Add(line);
+                comboBoxItem181.EndUpdate();
+                comboBoxItem182.BeginUpdate();
+                comboBoxItem182.Items.Add(line);
+                comboBoxItem182.EndUpdate();
+                comboBoxItem183.BeginUpdate();
+                comboBoxItem183.Items.Add(line);
+                comboBoxItem183.EndUpdate();
+                comboBoxItem184.BeginUpdate();
+                comboBoxItem184.Items.Add(line);
+                comboBoxItem184.EndUpdate();
+                comboBoxItem185.BeginUpdate();
+                comboBoxItem185.Items.Add(line);
+                comboBoxItem185.EndUpdate();
+                comboBoxItem186.BeginUpdate();
+                comboBoxItem186.Items.Add(line);
+                comboBoxItem186.EndUpdate();
+                comboBoxItem187.BeginUpdate();
+                comboBoxItem187.Items.Add(line);
+                comboBoxItem187.EndUpdate();
+                comboBoxItem188.BeginUpdate();
+                comboBoxItem188.Items.Add(line);
+                comboBoxItem188.EndUpdate();
+                comboBoxItem189.BeginUpdate();
+                comboBoxItem189.Items.Add(line);
+                comboBoxItem189.EndUpdate();
+                comboBoxItem190.BeginUpdate();
+                comboBoxItem190.Items.Add(line);
+                comboBoxItem190.EndUpdate();
+                comboBoxItem191.BeginUpdate();
+                comboBoxItem191.Items.Add(line);
+                comboBoxItem191.EndUpdate();
+                comboBoxItem192.BeginUpdate();
+                comboBoxItem192.Items.Add(line);
+                comboBoxItem192.EndUpdate();
+                comboBoxItem193.BeginUpdate();
+                comboBoxItem193.Items.Add(line);
+                comboBoxItem193.EndUpdate();
+                comboBoxItem194.BeginUpdate();
+                comboBoxItem194.Items.Add(line);
+                comboBoxItem194.EndUpdate();
+                comboBoxItem195.BeginUpdate();
+                comboBoxItem195.Items.Add(line);
+                comboBoxItem195.EndUpdate();
+                comboBoxItem196.BeginUpdate();
+                comboBoxItem196.Items.Add(line);
+                comboBoxItem196.EndUpdate();
+                comboBoxItem197.BeginUpdate();
+                comboBoxItem197.Items.Add(line);
+                comboBoxItem197.EndUpdate();
+                comboBoxItem198.BeginUpdate();
+                comboBoxItem198.Items.Add(line);
+                comboBoxItem198.EndUpdate();
+            }
+
+            #endregion
+
             ListViewLoadImages();
-
-            ListViewItem_SetSpacing(listViewExCharactersList, 32 + 113, 64 + 4);
-            ListViewItem_SetSpacing(listViewExGfList, 32 + 2, 64 + 4);
-
-            buttonSave.Enabled = false;
-            buttonSaveAs.Enabled = false;
-            buttonDeleteTooltips.Enabled = false;
 
             _backup = $"{AppDomain.CurrentDomain.BaseDirectory}\\tooltips.bin";
             if (File.Exists(_backup))
@@ -866,7 +1458,6 @@ namespace Quezacotl
 
         #region Listviews selection style
 
-        // You can subclass ListView and override this method
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
@@ -874,23 +1465,7 @@ namespace Quezacotl
             SetWindowTheme(listViewExGfList.Handle, "explorer", null);
         }
 
-        #endregion
-
-        #region Listviews spacing
-
-        public int MakeLong(short lowPart, short highPart)
-        {
-            return (int)(((ushort)lowPart) | (uint)(highPart << 16));
-        }
-
-        public void ListViewItem_SetSpacing(ListView listview, short leftPadding, short topPadding)
-        {
-            const int LVM_FIRST = 0x1000;
-            const int LVM_SETICONSPACING = LVM_FIRST + 53;
-            SendMessage(listview.Handle, LVM_SETICONSPACING, IntPtr.Zero, (IntPtr)MakeLong(leftPadding, topPadding));
-        }
-
-        #endregion
+        #endregion        
 
         #region Listviews load images
 
@@ -957,8 +1532,6 @@ namespace Quezacotl
             imageListGfBig.Images.SetKeyName(14, "Tonberry");
             imageListGfBig.Images.Add(Resources.gf15);
             imageListGfBig.Images.SetKeyName(15, "Eden");
-            imageListGfBig.Images.Add(Resources.gf16);
-            imageListGfBig.Images.SetKeyName(16, "Griever");
             listViewExGfList.Items[0].ImageKey = "Quezacotl";
             listViewExGfList.Items[1].ImageKey = "Shiva";
             listViewExGfList.Items[2].ImageKey = "Ifrit";
@@ -970,12 +1543,11 @@ namespace Quezacotl
             listViewExGfList.Items[8].ImageKey = "Pandemona";
             listViewExGfList.Items[9].ImageKey = "Cerberus";
             listViewExGfList.Items[10].ImageKey = "Alexander";
-            listViewExGfList.Items[14].ImageKey = "Doomtrain";
-            listViewExGfList.Items[11].ImageKey = "Bahamuth";
-            listViewExGfList.Items[12].ImageKey = "Cactuar";
-            listViewExGfList.Items[13].ImageKey = "Tonberry";
+            listViewExGfList.Items[11].ImageKey = "Doomtrain";
+            listViewExGfList.Items[12].ImageKey = "Bahamuth";
+            listViewExGfList.Items[13].ImageKey = "Cactuar";
+            listViewExGfList.Items[14].ImageKey = "Tonberry";
             listViewExGfList.Items[15].ImageKey = "Eden";
-            listViewExGfList.Items[16].ImageKey = "Griever";
 
             //GF Small
             imageListGfSmall.ImageSize = new Size(24, 36);
@@ -1011,8 +1583,6 @@ namespace Quezacotl
             imageListGfSmall.Images.SetKeyName(14, "Tonberry");
             imageListGfSmall.Images.Add(Resources.gf15);
             imageListGfSmall.Images.SetKeyName(15, "Eden");
-            imageListGfSmall.Images.Add(Resources.gf16);
-            imageListGfSmall.Images.SetKeyName(16, "Griever");
             checkBoxCharsGf1.ImageKey = "Quezacotl";
             checkBoxCharsGf2.ImageKey = "Shiva";
             checkBoxCharsGf3.ImageKey = "Ifrit";
@@ -1075,23 +1645,34 @@ namespace Quezacotl
 
                 if (!_opensaveException)
                 {
+                    labelCharsLevelValue.Enabled = true;
+                    panelCharsLevel.Enabled = true;
+                    numericUpDownCharsExpLvUp.Enabled = true;                    
+                    labelGfLevelValue.Enabled = true;
+                    panelGfLevel.Enabled = true;
+                    numericUpDownGfExpLvUp.Enabled = true;                    
                     buttonSave.Enabled = true;
                     buttonSaveAs.Enabled = true;
+
+                    numericUpDownCharsExpLvUp.Value = 1000;
+                    numericUpDownGfExpLvUp.Value = 1000;
+
+                    toolTip1.SetToolTip(numericUpDownCharsExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
+                        "This is here only to help you calculate the current level, it does nothing to init.out.");
+                    toolTip1.SetToolTip(numericUpDownGfExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
+                        "This is here only to help you calculate the current level, it does nothing to init.out.");
 
                     listViewExCharactersList.Items[0].Selected = true;
                     listViewExGfList.Items[0].Selected = true;
 
                     CheckIfAllGfsAreChecked();
 
-                    toolTip1.SetToolTip(numericUpDownCharsExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
-                        "This is here only to help you calculate the current level, it does nothing to init.out.");
-
                     toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
                     toolStripStatusLabelInit.Text = Path.GetFileName(_existingFilename) + " loaded";
-                    statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
+                    statusStrip1.BackColor = Color.FromArgb(255, 25, 170, 30);
                     toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
                     await Task.Delay(3000);
-                    statusStrip.BackColor = Color.Gray;
+                    statusStrip1.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.Text = "Ready";
                 }
@@ -1119,11 +1700,11 @@ namespace Quezacotl
 
                 if (!_opensaveException)
                 {
-                    statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
+                    statusStrip1.BackColor = Color.FromArgb(255, 25, 170, 30);
                     toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
                     toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
                     await Task.Delay(3000);
-                    statusStrip.BackColor = Color.Gray;
+                    statusStrip1.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.Text = "Ready";
                 }
@@ -1156,11 +1737,11 @@ namespace Quezacotl
                 }
                 if (!_opensaveException)
                 {
-                    statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
+                    statusStrip1.BackColor = Color.FromArgb(255, 25, 170, 30);
                     toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
                     toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
                     await Task.Delay(3000);
-                    statusStrip.BackColor = Color.Gray;
+                    statusStrip1.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.Text = "Ready";
                 }
@@ -1278,9 +1859,9 @@ namespace Quezacotl
 
         }
 
-        private void deleteTooltipsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void buttonDeleteTooltips_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("This will delete the tooltips.out file. " +
+            DialogResult dialogResult = MessageBox.Show("This will delete the tooltips.bin file. " +
                 "Quezacotl will restart and unsaved changes will be lost, do you want to continue?",
                 "Delete tooltips file", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             if (dialogResult == DialogResult.Yes)
@@ -1296,16 +1877,13 @@ namespace Quezacotl
                     Process.Start(Application.ExecutablePath);
                     Environment.Exit(0);
                 }
-
                 catch
                 {
                     DialogResult dialogResult2 = MessageBox.Show("Sorry, i wasn't able to delete the tooltips.out file.\nTry to delete it manually.",
                         "Failed to delete", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
 
                     if (!File.Exists(_backup))
-                    {
                         buttonDeleteTooltips.Enabled = false;
-                    }
                 }
             }
         }
@@ -1347,18 +1925,18 @@ namespace Quezacotl
 
         #endregion
 
-        #region Level calculator
+        #region Characters level calculator 
 
         private void CharacterLevel()
         {
             if (InitWorker.Init == null || InitWorker.BackupInit == null)
                 return;
 
-            uint level = ((uint)numericUpDownCharsExp.Value / (uint)numericUpDownCharsExpLvUp.Value) + 1;
-            if (level > 100)
-                level = 100;
+            uint charLevel = ((uint)numericUpDownCharsExp.Value / (uint)numericUpDownCharsExpLvUp.Value) + 1;
+            if (charLevel > 100)
+                charLevel = 100;
 
-            labelCharsLevelValue.Text = level.ToString();
+            labelCharsLevelValue.Text = charLevel.ToString();
         }
 
         private void numericUpDownCharExp_ValueChanged(object sender, EventArgs e)
@@ -1369,6 +1947,32 @@ namespace Quezacotl
         private void numericUpDownCharExpLvUp_ValueChanged(object sender, EventArgs e)
         {
             CharacterLevel();
+        }
+
+        #endregion
+
+        #region GFs level calculator 
+
+        private void GfLevel()
+        {
+            if (InitWorker.Init == null || InitWorker.BackupInit == null)
+                return;
+
+            uint gfLevel = ((uint)numericUpDownGfExp.Value / (uint)numericUpDownGfExpLvUp.Value) + 1;
+            if (gfLevel > 100)
+                gfLevel = 100;
+
+            labelGfLevelValue.Text = gfLevel.ToString();
+        }
+
+        private void numericUpDownGfExp_ValueChanged(object sender, EventArgs e)
+        {
+            GfLevel();
+        }
+
+        private void numericUpDownGfExpLvUp_ValueChanged(object sender, EventArgs e)
+        {
+            GfLevel();
         }
 
         #endregion
@@ -1456,13 +2060,76 @@ namespace Quezacotl
 
         #endregion
 
+        #region Listbox show/hide panels
+
+        private void listBoxMain_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxMain.SelectedIndex == 0)
+            {
+                panelCharacters.Visible = true;
+                panelGf.Visible = false;
+                panelItems.Visible = false;
+                panelMisc.Visible = false;
+            }
+            else if (listBoxMain.SelectedIndex == 1)
+            {
+                panelCharacters.Visible = false;
+                panelGf.Visible = true;
+                panelItems.Visible = false;
+                panelMisc.Visible = false;
+            }
+            else if (listBoxMain.SelectedIndex == 2)
+            {
+                panelCharacters.Visible = false;
+                panelGf.Visible = false;
+                panelItems.Visible = true;
+                panelMisc.Visible = false;
+            }
+            else if (listBoxMain.SelectedIndex == 3)
+            {
+                panelCharacters.Visible = false;
+                panelGf.Visible = false;
+                panelItems.Visible = false;
+                panelMisc.Visible = true;
+            }
+        }
+
+        #endregion
+
+        #region Loader loops + give focus after load
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listBoxMain.Items.Count; i++)
+                listBoxMain.SelectedIndex = i;
+            listBoxMain.SelectedIndex = 0;
+
+            for (int i = 0; i < tabControlCharacters.TabPages.Count; i++)
+                tabControlCharacters.SelectedIndex = i;
+            tabControlCharacters.SelectedIndex = 0;
+
+            for (int i = 0; i < tabControlGf.TabPages.Count; i++)
+                tabControlGf.SelectedIndex = i;
+            tabControlGf.SelectedIndex = 0;
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            this.Focus();
+        }
+
+        #endregion
+
 
         #region Init data to gui
 
         private void listViewExCharactersList_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewExCharactersList.Items[0].Selected || listViewExCharactersList.Items[6].Selected || listViewExCharactersList.Items[7].Selected)
+            {
                 tabPageChars6.Enabled = false;
+                tabPageChars6.Visible = false;
+            }
             else
                 tabPageChars6.Enabled = true;
 
@@ -2943,28 +3610,7 @@ namespace Quezacotl
             _loaded = true;
         }
 
-
-
         #endregion
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            for (int i = 1; i < tabControlMain.TabPages.Count; i++)
-                tabControlMain.SelectedIndex = i;
-            tabControlMain.SelectedIndex = 0;
-
-            for (int i = 1; i < tabControlCharacters.TabPages.Count; i++)
-                tabControlCharacters.SelectedIndex = i;
-            tabControlCharacters.SelectedIndex = 0;
-
-            for (int i = 1; i < tabControlGf.TabPages.Count; i++)
-                tabControlGf.SelectedIndex = i;
-            tabControlGf.SelectedIndex = 0;
-        }
-
-        private void tabControlCharacters_Selecting(object sender, TabControlCancelEventArgs e)
-        {
-            e.Cancel = !e.TabPage.Enabled;
-        }
     }
 }

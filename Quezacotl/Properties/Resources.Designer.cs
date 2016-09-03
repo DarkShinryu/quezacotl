@@ -491,17 +491,60 @@ namespace Quezacotl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to -
+        ///Potion
+        ///Potion+
+        ///Hi-Potion
+        ///Hi-Potion+
+        ///X-Potion
+        ///Mega-Potion
+        ///Phoenix Down
+        ///Mega Phoenix
+        ///Elixir
+        ///Megalixir
+        ///Antidote
+        ///Soft
+        ///Eye Drops
+        ///Echo Screen
+        ///Holy Water
+        ///Remedy
+        ///Remedy+
+        ///Hero-Trial
+        ///Hero
+        ///Holy War-Trial
+        ///Holy War
+        ///Shell Stone
+        ///Protect Stone
+        ///Aura Stone
+        ///Death Stone
+        ///Holy Stone
+        ///Flare Stone
+        ///Meteor Stone
+        ///Ultima Stone
+        ///Gysahl Greens
+        ///Phoenix Pinion
+        ///Friendship
+        ///Tent
+        ///Pet House
+        ///Cottage
+        ///G-Potion
+        ///G-Hi-Potion
+        ///G-Mega-Potion
+        ///G-Returner
+        ///Rename Card
+        ///Amnesia Greens
+        ///HP-J Scroll
+        ///Str-J Scroll
+        ///Vit-J [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static System.Drawing.Bitmap learning {
+        internal static string List_Items {
             get {
-                object obj = ResourceManager.GetObject("learning", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("List_Items", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to None
+        ///   Looks up a localized string similar to -
         ///Fire
         ///Fira
         ///Firaga
@@ -562,16 +605,6 @@ namespace Quezacotl.Properties {
         internal static string List_Magic {
             get {
                 return ResourceManager.GetString("List_Magic", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap loading {
-            get {
-                object obj = ResourceManager.GetObject("loading", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

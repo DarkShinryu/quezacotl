@@ -168,17 +168,48 @@ namespace Quezacotl
             StringBuilder sb = new StringBuilder();
             while (true)
             {
-                if (buffer[index] == 0x00)
+                if (buffer[index] == 0x00 || index >= buffer.Length - 1)
                     break;
-                sb.Append(chartable[buffer[index++]]);
+                if (chartable.ContainsKey(buffer[index]))
+                    sb.Append(chartable[buffer[index++]]);
             }
-            /* DELETE ME */
-            Console.WriteLine(sb.ToString());
+            return sb.ToString();
+        }
+
+        internal static string BuildString(string s)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int index = 0; index < s.Length; index++)
+            {
+                char c = s[index];
+                sb.Append(chartable[(byte)c]);
+            }
             return sb.ToString();
         }
 
         /// <summary>
-        /// Builds byte[] decoded string with buffer specified in SetInit
+        /// Same as BuildString(index), but takes buffer from input. Same as BuildString_b, but returns directly string
+        /// </summary>
+        /// <param name="buffer"></param>
+        /// <param name="index"></param>
+        /// <param name="bIgnoreTerminator"></param>
+        /// <returns></returns>
+        internal static string BuildString(byte[] buffer, int index = 0, bool bIgnoreTerminator = false)
+        {
+            StringBuilder sb = new StringBuilder();
+            while (true)
+            {
+                if (buffer[index] == 0x00 && !bIgnoreTerminator || index >= buffer.Length - 1)
+                    break;
+                if (chartable.ContainsKey(buffer[index]))
+                    sb.Append(chartable[buffer[index++]]);
+                else index++;
+            }
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Builds byte[] decoded string with buffer specified in SetKernel
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
@@ -214,7 +245,7 @@ namespace Quezacotl
             List<byte> DynamicReturn = new List<byte>();
             while (true)
             {
-                if (buffer[index] == 0x00 || index > buffer.Length - 1)
+                if (buffer[index] == 0x00 || index >= buffer.Length - 1)
                     break;
                 DynamicBuffer.Add(buffer[index++]);
             }
@@ -234,6 +265,7 @@ namespace Quezacotl
         /// <param name="index"></param>
         /// <returns></returns>
         internal static char BuildString_c(int index) => chartable[buffer[index]].ToCharArray()[0];
+        internal static char BuildString_c(char cc) => chartable[(byte)cc][0];
 
         internal static byte[] Cipher(string _in)
         {
@@ -241,22 +273,32 @@ namespace Quezacotl
 
             for (int i = 0; i != _in.Length;)
             {
-                //ANGELO:
-                if (string.Equals(_in.Substring(i, _AngeloVar.Length), _AngeloVar))
+                if (_in.Length - i >= _AngeloVar.Length &&
+                    _in.Length - i >= _UnknownVariable.Length &&
+                    _in.Length - i >= _UnknownVariable2.Length &&
+                    _in.Length - i >= _UnknownVariable3.Length &&
+                    _in.Length - i >= _UnknownVariable4.Length)
                 {
-                    DynamicCipheredBuffer.Add(0x04);
-                    i += _AngeloVar.Length;
+                    //ANGELO:
+                    if (string.Equals(_in.Substring(i, _AngeloVar.Length), _AngeloVar))
+                    {
+                        DynamicCipheredBuffer.Add(0x04);
+                        i += _AngeloVar.Length;
+                    }
+                    //TODO some other unknown variable and so on:
+                    if (string.Equals(_in.Substring(i, _UnknownVariable.Length), _UnknownVariable))
+                    {
+                        DynamicCipheredBuffer.Add(0x04);
+                        i += 0; //Sizeof Squirrel
+                    }
                 }
-                //TODO some other unknown variable and so on:
-                if (string.Equals(_in.Substring(i, "{Var_SquirrelTODO}".Length), "{Var_SquirrelTODO}"))
-                {
-                    DynamicCipheredBuffer.Add(0x04);
-                    i += 0; //Sizeof Squirrel
-                }
+                if (i >= _in.Length)
+                    break;
                 byte key = chartable.FirstOrDefault(x => x.Value == _in[i].ToString()).Key;
                 if (key < 0x20) //Variables are {, but what if user wants to input { that is not variable? All locals are under 0x20, so it's easy to solve it by doing this <---
                     key = 0xAE;
                 DynamicCipheredBuffer.Add(key);
+                i++;
             }
             DynamicCipheredBuffer.Add(0x00); //NULL terminator
             return DynamicCipheredBuffer.ToArray();

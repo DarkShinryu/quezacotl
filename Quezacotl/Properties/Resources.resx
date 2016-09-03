@@ -232,9 +232,6 @@
   <data name="gf16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gf16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="learning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\learning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="mtl00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mtl00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -322,10 +319,10 @@
   <data name="List_Magic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\List_Magic.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="loading_font" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loading font.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="List_Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\List_Items.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

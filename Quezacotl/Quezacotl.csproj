@@ -210,8 +210,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\List_Items.txt" />
     <None Include="Resources\loading font.png" />
-    <None Include="Resources\loading.png" />
     <None Include="Resources\List_Magic.txt" />
     <None Include="Resources\info_big.png" />
     <None Include="Resources\angelo.png" />
@@ -221,34 +221,6 @@
     <None Include="Resources\char8.png" />
     <None Include="Resources\about font.png" />
     <None Include="Resources\quezacotl.png" />
-    <None Include="Resources\weapon27.png" />
-    <None Include="Resources\weapon26.png" />
-    <None Include="Resources\weapon25.png" />
-    <None Include="Resources\weapon24.png" />
-    <None Include="Resources\weapon23.png" />
-    <None Include="Resources\weapon22.png" />
-    <None Include="Resources\weapon21.png" />
-    <None Include="Resources\weapon20.png" />
-    <None Include="Resources\weapon19.png" />
-    <None Include="Resources\weapon18.png" />
-    <None Include="Resources\weapon17.png" />
-    <None Include="Resources\weapon16.png" />
-    <None Include="Resources\weapon15.png" />
-    <None Include="Resources\weapon14.png" />
-    <None Include="Resources\weapon13.png" />
-    <None Include="Resources\weapon12.png" />
-    <None Include="Resources\weapon11.png" />
-    <None Include="Resources\weapon10.png" />
-    <None Include="Resources\weapon09.png" />
-    <None Include="Resources\weapon08.png" />
-    <None Include="Resources\weapon07.png" />
-    <None Include="Resources\weapon06.png" />
-    <None Include="Resources\weapon05.png" />
-    <None Include="Resources\weapon04.png" />
-    <None Include="Resources\weapon03.png" />
-    <None Include="Resources\weapon02.png" />
-    <None Include="Resources\weapon01.png" />
-    <None Include="Resources\weapon00.png" />
     <None Include="Resources\objet6.png" />
     <None Include="Resources\objet5.png" />
     <None Include="Resources\objet4.png" />
@@ -269,7 +241,6 @@
     <None Include="Resources\mtl02.png" />
     <None Include="Resources\mtl01.png" />
     <None Include="Resources\mtl00.png" />
-    <None Include="Resources\learning.png" />
     <None Include="Resources\gf16.png" />
     <None Include="Resources\dfs-mtl.png" />
     <None Include="Resources\dfs-ele.png" />

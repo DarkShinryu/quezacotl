@@ -9,7 +9,6 @@ namespace Quezacotl
 
         public static byte[] Init;
         public static byte[] BackupInit;
-        private FF8Text _ff8text;
 
         public static int GfDataOffset = -1;
         public static int OffsetToGfSelected = -1;
@@ -2622,8 +2621,8 @@ namespace Quezacotl
             byte[] byteArray = new byte[12];
             Array.Copy(Init, selectedGfOffset, byteArray, 0, 12);
 
-            GetSelectedGfData.Name = FF8Text.BuildString_b(byteArray).ToString();
-            GetSelectedGfData.Name = Encoding.UTF8.GetString(byteArray);
+            byte[] buffer = FF8Text.BuildString_b(byteArray);
+            GetSelectedGfData.Name = Encoding.UTF8.GetString(buffer);
             GetSelectedGfData.Exp = BitConverter.ToUInt32(Init, selectedGfOffset + 12);
             GetSelectedGfData.Unknown1 = Init[selectedGfOffset + 16];
             GetSelectedGfData.Available = Init[selectedGfOffset + 17];
