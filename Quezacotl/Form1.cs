@@ -13,6 +13,7 @@ namespace Quezacotl
     public partial class Form1 : Form
     {
         public static bool _loaded = false;
+        private bool _opensaveException = false;
         private string _existingFilename;
         private string _backup;
         private const byte _bp_numerical = 0x00;
@@ -1061,9 +1062,19 @@ namespace Quezacotl
                         CreateTooltipsFile();
                         InitItems();
                     }
-
                     _existingFilename = openFileDialog.FileName;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show
+                        (String.Format("I cannot open the file {0}, maybe it's locked by another software?", Path.GetFileName(openFileDialog.FileName)), "Error Opening File",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
 
+                    _opensaveException = true;
+                }
+
+                if (!_opensaveException)
+                {
                     buttonSave.Enabled = true;
                     buttonSaveAs.Enabled = true;
 
@@ -1084,12 +1095,7 @@ namespace Quezacotl
                     toolStripStatusLabelStatus.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.Text = "Ready";
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show
-                        (String.Format("I cannot open the file {0}, maybe it's locked by another software?", Path.GetFileName(openFileDialog.FileName)), "Error Opening File",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                }
+                _opensaveException = false;
             }
         }
 
@@ -1101,6 +1107,18 @@ namespace Quezacotl
                 {
                     File.WriteAllBytes(_existingFilename, InitWorker.Init);
 
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show
+                        (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(_existingFilename)), "Error Saving File",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+
+                    _opensaveException = true;
+                }
+
+                if (!_opensaveException)
+                {
                     statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
                     toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
                     toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
@@ -1109,12 +1127,7 @@ namespace Quezacotl
                     toolStripStatusLabelStatus.BackColor = Color.Gray;
                     toolStripStatusLabelStatus.Text = "Ready";
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show
-                        (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(_existingFilename)), "Error Saving File",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                }
+                _opensaveException = false;
             }
         }
 
@@ -1132,14 +1145,6 @@ namespace Quezacotl
                     if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
                     {
                         File.WriteAllBytes(saveAsDialog.FileName, InitWorker.Init);
-
-                        statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
-                        toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
-                        toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
-                        await Task.Delay(3000);
-                        statusStrip.BackColor = Color.Gray;
-                        toolStripStatusLabelStatus.BackColor = Color.Gray;
-                        toolStripStatusLabelStatus.Text = "Ready";
                     }
                 }
                 catch (Exception)
@@ -1147,7 +1152,19 @@ namespace Quezacotl
                     MessageBox.Show
                         (String.Format("I cannot save the file {0}, maybe it's locked by another software?", Path.GetFileName(saveAsDialog.FileName)), "Error Saving File",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                    _opensaveException = true;
                 }
+                if (!_opensaveException)
+                {
+                    statusStrip.BackColor = Color.FromArgb(255, 25, 170, 30);
+                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
+                    toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " saved successfully";
+                    await Task.Delay(3000);
+                    statusStrip.BackColor = Color.Gray;
+                    toolStripStatusLabelStatus.BackColor = Color.Gray;
+                    toolStripStatusLabelStatus.Text = "Ready";
+                }
+                _opensaveException = false;
             }
         }
 
@@ -1444,6 +1461,11 @@ namespace Quezacotl
 
         private void listViewExCharactersList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listViewExCharactersList.Items[0].Selected || listViewExCharactersList.Items[6].Selected || listViewExCharactersList.Items[7].Selected)
+                tabPageChars6.Enabled = false;
+            else
+                tabPageChars6.Enabled = true;
+
             _loaded = false;
             if (InitWorker.Init == null || InitWorker.BackupInit == null)
                 return;
@@ -2938,6 +2960,11 @@ namespace Quezacotl
             for (int i = 1; i < tabControlGf.TabPages.Count; i++)
                 tabControlGf.SelectedIndex = i;
             tabControlGf.SelectedIndex = 0;
+        }
+
+        private void tabControlCharacters_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            e.Cancel = !e.TabPage.Enabled;
         }
     }
 }

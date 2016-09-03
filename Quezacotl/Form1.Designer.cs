@@ -1512,6 +1512,7 @@
             this.tabControlCharacters.SelectedIndex = 0;
             this.tabControlCharacters.Size = new System.Drawing.Size(642, 746);
             this.tabControlCharacters.TabIndex = 9;
+            this.tabControlCharacters.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControlCharacters_Selecting);
             // 
             // tabPageChars1
             // 
