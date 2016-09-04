@@ -938,79 +938,85 @@
             this.comboBoxCharsElemDef1 = new System.Windows.Forms.ComboBox();
             this.comboBoxCharsElemAtk = new System.Windows.Forms.ComboBox();
             this.tabPageChars6 = new System.Windows.Forms.TabPage();
-            this.numericUpDownAngelo4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownAngelo8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownAngelo3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownAngelo7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownAngelo2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownAngelo6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownAngelo1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownAngelo5 = new System.Windows.Forms.NumericUpDown();
-            this.labelAngeloValue2 = new System.Windows.Forms.Label();
-            this.labelAngeloPChecked2 = new System.Windows.Forms.Label();
-            this.labelAngeloChecked2 = new System.Windows.Forms.Label();
-            this.labelAngeloValue = new System.Windows.Forms.Label();
-            this.labelAngeloPChecked = new System.Windows.Forms.Label();
-            this.labelAngeloChecked = new System.Windows.Forms.Label();
-            this.pictureBoxAngeloInfo = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAngelo = new System.Windows.Forms.PictureBox();
-            this.labelAngeloName = new System.Windows.Forms.Label();
-            this.textBoxAngeloName = new System.Windows.Forms.TextBox();
-            this.labelTrackBarCharsRenzoInd = new System.Windows.Forms.Label();
-            this.trackBarCharsRenzoInd = new System.Windows.Forms.TrackBar();
-            this.checkBoxCharsRenzoInd = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic16 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic15 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic12 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSlot6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSlot5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSlot4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSlot3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSlot2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxSlot1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelWingOff = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngeloOff = new System.Windows.Forms.CheckBox();
-            this.checkBoxAngelo1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic14 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic11 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic13 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic10 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic9 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxBlueMagic1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxShot1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove10 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove9 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove5 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove8 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove4 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove7 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove3 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove6 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelMove1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxDuelAuto = new System.Windows.Forms.CheckBox();
+            this.panelLbSquall = new System.Windows.Forms.Panel();
             this.checkBoxCharsGunBladeAuto = new System.Windows.Forms.CheckBox();
+            this.checkBoxCharsRenzoInd = new System.Windows.Forms.CheckBox();
+            this.trackBarCharsRenzoInd = new System.Windows.Forms.TrackBar();
+            this.labelTrackBarCharsRenzoInd = new System.Windows.Forms.Label();
+            this.panelLbIrvine = new System.Windows.Forms.Panel();
+            this.checkBoxShot1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShot2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShot5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShot3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShot6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShot4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShot7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxShot8 = new System.Windows.Forms.CheckBox();
+            this.panelLbZell = new System.Windows.Forms.Panel();
+            this.checkBoxDuelMove6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelAuto = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove9 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDuelMove10 = new System.Windows.Forms.CheckBox();
+            this.panelLbQuistis = new System.Windows.Forms.Panel();
+            this.checkBoxBlueMagic1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic9 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic10 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic13 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic16 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic8 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic11 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic15 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic14 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBlueMagic12 = new System.Windows.Forms.CheckBox();
+            this.panelLbSelphie = new System.Windows.Forms.Panel();
+            this.checkBoxSlot1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSlot2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSlot3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSlot4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSlot5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxSlot6 = new System.Windows.Forms.CheckBox();
+            this.panelLbRinoa = new System.Windows.Forms.Panel();
+            this.labelAngeloName = new System.Windows.Forms.Label();
+            this.numericUpDownAngelo4 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngelo1 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAngelo8 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngeloOff = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAngelo3 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngelWingOff = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAngelo7 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngelo5 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAngelo2 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngelo2 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAngelo6 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngelo3 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAngelo1 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngelo6 = new System.Windows.Forms.CheckBox();
+            this.numericUpDownAngelo5 = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxAngelo4 = new System.Windows.Forms.CheckBox();
+            this.labelAngeloValue2 = new System.Windows.Forms.Label();
+            this.checkBoxAngelo7 = new System.Windows.Forms.CheckBox();
+            this.labelAngeloPChecked2 = new System.Windows.Forms.Label();
+            this.checkBoxAngelo8 = new System.Windows.Forms.CheckBox();
+            this.labelAngeloChecked2 = new System.Windows.Forms.Label();
+            this.textBoxAngeloName = new System.Windows.Forms.TextBox();
+            this.labelAngeloValue = new System.Windows.Forms.Label();
+            this.pictureBoxAngelo = new System.Windows.Forms.PictureBox();
+            this.labelAngeloPChecked = new System.Windows.Forms.Label();
+            this.pictureBoxAngeloInfo = new System.Windows.Forms.PictureBox();
+            this.labelAngeloChecked = new System.Windows.Forms.Label();
             this.imageListChar = new System.Windows.Forms.ImageList(this.components);
             this.buttonDeleteTooltips = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -1019,6 +1025,8 @@
             this.buttonSaveAs = new System.Windows.Forms.Button();
             this.listBoxMain = new System.Windows.Forms.ListBox();
             this.panelGf = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.listViewExGfList = new ListViewEx();
             this.hexUpDownGfUnknown = new Quezacotl.HexUpDown();
             this.panelCharacters = new System.Windows.Forms.Panel();
@@ -1031,14 +1039,68 @@
             this.toolStripStatusLabelInit = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelDash = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelTooltips = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panelLbRinoa = new System.Windows.Forms.Panel();
-            this.panelLbSelphie = new System.Windows.Forms.Panel();
-            this.panelLbQuistis = new System.Windows.Forms.Panel();
-            this.panelLbZell = new System.Windows.Forms.Panel();
-            this.panelLbIrvine = new System.Windows.Forms.Panel();
-            this.panelLbSquall = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.panelConfig = new System.Windows.Forms.Panel();
+            this.groupBoxConfigTrackbars = new System.Windows.Forms.GroupBox();
+            this.trackBarVolume = new System.Windows.Forms.TrackBar();
+            this.labelVolume = new System.Windows.Forms.Label();
+            this.checkBoxConfigUnk = new System.Windows.Forms.CheckBox();
+            this.groupBoxConfigVibration = new System.Windows.Forms.GroupBox();
+            this.radioButtonVibOff = new System.Windows.Forms.RadioButton();
+            this.radioButtonVibOn = new System.Windows.Forms.RadioButton();
+            this.groupBoxConfigTargetMenu = new System.Windows.Forms.GroupBox();
+            this.radioButtonTargetYes = new System.Windows.Forms.RadioButton();
+            this.radioButtonTargetNo = new System.Windows.Forms.RadioButton();
+            this.groupBoxConfigAtb = new System.Windows.Forms.GroupBox();
+            this.radioButtonWait = new System.Windows.Forms.RadioButton();
+            this.radioButtonActive = new System.Windows.Forms.RadioButton();
+            this.groupBoxConfigScan = new System.Windows.Forms.GroupBox();
+            this.radioButtonAlways = new System.Windows.Forms.RadioButton();
+            this.radioButtonOnce = new System.Windows.Forms.RadioButton();
+            this.groupBoxConfigCursor = new System.Windows.Forms.GroupBox();
+            this.radioButtonMemory = new System.Windows.Forms.RadioButton();
+            this.radioButtonInitial = new System.Windows.Forms.RadioButton();
+            this.groupBoxConfigSound = new System.Windows.Forms.GroupBox();
+            this.radioButtonMono = new System.Windows.Forms.RadioButton();
+            this.radioButtonStereo = new System.Windows.Forms.RadioButton();
+            this.panelVolume = new System.Windows.Forms.Panel();
+            this.labelVolumeValue = new System.Windows.Forms.Label();
+            this.labelBattleSpeed = new System.Windows.Forms.Label();
+            this.trackBarBattleSpeed = new System.Windows.Forms.TrackBar();
+            this.labelBattleMessage = new System.Windows.Forms.Label();
+            this.trackBarBattleMessage = new System.Windows.Forms.TrackBar();
+            this.labelFieldMessage = new System.Windows.Forms.Label();
+            this.trackBarFieldMessage = new System.Windows.Forms.TrackBar();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.checkBoxCustomKeys = new System.Windows.Forms.CheckBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyUnk1 = new System.Windows.Forms.NumericUpDown();
+            this.label65 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyTrigger = new System.Windows.Forms.NumericUpDown();
+            this.label66 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyTripleTriad = new System.Windows.Forms.NumericUpDown();
+            this.label67 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyStart = new System.Windows.Forms.NumericUpDown();
+            this.label68 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyEscape = new System.Windows.Forms.NumericUpDown();
+            this.label69 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyCancel = new System.Windows.Forms.NumericUpDown();
+            this.label70 = new System.Windows.Forms.Label();
+            this.numericUpDownKeySelect = new System.Windows.Forms.NumericUpDown();
+            this.label72 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyPov = new System.Windows.Forms.NumericUpDown();
+            this.label73 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyMenu = new System.Windows.Forms.NumericUpDown();
+            this.label74 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyUnk2 = new System.Windows.Forms.NumericUpDown();
+            this.label76 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyWindow = new System.Windows.Forms.NumericUpDown();
+            this.label77 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyTalk = new System.Windows.Forms.NumericUpDown();
+            this.label78 = new System.Windows.Forms.Label();
+            this.numericUpDownKeyUnk3 = new System.Windows.Forms.NumericUpDown();
+            this.labelJoystick = new System.Windows.Forms.Label();
+            this.buttonConfigDefault = new System.Windows.Forms.Button();
+            this.buttonConfigInvert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExpLvUp)).BeginInit();
             this.panelGfLevel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKOs)).BeginInit();
@@ -1389,6 +1451,13 @@
             this.groupBoxCharsJunStats.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPageChars6.SuspendLayout();
+            this.panelLbSquall.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarCharsRenzoInd)).BeginInit();
+            this.panelLbIrvine.SuspendLayout();
+            this.panelLbZell.SuspendLayout();
+            this.panelLbQuistis.SuspendLayout();
+            this.panelLbSelphie.SuspendLayout();
+            this.panelLbRinoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo3)).BeginInit();
@@ -1397,21 +1466,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAngeloInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAngelo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarCharsRenzoInd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAngeloInfo)).BeginInit();
             this.panelGf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownGfUnknown)).BeginInit();
             this.panelCharacters.SuspendLayout();
             this.panelItems.SuspendLayout();
             this.panelMisc.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.panelLbRinoa.SuspendLayout();
-            this.panelLbSelphie.SuspendLayout();
-            this.panelLbQuistis.SuspendLayout();
-            this.panelLbZell.SuspendLayout();
-            this.panelLbIrvine.SuspendLayout();
-            this.panelLbSquall.SuspendLayout();
+            this.panelConfig.SuspendLayout();
+            this.groupBoxConfigTrackbars.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).BeginInit();
+            this.groupBoxConfigVibration.SuspendLayout();
+            this.groupBoxConfigTargetMenu.SuspendLayout();
+            this.groupBoxConfigAtb.SuspendLayout();
+            this.groupBoxConfigScan.SuspendLayout();
+            this.groupBoxConfigCursor.SuspendLayout();
+            this.groupBoxConfigSound.SuspendLayout();
+            this.panelVolume.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBattleSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBattleMessage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarFieldMessage)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyUnk1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyTrigger)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyTripleTriad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyEscape)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeySelect)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyPov)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyUnk2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyWindow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyTalk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyUnk3)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSave
@@ -3390,10 +3479,10 @@
             this.tabPageGfAp.Controls.Add(this.label13);
             this.tabPageGfAp.Controls.Add(this.label3);
             this.tabPageGfAp.Controls.Add(this.label2);
-            this.tabPageGfAp.Location = new System.Drawing.Point(4, 24);
+            this.tabPageGfAp.Location = new System.Drawing.Point(4, 22);
             this.tabPageGfAp.Name = "tabPageGfAp";
             this.tabPageGfAp.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGfAp.Size = new System.Drawing.Size(615, 571);
+            this.tabPageGfAp.Size = new System.Drawing.Size(615, 573);
             this.tabPageGfAp.TabIndex = 1;
             this.tabPageGfAp.Text = "AP";
             // 
@@ -9949,10 +10038,10 @@
             this.tabPageChars2.Controls.Add(this.numericUpDownCharsAllGfComp);
             this.tabPageChars2.Controls.Add(this.checkBoxCharsGfAll);
             this.tabPageChars2.Controls.Add(this.buttonCharsGfApply);
-            this.tabPageChars2.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars2.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars2.Name = "tabPageChars2";
             this.tabPageChars2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChars2.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars2.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars2.TabIndex = 1;
             this.tabPageChars2.Text = "G-Forces";
             // 
@@ -10787,9 +10876,9 @@
             this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic9);
             this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic17);
             this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic1);
-            this.tabPageChars3.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars3.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars3.Name = "tabPageChars3";
-            this.tabPageChars3.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars3.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars3.TabIndex = 2;
             this.tabPageChars3.Text = "Magics";
             // 
@@ -12235,9 +12324,9 @@
             this.tabPageChars4.BackColor = System.Drawing.Color.White;
             this.tabPageChars4.Controls.Add(this.groupBoxCharsAbilities);
             this.tabPageChars4.Controls.Add(this.groupBoxCharsCommands);
-            this.tabPageChars4.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars4.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars4.Name = "tabPageChars4";
-            this.tabPageChars4.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars4.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars4.TabIndex = 3;
             this.tabPageChars4.Text = "Abilities";
             // 
@@ -13261,9 +13350,9 @@
             this.tabPageChars5.Controls.Add(this.groupBox1);
             this.tabPageChars5.Controls.Add(this.groupBoxCharsJunStats);
             this.tabPageChars5.Controls.Add(this.groupBox2);
-            this.tabPageChars5.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars5.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars5.Name = "tabPageChars5";
-            this.tabPageChars5.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars5.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars5.TabIndex = 4;
             this.tabPageChars5.Text = "Junction";
             // 
@@ -14826,11 +14915,680 @@
             this.tabPageChars6.Controls.Add(this.panelLbQuistis);
             this.tabPageChars6.Controls.Add(this.panelLbSelphie);
             this.tabPageChars6.Controls.Add(this.panelLbRinoa);
-            this.tabPageChars6.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars6.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars6.Name = "tabPageChars6";
-            this.tabPageChars6.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars6.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars6.TabIndex = 5;
             this.tabPageChars6.Text = "Limit Break";
+            // 
+            // panelLbSquall
+            // 
+            this.panelLbSquall.Controls.Add(this.checkBoxCharsGunBladeAuto);
+            this.panelLbSquall.Controls.Add(this.checkBoxCharsRenzoInd);
+            this.panelLbSquall.Controls.Add(this.trackBarCharsRenzoInd);
+            this.panelLbSquall.Controls.Add(this.labelTrackBarCharsRenzoInd);
+            this.panelLbSquall.Location = new System.Drawing.Point(10, 10);
+            this.panelLbSquall.Margin = new System.Windows.Forms.Padding(10);
+            this.panelLbSquall.Name = "panelLbSquall";
+            this.panelLbSquall.Padding = new System.Windows.Forms.Padding(10);
+            this.panelLbSquall.Size = new System.Drawing.Size(615, 88);
+            this.panelLbSquall.TabIndex = 36;
+            // 
+            // checkBoxCharsGunBladeAuto
+            // 
+            this.checkBoxCharsGunBladeAuto.AutoSize = true;
+            this.checkBoxCharsGunBladeAuto.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsGunBladeAuto.Location = new System.Drawing.Point(12, 9);
+            this.checkBoxCharsGunBladeAuto.Name = "checkBoxCharsGunBladeAuto";
+            this.checkBoxCharsGunBladeAuto.Size = new System.Drawing.Size(105, 17);
+            this.checkBoxCharsGunBladeAuto.TabIndex = 10;
+            this.checkBoxCharsGunBladeAuto.Text = "Gunblade Auto";
+            this.checkBoxCharsGunBladeAuto.UseVisualStyleBackColor = true;
+            this.checkBoxCharsGunBladeAuto.Visible = false;
+            // 
+            // checkBoxCharsRenzoInd
+            // 
+            this.checkBoxCharsRenzoInd.AutoSize = true;
+            this.checkBoxCharsRenzoInd.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxCharsRenzoInd.Location = new System.Drawing.Point(12, 51);
+            this.checkBoxCharsRenzoInd.Name = "checkBoxCharsRenzoInd";
+            this.checkBoxCharsRenzoInd.Size = new System.Drawing.Size(139, 17);
+            this.checkBoxCharsRenzoInd.TabIndex = 10;
+            this.checkBoxCharsRenzoInd.Text = "Renzokuken Indicator";
+            this.checkBoxCharsRenzoInd.UseVisualStyleBackColor = true;
+            this.checkBoxCharsRenzoInd.Visible = false;
+            // 
+            // trackBarCharsRenzoInd
+            // 
+            this.trackBarCharsRenzoInd.Location = new System.Drawing.Point(152, 37);
+            this.trackBarCharsRenzoInd.Maximum = 127;
+            this.trackBarCharsRenzoInd.Name = "trackBarCharsRenzoInd";
+            this.trackBarCharsRenzoInd.Size = new System.Drawing.Size(408, 45);
+            this.trackBarCharsRenzoInd.TabIndex = 11;
+            this.trackBarCharsRenzoInd.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.trackBarCharsRenzoInd.Visible = false;
+            this.trackBarCharsRenzoInd.Scroll += new System.EventHandler(this.trackBarCharsRenzoInd_Scroll);
+            this.trackBarCharsRenzoInd.ValueChanged += new System.EventHandler(this.trackBarCharsRenzoInd_ValueChanged);
+            // 
+            // labelTrackBarCharsRenzoInd
+            // 
+            this.labelTrackBarCharsRenzoInd.AutoSize = true;
+            this.labelTrackBarCharsRenzoInd.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.labelTrackBarCharsRenzoInd.Location = new System.Drawing.Point(562, 50);
+            this.labelTrackBarCharsRenzoInd.Margin = new System.Windows.Forms.Padding(8);
+            this.labelTrackBarCharsRenzoInd.Name = "labelTrackBarCharsRenzoInd";
+            this.labelTrackBarCharsRenzoInd.Size = new System.Drawing.Size(17, 19);
+            this.labelTrackBarCharsRenzoInd.TabIndex = 24;
+            this.labelTrackBarCharsRenzoInd.Text = "0";
+            this.labelTrackBarCharsRenzoInd.Visible = false;
+            // 
+            // panelLbIrvine
+            // 
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot1);
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot2);
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot5);
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot3);
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot6);
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot4);
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot7);
+            this.panelLbIrvine.Controls.Add(this.checkBoxShot8);
+            this.panelLbIrvine.Location = new System.Drawing.Point(10, 221);
+            this.panelLbIrvine.Name = "panelLbIrvine";
+            this.panelLbIrvine.Size = new System.Drawing.Size(615, 68);
+            this.panelLbIrvine.TabIndex = 35;
+            // 
+            // checkBoxShot1
+            // 
+            this.checkBoxShot1.AutoSize = true;
+            this.checkBoxShot1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot1.Location = new System.Drawing.Point(26, 14);
+            this.checkBoxShot1.Name = "checkBoxShot1";
+            this.checkBoxShot1.Size = new System.Drawing.Size(90, 17);
+            this.checkBoxShot1.TabIndex = 10;
+            this.checkBoxShot1.Text = "Normal Shot";
+            this.checkBoxShot1.UseVisualStyleBackColor = true;
+            this.checkBoxShot1.Visible = false;
+            // 
+            // checkBoxShot2
+            // 
+            this.checkBoxShot2.AutoSize = true;
+            this.checkBoxShot2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot2.Location = new System.Drawing.Point(186, 14);
+            this.checkBoxShot2.Name = "checkBoxShot2";
+            this.checkBoxShot2.Size = new System.Drawing.Size(88, 17);
+            this.checkBoxShot2.TabIndex = 10;
+            this.checkBoxShot2.Text = "Scatter Shot";
+            this.checkBoxShot2.UseVisualStyleBackColor = true;
+            this.checkBoxShot2.Visible = false;
+            // 
+            // checkBoxShot5
+            // 
+            this.checkBoxShot5.AutoSize = true;
+            this.checkBoxShot5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot5.Location = new System.Drawing.Point(26, 37);
+            this.checkBoxShot5.Name = "checkBoxShot5";
+            this.checkBoxShot5.Size = new System.Drawing.Size(95, 17);
+            this.checkBoxShot5.TabIndex = 10;
+            this.checkBoxShot5.Text = "Canister Shot";
+            this.checkBoxShot5.UseVisualStyleBackColor = true;
+            this.checkBoxShot5.Visible = false;
+            // 
+            // checkBoxShot3
+            // 
+            this.checkBoxShot3.AutoSize = true;
+            this.checkBoxShot3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot3.Location = new System.Drawing.Point(346, 14);
+            this.checkBoxShot3.Name = "checkBoxShot3";
+            this.checkBoxShot3.Size = new System.Drawing.Size(77, 17);
+            this.checkBoxShot3.TabIndex = 10;
+            this.checkBoxShot3.Text = "Dark Shot";
+            this.checkBoxShot3.UseVisualStyleBackColor = true;
+            this.checkBoxShot3.Visible = false;
+            // 
+            // checkBoxShot6
+            // 
+            this.checkBoxShot6.AutoSize = true;
+            this.checkBoxShot6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot6.Location = new System.Drawing.Point(186, 37);
+            this.checkBoxShot6.Name = "checkBoxShot6";
+            this.checkBoxShot6.Size = new System.Drawing.Size(82, 17);
+            this.checkBoxShot6.TabIndex = 10;
+            this.checkBoxShot6.Text = "Quick Shot";
+            this.checkBoxShot6.UseVisualStyleBackColor = true;
+            this.checkBoxShot6.Visible = false;
+            // 
+            // checkBoxShot4
+            // 
+            this.checkBoxShot4.AutoSize = true;
+            this.checkBoxShot4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot4.Location = new System.Drawing.Point(506, 14);
+            this.checkBoxShot4.Name = "checkBoxShot4";
+            this.checkBoxShot4.Size = new System.Drawing.Size(83, 17);
+            this.checkBoxShot4.TabIndex = 10;
+            this.checkBoxShot4.Text = "Flame Shot";
+            this.checkBoxShot4.UseVisualStyleBackColor = true;
+            this.checkBoxShot4.Visible = false;
+            // 
+            // checkBoxShot7
+            // 
+            this.checkBoxShot7.AutoSize = true;
+            this.checkBoxShot7.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot7.Location = new System.Drawing.Point(346, 37);
+            this.checkBoxShot7.Name = "checkBoxShot7";
+            this.checkBoxShot7.Size = new System.Drawing.Size(84, 17);
+            this.checkBoxShot7.TabIndex = 10;
+            this.checkBoxShot7.Text = "Armor Shot";
+            this.checkBoxShot7.UseVisualStyleBackColor = true;
+            this.checkBoxShot7.Visible = false;
+            // 
+            // checkBoxShot8
+            // 
+            this.checkBoxShot8.AutoSize = true;
+            this.checkBoxShot8.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxShot8.Location = new System.Drawing.Point(506, 37);
+            this.checkBoxShot8.Name = "checkBoxShot8";
+            this.checkBoxShot8.Size = new System.Drawing.Size(83, 17);
+            this.checkBoxShot8.TabIndex = 10;
+            this.checkBoxShot8.Text = "Hyper Shot";
+            this.checkBoxShot8.UseVisualStyleBackColor = true;
+            this.checkBoxShot8.Visible = false;
+            // 
+            // panelLbZell
+            // 
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove6);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelAuto);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove1);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove2);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove3);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove7);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove4);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove8);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove5);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove9);
+            this.panelLbZell.Controls.Add(this.checkBoxDuelMove10);
+            this.panelLbZell.Location = new System.Drawing.Point(10, 111);
+            this.panelLbZell.Name = "panelLbZell";
+            this.panelLbZell.Size = new System.Drawing.Size(615, 82);
+            this.panelLbZell.TabIndex = 34;
+            // 
+            // checkBoxDuelMove6
+            // 
+            this.checkBoxDuelMove6.AutoSize = true;
+            this.checkBoxDuelMove6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove6.Location = new System.Drawing.Point(6, 63);
+            this.checkBoxDuelMove6.Name = "checkBoxDuelMove6";
+            this.checkBoxDuelMove6.Size = new System.Drawing.Size(95, 17);
+            this.checkBoxDuelMove6.TabIndex = 10;
+            this.checkBoxDuelMove6.Text = "Meteor Strike";
+            this.checkBoxDuelMove6.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove6.Visible = false;
+            // 
+            // checkBoxDuelAuto
+            // 
+            this.checkBoxDuelAuto.AutoSize = true;
+            this.checkBoxDuelAuto.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelAuto.Location = new System.Drawing.Point(6, 6);
+            this.checkBoxDuelAuto.Name = "checkBoxDuelAuto";
+            this.checkBoxDuelAuto.Size = new System.Drawing.Size(78, 17);
+            this.checkBoxDuelAuto.TabIndex = 10;
+            this.checkBoxDuelAuto.Text = "Duel Auto";
+            this.checkBoxDuelAuto.UseVisualStyleBackColor = true;
+            this.checkBoxDuelAuto.Visible = false;
+            // 
+            // checkBoxDuelMove1
+            // 
+            this.checkBoxDuelMove1.AutoSize = true;
+            this.checkBoxDuelMove1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove1.Location = new System.Drawing.Point(6, 40);
+            this.checkBoxDuelMove1.Name = "checkBoxDuelMove1";
+            this.checkBoxDuelMove1.Size = new System.Drawing.Size(87, 17);
+            this.checkBoxDuelMove1.TabIndex = 10;
+            this.checkBoxDuelMove1.Text = "Punch Rush";
+            this.checkBoxDuelMove1.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove1.Visible = false;
+            // 
+            // checkBoxDuelMove2
+            // 
+            this.checkBoxDuelMove2.AutoSize = true;
+            this.checkBoxDuelMove2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove2.Location = new System.Drawing.Point(130, 40);
+            this.checkBoxDuelMove2.Name = "checkBoxDuelMove2";
+            this.checkBoxDuelMove2.Size = new System.Drawing.Size(58, 17);
+            this.checkBoxDuelMove2.TabIndex = 10;
+            this.checkBoxDuelMove2.Text = "Booya";
+            this.checkBoxDuelMove2.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove2.Visible = false;
+            // 
+            // checkBoxDuelMove3
+            // 
+            this.checkBoxDuelMove3.AutoSize = true;
+            this.checkBoxDuelMove3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove3.Location = new System.Drawing.Point(254, 40);
+            this.checkBoxDuelMove3.Name = "checkBoxDuelMove3";
+            this.checkBoxDuelMove3.Size = new System.Drawing.Size(78, 17);
+            this.checkBoxDuelMove3.TabIndex = 10;
+            this.checkBoxDuelMove3.Text = "Heel Drop";
+            this.checkBoxDuelMove3.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove3.Visible = false;
+            // 
+            // checkBoxDuelMove7
+            // 
+            this.checkBoxDuelMove7.AutoSize = true;
+            this.checkBoxDuelMove7.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove7.Location = new System.Drawing.Point(130, 63);
+            this.checkBoxDuelMove7.Name = "checkBoxDuelMove7";
+            this.checkBoxDuelMove7.Size = new System.Drawing.Size(95, 17);
+            this.checkBoxDuelMove7.TabIndex = 10;
+            this.checkBoxDuelMove7.Text = "Burning Rave";
+            this.checkBoxDuelMove7.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove7.Visible = false;
+            // 
+            // checkBoxDuelMove4
+            // 
+            this.checkBoxDuelMove4.AutoSize = true;
+            this.checkBoxDuelMove4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove4.Location = new System.Drawing.Point(378, 40);
+            this.checkBoxDuelMove4.Name = "checkBoxDuelMove4";
+            this.checkBoxDuelMove4.Size = new System.Drawing.Size(77, 17);
+            this.checkBoxDuelMove4.TabIndex = 10;
+            this.checkBoxDuelMove4.Text = "Mach Kick";
+            this.checkBoxDuelMove4.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove4.Visible = false;
+            // 
+            // checkBoxDuelMove8
+            // 
+            this.checkBoxDuelMove8.AutoSize = true;
+            this.checkBoxDuelMove8.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove8.Location = new System.Drawing.Point(254, 63);
+            this.checkBoxDuelMove8.Name = "checkBoxDuelMove8";
+            this.checkBoxDuelMove8.Size = new System.Drawing.Size(97, 17);
+            this.checkBoxDuelMove8.TabIndex = 10;
+            this.checkBoxDuelMove8.Text = "Meteor Barret";
+            this.checkBoxDuelMove8.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove8.Visible = false;
+            // 
+            // checkBoxDuelMove5
+            // 
+            this.checkBoxDuelMove5.AutoSize = true;
+            this.checkBoxDuelMove5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove5.Location = new System.Drawing.Point(502, 40);
+            this.checkBoxDuelMove5.Name = "checkBoxDuelMove5";
+            this.checkBoxDuelMove5.Size = new System.Drawing.Size(97, 17);
+            this.checkBoxDuelMove5.TabIndex = 10;
+            this.checkBoxDuelMove5.Text = "Dolphin Blow";
+            this.checkBoxDuelMove5.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove5.Visible = false;
+            // 
+            // checkBoxDuelMove9
+            // 
+            this.checkBoxDuelMove9.AutoSize = true;
+            this.checkBoxDuelMove9.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove9.Location = new System.Drawing.Point(378, 63);
+            this.checkBoxDuelMove9.Name = "checkBoxDuelMove9";
+            this.checkBoxDuelMove9.Size = new System.Drawing.Size(98, 17);
+            this.checkBoxDuelMove9.TabIndex = 10;
+            this.checkBoxDuelMove9.Text = "Different Beat";
+            this.checkBoxDuelMove9.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove9.Visible = false;
+            // 
+            // checkBoxDuelMove10
+            // 
+            this.checkBoxDuelMove10.AutoSize = true;
+            this.checkBoxDuelMove10.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxDuelMove10.Location = new System.Drawing.Point(502, 63);
+            this.checkBoxDuelMove10.Name = "checkBoxDuelMove10";
+            this.checkBoxDuelMove10.Size = new System.Drawing.Size(110, 17);
+            this.checkBoxDuelMove10.TabIndex = 10;
+            this.checkBoxDuelMove10.Text = "My Final Heaven";
+            this.checkBoxDuelMove10.UseVisualStyleBackColor = true;
+            this.checkBoxDuelMove10.Visible = false;
+            // 
+            // panelLbQuistis
+            // 
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic1);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic9);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic2);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic10);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic5);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic13);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic16);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic3);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic8);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic11);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic15);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic6);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic7);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic14);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic4);
+            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic12);
+            this.panelLbQuistis.Location = new System.Drawing.Point(10, 319);
+            this.panelLbQuistis.Name = "panelLbQuistis";
+            this.panelLbQuistis.Size = new System.Drawing.Size(615, 91);
+            this.panelLbQuistis.TabIndex = 33;
+            // 
+            // checkBoxBlueMagic1
+            // 
+            this.checkBoxBlueMagic1.AutoSize = true;
+            this.checkBoxBlueMagic1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic1.Location = new System.Drawing.Point(9, 3);
+            this.checkBoxBlueMagic1.Name = "checkBoxBlueMagic1";
+            this.checkBoxBlueMagic1.Size = new System.Drawing.Size(72, 17);
+            this.checkBoxBlueMagic1.TabIndex = 10;
+            this.checkBoxBlueMagic1.Text = "Laser Eye";
+            this.checkBoxBlueMagic1.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic1.Visible = false;
+            // 
+            // checkBoxBlueMagic9
+            // 
+            this.checkBoxBlueMagic9.AutoSize = true;
+            this.checkBoxBlueMagic9.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic9.Location = new System.Drawing.Point(9, 49);
+            this.checkBoxBlueMagic9.Name = "checkBoxBlueMagic9";
+            this.checkBoxBlueMagic9.Size = new System.Drawing.Size(89, 17);
+            this.checkBoxBlueMagic9.TabIndex = 10;
+            this.checkBoxBlueMagic9.Text = "Gatling Gun";
+            this.checkBoxBlueMagic9.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic9.Visible = false;
+            // 
+            // checkBoxBlueMagic2
+            // 
+            this.checkBoxBlueMagic2.AutoSize = true;
+            this.checkBoxBlueMagic2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic2.Location = new System.Drawing.Point(169, 3);
+            this.checkBoxBlueMagic2.Name = "checkBoxBlueMagic2";
+            this.checkBoxBlueMagic2.Size = new System.Drawing.Size(87, 17);
+            this.checkBoxBlueMagic2.TabIndex = 10;
+            this.checkBoxBlueMagic2.Text = "Ultra Waves";
+            this.checkBoxBlueMagic2.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic2.Visible = false;
+            // 
+            // checkBoxBlueMagic10
+            // 
+            this.checkBoxBlueMagic10.AutoSize = true;
+            this.checkBoxBlueMagic10.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic10.Location = new System.Drawing.Point(169, 49);
+            this.checkBoxBlueMagic10.Name = "checkBoxBlueMagic10";
+            this.checkBoxBlueMagic10.Size = new System.Drawing.Size(82, 17);
+            this.checkBoxBlueMagic10.TabIndex = 10;
+            this.checkBoxBlueMagic10.Text = "Fire Breath";
+            this.checkBoxBlueMagic10.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic10.Visible = false;
+            // 
+            // checkBoxBlueMagic5
+            // 
+            this.checkBoxBlueMagic5.AutoSize = true;
+            this.checkBoxBlueMagic5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic5.Location = new System.Drawing.Point(9, 26);
+            this.checkBoxBlueMagic5.Name = "checkBoxBlueMagic5";
+            this.checkBoxBlueMagic5.Size = new System.Drawing.Size(91, 17);
+            this.checkBoxBlueMagic5.TabIndex = 10;
+            this.checkBoxBlueMagic5.Text = "Degenerator";
+            this.checkBoxBlueMagic5.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic5.Visible = false;
+            // 
+            // checkBoxBlueMagic13
+            // 
+            this.checkBoxBlueMagic13.AutoSize = true;
+            this.checkBoxBlueMagic13.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic13.Location = new System.Drawing.Point(9, 72);
+            this.checkBoxBlueMagic13.Name = "checkBoxBlueMagic13";
+            this.checkBoxBlueMagic13.Size = new System.Drawing.Size(96, 17);
+            this.checkBoxBlueMagic13.TabIndex = 10;
+            this.checkBoxBlueMagic13.Text = "Homing Laser";
+            this.checkBoxBlueMagic13.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic13.Visible = false;
+            // 
+            // checkBoxBlueMagic16
+            // 
+            this.checkBoxBlueMagic16.AutoSize = true;
+            this.checkBoxBlueMagic16.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic16.Location = new System.Drawing.Point(489, 72);
+            this.checkBoxBlueMagic16.Name = "checkBoxBlueMagic16";
+            this.checkBoxBlueMagic16.Size = new System.Drawing.Size(117, 17);
+            this.checkBoxBlueMagic16.TabIndex = 10;
+            this.checkBoxBlueMagic16.Text = "Shockwave Pulsar";
+            this.checkBoxBlueMagic16.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic16.Visible = false;
+            // 
+            // checkBoxBlueMagic3
+            // 
+            this.checkBoxBlueMagic3.AutoSize = true;
+            this.checkBoxBlueMagic3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic3.Location = new System.Drawing.Point(329, 3);
+            this.checkBoxBlueMagic3.Name = "checkBoxBlueMagic3";
+            this.checkBoxBlueMagic3.Size = new System.Drawing.Size(83, 17);
+            this.checkBoxBlueMagic3.TabIndex = 10;
+            this.checkBoxBlueMagic3.Text = "Electrocute";
+            this.checkBoxBlueMagic3.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic3.Visible = false;
+            // 
+            // checkBoxBlueMagic8
+            // 
+            this.checkBoxBlueMagic8.AutoSize = true;
+            this.checkBoxBlueMagic8.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic8.Location = new System.Drawing.Point(489, 26);
+            this.checkBoxBlueMagic8.Name = "checkBoxBlueMagic8";
+            this.checkBoxBlueMagic8.Size = new System.Drawing.Size(48, 17);
+            this.checkBoxBlueMagic8.TabIndex = 10;
+            this.checkBoxBlueMagic8.Text = "Acid";
+            this.checkBoxBlueMagic8.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic8.Visible = false;
+            // 
+            // checkBoxBlueMagic11
+            // 
+            this.checkBoxBlueMagic11.AutoSize = true;
+            this.checkBoxBlueMagic11.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic11.Location = new System.Drawing.Point(329, 49);
+            this.checkBoxBlueMagic11.Name = "checkBoxBlueMagic11";
+            this.checkBoxBlueMagic11.Size = new System.Drawing.Size(83, 17);
+            this.checkBoxBlueMagic11.TabIndex = 10;
+            this.checkBoxBlueMagic11.Text = "Bad Breath";
+            this.checkBoxBlueMagic11.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic11.Visible = false;
+            // 
+            // checkBoxBlueMagic15
+            // 
+            this.checkBoxBlueMagic15.AutoSize = true;
+            this.checkBoxBlueMagic15.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic15.Location = new System.Drawing.Point(329, 72);
+            this.checkBoxBlueMagic15.Name = "checkBoxBlueMagic15";
+            this.checkBoxBlueMagic15.Size = new System.Drawing.Size(78, 17);
+            this.checkBoxBlueMagic15.TabIndex = 10;
+            this.checkBoxBlueMagic15.Text = "Ray-Bomb";
+            this.checkBoxBlueMagic15.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic15.Visible = false;
+            // 
+            // checkBoxBlueMagic6
+            // 
+            this.checkBoxBlueMagic6.AutoSize = true;
+            this.checkBoxBlueMagic6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic6.Location = new System.Drawing.Point(169, 26);
+            this.checkBoxBlueMagic6.Name = "checkBoxBlueMagic6";
+            this.checkBoxBlueMagic6.Size = new System.Drawing.Size(90, 17);
+            this.checkBoxBlueMagic6.TabIndex = 10;
+            this.checkBoxBlueMagic6.Text = "Aqua Breath";
+            this.checkBoxBlueMagic6.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic6.Visible = false;
+            // 
+            // checkBoxBlueMagic7
+            // 
+            this.checkBoxBlueMagic7.AutoSize = true;
+            this.checkBoxBlueMagic7.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic7.Location = new System.Drawing.Point(329, 26);
+            this.checkBoxBlueMagic7.Name = "checkBoxBlueMagic7";
+            this.checkBoxBlueMagic7.Size = new System.Drawing.Size(98, 17);
+            this.checkBoxBlueMagic7.TabIndex = 10;
+            this.checkBoxBlueMagic7.Text = "Micro Missiles";
+            this.checkBoxBlueMagic7.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic7.Visible = false;
+            // 
+            // checkBoxBlueMagic14
+            // 
+            this.checkBoxBlueMagic14.AutoSize = true;
+            this.checkBoxBlueMagic14.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic14.Location = new System.Drawing.Point(169, 72);
+            this.checkBoxBlueMagic14.Name = "checkBoxBlueMagic14";
+            this.checkBoxBlueMagic14.Size = new System.Drawing.Size(97, 17);
+            this.checkBoxBlueMagic14.TabIndex = 10;
+            this.checkBoxBlueMagic14.Text = "Mighty Guard";
+            this.checkBoxBlueMagic14.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic14.Visible = false;
+            // 
+            // checkBoxBlueMagic4
+            // 
+            this.checkBoxBlueMagic4.AutoSize = true;
+            this.checkBoxBlueMagic4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic4.Location = new System.Drawing.Point(489, 3);
+            this.checkBoxBlueMagic4.Name = "checkBoxBlueMagic4";
+            this.checkBoxBlueMagic4.Size = new System.Drawing.Size(73, 17);
+            this.checkBoxBlueMagic4.TabIndex = 10;
+            this.checkBoxBlueMagic4.Text = "LV?Death";
+            this.checkBoxBlueMagic4.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic4.Visible = false;
+            // 
+            // checkBoxBlueMagic12
+            // 
+            this.checkBoxBlueMagic12.AutoSize = true;
+            this.checkBoxBlueMagic12.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxBlueMagic12.Location = new System.Drawing.Point(489, 49);
+            this.checkBoxBlueMagic12.Name = "checkBoxBlueMagic12";
+            this.checkBoxBlueMagic12.Size = new System.Drawing.Size(88, 17);
+            this.checkBoxBlueMagic12.TabIndex = 10;
+            this.checkBoxBlueMagic12.Text = "White Wind";
+            this.checkBoxBlueMagic12.UseVisualStyleBackColor = true;
+            this.checkBoxBlueMagic12.Visible = false;
+            // 
+            // panelLbSelphie
+            // 
+            this.panelLbSelphie.Controls.Add(this.checkBoxSlot1);
+            this.panelLbSelphie.Controls.Add(this.checkBoxSlot2);
+            this.panelLbSelphie.Controls.Add(this.checkBoxSlot3);
+            this.panelLbSelphie.Controls.Add(this.checkBoxSlot4);
+            this.panelLbSelphie.Controls.Add(this.checkBoxSlot5);
+            this.panelLbSelphie.Controls.Add(this.checkBoxSlot6);
+            this.panelLbSelphie.Location = new System.Drawing.Point(10, 675);
+            this.panelLbSelphie.Name = "panelLbSelphie";
+            this.panelLbSelphie.Size = new System.Drawing.Size(615, 35);
+            this.panelLbSelphie.TabIndex = 32;
+            // 
+            // checkBoxSlot1
+            // 
+            this.checkBoxSlot1.AutoSize = true;
+            this.checkBoxSlot1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxSlot1.Location = new System.Drawing.Point(18, 10);
+            this.checkBoxSlot1.Name = "checkBoxSlot1";
+            this.checkBoxSlot1.Size = new System.Drawing.Size(73, 17);
+            this.checkBoxSlot1.TabIndex = 10;
+            this.checkBoxSlot1.Text = "Full-Cure";
+            this.checkBoxSlot1.UseVisualStyleBackColor = true;
+            this.checkBoxSlot1.Visible = false;
+            // 
+            // checkBoxSlot2
+            // 
+            this.checkBoxSlot2.AutoSize = true;
+            this.checkBoxSlot2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxSlot2.Location = new System.Drawing.Point(125, 10);
+            this.checkBoxSlot2.Name = "checkBoxSlot2";
+            this.checkBoxSlot2.Size = new System.Drawing.Size(49, 17);
+            this.checkBoxSlot2.TabIndex = 10;
+            this.checkBoxSlot2.Text = "Wall";
+            this.checkBoxSlot2.UseVisualStyleBackColor = true;
+            this.checkBoxSlot2.Visible = false;
+            // 
+            // checkBoxSlot3
+            // 
+            this.checkBoxSlot3.AutoSize = true;
+            this.checkBoxSlot3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxSlot3.Location = new System.Drawing.Point(208, 10);
+            this.checkBoxSlot3.Name = "checkBoxSlot3";
+            this.checkBoxSlot3.Size = new System.Drawing.Size(67, 17);
+            this.checkBoxSlot3.TabIndex = 10;
+            this.checkBoxSlot3.Text = "Rapture";
+            this.checkBoxSlot3.UseVisualStyleBackColor = true;
+            this.checkBoxSlot3.Visible = false;
+            // 
+            // checkBoxSlot4
+            // 
+            this.checkBoxSlot4.AutoSize = true;
+            this.checkBoxSlot4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxSlot4.Location = new System.Drawing.Point(309, 10);
+            this.checkBoxSlot4.Name = "checkBoxSlot4";
+            this.checkBoxSlot4.Size = new System.Drawing.Size(64, 17);
+            this.checkBoxSlot4.TabIndex = 10;
+            this.checkBoxSlot4.Text = "Percent";
+            this.checkBoxSlot4.UseVisualStyleBackColor = true;
+            this.checkBoxSlot4.Visible = false;
+            // 
+            // checkBoxSlot5
+            // 
+            this.checkBoxSlot5.AutoSize = true;
+            this.checkBoxSlot5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxSlot5.Location = new System.Drawing.Point(407, 10);
+            this.checkBoxSlot5.Name = "checkBoxSlot5";
+            this.checkBoxSlot5.Size = new System.Drawing.Size(89, 17);
+            this.checkBoxSlot5.TabIndex = 10;
+            this.checkBoxSlot5.Text = "Catastrophe";
+            this.checkBoxSlot5.UseVisualStyleBackColor = true;
+            this.checkBoxSlot5.Visible = false;
+            // 
+            // checkBoxSlot6
+            // 
+            this.checkBoxSlot6.AutoSize = true;
+            this.checkBoxSlot6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxSlot6.Location = new System.Drawing.Point(530, 10);
+            this.checkBoxSlot6.Name = "checkBoxSlot6";
+            this.checkBoxSlot6.Size = new System.Drawing.Size(67, 17);
+            this.checkBoxSlot6.TabIndex = 10;
+            this.checkBoxSlot6.Text = "The End";
+            this.checkBoxSlot6.UseVisualStyleBackColor = true;
+            this.checkBoxSlot6.Visible = false;
+            // 
+            // panelLbRinoa
+            // 
+            this.panelLbRinoa.Controls.Add(this.labelAngeloName);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo4);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo1);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo8);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngeloOff);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo3);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelWingOff);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo7);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo5);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo2);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo2);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo6);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo3);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo1);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo6);
+            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo5);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo4);
+            this.panelLbRinoa.Controls.Add(this.labelAngeloValue2);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo7);
+            this.panelLbRinoa.Controls.Add(this.labelAngeloPChecked2);
+            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo8);
+            this.panelLbRinoa.Controls.Add(this.labelAngeloChecked2);
+            this.panelLbRinoa.Controls.Add(this.textBoxAngeloName);
+            this.panelLbRinoa.Controls.Add(this.labelAngeloValue);
+            this.panelLbRinoa.Controls.Add(this.pictureBoxAngelo);
+            this.panelLbRinoa.Controls.Add(this.labelAngeloPChecked);
+            this.panelLbRinoa.Controls.Add(this.pictureBoxAngeloInfo);
+            this.panelLbRinoa.Controls.Add(this.labelAngeloChecked);
+            this.panelLbRinoa.Location = new System.Drawing.Point(10, 417);
+            this.panelLbRinoa.Name = "panelLbRinoa";
+            this.panelLbRinoa.Size = new System.Drawing.Size(615, 252);
+            this.panelLbRinoa.TabIndex = 31;
+            // 
+            // labelAngeloName
+            // 
+            this.labelAngeloName.AutoSize = true;
+            this.labelAngeloName.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelAngeloName.Location = new System.Drawing.Point(5, 8);
+            this.labelAngeloName.Margin = new System.Windows.Forms.Padding(8);
+            this.labelAngeloName.Name = "labelAngeloName";
+            this.labelAngeloName.Size = new System.Drawing.Size(39, 13);
+            this.labelAngeloName.TabIndex = 26;
+            this.labelAngeloName.Text = "Name:";
+            this.labelAngeloName.Visible = false;
             // 
             // numericUpDownAngelo4
             // 
@@ -14846,6 +15604,18 @@
             this.numericUpDownAngelo4.TabIndex = 30;
             this.numericUpDownAngelo4.Visible = false;
             // 
+            // checkBoxAngelo1
+            // 
+            this.checkBoxAngelo1.AutoSize = true;
+            this.checkBoxAngelo1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelo1.Location = new System.Drawing.Point(8, 125);
+            this.checkBoxAngelo1.Name = "checkBoxAngelo1";
+            this.checkBoxAngelo1.Size = new System.Drawing.Size(52, 17);
+            this.checkBoxAngelo1.TabIndex = 10;
+            this.checkBoxAngelo1.Text = "Rush";
+            this.checkBoxAngelo1.UseVisualStyleBackColor = true;
+            this.checkBoxAngelo1.Visible = false;
+            // 
             // numericUpDownAngelo8
             // 
             this.numericUpDownAngelo8.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -14859,6 +15629,18 @@
             this.numericUpDownAngelo8.Size = new System.Drawing.Size(48, 23);
             this.numericUpDownAngelo8.TabIndex = 30;
             this.numericUpDownAngelo8.Visible = false;
+            // 
+            // checkBoxAngeloOff
+            // 
+            this.checkBoxAngeloOff.AutoSize = true;
+            this.checkBoxAngeloOff.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngeloOff.Location = new System.Drawing.Point(8, 200);
+            this.checkBoxAngeloOff.Name = "checkBoxAngeloOff";
+            this.checkBoxAngeloOff.Size = new System.Drawing.Size(111, 17);
+            this.checkBoxAngeloOff.TabIndex = 10;
+            this.checkBoxAngeloOff.Text = "Angelo Disabled";
+            this.checkBoxAngeloOff.UseVisualStyleBackColor = true;
+            this.checkBoxAngeloOff.Visible = false;
             // 
             // numericUpDownAngelo3
             // 
@@ -14874,6 +15656,18 @@
             this.numericUpDownAngelo3.TabIndex = 30;
             this.numericUpDownAngelo3.Visible = false;
             // 
+            // checkBoxAngelWingOff
+            // 
+            this.checkBoxAngelWingOff.AutoSize = true;
+            this.checkBoxAngelWingOff.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelWingOff.Location = new System.Drawing.Point(8, 223);
+            this.checkBoxAngelWingOff.Name = "checkBoxAngelWingOff";
+            this.checkBoxAngelWingOff.Size = new System.Drawing.Size(135, 17);
+            this.checkBoxAngelWingOff.TabIndex = 10;
+            this.checkBoxAngelWingOff.Text = "Angel Wing Disabled";
+            this.checkBoxAngelWingOff.UseVisualStyleBackColor = true;
+            this.checkBoxAngelWingOff.Visible = false;
+            // 
             // numericUpDownAngelo7
             // 
             this.numericUpDownAngelo7.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -14887,6 +15681,18 @@
             this.numericUpDownAngelo7.Size = new System.Drawing.Size(48, 23);
             this.numericUpDownAngelo7.TabIndex = 30;
             this.numericUpDownAngelo7.Visible = false;
+            // 
+            // checkBoxAngelo5
+            // 
+            this.checkBoxAngelo5.AutoSize = true;
+            this.checkBoxAngelo5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelo5.Location = new System.Drawing.Point(8, 154);
+            this.checkBoxAngelo5.Name = "checkBoxAngelo5";
+            this.checkBoxAngelo5.Size = new System.Drawing.Size(67, 17);
+            this.checkBoxAngelo5.TabIndex = 10;
+            this.checkBoxAngelo5.Text = "Cannon";
+            this.checkBoxAngelo5.UseVisualStyleBackColor = true;
+            this.checkBoxAngelo5.Visible = false;
             // 
             // numericUpDownAngelo2
             // 
@@ -14902,6 +15708,18 @@
             this.numericUpDownAngelo2.TabIndex = 30;
             this.numericUpDownAngelo2.Visible = false;
             // 
+            // checkBoxAngelo2
+            // 
+            this.checkBoxAngelo2.AutoSize = true;
+            this.checkBoxAngelo2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelo2.Location = new System.Drawing.Point(168, 125);
+            this.checkBoxAngelo2.Name = "checkBoxAngelo2";
+            this.checkBoxAngelo2.Size = new System.Drawing.Size(66, 17);
+            this.checkBoxAngelo2.TabIndex = 10;
+            this.checkBoxAngelo2.Text = "Recover";
+            this.checkBoxAngelo2.UseVisualStyleBackColor = true;
+            this.checkBoxAngelo2.Visible = false;
+            // 
             // numericUpDownAngelo6
             // 
             this.numericUpDownAngelo6.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -14915,6 +15733,18 @@
             this.numericUpDownAngelo6.Size = new System.Drawing.Size(48, 23);
             this.numericUpDownAngelo6.TabIndex = 30;
             this.numericUpDownAngelo6.Visible = false;
+            // 
+            // checkBoxAngelo3
+            // 
+            this.checkBoxAngelo3.AutoSize = true;
+            this.checkBoxAngelo3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelo3.Location = new System.Drawing.Point(329, 125);
+            this.checkBoxAngelo3.Name = "checkBoxAngelo3";
+            this.checkBoxAngelo3.Size = new System.Drawing.Size(65, 17);
+            this.checkBoxAngelo3.TabIndex = 10;
+            this.checkBoxAngelo3.Text = "Reverse";
+            this.checkBoxAngelo3.UseVisualStyleBackColor = true;
+            this.checkBoxAngelo3.Visible = false;
             // 
             // numericUpDownAngelo1
             // 
@@ -14930,6 +15760,18 @@
             this.numericUpDownAngelo1.TabIndex = 30;
             this.numericUpDownAngelo1.Visible = false;
             // 
+            // checkBoxAngelo6
+            // 
+            this.checkBoxAngelo6.AutoSize = true;
+            this.checkBoxAngelo6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelo6.Location = new System.Drawing.Point(168, 154);
+            this.checkBoxAngelo6.Name = "checkBoxAngelo6";
+            this.checkBoxAngelo6.Size = new System.Drawing.Size(55, 17);
+            this.checkBoxAngelo6.TabIndex = 10;
+            this.checkBoxAngelo6.Text = "Strike";
+            this.checkBoxAngelo6.UseVisualStyleBackColor = true;
+            this.checkBoxAngelo6.Visible = false;
+            // 
             // numericUpDownAngelo5
             // 
             this.numericUpDownAngelo5.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -14944,6 +15786,18 @@
             this.numericUpDownAngelo5.TabIndex = 30;
             this.numericUpDownAngelo5.Visible = false;
             // 
+            // checkBoxAngelo4
+            // 
+            this.checkBoxAngelo4.AutoSize = true;
+            this.checkBoxAngelo4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelo4.Location = new System.Drawing.Point(488, 125);
+            this.checkBoxAngelo4.Name = "checkBoxAngelo4";
+            this.checkBoxAngelo4.Size = new System.Drawing.Size(60, 17);
+            this.checkBoxAngelo4.TabIndex = 10;
+            this.checkBoxAngelo4.Text = "Search";
+            this.checkBoxAngelo4.UseVisualStyleBackColor = true;
+            this.checkBoxAngelo4.Visible = false;
+            // 
             // labelAngeloValue2
             // 
             this.labelAngeloValue2.AutoSize = true;
@@ -14955,213 +15809,6 @@
             this.labelAngeloValue2.TabIndex = 29;
             this.labelAngeloValue2.Text = "number of points remaining to learn the limit break.";
             this.labelAngeloValue2.Visible = false;
-            // 
-            // labelAngeloPChecked2
-            // 
-            this.labelAngeloPChecked2.AutoSize = true;
-            this.labelAngeloPChecked2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.labelAngeloPChecked2.Location = new System.Drawing.Point(159, 61);
-            this.labelAngeloPChecked2.Margin = new System.Windows.Forms.Padding(8);
-            this.labelAngeloPChecked2.Name = "labelAngeloPChecked2";
-            this.labelAngeloPChecked2.Size = new System.Drawing.Size(105, 15);
-            this.labelAngeloPChecked2.TabIndex = 29;
-            this.labelAngeloPChecked2.Text = "known limit break.";
-            this.labelAngeloPChecked2.Visible = false;
-            // 
-            // labelAngeloChecked2
-            // 
-            this.labelAngeloChecked2.AutoSize = true;
-            this.labelAngeloChecked2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.labelAngeloChecked2.Location = new System.Drawing.Point(114, 46);
-            this.labelAngeloChecked2.Margin = new System.Windows.Forms.Padding(8);
-            this.labelAngeloChecked2.Name = "labelAngeloChecked2";
-            this.labelAngeloChecked2.Size = new System.Drawing.Size(108, 15);
-            this.labelAngeloChecked2.TabIndex = 29;
-            this.labelAngeloChecked2.Text = "learned limit break.";
-            this.labelAngeloChecked2.Visible = false;
-            // 
-            // labelAngeloValue
-            // 
-            this.labelAngeloValue.AutoSize = true;
-            this.labelAngeloValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.labelAngeloValue.Location = new System.Drawing.Point(57, 76);
-            this.labelAngeloValue.Name = "labelAngeloValue";
-            this.labelAngeloValue.Size = new System.Drawing.Size(40, 15);
-            this.labelAngeloValue.TabIndex = 28;
-            this.labelAngeloValue.Text = "Value:";
-            this.labelAngeloValue.Visible = false;
-            // 
-            // labelAngeloPChecked
-            // 
-            this.labelAngeloPChecked.AutoSize = true;
-            this.labelAngeloPChecked.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.labelAngeloPChecked.Location = new System.Drawing.Point(57, 61);
-            this.labelAngeloPChecked.Name = "labelAngeloPChecked";
-            this.labelAngeloPChecked.Size = new System.Drawing.Size(105, 15);
-            this.labelAngeloPChecked.TabIndex = 28;
-            this.labelAngeloPChecked.Text = "Partially Checked:";
-            this.labelAngeloPChecked.Visible = false;
-            // 
-            // labelAngeloChecked
-            // 
-            this.labelAngeloChecked.AutoSize = true;
-            this.labelAngeloChecked.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.labelAngeloChecked.Location = new System.Drawing.Point(57, 46);
-            this.labelAngeloChecked.Name = "labelAngeloChecked";
-            this.labelAngeloChecked.Size = new System.Drawing.Size(58, 15);
-            this.labelAngeloChecked.TabIndex = 28;
-            this.labelAngeloChecked.Text = "Checked:";
-            this.labelAngeloChecked.Visible = false;
-            // 
-            // pictureBoxAngeloInfo
-            // 
-            this.pictureBoxAngeloInfo.Image = global::Quezacotl.Properties.Resources.info_big;
-            this.pictureBoxAngeloInfo.Location = new System.Drawing.Point(8, 46);
-            this.pictureBoxAngeloInfo.Name = "pictureBoxAngeloInfo";
-            this.pictureBoxAngeloInfo.Size = new System.Drawing.Size(47, 43);
-            this.pictureBoxAngeloInfo.TabIndex = 27;
-            this.pictureBoxAngeloInfo.TabStop = false;
-            this.pictureBoxAngeloInfo.Visible = false;
-            // 
-            // pictureBoxAngelo
-            // 
-            this.pictureBoxAngelo.Image = global::Quezacotl.Properties.Resources.angelo;
-            this.pictureBoxAngelo.Location = new System.Drawing.Point(545, -6);
-            this.pictureBoxAngelo.Name = "pictureBoxAngelo";
-            this.pictureBoxAngelo.Size = new System.Drawing.Size(66, 95);
-            this.pictureBoxAngelo.TabIndex = 27;
-            this.pictureBoxAngelo.TabStop = false;
-            this.pictureBoxAngelo.Visible = false;
-            // 
-            // labelAngeloName
-            // 
-            this.labelAngeloName.AutoSize = true;
-            this.labelAngeloName.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.labelAngeloName.Location = new System.Drawing.Point(5, 8);
-            this.labelAngeloName.Margin = new System.Windows.Forms.Padding(8);
-            this.labelAngeloName.Name = "labelAngeloName";
-            this.labelAngeloName.Size = new System.Drawing.Size(39, 13);
-            this.labelAngeloName.TabIndex = 26;
-            this.labelAngeloName.Text = "Name:";
-            this.labelAngeloName.Visible = false;
-            // 
-            // textBoxAngeloName
-            // 
-            this.textBoxAngeloName.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAngeloName.Location = new System.Drawing.Point(71, 5);
-            this.textBoxAngeloName.MaxLength = 12;
-            this.textBoxAngeloName.Name = "textBoxAngeloName";
-            this.textBoxAngeloName.Size = new System.Drawing.Size(417, 23);
-            this.textBoxAngeloName.TabIndex = 25;
-            this.textBoxAngeloName.Visible = false;
-            // 
-            // labelTrackBarCharsRenzoInd
-            // 
-            this.labelTrackBarCharsRenzoInd.AutoSize = true;
-            this.labelTrackBarCharsRenzoInd.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.labelTrackBarCharsRenzoInd.Location = new System.Drawing.Point(562, 50);
-            this.labelTrackBarCharsRenzoInd.Margin = new System.Windows.Forms.Padding(8);
-            this.labelTrackBarCharsRenzoInd.Name = "labelTrackBarCharsRenzoInd";
-            this.labelTrackBarCharsRenzoInd.Size = new System.Drawing.Size(17, 19);
-            this.labelTrackBarCharsRenzoInd.TabIndex = 24;
-            this.labelTrackBarCharsRenzoInd.Text = "0";
-            this.labelTrackBarCharsRenzoInd.Visible = false;
-            // 
-            // trackBarCharsRenzoInd
-            // 
-            this.trackBarCharsRenzoInd.Location = new System.Drawing.Point(152, 37);
-            this.trackBarCharsRenzoInd.Maximum = 127;
-            this.trackBarCharsRenzoInd.Name = "trackBarCharsRenzoInd";
-            this.trackBarCharsRenzoInd.Size = new System.Drawing.Size(408, 45);
-            this.trackBarCharsRenzoInd.TabIndex = 11;
-            this.trackBarCharsRenzoInd.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.trackBarCharsRenzoInd.Visible = false;
-            this.trackBarCharsRenzoInd.Scroll += new System.EventHandler(this.trackBarCharsRenzoInd_Scroll);
-            this.trackBarCharsRenzoInd.ValueChanged += new System.EventHandler(this.trackBarCharsRenzoInd_ValueChanged);
-            // 
-            // checkBoxCharsRenzoInd
-            // 
-            this.checkBoxCharsRenzoInd.AutoSize = true;
-            this.checkBoxCharsRenzoInd.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsRenzoInd.Location = new System.Drawing.Point(12, 51);
-            this.checkBoxCharsRenzoInd.Name = "checkBoxCharsRenzoInd";
-            this.checkBoxCharsRenzoInd.Size = new System.Drawing.Size(139, 17);
-            this.checkBoxCharsRenzoInd.TabIndex = 10;
-            this.checkBoxCharsRenzoInd.Text = "Renzokuken Indicator";
-            this.checkBoxCharsRenzoInd.UseVisualStyleBackColor = true;
-            this.checkBoxCharsRenzoInd.Visible = false;
-            // 
-            // checkBoxBlueMagic16
-            // 
-            this.checkBoxBlueMagic16.AutoSize = true;
-            this.checkBoxBlueMagic16.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic16.Location = new System.Drawing.Point(489, 72);
-            this.checkBoxBlueMagic16.Name = "checkBoxBlueMagic16";
-            this.checkBoxBlueMagic16.Size = new System.Drawing.Size(117, 17);
-            this.checkBoxBlueMagic16.TabIndex = 10;
-            this.checkBoxBlueMagic16.Text = "Shockwave Pulsar";
-            this.checkBoxBlueMagic16.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic16.Visible = false;
-            // 
-            // checkBoxBlueMagic8
-            // 
-            this.checkBoxBlueMagic8.AutoSize = true;
-            this.checkBoxBlueMagic8.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic8.Location = new System.Drawing.Point(489, 26);
-            this.checkBoxBlueMagic8.Name = "checkBoxBlueMagic8";
-            this.checkBoxBlueMagic8.Size = new System.Drawing.Size(48, 17);
-            this.checkBoxBlueMagic8.TabIndex = 10;
-            this.checkBoxBlueMagic8.Text = "Acid";
-            this.checkBoxBlueMagic8.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic8.Visible = false;
-            // 
-            // checkBoxBlueMagic15
-            // 
-            this.checkBoxBlueMagic15.AutoSize = true;
-            this.checkBoxBlueMagic15.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic15.Location = new System.Drawing.Point(329, 72);
-            this.checkBoxBlueMagic15.Name = "checkBoxBlueMagic15";
-            this.checkBoxBlueMagic15.Size = new System.Drawing.Size(78, 17);
-            this.checkBoxBlueMagic15.TabIndex = 10;
-            this.checkBoxBlueMagic15.Text = "Ray-Bomb";
-            this.checkBoxBlueMagic15.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic15.Visible = false;
-            // 
-            // checkBoxBlueMagic7
-            // 
-            this.checkBoxBlueMagic7.AutoSize = true;
-            this.checkBoxBlueMagic7.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic7.Location = new System.Drawing.Point(329, 26);
-            this.checkBoxBlueMagic7.Name = "checkBoxBlueMagic7";
-            this.checkBoxBlueMagic7.Size = new System.Drawing.Size(98, 17);
-            this.checkBoxBlueMagic7.TabIndex = 10;
-            this.checkBoxBlueMagic7.Text = "Micro Missiles";
-            this.checkBoxBlueMagic7.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic7.Visible = false;
-            // 
-            // checkBoxAngelo8
-            // 
-            this.checkBoxAngelo8.AutoSize = true;
-            this.checkBoxAngelo8.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelo8.Location = new System.Drawing.Point(488, 154);
-            this.checkBoxAngelo8.Name = "checkBoxAngelo8";
-            this.checkBoxAngelo8.Size = new System.Drawing.Size(78, 17);
-            this.checkBoxAngelo8.TabIndex = 10;
-            this.checkBoxAngelo8.Text = "Wish. Star";
-            this.checkBoxAngelo8.UseVisualStyleBackColor = true;
-            this.checkBoxAngelo8.Visible = false;
-            // 
-            // checkBoxShot8
-            // 
-            this.checkBoxShot8.AutoSize = true;
-            this.checkBoxShot8.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot8.Location = new System.Drawing.Point(506, 37);
-            this.checkBoxShot8.Name = "checkBoxShot8";
-            this.checkBoxShot8.Size = new System.Drawing.Size(83, 17);
-            this.checkBoxShot8.TabIndex = 10;
-            this.checkBoxShot8.Text = "Hyper Shot";
-            this.checkBoxShot8.UseVisualStyleBackColor = true;
-            this.checkBoxShot8.Visible = false;
             // 
             // checkBoxAngelo7
             // 
@@ -15175,545 +15822,104 @@
             this.checkBoxAngelo7.UseVisualStyleBackColor = true;
             this.checkBoxAngelo7.Visible = false;
             // 
-            // checkBoxBlueMagic12
-            // 
-            this.checkBoxBlueMagic12.AutoSize = true;
-            this.checkBoxBlueMagic12.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic12.Location = new System.Drawing.Point(489, 49);
-            this.checkBoxBlueMagic12.Name = "checkBoxBlueMagic12";
-            this.checkBoxBlueMagic12.Size = new System.Drawing.Size(88, 17);
-            this.checkBoxBlueMagic12.TabIndex = 10;
-            this.checkBoxBlueMagic12.Text = "White Wind";
-            this.checkBoxBlueMagic12.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic12.Visible = false;
-            // 
-            // checkBoxAngelo4
-            // 
-            this.checkBoxAngelo4.AutoSize = true;
-            this.checkBoxAngelo4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelo4.Location = new System.Drawing.Point(488, 125);
-            this.checkBoxAngelo4.Name = "checkBoxAngelo4";
-            this.checkBoxAngelo4.Size = new System.Drawing.Size(60, 17);
-            this.checkBoxAngelo4.TabIndex = 10;
-            this.checkBoxAngelo4.Text = "Search";
-            this.checkBoxAngelo4.UseVisualStyleBackColor = true;
-            this.checkBoxAngelo4.Visible = false;
-            // 
-            // checkBoxAngelo6
-            // 
-            this.checkBoxAngelo6.AutoSize = true;
-            this.checkBoxAngelo6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelo6.Location = new System.Drawing.Point(168, 154);
-            this.checkBoxAngelo6.Name = "checkBoxAngelo6";
-            this.checkBoxAngelo6.Size = new System.Drawing.Size(55, 17);
-            this.checkBoxAngelo6.TabIndex = 10;
-            this.checkBoxAngelo6.Text = "Strike";
-            this.checkBoxAngelo6.UseVisualStyleBackColor = true;
-            this.checkBoxAngelo6.Visible = false;
-            // 
-            // checkBoxAngelo3
-            // 
-            this.checkBoxAngelo3.AutoSize = true;
-            this.checkBoxAngelo3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelo3.Location = new System.Drawing.Point(329, 125);
-            this.checkBoxAngelo3.Name = "checkBoxAngelo3";
-            this.checkBoxAngelo3.Size = new System.Drawing.Size(65, 17);
-            this.checkBoxAngelo3.TabIndex = 10;
-            this.checkBoxAngelo3.Text = "Reverse";
-            this.checkBoxAngelo3.UseVisualStyleBackColor = true;
-            this.checkBoxAngelo3.Visible = false;
-            // 
-            // checkBoxBlueMagic4
-            // 
-            this.checkBoxBlueMagic4.AutoSize = true;
-            this.checkBoxBlueMagic4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic4.Location = new System.Drawing.Point(489, 3);
-            this.checkBoxBlueMagic4.Name = "checkBoxBlueMagic4";
-            this.checkBoxBlueMagic4.Size = new System.Drawing.Size(73, 17);
-            this.checkBoxBlueMagic4.TabIndex = 10;
-            this.checkBoxBlueMagic4.Text = "LV?Death";
-            this.checkBoxBlueMagic4.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic4.Visible = false;
-            // 
-            // checkBoxAngelo2
-            // 
-            this.checkBoxAngelo2.AutoSize = true;
-            this.checkBoxAngelo2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelo2.Location = new System.Drawing.Point(168, 125);
-            this.checkBoxAngelo2.Name = "checkBoxAngelo2";
-            this.checkBoxAngelo2.Size = new System.Drawing.Size(66, 17);
-            this.checkBoxAngelo2.TabIndex = 10;
-            this.checkBoxAngelo2.Text = "Recover";
-            this.checkBoxAngelo2.UseVisualStyleBackColor = true;
-            this.checkBoxAngelo2.Visible = false;
-            // 
-            // checkBoxAngelo5
-            // 
-            this.checkBoxAngelo5.AutoSize = true;
-            this.checkBoxAngelo5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelo5.Location = new System.Drawing.Point(8, 154);
-            this.checkBoxAngelo5.Name = "checkBoxAngelo5";
-            this.checkBoxAngelo5.Size = new System.Drawing.Size(67, 17);
-            this.checkBoxAngelo5.TabIndex = 10;
-            this.checkBoxAngelo5.Text = "Cannon";
-            this.checkBoxAngelo5.UseVisualStyleBackColor = true;
-            this.checkBoxAngelo5.Visible = false;
-            // 
-            // checkBoxSlot6
-            // 
-            this.checkBoxSlot6.AutoSize = true;
-            this.checkBoxSlot6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxSlot6.Location = new System.Drawing.Point(530, 10);
-            this.checkBoxSlot6.Name = "checkBoxSlot6";
-            this.checkBoxSlot6.Size = new System.Drawing.Size(67, 17);
-            this.checkBoxSlot6.TabIndex = 10;
-            this.checkBoxSlot6.Text = "The End";
-            this.checkBoxSlot6.UseVisualStyleBackColor = true;
-            this.checkBoxSlot6.Visible = false;
-            // 
-            // checkBoxSlot5
-            // 
-            this.checkBoxSlot5.AutoSize = true;
-            this.checkBoxSlot5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxSlot5.Location = new System.Drawing.Point(407, 10);
-            this.checkBoxSlot5.Name = "checkBoxSlot5";
-            this.checkBoxSlot5.Size = new System.Drawing.Size(89, 17);
-            this.checkBoxSlot5.TabIndex = 10;
-            this.checkBoxSlot5.Text = "Catastrophe";
-            this.checkBoxSlot5.UseVisualStyleBackColor = true;
-            this.checkBoxSlot5.Visible = false;
-            // 
-            // checkBoxSlot4
-            // 
-            this.checkBoxSlot4.AutoSize = true;
-            this.checkBoxSlot4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxSlot4.Location = new System.Drawing.Point(309, 10);
-            this.checkBoxSlot4.Name = "checkBoxSlot4";
-            this.checkBoxSlot4.Size = new System.Drawing.Size(64, 17);
-            this.checkBoxSlot4.TabIndex = 10;
-            this.checkBoxSlot4.Text = "Percent";
-            this.checkBoxSlot4.UseVisualStyleBackColor = true;
-            this.checkBoxSlot4.Visible = false;
-            // 
-            // checkBoxSlot3
-            // 
-            this.checkBoxSlot3.AutoSize = true;
-            this.checkBoxSlot3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxSlot3.Location = new System.Drawing.Point(208, 10);
-            this.checkBoxSlot3.Name = "checkBoxSlot3";
-            this.checkBoxSlot3.Size = new System.Drawing.Size(67, 17);
-            this.checkBoxSlot3.TabIndex = 10;
-            this.checkBoxSlot3.Text = "Rapture";
-            this.checkBoxSlot3.UseVisualStyleBackColor = true;
-            this.checkBoxSlot3.Visible = false;
-            // 
-            // checkBoxSlot2
-            // 
-            this.checkBoxSlot2.AutoSize = true;
-            this.checkBoxSlot2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxSlot2.Location = new System.Drawing.Point(125, 10);
-            this.checkBoxSlot2.Name = "checkBoxSlot2";
-            this.checkBoxSlot2.Size = new System.Drawing.Size(49, 17);
-            this.checkBoxSlot2.TabIndex = 10;
-            this.checkBoxSlot2.Text = "Wall";
-            this.checkBoxSlot2.UseVisualStyleBackColor = true;
-            this.checkBoxSlot2.Visible = false;
-            // 
-            // checkBoxSlot1
-            // 
-            this.checkBoxSlot1.AutoSize = true;
-            this.checkBoxSlot1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxSlot1.Location = new System.Drawing.Point(18, 10);
-            this.checkBoxSlot1.Name = "checkBoxSlot1";
-            this.checkBoxSlot1.Size = new System.Drawing.Size(73, 17);
-            this.checkBoxSlot1.TabIndex = 10;
-            this.checkBoxSlot1.Text = "Full-Cure";
-            this.checkBoxSlot1.UseVisualStyleBackColor = true;
-            this.checkBoxSlot1.Visible = false;
-            // 
-            // checkBoxAngelWingOff
-            // 
-            this.checkBoxAngelWingOff.AutoSize = true;
-            this.checkBoxAngelWingOff.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelWingOff.Location = new System.Drawing.Point(8, 223);
-            this.checkBoxAngelWingOff.Name = "checkBoxAngelWingOff";
-            this.checkBoxAngelWingOff.Size = new System.Drawing.Size(135, 17);
-            this.checkBoxAngelWingOff.TabIndex = 10;
-            this.checkBoxAngelWingOff.Text = "Angel Wing Disabled";
-            this.checkBoxAngelWingOff.UseVisualStyleBackColor = true;
-            this.checkBoxAngelWingOff.Visible = false;
-            // 
-            // checkBoxAngeloOff
-            // 
-            this.checkBoxAngeloOff.AutoSize = true;
-            this.checkBoxAngeloOff.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngeloOff.Location = new System.Drawing.Point(8, 200);
-            this.checkBoxAngeloOff.Name = "checkBoxAngeloOff";
-            this.checkBoxAngeloOff.Size = new System.Drawing.Size(111, 17);
-            this.checkBoxAngeloOff.TabIndex = 10;
-            this.checkBoxAngeloOff.Text = "Angelo Disabled";
-            this.checkBoxAngeloOff.UseVisualStyleBackColor = true;
-            this.checkBoxAngeloOff.Visible = false;
-            // 
-            // checkBoxAngelo1
-            // 
-            this.checkBoxAngelo1.AutoSize = true;
-            this.checkBoxAngelo1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxAngelo1.Location = new System.Drawing.Point(8, 125);
-            this.checkBoxAngelo1.Name = "checkBoxAngelo1";
-            this.checkBoxAngelo1.Size = new System.Drawing.Size(52, 17);
-            this.checkBoxAngelo1.TabIndex = 10;
-            this.checkBoxAngelo1.Text = "Rush";
-            this.checkBoxAngelo1.UseVisualStyleBackColor = true;
-            this.checkBoxAngelo1.Visible = false;
-            // 
-            // checkBoxBlueMagic14
-            // 
-            this.checkBoxBlueMagic14.AutoSize = true;
-            this.checkBoxBlueMagic14.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic14.Location = new System.Drawing.Point(169, 72);
-            this.checkBoxBlueMagic14.Name = "checkBoxBlueMagic14";
-            this.checkBoxBlueMagic14.Size = new System.Drawing.Size(97, 17);
-            this.checkBoxBlueMagic14.TabIndex = 10;
-            this.checkBoxBlueMagic14.Text = "Mighty Guard";
-            this.checkBoxBlueMagic14.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic14.Visible = false;
-            // 
-            // checkBoxShot7
-            // 
-            this.checkBoxShot7.AutoSize = true;
-            this.checkBoxShot7.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot7.Location = new System.Drawing.Point(346, 37);
-            this.checkBoxShot7.Name = "checkBoxShot7";
-            this.checkBoxShot7.Size = new System.Drawing.Size(84, 17);
-            this.checkBoxShot7.TabIndex = 10;
-            this.checkBoxShot7.Text = "Armor Shot";
-            this.checkBoxShot7.UseVisualStyleBackColor = true;
-            this.checkBoxShot7.Visible = false;
-            // 
-            // checkBoxBlueMagic6
-            // 
-            this.checkBoxBlueMagic6.AutoSize = true;
-            this.checkBoxBlueMagic6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic6.Location = new System.Drawing.Point(169, 26);
-            this.checkBoxBlueMagic6.Name = "checkBoxBlueMagic6";
-            this.checkBoxBlueMagic6.Size = new System.Drawing.Size(90, 17);
-            this.checkBoxBlueMagic6.TabIndex = 10;
-            this.checkBoxBlueMagic6.Text = "Aqua Breath";
-            this.checkBoxBlueMagic6.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic6.Visible = false;
-            // 
-            // checkBoxBlueMagic11
-            // 
-            this.checkBoxBlueMagic11.AutoSize = true;
-            this.checkBoxBlueMagic11.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic11.Location = new System.Drawing.Point(329, 49);
-            this.checkBoxBlueMagic11.Name = "checkBoxBlueMagic11";
-            this.checkBoxBlueMagic11.Size = new System.Drawing.Size(83, 17);
-            this.checkBoxBlueMagic11.TabIndex = 10;
-            this.checkBoxBlueMagic11.Text = "Bad Breath";
-            this.checkBoxBlueMagic11.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic11.Visible = false;
-            // 
-            // checkBoxShot4
-            // 
-            this.checkBoxShot4.AutoSize = true;
-            this.checkBoxShot4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot4.Location = new System.Drawing.Point(506, 14);
-            this.checkBoxShot4.Name = "checkBoxShot4";
-            this.checkBoxShot4.Size = new System.Drawing.Size(83, 17);
-            this.checkBoxShot4.TabIndex = 10;
-            this.checkBoxShot4.Text = "Flame Shot";
-            this.checkBoxShot4.UseVisualStyleBackColor = true;
-            this.checkBoxShot4.Visible = false;
-            // 
-            // checkBoxBlueMagic3
-            // 
-            this.checkBoxBlueMagic3.AutoSize = true;
-            this.checkBoxBlueMagic3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic3.Location = new System.Drawing.Point(329, 3);
-            this.checkBoxBlueMagic3.Name = "checkBoxBlueMagic3";
-            this.checkBoxBlueMagic3.Size = new System.Drawing.Size(83, 17);
-            this.checkBoxBlueMagic3.TabIndex = 10;
-            this.checkBoxBlueMagic3.Text = "Electrocute";
-            this.checkBoxBlueMagic3.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic3.Visible = false;
-            // 
-            // checkBoxBlueMagic13
-            // 
-            this.checkBoxBlueMagic13.AutoSize = true;
-            this.checkBoxBlueMagic13.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic13.Location = new System.Drawing.Point(9, 72);
-            this.checkBoxBlueMagic13.Name = "checkBoxBlueMagic13";
-            this.checkBoxBlueMagic13.Size = new System.Drawing.Size(96, 17);
-            this.checkBoxBlueMagic13.TabIndex = 10;
-            this.checkBoxBlueMagic13.Text = "Homing Laser";
-            this.checkBoxBlueMagic13.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic13.Visible = false;
-            // 
-            // checkBoxShot6
-            // 
-            this.checkBoxShot6.AutoSize = true;
-            this.checkBoxShot6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot6.Location = new System.Drawing.Point(186, 37);
-            this.checkBoxShot6.Name = "checkBoxShot6";
-            this.checkBoxShot6.Size = new System.Drawing.Size(82, 17);
-            this.checkBoxShot6.TabIndex = 10;
-            this.checkBoxShot6.Text = "Quick Shot";
-            this.checkBoxShot6.UseVisualStyleBackColor = true;
-            this.checkBoxShot6.Visible = false;
-            // 
-            // checkBoxBlueMagic5
-            // 
-            this.checkBoxBlueMagic5.AutoSize = true;
-            this.checkBoxBlueMagic5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic5.Location = new System.Drawing.Point(9, 26);
-            this.checkBoxBlueMagic5.Name = "checkBoxBlueMagic5";
-            this.checkBoxBlueMagic5.Size = new System.Drawing.Size(91, 17);
-            this.checkBoxBlueMagic5.TabIndex = 10;
-            this.checkBoxBlueMagic5.Text = "Degenerator";
-            this.checkBoxBlueMagic5.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic5.Visible = false;
-            // 
-            // checkBoxBlueMagic10
-            // 
-            this.checkBoxBlueMagic10.AutoSize = true;
-            this.checkBoxBlueMagic10.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic10.Location = new System.Drawing.Point(169, 49);
-            this.checkBoxBlueMagic10.Name = "checkBoxBlueMagic10";
-            this.checkBoxBlueMagic10.Size = new System.Drawing.Size(82, 17);
-            this.checkBoxBlueMagic10.TabIndex = 10;
-            this.checkBoxBlueMagic10.Text = "Fire Breath";
-            this.checkBoxBlueMagic10.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic10.Visible = false;
-            // 
-            // checkBoxShot3
-            // 
-            this.checkBoxShot3.AutoSize = true;
-            this.checkBoxShot3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot3.Location = new System.Drawing.Point(346, 14);
-            this.checkBoxShot3.Name = "checkBoxShot3";
-            this.checkBoxShot3.Size = new System.Drawing.Size(77, 17);
-            this.checkBoxShot3.TabIndex = 10;
-            this.checkBoxShot3.Text = "Dark Shot";
-            this.checkBoxShot3.UseVisualStyleBackColor = true;
-            this.checkBoxShot3.Visible = false;
-            // 
-            // checkBoxBlueMagic2
-            // 
-            this.checkBoxBlueMagic2.AutoSize = true;
-            this.checkBoxBlueMagic2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic2.Location = new System.Drawing.Point(169, 3);
-            this.checkBoxBlueMagic2.Name = "checkBoxBlueMagic2";
-            this.checkBoxBlueMagic2.Size = new System.Drawing.Size(87, 17);
-            this.checkBoxBlueMagic2.TabIndex = 10;
-            this.checkBoxBlueMagic2.Text = "Ultra Waves";
-            this.checkBoxBlueMagic2.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic2.Visible = false;
-            // 
-            // checkBoxBlueMagic9
-            // 
-            this.checkBoxBlueMagic9.AutoSize = true;
-            this.checkBoxBlueMagic9.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic9.Location = new System.Drawing.Point(9, 49);
-            this.checkBoxBlueMagic9.Name = "checkBoxBlueMagic9";
-            this.checkBoxBlueMagic9.Size = new System.Drawing.Size(89, 17);
-            this.checkBoxBlueMagic9.TabIndex = 10;
-            this.checkBoxBlueMagic9.Text = "Gatling Gun";
-            this.checkBoxBlueMagic9.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic9.Visible = false;
-            // 
-            // checkBoxShot5
-            // 
-            this.checkBoxShot5.AutoSize = true;
-            this.checkBoxShot5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot5.Location = new System.Drawing.Point(26, 37);
-            this.checkBoxShot5.Name = "checkBoxShot5";
-            this.checkBoxShot5.Size = new System.Drawing.Size(95, 17);
-            this.checkBoxShot5.TabIndex = 10;
-            this.checkBoxShot5.Text = "Canister Shot";
-            this.checkBoxShot5.UseVisualStyleBackColor = true;
-            this.checkBoxShot5.Visible = false;
-            // 
-            // checkBoxBlueMagic1
-            // 
-            this.checkBoxBlueMagic1.AutoSize = true;
-            this.checkBoxBlueMagic1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxBlueMagic1.Location = new System.Drawing.Point(9, 3);
-            this.checkBoxBlueMagic1.Name = "checkBoxBlueMagic1";
-            this.checkBoxBlueMagic1.Size = new System.Drawing.Size(72, 17);
-            this.checkBoxBlueMagic1.TabIndex = 10;
-            this.checkBoxBlueMagic1.Text = "Laser Eye";
-            this.checkBoxBlueMagic1.UseVisualStyleBackColor = true;
-            this.checkBoxBlueMagic1.Visible = false;
-            // 
-            // checkBoxShot2
-            // 
-            this.checkBoxShot2.AutoSize = true;
-            this.checkBoxShot2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot2.Location = new System.Drawing.Point(186, 14);
-            this.checkBoxShot2.Name = "checkBoxShot2";
-            this.checkBoxShot2.Size = new System.Drawing.Size(88, 17);
-            this.checkBoxShot2.TabIndex = 10;
-            this.checkBoxShot2.Text = "Scatter Shot";
-            this.checkBoxShot2.UseVisualStyleBackColor = true;
-            this.checkBoxShot2.Visible = false;
-            // 
-            // checkBoxShot1
-            // 
-            this.checkBoxShot1.AutoSize = true;
-            this.checkBoxShot1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxShot1.Location = new System.Drawing.Point(26, 14);
-            this.checkBoxShot1.Name = "checkBoxShot1";
-            this.checkBoxShot1.Size = new System.Drawing.Size(90, 17);
-            this.checkBoxShot1.TabIndex = 10;
-            this.checkBoxShot1.Text = "Normal Shot";
-            this.checkBoxShot1.UseVisualStyleBackColor = true;
-            this.checkBoxShot1.Visible = false;
-            // 
-            // checkBoxDuelMove10
-            // 
-            this.checkBoxDuelMove10.AutoSize = true;
-            this.checkBoxDuelMove10.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove10.Location = new System.Drawing.Point(502, 63);
-            this.checkBoxDuelMove10.Name = "checkBoxDuelMove10";
-            this.checkBoxDuelMove10.Size = new System.Drawing.Size(110, 17);
-            this.checkBoxDuelMove10.TabIndex = 10;
-            this.checkBoxDuelMove10.Text = "My Final Heaven";
-            this.checkBoxDuelMove10.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove10.Visible = false;
-            // 
-            // checkBoxDuelMove9
-            // 
-            this.checkBoxDuelMove9.AutoSize = true;
-            this.checkBoxDuelMove9.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove9.Location = new System.Drawing.Point(378, 63);
-            this.checkBoxDuelMove9.Name = "checkBoxDuelMove9";
-            this.checkBoxDuelMove9.Size = new System.Drawing.Size(98, 17);
-            this.checkBoxDuelMove9.TabIndex = 10;
-            this.checkBoxDuelMove9.Text = "Different Beat";
-            this.checkBoxDuelMove9.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove9.Visible = false;
-            // 
-            // checkBoxDuelMove5
-            // 
-            this.checkBoxDuelMove5.AutoSize = true;
-            this.checkBoxDuelMove5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove5.Location = new System.Drawing.Point(502, 40);
-            this.checkBoxDuelMove5.Name = "checkBoxDuelMove5";
-            this.checkBoxDuelMove5.Size = new System.Drawing.Size(97, 17);
-            this.checkBoxDuelMove5.TabIndex = 10;
-            this.checkBoxDuelMove5.Text = "Dolphin Blow";
-            this.checkBoxDuelMove5.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove5.Visible = false;
-            // 
-            // checkBoxDuelMove8
-            // 
-            this.checkBoxDuelMove8.AutoSize = true;
-            this.checkBoxDuelMove8.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove8.Location = new System.Drawing.Point(254, 63);
-            this.checkBoxDuelMove8.Name = "checkBoxDuelMove8";
-            this.checkBoxDuelMove8.Size = new System.Drawing.Size(97, 17);
-            this.checkBoxDuelMove8.TabIndex = 10;
-            this.checkBoxDuelMove8.Text = "Meteor Barret";
-            this.checkBoxDuelMove8.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove8.Visible = false;
-            // 
-            // checkBoxDuelMove4
-            // 
-            this.checkBoxDuelMove4.AutoSize = true;
-            this.checkBoxDuelMove4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove4.Location = new System.Drawing.Point(378, 40);
-            this.checkBoxDuelMove4.Name = "checkBoxDuelMove4";
-            this.checkBoxDuelMove4.Size = new System.Drawing.Size(77, 17);
-            this.checkBoxDuelMove4.TabIndex = 10;
-            this.checkBoxDuelMove4.Text = "Mach Kick";
-            this.checkBoxDuelMove4.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove4.Visible = false;
-            // 
-            // checkBoxDuelMove7
-            // 
-            this.checkBoxDuelMove7.AutoSize = true;
-            this.checkBoxDuelMove7.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove7.Location = new System.Drawing.Point(130, 63);
-            this.checkBoxDuelMove7.Name = "checkBoxDuelMove7";
-            this.checkBoxDuelMove7.Size = new System.Drawing.Size(95, 17);
-            this.checkBoxDuelMove7.TabIndex = 10;
-            this.checkBoxDuelMove7.Text = "Burning Rave";
-            this.checkBoxDuelMove7.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove7.Visible = false;
-            // 
-            // checkBoxDuelMove3
-            // 
-            this.checkBoxDuelMove3.AutoSize = true;
-            this.checkBoxDuelMove3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove3.Location = new System.Drawing.Point(254, 40);
-            this.checkBoxDuelMove3.Name = "checkBoxDuelMove3";
-            this.checkBoxDuelMove3.Size = new System.Drawing.Size(78, 17);
-            this.checkBoxDuelMove3.TabIndex = 10;
-            this.checkBoxDuelMove3.Text = "Heel Drop";
-            this.checkBoxDuelMove3.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove3.Visible = false;
-            // 
-            // checkBoxDuelMove6
-            // 
-            this.checkBoxDuelMove6.AutoSize = true;
-            this.checkBoxDuelMove6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove6.Location = new System.Drawing.Point(6, 63);
-            this.checkBoxDuelMove6.Name = "checkBoxDuelMove6";
-            this.checkBoxDuelMove6.Size = new System.Drawing.Size(95, 17);
-            this.checkBoxDuelMove6.TabIndex = 10;
-            this.checkBoxDuelMove6.Text = "Meteor Strike";
-            this.checkBoxDuelMove6.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove6.Visible = false;
-            // 
-            // checkBoxDuelMove2
-            // 
-            this.checkBoxDuelMove2.AutoSize = true;
-            this.checkBoxDuelMove2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove2.Location = new System.Drawing.Point(130, 40);
-            this.checkBoxDuelMove2.Name = "checkBoxDuelMove2";
-            this.checkBoxDuelMove2.Size = new System.Drawing.Size(58, 17);
-            this.checkBoxDuelMove2.TabIndex = 10;
-            this.checkBoxDuelMove2.Text = "Booya";
-            this.checkBoxDuelMove2.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove2.Visible = false;
-            // 
-            // checkBoxDuelMove1
-            // 
-            this.checkBoxDuelMove1.AutoSize = true;
-            this.checkBoxDuelMove1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelMove1.Location = new System.Drawing.Point(6, 40);
-            this.checkBoxDuelMove1.Name = "checkBoxDuelMove1";
-            this.checkBoxDuelMove1.Size = new System.Drawing.Size(87, 17);
-            this.checkBoxDuelMove1.TabIndex = 10;
-            this.checkBoxDuelMove1.Text = "Punch Rush";
-            this.checkBoxDuelMove1.UseVisualStyleBackColor = true;
-            this.checkBoxDuelMove1.Visible = false;
-            // 
-            // checkBoxDuelAuto
-            // 
-            this.checkBoxDuelAuto.AutoSize = true;
-            this.checkBoxDuelAuto.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxDuelAuto.Location = new System.Drawing.Point(6, 6);
-            this.checkBoxDuelAuto.Name = "checkBoxDuelAuto";
-            this.checkBoxDuelAuto.Size = new System.Drawing.Size(78, 17);
-            this.checkBoxDuelAuto.TabIndex = 10;
-            this.checkBoxDuelAuto.Text = "Duel Auto";
-            this.checkBoxDuelAuto.UseVisualStyleBackColor = true;
-            this.checkBoxDuelAuto.Visible = false;
-            // 
-            // checkBoxCharsGunBladeAuto
-            // 
-            this.checkBoxCharsGunBladeAuto.AutoSize = true;
-            this.checkBoxCharsGunBladeAuto.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.checkBoxCharsGunBladeAuto.Location = new System.Drawing.Point(12, 9);
-            this.checkBoxCharsGunBladeAuto.Name = "checkBoxCharsGunBladeAuto";
-            this.checkBoxCharsGunBladeAuto.Size = new System.Drawing.Size(105, 17);
-            this.checkBoxCharsGunBladeAuto.TabIndex = 10;
-            this.checkBoxCharsGunBladeAuto.Text = "Gunblade Auto";
-            this.checkBoxCharsGunBladeAuto.UseVisualStyleBackColor = true;
-            this.checkBoxCharsGunBladeAuto.Visible = false;
+            // labelAngeloPChecked2
+            // 
+            this.labelAngeloPChecked2.AutoSize = true;
+            this.labelAngeloPChecked2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelAngeloPChecked2.Location = new System.Drawing.Point(159, 61);
+            this.labelAngeloPChecked2.Margin = new System.Windows.Forms.Padding(8);
+            this.labelAngeloPChecked2.Name = "labelAngeloPChecked2";
+            this.labelAngeloPChecked2.Size = new System.Drawing.Size(105, 15);
+            this.labelAngeloPChecked2.TabIndex = 29;
+            this.labelAngeloPChecked2.Text = "known limit break.";
+            this.labelAngeloPChecked2.Visible = false;
+            // 
+            // checkBoxAngelo8
+            // 
+            this.checkBoxAngelo8.AutoSize = true;
+            this.checkBoxAngelo8.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.checkBoxAngelo8.Location = new System.Drawing.Point(488, 154);
+            this.checkBoxAngelo8.Name = "checkBoxAngelo8";
+            this.checkBoxAngelo8.Size = new System.Drawing.Size(78, 17);
+            this.checkBoxAngelo8.TabIndex = 10;
+            this.checkBoxAngelo8.Text = "Wish. Star";
+            this.checkBoxAngelo8.UseVisualStyleBackColor = true;
+            this.checkBoxAngelo8.Visible = false;
+            // 
+            // labelAngeloChecked2
+            // 
+            this.labelAngeloChecked2.AutoSize = true;
+            this.labelAngeloChecked2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelAngeloChecked2.Location = new System.Drawing.Point(114, 46);
+            this.labelAngeloChecked2.Margin = new System.Windows.Forms.Padding(8);
+            this.labelAngeloChecked2.Name = "labelAngeloChecked2";
+            this.labelAngeloChecked2.Size = new System.Drawing.Size(108, 15);
+            this.labelAngeloChecked2.TabIndex = 29;
+            this.labelAngeloChecked2.Text = "learned limit break.";
+            this.labelAngeloChecked2.Visible = false;
+            // 
+            // textBoxAngeloName
+            // 
+            this.textBoxAngeloName.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAngeloName.Location = new System.Drawing.Point(71, 5);
+            this.textBoxAngeloName.MaxLength = 12;
+            this.textBoxAngeloName.Name = "textBoxAngeloName";
+            this.textBoxAngeloName.Size = new System.Drawing.Size(417, 23);
+            this.textBoxAngeloName.TabIndex = 25;
+            this.textBoxAngeloName.Visible = false;
+            // 
+            // labelAngeloValue
+            // 
+            this.labelAngeloValue.AutoSize = true;
+            this.labelAngeloValue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelAngeloValue.Location = new System.Drawing.Point(57, 76);
+            this.labelAngeloValue.Name = "labelAngeloValue";
+            this.labelAngeloValue.Size = new System.Drawing.Size(40, 15);
+            this.labelAngeloValue.TabIndex = 28;
+            this.labelAngeloValue.Text = "Value:";
+            this.labelAngeloValue.Visible = false;
+            // 
+            // pictureBoxAngelo
+            // 
+            this.pictureBoxAngelo.Image = global::Quezacotl.Properties.Resources.angelo;
+            this.pictureBoxAngelo.Location = new System.Drawing.Point(545, -6);
+            this.pictureBoxAngelo.Name = "pictureBoxAngelo";
+            this.pictureBoxAngelo.Size = new System.Drawing.Size(66, 95);
+            this.pictureBoxAngelo.TabIndex = 27;
+            this.pictureBoxAngelo.TabStop = false;
+            this.pictureBoxAngelo.Visible = false;
+            // 
+            // labelAngeloPChecked
+            // 
+            this.labelAngeloPChecked.AutoSize = true;
+            this.labelAngeloPChecked.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelAngeloPChecked.Location = new System.Drawing.Point(57, 61);
+            this.labelAngeloPChecked.Name = "labelAngeloPChecked";
+            this.labelAngeloPChecked.Size = new System.Drawing.Size(105, 15);
+            this.labelAngeloPChecked.TabIndex = 28;
+            this.labelAngeloPChecked.Text = "Partially Checked:";
+            this.labelAngeloPChecked.Visible = false;
+            // 
+            // pictureBoxAngeloInfo
+            // 
+            this.pictureBoxAngeloInfo.Image = global::Quezacotl.Properties.Resources.info_big;
+            this.pictureBoxAngeloInfo.Location = new System.Drawing.Point(8, 46);
+            this.pictureBoxAngeloInfo.Name = "pictureBoxAngeloInfo";
+            this.pictureBoxAngeloInfo.Size = new System.Drawing.Size(47, 43);
+            this.pictureBoxAngeloInfo.TabIndex = 27;
+            this.pictureBoxAngeloInfo.TabStop = false;
+            this.pictureBoxAngeloInfo.Visible = false;
+            // 
+            // labelAngeloChecked
+            // 
+            this.labelAngeloChecked.AutoSize = true;
+            this.labelAngeloChecked.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.labelAngeloChecked.Location = new System.Drawing.Point(57, 46);
+            this.labelAngeloChecked.Name = "labelAngeloChecked";
+            this.labelAngeloChecked.Size = new System.Drawing.Size(58, 15);
+            this.labelAngeloChecked.TabIndex = 28;
+            this.labelAngeloChecked.Text = "Checked:";
+            this.labelAngeloChecked.Visible = false;
             // 
             // imageListChar
             // 
@@ -15823,6 +16029,26 @@
             this.panelGf.Name = "panelGf";
             this.panelGf.Size = new System.Drawing.Size(665, 823);
             this.panelGf.TabIndex = 10;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label26.Location = new System.Drawing.Point(308, 102);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(12, 13);
+            this.label26.TabIndex = 32;
+            this.label26.Text = "*";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 7F);
+            this.label25.Location = new System.Drawing.Point(312, 62);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(352, 12);
+            this.label25.TabIndex = 32;
+            this.label25.Text = "*Changing names does nothing, default GF names are loaded from mngrp.bin.";
             // 
             // listViewExGfList
             // 
@@ -15992,142 +16218,740 @@
             this.toolStripStatusLabelTooltips.Size = new System.Drawing.Size(125, 17);
             this.toolStripStatusLabelTooltips.Text = "No tooltips.bin loaded";
             // 
-            // panelLbRinoa
+            // panelConfig
             // 
-            this.panelLbRinoa.Controls.Add(this.labelAngeloName);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo4);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo1);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo8);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngeloOff);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo3);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelWingOff);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo7);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo5);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo2);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo2);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo6);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo3);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo1);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo6);
-            this.panelLbRinoa.Controls.Add(this.numericUpDownAngelo5);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo4);
-            this.panelLbRinoa.Controls.Add(this.labelAngeloValue2);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo7);
-            this.panelLbRinoa.Controls.Add(this.labelAngeloPChecked2);
-            this.panelLbRinoa.Controls.Add(this.checkBoxAngelo8);
-            this.panelLbRinoa.Controls.Add(this.labelAngeloChecked2);
-            this.panelLbRinoa.Controls.Add(this.textBoxAngeloName);
-            this.panelLbRinoa.Controls.Add(this.labelAngeloValue);
-            this.panelLbRinoa.Controls.Add(this.pictureBoxAngelo);
-            this.panelLbRinoa.Controls.Add(this.labelAngeloPChecked);
-            this.panelLbRinoa.Controls.Add(this.pictureBoxAngeloInfo);
-            this.panelLbRinoa.Controls.Add(this.labelAngeloChecked);
-            this.panelLbRinoa.Location = new System.Drawing.Point(10, 417);
-            this.panelLbRinoa.Name = "panelLbRinoa";
-            this.panelLbRinoa.Size = new System.Drawing.Size(615, 252);
-            this.panelLbRinoa.TabIndex = 31;
+            this.panelConfig.Controls.Add(this.checkBoxCustomKeys);
+            this.panelConfig.Controls.Add(this.groupBox3);
+            this.panelConfig.Controls.Add(this.groupBoxConfigTrackbars);
+            this.panelConfig.Controls.Add(this.checkBoxConfigUnk);
+            this.panelConfig.Controls.Add(this.groupBoxConfigVibration);
+            this.panelConfig.Controls.Add(this.groupBoxConfigTargetMenu);
+            this.panelConfig.Controls.Add(this.groupBoxConfigAtb);
+            this.panelConfig.Controls.Add(this.groupBoxConfigScan);
+            this.panelConfig.Controls.Add(this.groupBoxConfigCursor);
+            this.panelConfig.Controls.Add(this.groupBoxConfigSound);
+            this.panelConfig.Location = new System.Drawing.Point(138, 47);
+            this.panelConfig.Name = "panelConfig";
+            this.panelConfig.Size = new System.Drawing.Size(665, 823);
+            this.panelConfig.TabIndex = 25;
             // 
-            // panelLbSelphie
+            // groupBoxConfigTrackbars
             // 
-            this.panelLbSelphie.Controls.Add(this.checkBoxSlot1);
-            this.panelLbSelphie.Controls.Add(this.checkBoxSlot2);
-            this.panelLbSelphie.Controls.Add(this.checkBoxSlot3);
-            this.panelLbSelphie.Controls.Add(this.checkBoxSlot4);
-            this.panelLbSelphie.Controls.Add(this.checkBoxSlot5);
-            this.panelLbSelphie.Controls.Add(this.checkBoxSlot6);
-            this.panelLbSelphie.Location = new System.Drawing.Point(10, 675);
-            this.panelLbSelphie.Name = "panelLbSelphie";
-            this.panelLbSelphie.Size = new System.Drawing.Size(615, 35);
-            this.panelLbSelphie.TabIndex = 32;
+            this.groupBoxConfigTrackbars.Controls.Add(this.panelVolume);
+            this.groupBoxConfigTrackbars.Controls.Add(this.trackBarFieldMessage);
+            this.groupBoxConfigTrackbars.Controls.Add(this.labelFieldMessage);
+            this.groupBoxConfigTrackbars.Controls.Add(this.trackBarBattleMessage);
+            this.groupBoxConfigTrackbars.Controls.Add(this.labelBattleMessage);
+            this.groupBoxConfigTrackbars.Controls.Add(this.trackBarBattleSpeed);
+            this.groupBoxConfigTrackbars.Controls.Add(this.labelBattleSpeed);
+            this.groupBoxConfigTrackbars.Controls.Add(this.trackBarVolume);
+            this.groupBoxConfigTrackbars.Controls.Add(this.labelVolume);
+            this.groupBoxConfigTrackbars.Location = new System.Drawing.Point(21, 181);
+            this.groupBoxConfigTrackbars.Name = "groupBoxConfigTrackbars";
+            this.groupBoxConfigTrackbars.Size = new System.Drawing.Size(622, 157);
+            this.groupBoxConfigTrackbars.TabIndex = 3;
+            this.groupBoxConfigTrackbars.TabStop = false;
+            this.groupBoxConfigTrackbars.Text = "Trackbars";
             // 
-            // panelLbQuistis
+            // trackBarVolume
             // 
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic1);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic9);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic2);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic10);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic5);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic13);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic16);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic3);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic8);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic11);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic15);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic6);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic7);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic14);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic4);
-            this.panelLbQuistis.Controls.Add(this.checkBoxBlueMagic12);
-            this.panelLbQuistis.Location = new System.Drawing.Point(10, 319);
-            this.panelLbQuistis.Name = "panelLbQuistis";
-            this.panelLbQuistis.Size = new System.Drawing.Size(615, 91);
-            this.panelLbQuistis.TabIndex = 33;
+            this.trackBarVolume.AutoSize = false;
+            this.trackBarVolume.LargeChange = 10;
+            this.trackBarVolume.Location = new System.Drawing.Point(151, 21);
+            this.trackBarVolume.Maximum = 100;
+            this.trackBarVolume.Name = "trackBarVolume";
+            this.trackBarVolume.Size = new System.Drawing.Size(423, 24);
+            this.trackBarVolume.TabIndex = 3;
+            this.trackBarVolume.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // panelLbZell
+            // labelVolume
             // 
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove6);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelAuto);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove1);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove2);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove3);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove7);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove4);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove8);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove5);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove9);
-            this.panelLbZell.Controls.Add(this.checkBoxDuelMove10);
-            this.panelLbZell.Location = new System.Drawing.Point(10, 111);
-            this.panelLbZell.Name = "panelLbZell";
-            this.panelLbZell.Size = new System.Drawing.Size(615, 82);
-            this.panelLbZell.TabIndex = 34;
+            this.labelVolume.AutoSize = true;
+            this.labelVolume.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelVolume.Location = new System.Drawing.Point(13, 25);
+            this.labelVolume.Name = "labelVolume";
+            this.labelVolume.Size = new System.Drawing.Size(120, 13);
+            this.labelVolume.TabIndex = 2;
+            this.labelVolume.Text = "Analog Input/Volume:";
             // 
-            // panelLbIrvine
+            // checkBoxConfigUnk
             // 
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot1);
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot2);
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot5);
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot3);
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot6);
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot4);
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot7);
-            this.panelLbIrvine.Controls.Add(this.checkBoxShot8);
-            this.panelLbIrvine.Location = new System.Drawing.Point(10, 221);
-            this.panelLbIrvine.Name = "panelLbIrvine";
-            this.panelLbIrvine.Size = new System.Drawing.Size(615, 68);
-            this.panelLbIrvine.TabIndex = 35;
+            this.checkBoxConfigUnk.AutoSize = true;
+            this.checkBoxConfigUnk.Location = new System.Drawing.Point(21, 138);
+            this.checkBoxConfigUnk.Name = "checkBoxConfigUnk";
+            this.checkBoxConfigUnk.Size = new System.Drawing.Size(77, 19);
+            this.checkBoxConfigUnk.TabIndex = 1;
+            this.checkBoxConfigUnk.Text = "Unknown";
+            this.checkBoxConfigUnk.UseVisualStyleBackColor = true;
             // 
-            // panelLbSquall
+            // groupBoxConfigVibration
             // 
-            this.panelLbSquall.Controls.Add(this.checkBoxCharsGunBladeAuto);
-            this.panelLbSquall.Controls.Add(this.checkBoxCharsRenzoInd);
-            this.panelLbSquall.Controls.Add(this.trackBarCharsRenzoInd);
-            this.panelLbSquall.Controls.Add(this.labelTrackBarCharsRenzoInd);
-            this.panelLbSquall.Location = new System.Drawing.Point(10, 10);
-            this.panelLbSquall.Margin = new System.Windows.Forms.Padding(10);
-            this.panelLbSquall.Name = "panelLbSquall";
-            this.panelLbSquall.Padding = new System.Windows.Forms.Padding(10);
-            this.panelLbSquall.Size = new System.Drawing.Size(615, 88);
-            this.panelLbSquall.TabIndex = 36;
+            this.groupBoxConfigVibration.Controls.Add(this.radioButtonVibOff);
+            this.groupBoxConfigVibration.Controls.Add(this.radioButtonVibOn);
+            this.groupBoxConfigVibration.Location = new System.Drawing.Point(461, 77);
+            this.groupBoxConfigVibration.Name = "groupBoxConfigVibration";
+            this.groupBoxConfigVibration.Size = new System.Drawing.Size(182, 51);
+            this.groupBoxConfigVibration.TabIndex = 0;
+            this.groupBoxConfigVibration.TabStop = false;
+            this.groupBoxConfigVibration.Text = "Vibration";
             // 
-            // label25
+            // radioButtonVibOff
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 7F);
-            this.label25.Location = new System.Drawing.Point(312, 62);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(352, 12);
-            this.label25.TabIndex = 32;
-            this.label25.Text = "*Changing names does nothing, default GF names are loaded from mngrp.bin.";
+            this.radioButtonVibOff.AutoSize = true;
+            this.radioButtonVibOff.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonVibOff.Location = new System.Drawing.Point(85, 22);
+            this.radioButtonVibOff.Name = "radioButtonVibOff";
+            this.radioButtonVibOff.Size = new System.Drawing.Size(42, 17);
+            this.radioButtonVibOff.TabIndex = 0;
+            this.radioButtonVibOff.TabStop = true;
+            this.radioButtonVibOff.Text = "Off";
+            this.radioButtonVibOff.UseVisualStyleBackColor = true;
             // 
-            // label26
+            // radioButtonVibOn
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.label26.Location = new System.Drawing.Point(308, 102);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(12, 13);
-            this.label26.TabIndex = 32;
-            this.label26.Text = "*";
+            this.radioButtonVibOn.AutoSize = true;
+            this.radioButtonVibOn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonVibOn.Location = new System.Drawing.Point(15, 22);
+            this.radioButtonVibOn.Name = "radioButtonVibOn";
+            this.radioButtonVibOn.Size = new System.Drawing.Size(41, 17);
+            this.radioButtonVibOn.TabIndex = 0;
+            this.radioButtonVibOn.TabStop = true;
+            this.radioButtonVibOn.Text = "On";
+            this.radioButtonVibOn.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxConfigTargetMenu
+            // 
+            this.groupBoxConfigTargetMenu.Controls.Add(this.radioButtonTargetYes);
+            this.groupBoxConfigTargetMenu.Controls.Add(this.radioButtonTargetNo);
+            this.groupBoxConfigTargetMenu.Location = new System.Drawing.Point(241, 77);
+            this.groupBoxConfigTargetMenu.Name = "groupBoxConfigTargetMenu";
+            this.groupBoxConfigTargetMenu.Size = new System.Drawing.Size(182, 51);
+            this.groupBoxConfigTargetMenu.TabIndex = 0;
+            this.groupBoxConfigTargetMenu.TabStop = false;
+            this.groupBoxConfigTargetMenu.Text = "Target Menu (Battle)";
+            // 
+            // radioButtonTargetYes
+            // 
+            this.radioButtonTargetYes.AutoSize = true;
+            this.radioButtonTargetYes.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonTargetYes.Location = new System.Drawing.Point(15, 22);
+            this.radioButtonTargetYes.Name = "radioButtonTargetYes";
+            this.radioButtonTargetYes.Size = new System.Drawing.Size(40, 17);
+            this.radioButtonTargetYes.TabIndex = 0;
+            this.radioButtonTargetYes.TabStop = true;
+            this.radioButtonTargetYes.Text = "Yes";
+            this.radioButtonTargetYes.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonTargetNo
+            // 
+            this.radioButtonTargetNo.AutoSize = true;
+            this.radioButtonTargetNo.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonTargetNo.Location = new System.Drawing.Point(85, 22);
+            this.radioButtonTargetNo.Name = "radioButtonTargetNo";
+            this.radioButtonTargetNo.Size = new System.Drawing.Size(40, 17);
+            this.radioButtonTargetNo.TabIndex = 0;
+            this.radioButtonTargetNo.TabStop = true;
+            this.radioButtonTargetNo.Text = "No";
+            this.radioButtonTargetNo.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxConfigAtb
+            // 
+            this.groupBoxConfigAtb.Controls.Add(this.radioButtonWait);
+            this.groupBoxConfigAtb.Controls.Add(this.radioButtonActive);
+            this.groupBoxConfigAtb.Location = new System.Drawing.Point(461, 11);
+            this.groupBoxConfigAtb.Name = "groupBoxConfigAtb";
+            this.groupBoxConfigAtb.Size = new System.Drawing.Size(182, 51);
+            this.groupBoxConfigAtb.TabIndex = 0;
+            this.groupBoxConfigAtb.TabStop = false;
+            this.groupBoxConfigAtb.Text = "ATB";
+            // 
+            // radioButtonWait
+            // 
+            this.radioButtonWait.AutoSize = true;
+            this.radioButtonWait.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonWait.Location = new System.Drawing.Point(85, 22);
+            this.radioButtonWait.Name = "radioButtonWait";
+            this.radioButtonWait.Size = new System.Drawing.Size(49, 17);
+            this.radioButtonWait.TabIndex = 0;
+            this.radioButtonWait.TabStop = true;
+            this.radioButtonWait.Text = "Wait";
+            this.radioButtonWait.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonActive
+            // 
+            this.radioButtonActive.AutoSize = true;
+            this.radioButtonActive.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonActive.Location = new System.Drawing.Point(15, 22);
+            this.radioButtonActive.Name = "radioButtonActive";
+            this.radioButtonActive.Size = new System.Drawing.Size(55, 17);
+            this.radioButtonActive.TabIndex = 0;
+            this.radioButtonActive.TabStop = true;
+            this.radioButtonActive.Text = "Active";
+            this.radioButtonActive.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxConfigScan
+            // 
+            this.groupBoxConfigScan.Controls.Add(this.radioButtonAlways);
+            this.groupBoxConfigScan.Controls.Add(this.radioButtonOnce);
+            this.groupBoxConfigScan.Location = new System.Drawing.Point(21, 77);
+            this.groupBoxConfigScan.Name = "groupBoxConfigScan";
+            this.groupBoxConfigScan.Size = new System.Drawing.Size(182, 51);
+            this.groupBoxConfigScan.TabIndex = 0;
+            this.groupBoxConfigScan.TabStop = false;
+            this.groupBoxConfigScan.Text = "Scan";
+            // 
+            // radioButtonAlways
+            // 
+            this.radioButtonAlways.AutoSize = true;
+            this.radioButtonAlways.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonAlways.Location = new System.Drawing.Point(85, 22);
+            this.radioButtonAlways.Name = "radioButtonAlways";
+            this.radioButtonAlways.Size = new System.Drawing.Size(60, 17);
+            this.radioButtonAlways.TabIndex = 0;
+            this.radioButtonAlways.TabStop = true;
+            this.radioButtonAlways.Text = "Always";
+            this.radioButtonAlways.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonOnce
+            // 
+            this.radioButtonOnce.AutoSize = true;
+            this.radioButtonOnce.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonOnce.Location = new System.Drawing.Point(15, 22);
+            this.radioButtonOnce.Name = "radioButtonOnce";
+            this.radioButtonOnce.Size = new System.Drawing.Size(52, 17);
+            this.radioButtonOnce.TabIndex = 0;
+            this.radioButtonOnce.TabStop = true;
+            this.radioButtonOnce.Text = "Once";
+            this.radioButtonOnce.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxConfigCursor
+            // 
+            this.groupBoxConfigCursor.Controls.Add(this.radioButtonMemory);
+            this.groupBoxConfigCursor.Controls.Add(this.radioButtonInitial);
+            this.groupBoxConfigCursor.Location = new System.Drawing.Point(241, 11);
+            this.groupBoxConfigCursor.Name = "groupBoxConfigCursor";
+            this.groupBoxConfigCursor.Size = new System.Drawing.Size(182, 51);
+            this.groupBoxConfigCursor.TabIndex = 0;
+            this.groupBoxConfigCursor.TabStop = false;
+            this.groupBoxConfigCursor.Text = "Cursor";
+            // 
+            // radioButtonMemory
+            // 
+            this.radioButtonMemory.AutoSize = true;
+            this.radioButtonMemory.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonMemory.Location = new System.Drawing.Point(85, 22);
+            this.radioButtonMemory.Name = "radioButtonMemory";
+            this.radioButtonMemory.Size = new System.Drawing.Size(66, 17);
+            this.radioButtonMemory.TabIndex = 0;
+            this.radioButtonMemory.TabStop = true;
+            this.radioButtonMemory.Text = "Memory";
+            this.radioButtonMemory.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonInitial
+            // 
+            this.radioButtonInitial.AutoSize = true;
+            this.radioButtonInitial.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonInitial.Location = new System.Drawing.Point(15, 22);
+            this.radioButtonInitial.Name = "radioButtonInitial";
+            this.radioButtonInitial.Size = new System.Drawing.Size(54, 17);
+            this.radioButtonInitial.TabIndex = 0;
+            this.radioButtonInitial.TabStop = true;
+            this.radioButtonInitial.Text = "Initial";
+            this.radioButtonInitial.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxConfigSound
+            // 
+            this.groupBoxConfigSound.Controls.Add(this.radioButtonMono);
+            this.groupBoxConfigSound.Controls.Add(this.radioButtonStereo);
+            this.groupBoxConfigSound.Location = new System.Drawing.Point(21, 11);
+            this.groupBoxConfigSound.Name = "groupBoxConfigSound";
+            this.groupBoxConfigSound.Size = new System.Drawing.Size(182, 51);
+            this.groupBoxConfigSound.TabIndex = 0;
+            this.groupBoxConfigSound.TabStop = false;
+            this.groupBoxConfigSound.Text = "Sound";
+            // 
+            // radioButtonMono
+            // 
+            this.radioButtonMono.AutoSize = true;
+            this.radioButtonMono.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonMono.Location = new System.Drawing.Point(85, 22);
+            this.radioButtonMono.Name = "radioButtonMono";
+            this.radioButtonMono.Size = new System.Drawing.Size(56, 17);
+            this.radioButtonMono.TabIndex = 0;
+            this.radioButtonMono.TabStop = true;
+            this.radioButtonMono.Text = "Mono";
+            this.radioButtonMono.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonStereo
+            // 
+            this.radioButtonStereo.AutoSize = true;
+            this.radioButtonStereo.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.radioButtonStereo.Location = new System.Drawing.Point(15, 22);
+            this.radioButtonStereo.Name = "radioButtonStereo";
+            this.radioButtonStereo.Size = new System.Drawing.Size(58, 17);
+            this.radioButtonStereo.TabIndex = 0;
+            this.radioButtonStereo.TabStop = true;
+            this.radioButtonStereo.Text = "Stereo";
+            this.radioButtonStereo.UseVisualStyleBackColor = true;
+            // 
+            // panelVolume
+            // 
+            this.panelVolume.BackColor = System.Drawing.Color.White;
+            this.panelVolume.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelVolume.Controls.Add(this.labelVolumeValue);
+            this.panelVolume.Enabled = false;
+            this.panelVolume.Location = new System.Drawing.Point(581, 19);
+            this.panelVolume.Name = "panelVolume";
+            this.panelVolume.Size = new System.Drawing.Size(31, 23);
+            this.panelVolume.TabIndex = 32;
+            // 
+            // labelVolumeValue
+            // 
+            this.labelVolumeValue.AutoSize = true;
+            this.labelVolumeValue.Enabled = false;
+            this.labelVolumeValue.Font = new System.Drawing.Font("Arial", 9F);
+            this.labelVolumeValue.Location = new System.Drawing.Point(0, 3);
+            this.labelVolumeValue.Margin = new System.Windows.Forms.Padding(0);
+            this.labelVolumeValue.Name = "labelVolumeValue";
+            this.labelVolumeValue.Size = new System.Drawing.Size(14, 15);
+            this.labelVolumeValue.TabIndex = 26;
+            this.labelVolumeValue.Text = "0";
+            this.labelVolumeValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelBattleSpeed
+            // 
+            this.labelBattleSpeed.AutoSize = true;
+            this.labelBattleSpeed.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelBattleSpeed.Location = new System.Drawing.Point(13, 69);
+            this.labelBattleSpeed.Name = "labelBattleSpeed";
+            this.labelBattleSpeed.Size = new System.Drawing.Size(75, 13);
+            this.labelBattleSpeed.TabIndex = 2;
+            this.labelBattleSpeed.Text = "Battle Speed:";
+            // 
+            // trackBarBattleSpeed
+            // 
+            this.trackBarBattleSpeed.AutoSize = false;
+            this.trackBarBattleSpeed.Location = new System.Drawing.Point(151, 65);
+            this.trackBarBattleSpeed.Maximum = 4;
+            this.trackBarBattleSpeed.Name = "trackBarBattleSpeed";
+            this.trackBarBattleSpeed.Size = new System.Drawing.Size(423, 24);
+            this.trackBarBattleSpeed.TabIndex = 3;
+            this.trackBarBattleSpeed.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
+            // labelBattleMessage
+            // 
+            this.labelBattleMessage.AutoSize = true;
+            this.labelBattleMessage.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelBattleMessage.Location = new System.Drawing.Point(13, 99);
+            this.labelBattleMessage.Name = "labelBattleMessage";
+            this.labelBattleMessage.Size = new System.Drawing.Size(88, 13);
+            this.labelBattleMessage.TabIndex = 2;
+            this.labelBattleMessage.Text = "Battle Message:";
+            // 
+            // trackBarBattleMessage
+            // 
+            this.trackBarBattleMessage.AutoSize = false;
+            this.trackBarBattleMessage.Location = new System.Drawing.Point(151, 95);
+            this.trackBarBattleMessage.Maximum = 4;
+            this.trackBarBattleMessage.Name = "trackBarBattleMessage";
+            this.trackBarBattleMessage.Size = new System.Drawing.Size(423, 24);
+            this.trackBarBattleMessage.TabIndex = 3;
+            this.trackBarBattleMessage.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
+            // labelFieldMessage
+            // 
+            this.labelFieldMessage.AutoSize = true;
+            this.labelFieldMessage.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelFieldMessage.Location = new System.Drawing.Point(13, 129);
+            this.labelFieldMessage.Name = "labelFieldMessage";
+            this.labelFieldMessage.Size = new System.Drawing.Size(83, 13);
+            this.labelFieldMessage.TabIndex = 2;
+            this.labelFieldMessage.Text = "Field Message:";
+            // 
+            // trackBarFieldMessage
+            // 
+            this.trackBarFieldMessage.AutoSize = false;
+            this.trackBarFieldMessage.Location = new System.Drawing.Point(151, 125);
+            this.trackBarFieldMessage.Maximum = 4;
+            this.trackBarFieldMessage.Name = "trackBarFieldMessage";
+            this.trackBarFieldMessage.Size = new System.Drawing.Size(423, 24);
+            this.trackBarFieldMessage.TabIndex = 3;
+            this.trackBarFieldMessage.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.buttonConfigInvert);
+            this.groupBox3.Controls.Add(this.buttonConfigDefault);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyStart);
+            this.groupBox3.Controls.Add(this.labelJoystick);
+            this.groupBox3.Controls.Add(this.label67);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyUnk3);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyUnk2);
+            this.groupBox3.Controls.Add(this.numericUpDownKeySelect);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyTripleTriad);
+            this.groupBox3.Controls.Add(this.label78);
+            this.groupBox3.Controls.Add(this.label74);
+            this.groupBox3.Controls.Add(this.label70);
+            this.groupBox3.Controls.Add(this.label66);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyTalk);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyMenu);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyCancel);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyTrigger);
+            this.groupBox3.Controls.Add(this.label77);
+            this.groupBox3.Controls.Add(this.label73);
+            this.groupBox3.Controls.Add(this.label69);
+            this.groupBox3.Controls.Add(this.label65);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyWindow);
+            this.groupBox3.Controls.Add(this.label76);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyPov);
+            this.groupBox3.Controls.Add(this.label72);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyEscape);
+            this.groupBox3.Controls.Add(this.label68);
+            this.groupBox3.Controls.Add(this.numericUpDownKeyUnk1);
+            this.groupBox3.Controls.Add(this.label64);
+            this.groupBox3.Location = new System.Drawing.Point(21, 358);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(622, 179);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // checkBoxCustomKeys
+            // 
+            this.checkBoxCustomKeys.AutoSize = true;
+            this.checkBoxCustomKeys.Location = new System.Drawing.Point(30, 358);
+            this.checkBoxCustomKeys.Name = "checkBoxCustomKeys";
+            this.checkBoxCustomKeys.Size = new System.Drawing.Size(95, 19);
+            this.checkBoxCustomKeys.TabIndex = 1;
+            this.checkBoxCustomKeys.Text = "Custom Keys";
+            this.checkBoxCustomKeys.UseVisualStyleBackColor = true;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label64.Location = new System.Drawing.Point(3, 32);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(25, 13);
+            this.label64.TabIndex = 2;
+            this.label64.Text = "???:";
+            // 
+            // numericUpDownKeyUnk1
+            // 
+            this.numericUpDownKeyUnk1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyUnk1.Location = new System.Drawing.Point(99, 26);
+            this.numericUpDownKeyUnk1.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyUnk1.Name = "numericUpDownKeyUnk1";
+            this.numericUpDownKeyUnk1.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyUnk1.TabIndex = 7;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label65.Location = new System.Drawing.Point(3, 61);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(45, 13);
+            this.label65.TabIndex = 2;
+            this.label65.Text = "Trigger:";
+            // 
+            // numericUpDownKeyTrigger
+            // 
+            this.numericUpDownKeyTrigger.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyTrigger.Location = new System.Drawing.Point(99, 55);
+            this.numericUpDownKeyTrigger.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyTrigger.Name = "numericUpDownKeyTrigger";
+            this.numericUpDownKeyTrigger.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyTrigger.TabIndex = 7;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label66.Location = new System.Drawing.Point(3, 90);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(64, 13);
+            this.label66.TabIndex = 2;
+            this.label66.Text = "Triple Triad:";
+            // 
+            // numericUpDownKeyTripleTriad
+            // 
+            this.numericUpDownKeyTripleTriad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyTripleTriad.Location = new System.Drawing.Point(99, 84);
+            this.numericUpDownKeyTripleTriad.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyTripleTriad.Name = "numericUpDownKeyTripleTriad";
+            this.numericUpDownKeyTripleTriad.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyTripleTriad.TabIndex = 7;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label67.Location = new System.Drawing.Point(3, 119);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(34, 13);
+            this.label67.TabIndex = 2;
+            this.label67.Text = "Start:";
+            // 
+            // numericUpDownKeyStart
+            // 
+            this.numericUpDownKeyStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyStart.Location = new System.Drawing.Point(99, 113);
+            this.numericUpDownKeyStart.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyStart.Name = "numericUpDownKeyStart";
+            this.numericUpDownKeyStart.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyStart.TabIndex = 7;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label68.Location = new System.Drawing.Point(158, 32);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(45, 13);
+            this.label68.TabIndex = 2;
+            this.label68.Text = "Escape:";
+            // 
+            // numericUpDownKeyEscape
+            // 
+            this.numericUpDownKeyEscape.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyEscape.Location = new System.Drawing.Point(254, 26);
+            this.numericUpDownKeyEscape.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyEscape.Name = "numericUpDownKeyEscape";
+            this.numericUpDownKeyEscape.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyEscape.TabIndex = 7;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label69.Location = new System.Drawing.Point(158, 61);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(44, 13);
+            this.label69.TabIndex = 2;
+            this.label69.Text = "Cancel:";
+            // 
+            // numericUpDownKeyCancel
+            // 
+            this.numericUpDownKeyCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyCancel.Location = new System.Drawing.Point(254, 55);
+            this.numericUpDownKeyCancel.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyCancel.Name = "numericUpDownKeyCancel";
+            this.numericUpDownKeyCancel.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyCancel.TabIndex = 7;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label70.Location = new System.Drawing.Point(158, 90);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(40, 13);
+            this.label70.TabIndex = 2;
+            this.label70.Text = "Select:";
+            // 
+            // numericUpDownKeySelect
+            // 
+            this.numericUpDownKeySelect.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeySelect.Location = new System.Drawing.Point(254, 84);
+            this.numericUpDownKeySelect.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeySelect.Name = "numericUpDownKeySelect";
+            this.numericUpDownKeySelect.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeySelect.TabIndex = 7;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label72.Location = new System.Drawing.Point(320, 32);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(69, 13);
+            this.label72.TabIndex = 2;
+            this.label72.Text = "Switch POV:";
+            // 
+            // numericUpDownKeyPov
+            // 
+            this.numericUpDownKeyPov.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyPov.Location = new System.Drawing.Point(416, 26);
+            this.numericUpDownKeyPov.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyPov.Name = "numericUpDownKeyPov";
+            this.numericUpDownKeyPov.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyPov.TabIndex = 7;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label73.Location = new System.Drawing.Point(320, 61);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(40, 13);
+            this.label73.TabIndex = 2;
+            this.label73.Text = "Menu:";
+            // 
+            // numericUpDownKeyMenu
+            // 
+            this.numericUpDownKeyMenu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyMenu.Location = new System.Drawing.Point(416, 55);
+            this.numericUpDownKeyMenu.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyMenu.Name = "numericUpDownKeyMenu";
+            this.numericUpDownKeyMenu.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyMenu.TabIndex = 7;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label74.Location = new System.Drawing.Point(320, 90);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(25, 13);
+            this.label74.TabIndex = 2;
+            this.label74.Text = "???:";
+            // 
+            // numericUpDownKeyUnk2
+            // 
+            this.numericUpDownKeyUnk2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyUnk2.Location = new System.Drawing.Point(416, 84);
+            this.numericUpDownKeyUnk2.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyUnk2.Name = "numericUpDownKeyUnk2";
+            this.numericUpDownKeyUnk2.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyUnk2.TabIndex = 7;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label76.Location = new System.Drawing.Point(479, 32);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(97, 13);
+            this.label76.TabIndex = 2;
+            this.label76.Text = "Change Window:";
+            // 
+            // numericUpDownKeyWindow
+            // 
+            this.numericUpDownKeyWindow.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyWindow.Location = new System.Drawing.Point(575, 26);
+            this.numericUpDownKeyWindow.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyWindow.Name = "numericUpDownKeyWindow";
+            this.numericUpDownKeyWindow.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyWindow.TabIndex = 7;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label77.Location = new System.Drawing.Point(479, 61);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(29, 13);
+            this.label77.TabIndex = 2;
+            this.label77.Text = "Talk:";
+            // 
+            // numericUpDownKeyTalk
+            // 
+            this.numericUpDownKeyTalk.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyTalk.Location = new System.Drawing.Point(575, 55);
+            this.numericUpDownKeyTalk.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyTalk.Name = "numericUpDownKeyTalk";
+            this.numericUpDownKeyTalk.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyTalk.TabIndex = 7;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label78.Location = new System.Drawing.Point(479, 90);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(25, 13);
+            this.label78.TabIndex = 2;
+            this.label78.Text = "???:";
+            // 
+            // numericUpDownKeyUnk3
+            // 
+            this.numericUpDownKeyUnk3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.numericUpDownKeyUnk3.Location = new System.Drawing.Point(575, 84);
+            this.numericUpDownKeyUnk3.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.numericUpDownKeyUnk3.Name = "numericUpDownKeyUnk3";
+            this.numericUpDownKeyUnk3.Size = new System.Drawing.Size(42, 23);
+            this.numericUpDownKeyUnk3.TabIndex = 7;
+            // 
+            // labelJoystick
+            // 
+            this.labelJoystick.AutoSize = true;
+            this.labelJoystick.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.labelJoystick.Location = new System.Drawing.Point(3, 147);
+            this.labelJoystick.Name = "labelJoystick";
+            this.labelJoystick.Size = new System.Drawing.Size(254, 13);
+            this.labelJoystick.TabIndex = 2;
+            this.labelJoystick.Text = "Left joystick: walk | Right joystick: car FWD/RWD";
+            // 
+            // buttonConfigDefault
+            // 
+            this.buttonConfigDefault.Location = new System.Drawing.Point(281, 142);
+            this.buttonConfigDefault.Name = "buttonConfigDefault";
+            this.buttonConfigDefault.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfigDefault.TabIndex = 8;
+            this.buttonConfigDefault.Text = "Default";
+            this.buttonConfigDefault.UseVisualStyleBackColor = true;
+            // 
+            // buttonConfigInvert
+            // 
+            this.buttonConfigInvert.Location = new System.Drawing.Point(369, 142);
+            this.buttonConfigInvert.Name = "buttonConfigInvert";
+            this.buttonConfigInvert.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfigInvert.TabIndex = 8;
+            this.buttonConfigInvert.Text = "Invert";
+            this.buttonConfigInvert.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -16141,6 +16965,7 @@
             this.Controls.Add(this.buttonAbout);
             this.Controls.Add(this.buttonDeleteTooltips);
             this.Controls.Add(this.buttonOpen);
+            this.Controls.Add(this.panelConfig);
             this.Controls.Add(this.panelGf);
             this.Controls.Add(this.panelItems);
             this.Controls.Add(this.panelMisc);
@@ -16553,6 +17378,19 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPageChars6.ResumeLayout(false);
+            this.panelLbSquall.ResumeLayout(false);
+            this.panelLbSquall.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarCharsRenzoInd)).EndInit();
+            this.panelLbIrvine.ResumeLayout(false);
+            this.panelLbIrvine.PerformLayout();
+            this.panelLbZell.ResumeLayout(false);
+            this.panelLbZell.PerformLayout();
+            this.panelLbQuistis.ResumeLayout(false);
+            this.panelLbQuistis.PerformLayout();
+            this.panelLbSelphie.ResumeLayout(false);
+            this.panelLbSelphie.PerformLayout();
+            this.panelLbRinoa.ResumeLayout(false);
+            this.panelLbRinoa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo3)).EndInit();
@@ -16561,9 +17399,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngelo5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAngeloInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAngelo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarCharsRenzoInd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAngeloInfo)).EndInit();
             this.panelGf.ResumeLayout(false);
             this.panelGf.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hexUpDownGfUnknown)).EndInit();
@@ -16573,18 +17410,43 @@
             this.panelMisc.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panelLbRinoa.ResumeLayout(false);
-            this.panelLbRinoa.PerformLayout();
-            this.panelLbSelphie.ResumeLayout(false);
-            this.panelLbSelphie.PerformLayout();
-            this.panelLbQuistis.ResumeLayout(false);
-            this.panelLbQuistis.PerformLayout();
-            this.panelLbZell.ResumeLayout(false);
-            this.panelLbZell.PerformLayout();
-            this.panelLbIrvine.ResumeLayout(false);
-            this.panelLbIrvine.PerformLayout();
-            this.panelLbSquall.ResumeLayout(false);
-            this.panelLbSquall.PerformLayout();
+            this.panelConfig.ResumeLayout(false);
+            this.panelConfig.PerformLayout();
+            this.groupBoxConfigTrackbars.ResumeLayout(false);
+            this.groupBoxConfigTrackbars.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).EndInit();
+            this.groupBoxConfigVibration.ResumeLayout(false);
+            this.groupBoxConfigVibration.PerformLayout();
+            this.groupBoxConfigTargetMenu.ResumeLayout(false);
+            this.groupBoxConfigTargetMenu.PerformLayout();
+            this.groupBoxConfigAtb.ResumeLayout(false);
+            this.groupBoxConfigAtb.PerformLayout();
+            this.groupBoxConfigScan.ResumeLayout(false);
+            this.groupBoxConfigScan.PerformLayout();
+            this.groupBoxConfigCursor.ResumeLayout(false);
+            this.groupBoxConfigCursor.PerformLayout();
+            this.groupBoxConfigSound.ResumeLayout(false);
+            this.groupBoxConfigSound.PerformLayout();
+            this.panelVolume.ResumeLayout(false);
+            this.panelVolume.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBattleSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarBattleMessage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarFieldMessage)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyUnk1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyTrigger)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyTripleTriad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyEscape)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeySelect)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyPov)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyUnk2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyWindow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyTalk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKeyUnk3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -17576,6 +18438,68 @@
         private System.Windows.Forms.Panel panelLbRinoa;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Panel panelConfig;
+        private System.Windows.Forms.GroupBox groupBoxConfigVibration;
+        private System.Windows.Forms.RadioButton radioButtonVibOff;
+        private System.Windows.Forms.RadioButton radioButtonVibOn;
+        private System.Windows.Forms.GroupBox groupBoxConfigTargetMenu;
+        private System.Windows.Forms.RadioButton radioButtonTargetYes;
+        private System.Windows.Forms.RadioButton radioButtonTargetNo;
+        private System.Windows.Forms.GroupBox groupBoxConfigAtb;
+        private System.Windows.Forms.RadioButton radioButtonWait;
+        private System.Windows.Forms.RadioButton radioButtonActive;
+        private System.Windows.Forms.GroupBox groupBoxConfigScan;
+        private System.Windows.Forms.RadioButton radioButtonAlways;
+        private System.Windows.Forms.RadioButton radioButtonOnce;
+        private System.Windows.Forms.GroupBox groupBoxConfigCursor;
+        private System.Windows.Forms.RadioButton radioButtonMemory;
+        private System.Windows.Forms.RadioButton radioButtonInitial;
+        private System.Windows.Forms.GroupBox groupBoxConfigSound;
+        private System.Windows.Forms.RadioButton radioButtonMono;
+        private System.Windows.Forms.RadioButton radioButtonStereo;
+        private System.Windows.Forms.GroupBox groupBoxConfigTrackbars;
+        private System.Windows.Forms.TrackBar trackBarVolume;
+        private System.Windows.Forms.Label labelVolume;
+        private System.Windows.Forms.CheckBox checkBoxConfigUnk;
+        private System.Windows.Forms.Panel panelVolume;
+        private System.Windows.Forms.Label labelVolumeValue;
+        private System.Windows.Forms.TrackBar trackBarBattleSpeed;
+        private System.Windows.Forms.Label labelBattleSpeed;
+        private System.Windows.Forms.TrackBar trackBarFieldMessage;
+        private System.Windows.Forms.Label labelFieldMessage;
+        private System.Windows.Forms.TrackBar trackBarBattleMessage;
+        private System.Windows.Forms.Label labelBattleMessage;
+        private System.Windows.Forms.CheckBox checkBoxCustomKeys;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Button buttonConfigInvert;
+        private System.Windows.Forms.Button buttonConfigDefault;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyStart;
+        private System.Windows.Forms.Label labelJoystick;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyUnk3;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyUnk2;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeySelect;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyTripleTriad;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyTalk;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyMenu;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyCancel;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyTrigger;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyWindow;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyPov;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyEscape;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.NumericUpDown numericUpDownKeyUnk1;
     }
 }
 

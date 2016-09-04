@@ -257,6 +257,8 @@ namespace Quezacotl
             public byte KnownWeapons3;
             public byte KnownWeapons4;
             public string GrieverName;
+            public UInt16 Unknown1;
+            public UInt16 Unknown2;
             public UInt32 Gil;
             public UInt32 GilLaguna;
             public byte limitQuistis1;
@@ -685,23 +687,32 @@ namespace Quezacotl
         #endregion
 
 
-        #region Multiple bytes stuff
+        #region WORD and DWORD to Init
 
         /// <summary>
-        /// This is for Exp
+        /// This is for 2 bytes
         /// </summary>
         /// <param name="a"></param>
         /// <param name="add"></param>
-        private static void ExpToInit(uint a, int add, byte mode)
+        private static void WordToInit(uint a, int add, byte mode)
         {
-            byte[] expBytes = BitConverter.GetBytes(a);
+            byte[] bytes = BitConverter.GetBytes(a);
             switch (mode)
             {
                 case (byte)Mode.Mode_GF:
-                    Array.Copy(expBytes, 0, Init, OffsetToGfSelected + add, 4);
+                    Array.Copy(bytes, 0, Init, OffsetToGfSelected + add, 2);
                     break;
                 case (byte)Mode.Mode_Characters:
-                    Array.Copy(expBytes, 0, Init, OffsetToCharacterSelected + add, 4);
+                    Array.Copy(bytes, 0, Init, OffsetToCharacterSelected + add, 2);
+                    break;
+                case (byte)Mode.Mode_Config:
+                    Array.Copy(bytes, 0, Init, OffsetToConfigSelected + add, 2);
+                    break;
+                case (byte)Mode.Mode_Misc:
+                    Array.Copy(bytes, 0, Init, OffsetToMiscSelected + add, 2);
+                    break;
+                case (byte)Mode.Mode_Items:
+                    Array.Copy(bytes, 0, Init, OffsetToItemsSelected + add, 2);
                     break;
 
                 default:
@@ -709,141 +720,31 @@ namespace Quezacotl
             }
         }
 
+
         /// <summary>
-        /// This is for Current Hp
+        /// This is for 4 bytes
         /// </summary>
         /// <param name="a"></param>
         /// <param name="add"></param>
-        private static void CurrentHpToInit(uint a, int add, byte mode)
+        private static void DwordToInit(uint a, int add, byte mode)
         {
-            byte[] hpBytes = BitConverter.GetBytes(a);
+            byte[] bytes = BitConverter.GetBytes(a);
             switch (mode)
             {
                 case (byte)Mode.Mode_GF:
-                    Array.Copy(hpBytes, 0, Init, OffsetToGfSelected + add, 2);
+                    Array.Copy(bytes, 0, Init, OffsetToGfSelected + add, 4);
                     break;
                 case (byte)Mode.Mode_Characters:
-                    Array.Copy(hpBytes, 0, Init, OffsetToCharacterSelected + add, 2);
+                    Array.Copy(bytes, 0, Init, OffsetToCharacterSelected + add, 4);
                     break;
-
-                default:
-                    return;
-            }
-        }
-
-        /// <summary>
-        /// This is for Kills
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="add"></param>
-        private static void KillsToInit(uint a, int add, byte mode)
-        {
-            byte[] killsBytes = BitConverter.GetBytes(a);
-            switch (mode)
-            {
-                case (byte)Mode.Mode_GF:
-                    Array.Copy(killsBytes, 0, Init, OffsetToGfSelected + add, 2);
+                case (byte)Mode.Mode_Config:
+                    Array.Copy(bytes, 0, Init, OffsetToConfigSelected + add, 4);
                     break;
-                case (byte)Mode.Mode_Characters:
-                    Array.Copy(killsBytes, 0, Init, OffsetToCharacterSelected + add, 2);
+                case (byte)Mode.Mode_Misc:
+                    Array.Copy(bytes, 0, Init, OffsetToMiscSelected + add, 4);
                     break;
-
-                default:
-                    return;
-            }
-        }
-
-        /// <summary>
-        /// This is for KOs
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="add"></param>
-        private static void KOsToInit(uint a, int add, byte mode)
-        {
-            byte[] koBytes = BitConverter.GetBytes(a);
-            switch (mode)
-            {
-                case (byte)Mode.Mode_GF:
-                    Array.Copy(koBytes, 0, Init, OffsetToGfSelected + add, 2);
-                    break;
-                case (byte)Mode.Mode_Characters:
-                    Array.Copy(koBytes, 0, Init, OffsetToCharacterSelected + add, 2);
-                    break;
-
-                default:
-                    return;
-            }
-        }
-
-        /// <summary>
-        /// This is for Max Hp
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="add"></param>
-        private static void HpBonusToInit(uint a, int add, byte mode)
-        {
-            byte[] hpBytes = BitConverter.GetBytes(a);
-            switch (mode)
-            {
-                case (byte)Mode.Mode_Characters:
-                    Array.Copy(hpBytes, 0, Init, OffsetToCharacterSelected + add, 2);
-                    break;
-
-                default:
-                    return;
-            }
-        }
-
-        /// <summary>
-        /// This is for Magic
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="add"></param>
-        private static void MagicToInit(uint a, int add, byte mode)
-        {
-            byte[] magicBytes = BitConverter.GetBytes(a);
-            switch (mode)
-            {
-                case (byte)Mode.Mode_Characters:
-                    Array.Copy(magicBytes, 0, Init, OffsetToCharacterSelected + add, 2);
-                    break;
-
-                default:
-                    return;
-            }
-        }
-
-        /// <summary>
-        /// This is for GF Compatibility
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="add"></param>
-        private static void GfCompToInit(int a, int add, byte mode)
-        {
-            byte[] compBytes = BitConverter.GetBytes(a);
-            switch (mode)
-            {
-                case (byte)Mode.Mode_Characters:
-                    Array.Copy(compBytes, 0, Init, OffsetToCharacterSelected + add, 2);
-                    break;
-
-                default:
-                    return;
-            }
-        }
-
-        /// <summary>
-        /// This is for Names
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="add"></param>
-        private static void NameToInit(byte[] a, int add, byte mode)
-        {
-            byte[] nameBytes = BitConverter.GetBytes(a[12]);
-            switch (mode)
-            {
-                case (byte)Mode.Mode_GF:
-                    Array.Copy(nameBytes, 0, Init, OffsetToGfSelected + add, 12);
+                case (byte)Mode.Mode_Items:
+                    Array.Copy(bytes, 0, Init, OffsetToItemsSelected + add, 4);
                     break;
 
                 default:
@@ -854,7 +755,10 @@ namespace Quezacotl
         enum Mode : byte
         {
             Mode_GF,
-            Mode_Characters
+            Mode_Characters,
+            Mode_Config,
+            Mode_Misc,
+            Mode_Items,
         }
 
         #endregion
@@ -885,7 +789,7 @@ namespace Quezacotl
 
                     return;
                 case 1:
-                    ExpToInit(Convert.ToUInt32(variable), 12, (byte)Mode.Mode_GF); //Exp
+                    DwordToInit(Convert.ToUInt32(variable), 12, (byte)Mode.Mode_GF); //Exp
                     return;
                 case 2:
                     Init[OffsetToGfSelected + 16] = Convert.ToByte(variable); //Unknown 1
@@ -894,7 +798,7 @@ namespace Quezacotl
                     Init[OffsetToGfSelected + 17] = Convert.ToByte(variable); //Available
                     return;
                 case 4:
-                    CurrentHpToInit(Convert.ToUInt32(variable), 18, (byte)Mode.Mode_GF); //Current Hp
+                    WordToInit(Convert.ToUInt16(variable), 18, (byte)Mode.Mode_GF); //Current Hp
                     return;
                 case 5:
                     Init[OffsetToGfSelected + 20] = (byte)(Init[OffsetToGfSelected + 20] ^ Convert.ToByte(variable)); //Ability 1
@@ -1011,10 +915,10 @@ namespace Quezacotl
                     Init[OffsetToGfSelected + 57] = Convert.ToByte(variable); //Ap Ability 22
                     return;
                 case 43:
-                    KillsToInit(Convert.ToUInt16(variable), 60, (byte)Mode.Mode_GF); //Kills
+                    WordToInit(Convert.ToUInt16(variable), 60, (byte)Mode.Mode_GF); //Kills
                     return;
                 case 44:
-                    KOsToInit(Convert.ToUInt16(variable), 62, (byte)Mode.Mode_GF); //KOs
+                    WordToInit(Convert.ToUInt16(variable), 62, (byte)Mode.Mode_GF); //KOs
                     return;
                 case 45:
                     Init[OffsetToGfSelected + 64] = Convert.ToByte(variable); //Learning Ability
@@ -1039,13 +943,13 @@ namespace Quezacotl
             switch (index)
             {
                 case 0:
-                    CurrentHpToInit(Convert.ToUInt16(variable), 0, (byte)Mode.Mode_Characters); //Current Hp
+                    WordToInit(Convert.ToUInt16(variable), 0, (byte)Mode.Mode_Characters); //Current Hp
                     return;
                 case 1:
-                    HpBonusToInit(Convert.ToUInt16(variable), 2, (byte)Mode.Mode_Characters); //Max Hp
+                    WordToInit(Convert.ToUInt16(variable), 2, (byte)Mode.Mode_Characters); //Max Hp
                     return;
                 case 2:
-                    ExpToInit(Convert.ToUInt32(variable), 4, (byte)Mode.Mode_Characters); //Exp
+                    DwordToInit(Convert.ToUInt32(variable), 4, (byte)Mode.Mode_Characters); //Exp
                     return;
                 case 3:
                     Init[OffsetToCharacterSelected + 8] = Convert.ToByte(variable); //model id
@@ -1360,58 +1264,58 @@ namespace Quezacotl
                     Init[OffsetToCharacterSelected + 111] = Convert.ToByte(variable); //Unk 3
                     return;
                 case 107:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 112, (byte)Mode.Mode_Characters); //GF Compatibility 1
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 112, (byte)Mode.Mode_Characters); //GF Compatibility 1
                     return;
                 case 108:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 114, (byte)Mode.Mode_Characters); //GF Compatibility 2
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 114, (byte)Mode.Mode_Characters); //GF Compatibility 2
                     return;
                 case 109:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 116, (byte)Mode.Mode_Characters); //GF Compatibility 3
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 116, (byte)Mode.Mode_Characters); //GF Compatibility 3
                     return;
                 case 110:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 118, (byte)Mode.Mode_Characters); //GF Compatibility 4
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 118, (byte)Mode.Mode_Characters); //GF Compatibility 4
                     return;
                 case 111:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 120, (byte)Mode.Mode_Characters); //GF Compatibility 5
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 120, (byte)Mode.Mode_Characters); //GF Compatibility 5
                     return;
                 case 112:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 122, (byte)Mode.Mode_Characters); //GF Compatibility 6
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 122, (byte)Mode.Mode_Characters); //GF Compatibility 6
                     return;
                 case 113:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 124, (byte)Mode.Mode_Characters); //GF Compatibility 7
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 124, (byte)Mode.Mode_Characters); //GF Compatibility 7
                     return;
                 case 114:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 126, (byte)Mode.Mode_Characters); //GF Compatibility 8
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 126, (byte)Mode.Mode_Characters); //GF Compatibility 8
                     return;
                 case 115:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 128, (byte)Mode.Mode_Characters); //GF Compatibility 9
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 128, (byte)Mode.Mode_Characters); //GF Compatibility 9
                     return;
                 case 116:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 130, (byte)Mode.Mode_Characters); //GF Compatibility 10
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 130, (byte)Mode.Mode_Characters); //GF Compatibility 10
                     return;
                 case 117:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 132, (byte)Mode.Mode_Characters); //GF Compatibility 11
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 132, (byte)Mode.Mode_Characters); //GF Compatibility 11
                     return;
                 case 118:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 134, (byte)Mode.Mode_Characters); //GF Compatibility 12
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 134, (byte)Mode.Mode_Characters); //GF Compatibility 12
                     return;
                 case 119:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 136, (byte)Mode.Mode_Characters); //GF Compatibility 13
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 136, (byte)Mode.Mode_Characters); //GF Compatibility 13
                     return;
                 case 120:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 138, (byte)Mode.Mode_Characters); //GF Compatibility 14
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 138, (byte)Mode.Mode_Characters); //GF Compatibility 14
                     return;
                 case 121:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 140, (byte)Mode.Mode_Characters); //GF Compatibility 15
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 140, (byte)Mode.Mode_Characters); //GF Compatibility 15
                     return;
                 case 122:
-                    GfCompToInit(6000 - (Convert.ToInt16(variable)) * 5, 142, (byte)Mode.Mode_Characters); //GF Compatibility 16
+                    WordToInit(6000 - (Convert.ToUInt16(variable)) * (uint)5, 142, (byte)Mode.Mode_Characters); //GF Compatibility 16
                     return;
                 case 123:
-                    KillsToInit(Convert.ToUInt16(variable), 144, (byte)Mode.Mode_Characters); //Kills
+                    WordToInit(Convert.ToUInt16(variable), 144, (byte)Mode.Mode_Characters); //Kills
                     return;
                 case 124:
-                    KOsToInit(Convert.ToUInt16(variable), 146, (byte)Mode.Mode_Characters); //KOs
+                    WordToInit(Convert.ToUInt16(variable), 146, (byte)Mode.Mode_Characters); //KOs
                     return;
                 case 125:
                     Init[OffsetToCharacterSelected + 148] = (byte)(Init[OffsetToCharacterSelected + 148] ^ Convert.ToByte(variable)); //Exist
@@ -1503,7 +1407,7 @@ namespace Quezacotl
 
         #endregion
 
-        #region Write Config Variables
+        #region Write Misc Variables
 
         public static void UpdateVariable_Misc(int index, object variable)
         {
@@ -1521,55 +1425,92 @@ namespace Quezacotl
                     Init[OffsetToMiscSelected + 2] = (byte)(Init[OffsetToMiscSelected + 2] ^ Convert.ToByte(variable)); //party member 3
                     return;
                 case 3:
-                    Init[OffsetToMiscSelected + 3] = (byte)(Init[OffsetToMiscSelected + 3] ^ Convert.ToByte(variable)); //known weapons 1
+                    Init[OffsetToMiscSelected + 3] = (byte)(Init[OffsetToMiscSelected + 4] ^ Convert.ToByte(variable)); //known weapons 1
                     return;
                 case 4:
-                    Init[OffsetToMiscSelected + 4] = (byte)(Init[OffsetToMiscSelected + 4] ^ Convert.ToByte(variable)); //known weapons 2
+                    Init[OffsetToMiscSelected + 4] = (byte)(Init[OffsetToMiscSelected + 5] ^ Convert.ToByte(variable)); //known weapons 2
                     return;
                 case 5:
-                    Init[OffsetToMiscSelected + 5] = (byte)(Init[OffsetToMiscSelected + 5] ^ Convert.ToByte(variable)); //known weapons 3
+                    Init[OffsetToMiscSelected + 5] = (byte)(Init[OffsetToMiscSelected + 6] ^ Convert.ToByte(variable)); //known weapons 3
                     return;
                 case 6:
-                    Init[OffsetToMiscSelected + 6] = (byte)(Init[OffsetToMiscSelected + 6] ^ Convert.ToByte(variable)); //known weapons 4
+                    Init[OffsetToMiscSelected + 6] = (byte)(Init[OffsetToMiscSelected + 7] ^ Convert.ToByte(variable)); //known weapons 4
                     return;
                 case 7:
-                    //griever name
+                    byte[] text = FF8Text.Cipher((string)variable);
+                    int emptyLenght = 12 - text.Length;
+                    if (emptyLenght > 0)
+                    {
+                        byte[] empty = new byte[emptyLenght];
+                        byte[] temp = new byte[text.Length + empty.Length];
+                        Buffer.BlockCopy(text, 0, temp, 0, text.Length);
+                        Buffer.BlockCopy(empty, 0, temp, text.Length, empty.Length);
+
+                        Array.Copy(temp, 0, Init, OffsetToMiscSelected + 8, 12);
+                    }
+                    else
+                        Array.Copy(text, 0, Init, OffsetToMiscSelected + 8, 12);
+
                     return;
                 case 8:
-                    Init[OffsetToConfigSelected + 8] = Convert.ToByte(variable); //key escape
+                    WordToInit(Convert.ToUInt16(variable), 20, (byte)Mode.Mode_Misc); //Unknown 1
                     return;
                 case 9:
-                    Init[OffsetToConfigSelected + 9] = Convert.ToByte(variable); //key pov
+                    WordToInit(Convert.ToUInt16(variable), 22, (byte)Mode.Mode_Misc); //Unknown 2
                     return;
                 case 10:
-                    Init[OffsetToConfigSelected + 10] = Convert.ToByte(variable); //key window
+                    DwordToInit(Convert.ToUInt32(variable), 24, (byte)Mode.Mode_Misc); //Gil
                     return;
                 case 11:
-                    Init[OffsetToConfigSelected + 11] = Convert.ToByte(variable); //key trigger
+                    DwordToInit(Convert.ToUInt32(variable), 28, (byte)Mode.Mode_Misc); //Gil Laguna
                     return;
                 case 12:
-                    Init[OffsetToConfigSelected + 12] = Convert.ToByte(variable); //key cancel
+                    Init[OffsetToMiscSelected + 32] = (byte)(Init[OffsetToMiscSelected + 32] ^ Convert.ToByte(variable)); //Quistis LB 1
                     return;
                 case 13:
-                    Init[OffsetToConfigSelected + 13] = Convert.ToByte(variable); //key menu
+                    Init[OffsetToMiscSelected + 33] = (byte)(Init[OffsetToMiscSelected + 33] ^ Convert.ToByte(variable)); //Quistis LB 1
                     return;
                 case 14:
-                    Init[OffsetToConfigSelected + 14] = Convert.ToByte(variable); //key talk
+                    Init[OffsetToMiscSelected + 34] = (byte)(Init[OffsetToMiscSelected + 34] ^ Convert.ToByte(variable)); //Zell LB 1
                     return;
                 case 15:
-                    Init[OffsetToConfigSelected + 15] = Convert.ToByte(variable); //key triple triad
+                    Init[OffsetToMiscSelected + 35] = (byte)(Init[OffsetToMiscSelected + 35] ^ Convert.ToByte(variable)); //Zell LB 1
                     return;
                 case 16:
-                    Init[OffsetToConfigSelected + 16] = Convert.ToByte(variable); //key select
+                    Init[OffsetToMiscSelected + 36] = (byte)(Init[OffsetToMiscSelected + 36] ^ Convert.ToByte(variable)); //Irvine LB 1
                     return;
                 case 17:
-                    Init[OffsetToConfigSelected + 17] = Convert.ToByte(variable); //key unk 2
+                    Init[OffsetToMiscSelected + 37] = (byte)(Init[OffsetToMiscSelected + 37] ^ Convert.ToByte(variable)); //Selphie LB 1
                     return;
                 case 18:
-                    Init[OffsetToConfigSelected + 18] = Convert.ToByte(variable); //key unk 3
+                    Init[OffsetToMiscSelected + 38] = (byte)(Init[OffsetToMiscSelected + 38] ^ Convert.ToByte(variable)); //Angelo Completed
                     return;
                 case 19:
-                    Init[OffsetToConfigSelected + 19] = Convert.ToByte(variable); //key start
+                    Init[OffsetToMiscSelected + 39] = (byte)(Init[OffsetToMiscSelected + 39] ^ Convert.ToByte(variable)); //Angelo Known
+                    return;
+                case 20:
+                    Init[OffsetToItemsSelected + 40] = Convert.ToByte(variable); //Angelo Point 1
+                    return;
+                case 21:
+                    Init[OffsetToItemsSelected + 41] = Convert.ToByte(variable); //Angelo Point 2
+                    return;
+                case 22:
+                    Init[OffsetToItemsSelected + 42] = Convert.ToByte(variable); //Angelo Point 3
+                    return;
+                case 23:
+                    Init[OffsetToItemsSelected + 43] = Convert.ToByte(variable); //Angelo Point 4
+                    return;
+                case 24:
+                    Init[OffsetToItemsSelected + 44] = Convert.ToByte(variable); //Angelo Point 5
+                    return;
+                case 25:
+                    Init[OffsetToItemsSelected + 45] = Convert.ToByte(variable); //Angelo Point 6
+                    return;
+                case 26:
+                    Init[OffsetToItemsSelected + 46] = Convert.ToByte(variable); //Angelo Point 7
+                    return;
+                case 27:
+                    Init[OffsetToItemsSelected + 47] = Convert.ToByte(variable); //Angelo Point 8
                     return;
             }
         }
@@ -2811,9 +2752,9 @@ namespace Quezacotl
 
             byte[] byteArray = new byte[12];
             Array.Copy(Init, selectedGfOffset, byteArray, 0, 12);
-
             byte[] buffer = FF8Text.BuildString_b(byteArray);
             GetSelectedGfData.Name = Encoding.UTF8.GetString(buffer);
+
             GetSelectedGfData.Exp = BitConverter.ToUInt32(Init, selectedGfOffset + 12);
             GetSelectedGfData.Unknown1 = Init[selectedGfOffset + 16];
             GetSelectedGfData.Available = Init[selectedGfOffset + 17];
@@ -3001,6 +2942,83 @@ namespace Quezacotl
             GetSelectedCharactersData.Unknown4 = Init[selectedCharactersOffset + 149];
             GetSelectedCharactersData.CurrentStatus = Init[selectedCharactersOffset + 150];
             GetSelectedCharactersData.Unknown5 = Init[selectedCharactersOffset + 151];
+        }
+
+        #endregion
+
+        #region Config
+
+        public static void ReadConfig(byte[] Init)
+        {
+            GetSelectedConfigData = new ConfigData();
+            int selectedConfigOffset = ConfigDataOffset;
+            OffsetToConfigSelected = selectedConfigOffset;
+
+            GetSelectedConfigData.BattleSpeed = Init[selectedConfigOffset];
+            GetSelectedConfigData.BattleMessage = Init[selectedConfigOffset + 1];
+            GetSelectedConfigData.FieldMessage = Init[selectedConfigOffset + 2];
+            GetSelectedConfigData.Volume = Init[selectedConfigOffset + 3];
+            GetSelectedConfigData.Flag = Init[selectedConfigOffset + 4];
+            GetSelectedConfigData.Scan = Init[selectedConfigOffset + 5];
+            GetSelectedConfigData.Camera = Init[selectedConfigOffset + 6];
+            GetSelectedConfigData.KeyUnk1 = Init[selectedConfigOffset + 7];
+            GetSelectedConfigData.KeyEscape = Init[selectedConfigOffset + 8];
+            GetSelectedConfigData.KeyPov = Init[selectedConfigOffset + 9];
+            GetSelectedConfigData.KeyWindow = Init[selectedConfigOffset + 10];
+            GetSelectedConfigData.KeyTrigger = Init[selectedConfigOffset + 11];
+            GetSelectedConfigData.KeyCancel = Init[selectedConfigOffset + 12];
+            GetSelectedConfigData.KeyMenu = Init[selectedConfigOffset + 13];
+            GetSelectedConfigData.KeyTalk = Init[selectedConfigOffset + 14];
+            GetSelectedConfigData.KeyTripleTriad = Init[selectedConfigOffset + 15];
+            GetSelectedConfigData.KeySelect = Init[selectedConfigOffset + 16];
+            GetSelectedConfigData.KeyUnk2 = Init[selectedConfigOffset + 17];
+            GetSelectedConfigData.KeyUnk3 = Init[selectedConfigOffset + 18];
+            GetSelectedConfigData.KeyStart = Init[selectedConfigOffset + 19];
+        }
+
+        #endregion
+
+        #region Misc
+
+        public static void ReadMisc(byte[] Init)
+        {
+            GetSelectedMiscData = new MiscData();
+            int selectedMiscOffset = MiscDataOffset;
+            OffsetToMiscSelected = selectedMiscOffset;
+
+            GetSelectedMiscData.PartyMem1 = Init[selectedMiscOffset];
+            GetSelectedMiscData.PartyMem2 = Init[selectedMiscOffset + 1];
+            GetSelectedMiscData.PartyMem3 = Init[selectedMiscOffset + 2];
+            GetSelectedMiscData.KnownWeapons1 = Init[selectedMiscOffset + 4];
+            GetSelectedMiscData.KnownWeapons2 = Init[selectedMiscOffset + 5];
+            GetSelectedMiscData.KnownWeapons3 = Init[selectedMiscOffset + 6];
+            GetSelectedMiscData.KnownWeapons4 = Init[selectedMiscOffset + 7];
+
+            byte[] byteArray = new byte[12];
+            Array.Copy(Init, selectedMiscOffset + 8, byteArray, 0, 12);
+            byte[] buffer = FF8Text.BuildString_b(byteArray);
+            GetSelectedMiscData.GrieverName = Encoding.UTF8.GetString(buffer);
+
+            GetSelectedMiscData.Unknown1 = BitConverter.ToUInt16(Init, selectedMiscOffset + 20);
+            GetSelectedMiscData.Unknown2 = BitConverter.ToUInt16(Init, selectedMiscOffset + 22);
+            GetSelectedMiscData.Gil = BitConverter.ToUInt32(Init, selectedMiscOffset + 24);
+            GetSelectedMiscData.GilLaguna = BitConverter.ToUInt32(Init, selectedMiscOffset + 28);
+            GetSelectedMiscData.limitQuistis1 = Init[selectedMiscOffset + 32];
+            GetSelectedMiscData.limitQuistis2 = Init[selectedMiscOffset + 33];
+            GetSelectedMiscData.limitZell1 = Init[selectedMiscOffset + 34];
+            GetSelectedMiscData.limitZell2 = Init[selectedMiscOffset + 35];
+            GetSelectedMiscData.limitIrvine = Init[selectedMiscOffset + 36];
+            GetSelectedMiscData.limitSelphie = Init[selectedMiscOffset + 37];
+            GetSelectedMiscData.limitAngeloCompleted = Init[selectedMiscOffset + 38];
+            GetSelectedMiscData.limitAngeloKnown = Init[selectedMiscOffset + 39];
+            GetSelectedMiscData.limitAngeloPoints1 = Init[selectedMiscOffset + 40];
+            GetSelectedMiscData.limitAngeloPoints2 = Init[selectedMiscOffset + 41];
+            GetSelectedMiscData.limitAngeloPoints3 = Init[selectedMiscOffset + 42];
+            GetSelectedMiscData.limitAngeloPoints4 = Init[selectedMiscOffset + 43];
+            GetSelectedMiscData.limitAngeloPoints5 = Init[selectedMiscOffset + 44];
+            GetSelectedMiscData.limitAngeloPoints6 = Init[selectedMiscOffset + 45];
+            GetSelectedMiscData.limitAngeloPoints7 = Init[selectedMiscOffset + 46];
+            GetSelectedMiscData.limitAngeloPoints8 = Init[selectedMiscOffset + 47];
         }
 
         #endregion
