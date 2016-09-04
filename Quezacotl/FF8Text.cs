@@ -209,7 +209,7 @@ namespace Quezacotl
         }
 
         /// <summary>
-        /// Builds byte[] decoded string with buffer specified in SetKernel
+        /// Builds byte[] decoded string with buffer specified in SetInit
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>

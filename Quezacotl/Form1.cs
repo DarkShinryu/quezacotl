@@ -2115,6 +2115,7 @@ namespace Quezacotl
 
         private void Form1_Shown(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Normal;
             this.Focus();
         }
 

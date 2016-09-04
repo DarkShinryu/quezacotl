@@ -1037,6 +1037,8 @@
             this.panelLbZell = new System.Windows.Forms.Panel();
             this.panelLbIrvine = new System.Windows.Forms.Panel();
             this.panelLbSquall = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExpLvUp)).BeginInit();
             this.panelGfLevel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKOs)).BeginInit();
@@ -1694,7 +1696,7 @@
             // 
             this.textBoxGfName.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGfName.Location = new System.Drawing.Point(87, 95);
-            this.textBoxGfName.MaxLength = 12;
+            this.textBoxGfName.MaxLength = 11;
             this.textBoxGfName.Name = "textBoxGfName";
             this.textBoxGfName.Size = new System.Drawing.Size(220, 23);
             this.textBoxGfName.TabIndex = 4;
@@ -15781,7 +15783,10 @@
             "Characters",
             "G-Forces",
             "Items",
-            "Misc"});
+            "Shops",
+            "Party",
+            "Miscellaneous",
+            "Configuration"});
             this.listBoxMain.Location = new System.Drawing.Point(5, 47);
             this.listBoxMain.Name = "listBoxMain";
             this.listBoxMain.Size = new System.Drawing.Size(125, 822);
@@ -15791,6 +15796,8 @@
             // panelGf
             // 
             this.panelGf.BackColor = System.Drawing.SystemColors.Control;
+            this.panelGf.Controls.Add(this.label26);
+            this.panelGf.Controls.Add(this.label25);
             this.panelGf.Controls.Add(this.tabControlGf);
             this.panelGf.Controls.Add(this.checkBoxGfAvailable);
             this.panelGf.Controls.Add(this.numericUpDownGfExpLvUp);
@@ -16102,10 +16109,29 @@
             this.panelLbSquall.Size = new System.Drawing.Size(615, 88);
             this.panelLbSquall.TabIndex = 36;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 7F);
+            this.label25.Location = new System.Drawing.Point(312, 62);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(352, 12);
+            this.label25.TabIndex = 32;
+            this.label25.Text = "*Changing names does nothing, default GF names are loaded from mngrp.bin.";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label26.Location = new System.Drawing.Point(308, 102);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(12, 13);
+            this.label26.TabIndex = 32;
+            this.label26.Text = "*";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(809, 897);
             this.Controls.Add(this.statusStrip1);
@@ -16115,13 +16141,15 @@
             this.Controls.Add(this.buttonAbout);
             this.Controls.Add(this.buttonDeleteTooltips);
             this.Controls.Add(this.buttonOpen);
-            this.Controls.Add(this.panelCharacters);
             this.Controls.Add(this.panelGf);
             this.Controls.Add(this.panelItems);
             this.Controls.Add(this.panelMisc);
+            this.Controls.Add(this.panelCharacters);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quezacotl v1.0.0";
@@ -17546,6 +17574,8 @@
         private System.Windows.Forms.Panel panelLbQuistis;
         private System.Windows.Forms.Panel panelLbSelphie;
         private System.Windows.Forms.Panel panelLbRinoa;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
     }
 }
 

@@ -25,12 +25,17 @@ namespace Quezacotl
         public static int MiscDataOffset = -1;
         public static int OffsetToMiscSelected = -1;
 
+        public static int ItemsBattleOrderDataOffset = -1;
+        public static int OffsetToItemsBattleOrderSelected = -1;
+
         public static int ItemsDataOffset = -1;
         public static int OffsetToItemsSelected = -1;
 
         public static GfData GetSelectedGfData;
         public static CharactersData GetSelectedCharactersData;
+        public static ConfigData GetSelectedConfigData;
         public static MiscData GetSelectedMiscData;
+        public static ItemsBattleOrderData GetSelectedItemsBattleOrderData;
         public static ItemsData GetSelectedItemsData;
 
 
@@ -218,12 +223,39 @@ namespace Quezacotl
             public byte Unknown5;
         }
 
+        public struct ConfigData
+        {
+            public byte BattleSpeed;
+            public byte BattleMessage;
+            public byte FieldMessage;
+            public byte Volume;
+            public byte Flag;
+            public byte Scan;
+            public byte Camera;
+            public byte KeyUnk1;
+            public byte KeyEscape;
+            public byte KeyPov;
+            public byte KeyWindow;
+            public byte KeyTrigger;
+            public byte KeyCancel;
+            public byte KeyMenu;
+            public byte KeyTalk;
+            public byte KeyTripleTriad;
+            public byte KeySelect;
+            public byte KeyUnk2;
+            public byte KeyUnk3;
+            public byte KeyStart;          
+        }
+
         public struct MiscData
         {
             public byte PartyMem1;
             public byte PartyMem2;
             public byte PartyMem3;
-            public UInt32 KnownWeapons;
+            public byte KnownWeapons1;
+            public byte KnownWeapons2;
+            public byte KnownWeapons3;
+            public byte KnownWeapons4;
             public string GrieverName;
             public UInt32 Gil;
             public UInt32 GilLaguna;
@@ -243,6 +275,11 @@ namespace Quezacotl
             public byte limitAngeloPoints6;
             public byte limitAngeloPoints7;
             public byte limitAngeloPoints8;
+        }
+
+        public struct ItemsBattleOrderData
+        {
+
         }
 
         public struct ItemsData
@@ -800,16 +837,13 @@ namespace Quezacotl
         /// </summary>
         /// <param name="a"></param>
         /// <param name="add"></param>
-        private static void NameToInit(uint a, int add, byte mode)
+        private static void NameToInit(byte[] a, int add, byte mode)
         {
-            byte[] nameBytes = BitConverter.GetBytes(a);
+            byte[] nameBytes = BitConverter.GetBytes(a[12]);
             switch (mode)
             {
                 case (byte)Mode.Mode_GF:
                     Array.Copy(nameBytes, 0, Init, OffsetToGfSelected + add, 12);
-                    break;
-                case (byte)Mode.Mode_Characters:
-                    Array.Copy(nameBytes, 0, Init, OffsetToCharacterSelected + add, 2);
                     break;
 
                 default:
@@ -835,7 +869,20 @@ namespace Quezacotl
             switch (index)
             {
                 case 0:
-                    NameToInit(Convert.ToUInt32(variable), 0, (byte)Mode.Mode_GF); //GF Name
+                    byte[] text = FF8Text.Cipher((string)variable);
+                    int emptyLenght = 12 - text.Length;
+                    if (emptyLenght > 0)
+                    {
+                        byte[] empty = new byte[emptyLenght];
+                        byte[] temp = new byte[text.Length + empty.Length];
+                        Buffer.BlockCopy(text, 0, temp, 0, text.Length);
+                        Buffer.BlockCopy(empty, 0, temp, text.Length, empty.Length);
+
+                        Array.Copy(temp, 0, Init, OffsetToGfSelected, 12);
+                    }
+                    else
+                        Array.Copy(text, 0, Init, OffsetToGfSelected, 12);
+
                     return;
                 case 1:
                     ExpToInit(Convert.ToUInt32(variable), 12, (byte)Mode.Mode_GF); //Exp
@@ -982,7 +1029,6 @@ namespace Quezacotl
 
 
         #endregion
-
 
         #region Write Characters Variables
 
@@ -1384,6 +1430,151 @@ namespace Quezacotl
 
         #endregion
 
+        #region Write Config Variables
+
+        public static void UpdateVariable_Config(int index, object variable)
+        {
+            if (!Form1._loaded || Init == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Init[OffsetToConfigSelected] = Convert.ToByte(variable); //battle speed
+                    return;
+                case 1:
+                    Init[OffsetToConfigSelected + 1] = Convert.ToByte(variable); //battle message
+                    return;
+                case 2:
+                    Init[OffsetToConfigSelected + 2] = Convert.ToByte(variable); //field message
+                    return;
+                case 3:
+                    Init[OffsetToConfigSelected + 3] = Convert.ToByte(variable); //Volume
+                    return;
+                case 4:
+                    Init[OffsetToConfigSelected + 4] = (byte)(Init[OffsetToConfigSelected + 4] ^ Convert.ToByte(variable)); //flag
+                    return;
+                case 5:
+                    Init[OffsetToConfigSelected + 5] = (byte)(Init[OffsetToConfigSelected + 5] ^ Convert.ToByte(variable)); //scan
+                    return;
+                case 6:
+                    Init[OffsetToConfigSelected + 6] = Convert.ToByte(variable); //camera movement
+                    return;
+                case 7:
+                    Init[OffsetToConfigSelected + 7] = Convert.ToByte(variable); // key unk 1
+                    return;
+                case 8:
+                    Init[OffsetToConfigSelected + 8] = Convert.ToByte(variable); //key escape
+                    return;
+                case 9:
+                    Init[OffsetToConfigSelected + 9] = Convert.ToByte(variable); //key pov
+                    return;
+                case 10:
+                    Init[OffsetToConfigSelected + 10] = Convert.ToByte(variable); //key window
+                    return;
+                case 11:
+                    Init[OffsetToConfigSelected + 11] = Convert.ToByte(variable); //key trigger
+                    return;
+                case 12:
+                    Init[OffsetToConfigSelected + 12] = Convert.ToByte(variable); //key cancel
+                    return;
+                case 13:
+                    Init[OffsetToConfigSelected + 13] = Convert.ToByte(variable); //key menu
+                    return;
+                case 14:
+                    Init[OffsetToConfigSelected + 14] = Convert.ToByte(variable); //key talk
+                    return;
+                case 15:
+                    Init[OffsetToConfigSelected + 15] = Convert.ToByte(variable); //key triple triad
+                    return;
+                case 16:
+                    Init[OffsetToConfigSelected + 16] = Convert.ToByte(variable); //key select
+                    return;
+                case 17:
+                    Init[OffsetToConfigSelected + 17] = Convert.ToByte(variable); //key unk 2
+                    return;
+                case 18:
+                    Init[OffsetToConfigSelected + 18] = Convert.ToByte(variable); //key unk 3
+                    return;
+                case 19:
+                    Init[OffsetToConfigSelected + 19] = Convert.ToByte(variable); //key start
+                    return;               
+            }
+        }
+
+        #endregion
+
+        #region Write Config Variables
+
+        public static void UpdateVariable_Misc(int index, object variable)
+        {
+            if (!Form1._loaded || Init == null)
+                return;
+            switch (index)
+            {
+                case 0:
+                    Init[OffsetToMiscSelected] = (byte)(Init[OffsetToMiscSelected] ^ Convert.ToByte(variable)); //party member 1
+                    return;
+                case 1:
+                    Init[OffsetToMiscSelected + 1] = (byte)(Init[OffsetToMiscSelected + 1] ^ Convert.ToByte(variable)); //party member 2
+                    return;
+                case 2:
+                    Init[OffsetToMiscSelected + 2] = (byte)(Init[OffsetToMiscSelected + 2] ^ Convert.ToByte(variable)); //party member 3
+                    return;
+                case 3:
+                    Init[OffsetToMiscSelected + 3] = (byte)(Init[OffsetToMiscSelected + 3] ^ Convert.ToByte(variable)); //known weapons 1
+                    return;
+                case 4:
+                    Init[OffsetToMiscSelected + 4] = (byte)(Init[OffsetToMiscSelected + 4] ^ Convert.ToByte(variable)); //known weapons 2
+                    return;
+                case 5:
+                    Init[OffsetToMiscSelected + 5] = (byte)(Init[OffsetToMiscSelected + 5] ^ Convert.ToByte(variable)); //known weapons 3
+                    return;
+                case 6:
+                    Init[OffsetToMiscSelected + 6] = (byte)(Init[OffsetToMiscSelected + 6] ^ Convert.ToByte(variable)); //known weapons 4
+                    return;
+                case 7:
+                    //griever name
+                    return;
+                case 8:
+                    Init[OffsetToConfigSelected + 8] = Convert.ToByte(variable); //key escape
+                    return;
+                case 9:
+                    Init[OffsetToConfigSelected + 9] = Convert.ToByte(variable); //key pov
+                    return;
+                case 10:
+                    Init[OffsetToConfigSelected + 10] = Convert.ToByte(variable); //key window
+                    return;
+                case 11:
+                    Init[OffsetToConfigSelected + 11] = Convert.ToByte(variable); //key trigger
+                    return;
+                case 12:
+                    Init[OffsetToConfigSelected + 12] = Convert.ToByte(variable); //key cancel
+                    return;
+                case 13:
+                    Init[OffsetToConfigSelected + 13] = Convert.ToByte(variable); //key menu
+                    return;
+                case 14:
+                    Init[OffsetToConfigSelected + 14] = Convert.ToByte(variable); //key talk
+                    return;
+                case 15:
+                    Init[OffsetToConfigSelected + 15] = Convert.ToByte(variable); //key triple triad
+                    return;
+                case 16:
+                    Init[OffsetToConfigSelected + 16] = Convert.ToByte(variable); //key select
+                    return;
+                case 17:
+                    Init[OffsetToConfigSelected + 17] = Convert.ToByte(variable); //key unk 2
+                    return;
+                case 18:
+                    Init[OffsetToConfigSelected + 18] = Convert.ToByte(variable); //key unk 3
+                    return;
+                case 19:
+                    Init[OffsetToConfigSelected + 19] = Convert.ToByte(variable); //key start
+                    return;
+            }
+        }
+
+        #endregion
 
         #region Write Items Variables
 
@@ -2601,9 +2792,9 @@ namespace Quezacotl
 
             GfDataOffset = 0;
             CharacterDataOffset = 1088;
-            ShopsDataOffset = 2264;
-            ConfigDataOffset = 2664;
-            MiscDataOffset = 2684;
+            ShopsDataOffset = 2304;
+            ConfigDataOffset = 2704;
+            MiscDataOffset = 2724;
             ItemsDataOffset = 2804;
         }
 
