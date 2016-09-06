@@ -1,11 +1,11 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using Quezacotl.Properties;
+using System;
+using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Drawing;
-using System.Diagnostics;
 using System.Threading.Tasks;
-using Quezacotl.Properties;
+using System.Windows.Forms;
 
 namespace Quezacotl
 {
@@ -1780,10 +1780,9 @@ namespace Quezacotl
                                     fileStream.Seek(0, SeekOrigin.End);
                                     fileStream.Write(emptyBytes, 0, emptyBytes.Length);
 
-                                    DialogResult dialogResult = MessageBox.Show("I've appended 388 empty bytes to the end of " + Path.GetFileName(openFileDialog.FileName) +
-                                        " to allow the editing of all 196 item slots (vanilla init.out only has 4 item slots).\n\n\bPlease open the same file again.\b",
-                                        "Empty bytes appended",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                                    MessageBox.Show("I've appended 388 empty bytes to the end of " + Path.GetFileName(openFileDialog.FileName) +
+                                        " to allow the editing of all 196 item slots (vanilla init.out only has 4 item slots).\n\nPlease open the same file again!", 
+                                        "Empty bytes appended to file", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                     emptyBytesAppended--;
                                 }

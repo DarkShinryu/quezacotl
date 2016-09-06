@@ -1147,6 +1147,7 @@
             this.radioButtonStereo = new System.Windows.Forms.RadioButton();
             this.panelBattleItems = new System.Windows.Forms.Panel();
             this.label80 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
             this.listViewExCharactersList = new ListViewEx();
             this.hexUpDownCharUnk5 = new Quezacotl.HexUpDown();
             this.hexUpDownCharUnk2 = new Quezacotl.HexUpDown();
@@ -1157,7 +1158,6 @@
             this.hexUpDownGfUnknown = new Quezacotl.HexUpDown();
             this.hexUpDownB2 = new Quezacotl.HexUpDownB();
             this.hexUpDownB1 = new Quezacotl.HexUpDownB();
-            this.label90 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExpLvUp)).BeginInit();
             this.panelGfLevel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfKOs)).BeginInit();
@@ -10054,10 +10054,10 @@
             this.tabPageChars2.Controls.Add(this.numericUpDownCharsAllGfComp);
             this.tabPageChars2.Controls.Add(this.checkBoxCharsGfAll);
             this.tabPageChars2.Controls.Add(this.buttonCharsGfApply);
-            this.tabPageChars2.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars2.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars2.Name = "tabPageChars2";
             this.tabPageChars2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChars2.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars2.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars2.TabIndex = 1;
             this.tabPageChars2.Text = "G-Forces";
             // 
@@ -10892,9 +10892,9 @@
             this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic9);
             this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic17);
             this.tabPageChars3.Controls.Add(this.comboBoxCharsMagic1);
-            this.tabPageChars3.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars3.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars3.Name = "tabPageChars3";
-            this.tabPageChars3.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars3.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars3.TabIndex = 2;
             this.tabPageChars3.Text = "Magics";
             // 
@@ -12340,9 +12340,9 @@
             this.tabPageChars4.BackColor = System.Drawing.Color.White;
             this.tabPageChars4.Controls.Add(this.groupBoxCharsAbilities);
             this.tabPageChars4.Controls.Add(this.groupBoxCharsCommands);
-            this.tabPageChars4.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars4.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars4.Name = "tabPageChars4";
-            this.tabPageChars4.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars4.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars4.TabIndex = 3;
             this.tabPageChars4.Text = "Abilities";
             // 
@@ -13358,9 +13358,9 @@
             this.tabPageChars5.Controls.Add(this.groupBox1);
             this.tabPageChars5.Controls.Add(this.groupBoxCharsJunStats);
             this.tabPageChars5.Controls.Add(this.groupBox2);
-            this.tabPageChars5.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars5.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars5.Name = "tabPageChars5";
-            this.tabPageChars5.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars5.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars5.TabIndex = 4;
             this.tabPageChars5.Text = "Junction";
             // 
@@ -14924,9 +14924,9 @@
             this.tabPageChars6.Controls.Add(this.panelLbRinoa);
             this.tabPageChars6.Controls.Add(this.panelLbSquall);
             this.tabPageChars6.Controls.Add(this.panelLbIrvine);
-            this.tabPageChars6.Location = new System.Drawing.Point(4, 24);
+            this.tabPageChars6.Location = new System.Drawing.Point(4, 22);
             this.tabPageChars6.Name = "tabPageChars6";
-            this.tabPageChars6.Size = new System.Drawing.Size(635, 723);
+            this.tabPageChars6.Size = new System.Drawing.Size(635, 725);
             this.tabPageChars6.TabIndex = 5;
             this.tabPageChars6.Text = "Limit Break";
             // 
@@ -17527,6 +17527,17 @@
             this.label80.TabIndex = 0;
             this.label80.Text = "To do...";
             // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label90.Location = new System.Drawing.Point(12, 30);
+            this.label90.Margin = new System.Windows.Forms.Padding(8);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(45, 13);
+            this.label90.TabIndex = 20;
+            this.label90.Text = "Menus:";
+            // 
             // listViewExCharactersList
             // 
             this.listViewExCharactersList.AutoArrange = false;
@@ -17696,17 +17707,6 @@
             this.hexUpDownB1.Name = "hexUpDownB1";
             this.hexUpDownB1.Size = new System.Drawing.Size(108, 23);
             this.hexUpDownB1.TabIndex = 23;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.label90.Location = new System.Drawing.Point(12, 30);
-            this.label90.Margin = new System.Windows.Forms.Padding(8);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(45, 13);
-            this.label90.TabIndex = 20;
-            this.label90.Text = "Menus:";
             // 
             // Form1
             // 
