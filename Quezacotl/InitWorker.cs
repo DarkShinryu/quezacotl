@@ -929,9 +929,6 @@ namespace Quezacotl
             }
         }
 
-
-
-
         #endregion
 
         #region Write Characters Variables
@@ -1416,13 +1413,13 @@ namespace Quezacotl
             switch (index)
             {
                 case 0:
-                    Init[OffsetToMiscSelected] = (byte)(Init[OffsetToMiscSelected] ^ Convert.ToByte(variable)); //party member 1
+                    Init[OffsetToMiscSelected] = Convert.ToByte(variable); //party member 1
                     return;
                 case 1:
-                    Init[OffsetToMiscSelected + 1] = (byte)(Init[OffsetToMiscSelected + 1] ^ Convert.ToByte(variable)); //party member 2
+                    Init[OffsetToMiscSelected + 1] = Convert.ToByte(variable); //party member 2
                     return;
                 case 2:
-                    Init[OffsetToMiscSelected + 2] = (byte)(Init[OffsetToMiscSelected + 2] ^ Convert.ToByte(variable)); //party member 3
+                    Init[OffsetToMiscSelected + 2] = Convert.ToByte(variable); //party member 3
                     return;
                 case 3:
                     Init[OffsetToMiscSelected + 3] = (byte)(Init[OffsetToMiscSelected + 4] ^ Convert.ToByte(variable)); //known weapons 1

@@ -325,4 +325,88 @@
   <data name="List_Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\List_Items.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="weapon00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weapon27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

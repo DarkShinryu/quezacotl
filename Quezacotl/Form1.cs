@@ -19,6 +19,7 @@ namespace Quezacotl
         private const byte _bp_checked = 0x01;
         private const byte _bp_string = 0x02;
         private const byte _bp_hex = 0x03;
+        private const byte _bp_hex2 = 0x04;
 
         [DllImport("uxtheme.dll", CharSet = CharSet.Unicode, ExactSpelling = true)] //used in Listview selection style method
         internal static extern int SetWindowTheme(IntPtr hWnd, string appName, string partList);
@@ -1054,158 +1055,42 @@ namespace Quezacotl
             #endregion
 
             #region Config event handlers
-
-            numericUpDownCharsCurrentHp.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(0, numericUpDownCharsCurrentHp.Value);
-            numericUpDownCharsHpBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(1, numericUpDownCharsHpBonus.Value);
-            numericUpDownCharsExp.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(2, numericUpDownCharsExp.Value);
-            comboBoxCharsBody.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(3, comboBoxCharsBody.SelectedIndex);
-            comboBoxCharsWeapon.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(4, comboBoxCharsWeapon.SelectedIndex);
-            numericUpDownCharsStrBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(5, numericUpDownCharsStrBonus.Value);
-            numericUpDownCharsVitBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(6, numericUpDownCharsVitBonus.Value);
-            numericUpDownCharsMagBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(7, numericUpDownCharsMagBonus.Value);
-            numericUpDownCharsSprBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(8, numericUpDownCharsSprBonus.Value);
-            numericUpDownCharsSpdBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(9, numericUpDownCharsSpdBonus.Value);
-            numericUpDownCharsLuckBonus.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(10, numericUpDownCharsLuckBonus.Value);
-            comboBoxCharsMagic1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(11, comboBoxCharsMagic1.SelectedIndex);
-            numericUpDownCharsMagicQ1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(12, numericUpDownCharsMagicQ1.Value);
-            comboBoxCharsMagic2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(13, comboBoxCharsMagic2.SelectedIndex);
-            numericUpDownCharsMagicQ2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(14, numericUpDownCharsMagicQ2.Value);
-            comboBoxCharsMagic3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(15, comboBoxCharsMagic3.SelectedIndex);
-            numericUpDownCharsMagicQ3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(16, numericUpDownCharsMagicQ3.Value);
-            comboBoxCharsMagic4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(17, comboBoxCharsMagic4.SelectedIndex);
-            numericUpDownCharsMagicQ4.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(18, numericUpDownCharsMagicQ4.Value);
-            comboBoxCharsMagic5.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(19, comboBoxCharsMagic5.SelectedIndex);
-            numericUpDownCharsMagicQ5.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(20, numericUpDownCharsMagicQ5.Value);
-            comboBoxCharsMagic6.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(21, comboBoxCharsMagic6.SelectedIndex);
-            numericUpDownCharsMagicQ6.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(22, numericUpDownCharsMagicQ6.Value);
-            comboBoxCharsMagic7.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(23, comboBoxCharsMagic7.SelectedIndex);
-            numericUpDownCharsMagicQ7.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(24, numericUpDownCharsMagicQ7.Value);
-            comboBoxCharsMagic8.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(25, comboBoxCharsMagic8.SelectedIndex);
-            numericUpDownCharsMagicQ8.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(26, numericUpDownCharsMagicQ8.Value);
-            comboBoxCharsMagic9.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(27, comboBoxCharsMagic9.SelectedIndex);
-            numericUpDownCharsMagicQ9.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(28, numericUpDownCharsMagicQ9.Value);
-            comboBoxCharsMagic10.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(29, comboBoxCharsMagic10.SelectedIndex);
-            numericUpDownCharsMagicQ10.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(30, numericUpDownCharsMagicQ10.Value);
-            comboBoxCharsMagic11.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(31, comboBoxCharsMagic11.SelectedIndex);
-            numericUpDownCharsMagicQ11.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(32, numericUpDownCharsMagicQ11.Value);
-            comboBoxCharsMagic12.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(33, comboBoxCharsMagic12.SelectedIndex);
-            numericUpDownCharsMagicQ12.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(34, numericUpDownCharsMagicQ12.Value);
-            comboBoxCharsMagic13.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(35, comboBoxCharsMagic13.SelectedIndex);
-            numericUpDownCharsMagicQ13.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(36, numericUpDownCharsMagicQ13.Value);
-            comboBoxCharsMagic14.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(37, comboBoxCharsMagic14.SelectedIndex);
-            numericUpDownCharsMagicQ14.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(38, numericUpDownCharsMagicQ14.Value);
-            comboBoxCharsMagic15.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(39, comboBoxCharsMagic15.SelectedIndex);
-            numericUpDownCharsMagicQ15.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(40, numericUpDownCharsMagicQ15.Value);
-            comboBoxCharsMagic16.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(41, comboBoxCharsMagic16.SelectedIndex);
-            numericUpDownCharsMagicQ16.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(42, numericUpDownCharsMagicQ16.Value);
-            comboBoxCharsMagic17.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(43, comboBoxCharsMagic17.SelectedIndex);
-            numericUpDownCharsMagicQ17.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(44, numericUpDownCharsMagicQ17.Value);
-            comboBoxCharsMagic18.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(45, comboBoxCharsMagic18.SelectedIndex);
-            numericUpDownCharsMagicQ18.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(46, numericUpDownCharsMagicQ18.Value);
-            comboBoxCharsMagic19.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(47, comboBoxCharsMagic19.SelectedIndex);
-            numericUpDownCharsMagicQ19.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(48, numericUpDownCharsMagicQ19.Value);
-            comboBoxCharsMagic20.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(49, comboBoxCharsMagic20.SelectedIndex);
-            numericUpDownCharsMagicQ20.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(50, numericUpDownCharsMagicQ20.Value);
-            comboBoxCharsMagic21.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(51, comboBoxCharsMagic21.SelectedIndex);
-            numericUpDownCharsMagicQ21.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(52, numericUpDownCharsMagicQ21.Value);
-            comboBoxCharsMagic22.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(53, comboBoxCharsMagic22.SelectedIndex);
-            numericUpDownCharsMagicQ22.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(54, numericUpDownCharsMagicQ22.Value);
-            comboBoxCharsMagic23.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(55, comboBoxCharsMagic23.SelectedIndex);
-            numericUpDownCharsMagicQ23.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(56, numericUpDownCharsMagicQ23.Value);
-            comboBoxCharsMagic24.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(57, comboBoxCharsMagic24.SelectedIndex);
-            numericUpDownCharsMagicQ24.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(58, numericUpDownCharsMagicQ24.Value);
-            comboBoxCharsMagic25.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(59, comboBoxCharsMagic25.SelectedIndex);
-            numericUpDownCharsMagicQ25.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(60, numericUpDownCharsMagicQ25.Value);
-            comboBoxCharsMagic26.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(61, comboBoxCharsMagic26.SelectedIndex);
-            numericUpDownCharsMagicQ26.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(62, numericUpDownCharsMagicQ26.Value);
-            comboBoxCharsMagic27.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(63, comboBoxCharsMagic27.SelectedIndex);
-            numericUpDownCharsMagicQ27.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(64, numericUpDownCharsMagicQ27.Value);
-            comboBoxCharsMagic28.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(65, comboBoxCharsMagic28.SelectedIndex);
-            numericUpDownCharsMagicQ28.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(66, numericUpDownCharsMagicQ28.Value);
-            comboBoxCharsMagic29.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(67, comboBoxCharsMagic29.SelectedIndex);
-            numericUpDownCharsMagicQ29.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(68, numericUpDownCharsMagicQ29.Value);
-            comboBoxCharsMagic30.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(69, comboBoxCharsMagic30.SelectedIndex);
-            numericUpDownCharsMagicQ30.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(70, numericUpDownCharsMagicQ30.Value);
-            comboBoxCharsMagic31.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(71, comboBoxCharsMagic31.SelectedIndex);
-            numericUpDownCharsMagicQ31.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(72, numericUpDownCharsMagicQ31.Value);
-            comboBoxCharsMagic32.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(73, comboBoxCharsMagic32.SelectedIndex);
-            numericUpDownCharsMagicQ32.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(74, numericUpDownCharsMagicQ32.Value);
-            comboBoxCharsComm1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(75, comboBoxCharsComm1.SelectedIndex);
-            comboBoxCharsComm2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(76, comboBoxCharsComm2.SelectedIndex);
-            comboBoxCharsComm3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(77, comboBoxCharsComm3.SelectedIndex);
-            hexUpDownCharUnk1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(78, hexUpDownCharUnk1.Value);
-            comboBoxCharsAb1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(79, comboBoxCharsAb1.SelectedIndex);
-            comboBoxCharsAb2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(80, comboBoxCharsAb2.SelectedIndex);
-            comboBoxCharsAb3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(81, comboBoxCharsAb3.SelectedIndex);
-            comboBoxCharsAb4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(82, comboBoxCharsAb4.SelectedIndex);
-            checkBoxCharsGf1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x01);
-            checkBoxCharsGf2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x02);
-            checkBoxCharsGf3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x04);
-            checkBoxCharsGf4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x08);
-            checkBoxCharsGf5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x10);
-            checkBoxCharsGf6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x20);
-            checkBoxCharsGf7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x40);
-            checkBoxCharsGf8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(83, 0x80);
-            checkBoxCharsGf9.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x01);
-            checkBoxCharsGf10.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x02);
-            checkBoxCharsGf11.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x04);
-            checkBoxCharsGf12.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x08);
-            checkBoxCharsGf13.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x10);
-            checkBoxCharsGf14.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x20);
-            checkBoxCharsGf15.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x40);
-            checkBoxCharsGf16.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(84, 0x80);
-            hexUpDownCharUnk2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(85, hexUpDownCharUnk2.Value);
-            checkBoxCharsAltMod.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(86, 0x01);
-            comboBoxCharsJunHp.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(87, comboBoxCharsJunHp.SelectedIndex);
-            comboBoxCharsJunStr.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(88, comboBoxCharsJunStr.SelectedIndex);
-            comboBoxCharsJunVit.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(89, comboBoxCharsJunVit.SelectedIndex);
-            comboBoxCharsJunMag.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(90, comboBoxCharsJunMag.SelectedIndex);
-            comboBoxCharsJunSpr.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(91, comboBoxCharsJunSpr.SelectedIndex);
-            comboBoxCharsJunSpd.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(92, comboBoxCharsJunSpd.SelectedIndex);
-            comboBoxCharsJunEva.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(93, comboBoxCharsJunEva.SelectedIndex);
-            comboBoxCharsJunHit.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(94, comboBoxCharsJunHit.SelectedIndex);
-            comboBoxCharsJunLuck.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(95, comboBoxCharsJunLuck.SelectedIndex);
-            comboBoxCharsElemAtk.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(96, comboBoxCharsElemAtk.SelectedIndex);
-            comboBoxCharsStatusAtk.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(97, comboBoxCharsStatusAtk.SelectedIndex);
-            comboBoxCharsElemDef1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(98, comboBoxCharsElemDef1.SelectedIndex);
-            comboBoxCharsElemDef2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(99, comboBoxCharsElemDef2.SelectedIndex);
-            comboBoxCharsElemDef3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(100, comboBoxCharsElemDef3.SelectedIndex);
-            comboBoxCharsElemDef4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(101, comboBoxCharsElemDef4.SelectedIndex);
-            comboBoxCharsStatusDef1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(102, comboBoxCharsStatusDef1.SelectedIndex);
-            comboBoxCharsStatusDef2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(103, comboBoxCharsStatusDef2.SelectedIndex);
-            comboBoxCharsStatusDef3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(104, comboBoxCharsStatusDef3.SelectedIndex);
-            comboBoxCharsStatusDef4.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Characters(105, comboBoxCharsStatusDef4.SelectedIndex);
-            hexUpDownCharUnk3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(106, hexUpDownCharUnk3.Value);
-            numericUpDownGfComp1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(107, numericUpDownGfComp1.Value);
-            numericUpDownGfComp2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(108, numericUpDownGfComp2.Value);
-            numericUpDownGfComp3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(109, numericUpDownGfComp3.Value);
-            numericUpDownGfComp4.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(110, numericUpDownGfComp4.Value);
-            numericUpDownGfComp5.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(111, numericUpDownGfComp5.Value);
-            numericUpDownGfComp6.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(112, numericUpDownGfComp6.Value);
-            numericUpDownGfComp7.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(113, numericUpDownGfComp7.Value);
-            numericUpDownGfComp8.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(114, numericUpDownGfComp8.Value);
-            numericUpDownGfComp9.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(115, numericUpDownGfComp9.Value);
-            numericUpDownGfComp10.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(116, numericUpDownGfComp10.Value);
-            numericUpDownGfComp11.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(117, numericUpDownGfComp11.Value);
-            numericUpDownGfComp12.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(118, numericUpDownGfComp12.Value);
-            numericUpDownGfComp13.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(119, numericUpDownGfComp13.Value);
-            numericUpDownGfComp14.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(120, numericUpDownGfComp14.Value);
-            numericUpDownGfComp15.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(121, numericUpDownGfComp15.Value);
-            numericUpDownGfComp16.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(122, numericUpDownGfComp16.Value);
-            numericUpDownCharsKills.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(123, numericUpDownCharsKills.Value);
-            numericUpDownCharsKOs.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(124, numericUpDownCharsKOs.Value);
-            checkBoxCharsAvailable.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(125, 0x01);
-            hexUpDownCharUnk4.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(126, hexUpDownCharUnk4.Value);
-            checkBoxCharStatus1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x01);
-            checkBoxCharStatus2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x02);
-            checkBoxCharStatus3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x04);
-            checkBoxCharStatus4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x08);
-            checkBoxCharStatus5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x10);
-            checkBoxCharStatus6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x20);
-            checkBoxCharStatus7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x40);
-            checkBoxCharStatus8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Characters(127, 0x80);
-            hexUpDownCharUnk5.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Characters(128, hexUpDownCharUnk5.Value);
-
+            /*
+            trackBarBattleSpeed.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(0, trackBarBattleSpeed.Value);
+            trackBarBattleMessage.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(1, trackBarBattleMessage.Value);
+            trackBarFieldMessage.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(2, trackBarFieldMessage.Value);
+            trackBarVolume.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(3, trackBarVolume.Value);
+            radioButtonStereo.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x00);
+            radioButtonMono.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x002);
+            radioButtonInitial.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x00);
+            radioButtonMemory.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x04);
+            radioButtonActive.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x00);
+            radioButtonWait.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x01);
+            radioButtonTargetYes.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x10);
+            radioButtonTargetNo.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x00);
+            radioButtonVibOn.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x40);
+            radioButtonVibOff.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x00);
+            checkBoxCustomKeys.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x20);
+            checkBoxConfigUnk.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x08);
+            buttonConfigInvert.Click += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x80);
+            buttonConfigDefault.Click += (sender, args) => InitWorker.UpdateVariable_Config(4, 0x00);
+            radioButtonOnce.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(5, 0x00);
+            radioButtonAlways.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Config(5, 0x01);
+            trackBarCamera.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(6, trackBarCamera.Value);
+            numericUpDownKeyUnk1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(7, numericUpDownKeyUnk1.Value);
+            numericUpDownKeyEscape.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(8, numericUpDownKeyEscape.Value);
+            numericUpDownKeyPov.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(9, numericUpDownKeyPov.Value);
+            numericUpDownKeyWindow.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(10, numericUpDownKeyWindow.Value);
+            numericUpDownKeyTrigger.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(11, numericUpDownKeyTrigger.Value);
+            numericUpDownKeyCancel.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(12, numericUpDownKeyCancel.Value);
+            numericUpDownKeyMenu.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(13, numericUpDownKeyMenu.Value);
+            numericUpDownKeyTalk.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(14, numericUpDownKeyTalk.Value);
+            numericUpDownKeyTripleTriad.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(15, numericUpDownKeyTripleTriad.Value);
+            numericUpDownKeySelect.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(16, numericUpDownKeySelect.Value);
+            numericUpDownKeyUnk2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(17, numericUpDownKeyUnk2.Value);
+            numericUpDownKeyUnk3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(18, numericUpDownKeyUnk3.Value);
+            numericUpDownKeyStart.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Config(19, numericUpDownKeyStart.Value);
+            */
             #endregion
 
             #region Items event handlers
@@ -1609,6 +1494,113 @@ namespace Quezacotl
             numericUpDownItemQ198.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Items(395, numericUpDownItemQ198.Value);
 
             #endregion
+
+            #region Misc event handlers
+
+            comboBoxParty1.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Misc(0, comboBoxParty1.SelectedIndex);
+            comboBoxParty2.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Misc(1, comboBoxParty2.SelectedIndex);
+            comboBoxParty3.SelectedIndexChanged += (sender, args) => InitWorker.UpdateVariable_Misc(2, comboBoxParty3.SelectedIndex);
+            checkBoxWeapon1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x01);
+            checkBoxWeapon2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x02);
+            checkBoxWeapon3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x04);
+            checkBoxWeapon4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x08);
+            checkBoxWeapon5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x10);
+            checkBoxWeapon6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x20);
+            checkBoxWeapon7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x40);
+            checkBoxWeapon8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(3, 0x80);
+            checkBoxWeapon9.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x01);
+            checkBoxWeapon10.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x02);
+            checkBoxWeapon11.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x04);
+            checkBoxWeapon12.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x08);
+            checkBoxWeapon13.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x10);
+            checkBoxWeapon14.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x20);
+            checkBoxWeapon15.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x40);
+            checkBoxWeapon16.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(4, 0x80);
+            checkBoxWeapon17.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x01);
+            checkBoxWeapon18.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x02);
+            checkBoxWeapon19.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x04);
+            checkBoxWeapon20.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x08);
+            checkBoxWeapon21.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x10);
+            checkBoxWeapon22.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x20);
+            checkBoxWeapon23.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x40);
+            checkBoxWeapon24.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(5, 0x80);
+            checkBoxWeapon25.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x01);
+            checkBoxWeapon26.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x02);
+            checkBoxWeapon27.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x04);
+            checkBoxWeapon28.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x08);
+            checkBoxWeapon29.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x10);
+            checkBoxWeapon30.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x20);
+            checkBoxWeapon31.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x40);
+            checkBoxWeapon32.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(6, 0x80);
+            hexUpDownB1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(8, hexUpDownB1.Value);
+            hexUpDownB2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(9, hexUpDownB1.Value);
+            numericUpDownGil.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(10, numericUpDownGil.Value);
+            numericUpDownGilLaguna.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(11, numericUpDownGilLaguna.Value);
+            checkBoxBlueMagic1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x01);
+            checkBoxBlueMagic2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x02);
+            checkBoxBlueMagic3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x04);
+            checkBoxBlueMagic4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x08);
+            checkBoxBlueMagic5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x10);
+            checkBoxBlueMagic6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x20);
+            checkBoxBlueMagic7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x40);
+            checkBoxBlueMagic8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(12, 0x80);
+            checkBoxBlueMagic9.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x01);
+            checkBoxBlueMagic10.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x02);
+            checkBoxBlueMagic11.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x04);
+            checkBoxBlueMagic12.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x08);
+            checkBoxBlueMagic13.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x10);
+            checkBoxBlueMagic14.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x20);
+            checkBoxBlueMagic15.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x40);
+            checkBoxBlueMagic16.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(13, 0x80);
+            checkBoxDuelMove1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x01);
+            checkBoxDuelMove2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x02);
+            checkBoxDuelMove3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x04);
+            checkBoxDuelMove4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x08);
+            checkBoxDuelMove5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x10);
+            checkBoxDuelMove6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x20);
+            checkBoxDuelMove7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x40);
+            checkBoxDuelMove8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(14, 0x80);
+            checkBoxDuelMove9.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(15, 0x01);
+            checkBoxDuelMove10.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(15, 0x02);
+            checkBoxShot1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x01);
+            checkBoxShot2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x02);
+            checkBoxShot3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x04);
+            checkBoxShot4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x08);
+            checkBoxShot5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x10);
+            checkBoxShot6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x20);
+            checkBoxShot7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x40);
+            checkBoxShot8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(16, 0x80);
+            checkBoxSlot1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(17, 0x01);
+            checkBoxSlot2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(17, 0x02);
+            checkBoxSlot3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(17, 0x04);
+            checkBoxSlot4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(17, 0x08);
+            checkBoxAngeloCom1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x01);
+            checkBoxAngeloCom2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x02);
+            checkBoxAngeloCom3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x04);
+            checkBoxAngeloCom4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x08);
+            checkBoxAngeloCom5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x10);
+            checkBoxAngeloCom6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x20);
+            checkBoxAngeloCom7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x40);
+            checkBoxAngeloCom8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(18, 0x80);
+            checkBoxAngeloKn1.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x01);
+            checkBoxAngeloKn2.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x02);
+            checkBoxAngeloKn3.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x04);
+            checkBoxAngeloKn4.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x08);
+            checkBoxAngeloKn5.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x10);
+            checkBoxAngeloKn6.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x20);
+            checkBoxAngeloKn7.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x40);
+            checkBoxAngeloKn8.CheckedChanged += (sender, args) => InitWorker.UpdateVariable_Misc(19, 0x80);
+            numericUpDownAngelo1.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(20, numericUpDownAngelo1.Value);
+            numericUpDownAngelo2.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(21, numericUpDownAngelo2.Value);
+            numericUpDownAngelo3.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(22, numericUpDownAngelo3.Value);
+            numericUpDownAngelo4.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(23, numericUpDownAngelo4.Value);
+            numericUpDownAngelo5.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(24, numericUpDownAngelo5.Value);
+            numericUpDownAngelo6.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(25, numericUpDownAngelo6.Value);
+            numericUpDownAngelo7.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(26, numericUpDownAngelo7.Value);
+            numericUpDownAngelo8.ValueChanged += (sender, args) => InitWorker.UpdateVariable_Misc(27, numericUpDownAngelo8.Value);
+            #endregion
+
+            FormClosing += new FormClosingEventHandler(Form1_FormClosing);
         }
 
         #region Listviews selection style
@@ -1758,81 +1750,97 @@ namespace Quezacotl
 
         #endregion
 
-        #region Open, Save, About
+        #region Open, Save, Close, About
 
         private async void buttonOpen_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Title = "Open FF8 init.out";
-            openFileDialog.Filter = "FF8 Init File|*.out";
-            openFileDialog.FileName = "init.out";
+            var emptyBytesAppended = 1;
 
-            if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+            while (emptyBytesAppended < 2)
             {
-                try
-                {
-                    using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.ReadWrite))
-                    {
-                        using (var BR = new BinaryReader(fileStream))
-                        {
-                            InitWorker.ReadInit(BR.ReadBytes((int)fileStream.Length));
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Title = "Open FF8 init.out";
+                openFileDialog.Filter = "FF8 Init File|*.out";
+                openFileDialog.FileName = "init.out";
 
-                            if (fileStream.Length <= 2812)
+                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+                {
+                    try
+                    {
+                        using (var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.ReadWrite))
+                        {
+                            using (var BR = new BinaryReader(fileStream))
                             {
-                                var emptyBytes = new byte[388];
-                                fileStream.Seek(0, SeekOrigin.End);
-                                fileStream.Write(emptyBytes, 0, emptyBytes.Length);
+                                InitWorker.ReadInit(BR.ReadBytes((int)fileStream.Length));
+                                emptyBytesAppended++;
+
+                                if (fileStream.Length <= 2812)
+                                {
+                                    var emptyBytes = new byte[388];
+                                    fileStream.Seek(0, SeekOrigin.End);
+                                    fileStream.Write(emptyBytes, 0, emptyBytes.Length);
+
+                                    DialogResult dialogResult = MessageBox.Show("I've appended 388 empty bytes to the end of " + Path.GetFileName(openFileDialog.FileName) +
+                                        " to allow the editing of all 196 item slots (vanilla init.out only has 4 item slots).\n\n\bPlease open the same file again.\b",
+                                        "Empty bytes appended",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+
+                                    emptyBytesAppended--;
+                                }
                             }
                         }
-                        CreateTooltipsFile();
-                        InitItems();
+                        _existingFilename = openFileDialog.FileName;
                     }
-                    _existingFilename = openFileDialog.FileName;
+                    catch (Exception)
+                    {
+                        MessageBox.Show
+                            (String.Format("I cannot open the file {0}, maybe it's locked by another software?", Path.GetFileName(openFileDialog.FileName)), "Error Opening File",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+
+                        _opensaveException = true;
+                    }
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show
-                        (String.Format("I cannot open the file {0}, maybe it's locked by another software?", Path.GetFileName(openFileDialog.FileName)), "Error Opening File",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-
-                    _opensaveException = true;
-                }
-
-                if (!_opensaveException)
-                {
-                    labelCharsLevelValue.Enabled = true;
-                    panelCharsLevel.Enabled = true;
-                    numericUpDownCharsExpLvUp.Enabled = true;                    
-                    labelGfLevelValue.Enabled = true;
-                    panelGfLevel.Enabled = true;
-                    numericUpDownGfExpLvUp.Enabled = true;                    
-                    buttonSave.Enabled = true;
-                    buttonSaveAs.Enabled = true;
-
-                    numericUpDownCharsExpLvUp.Value = 1000;
-                    numericUpDownGfExpLvUp.Value = 1000;
-
-                    toolTip1.SetToolTip(numericUpDownCharsExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
-                        "This is here only to help you calculate the current level, it does nothing to init.out.");
-                    toolTip1.SetToolTip(numericUpDownGfExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
-                        "This is here only to help you calculate the current level, it does nothing to init.out.");
-
-                    listViewExCharactersList.Items[0].Selected = true;
-                    listViewExGfList.Items[0].Selected = true;
-
-                    CheckIfAllGfsAreChecked();
-
-                    toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
-                    toolStripStatusLabelInit.Text = Path.GetFileName(_existingFilename) + " loaded";
-                    statusStrip1.BackColor = Color.FromArgb(255, 25, 170, 30);
-                    toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
-                    await Task.Delay(3000);
-                    statusStrip1.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.BackColor = Color.Gray;
-                    toolStripStatusLabelStatus.Text = "Ready";
-                }
-                _opensaveException = false;
             }
+
+            if (!_opensaveException)
+            {
+                CreateTooltipsFile();
+                InitMisc();
+                //InitConfig();
+                InitItems();
+
+                labelCharsLevelValue.Enabled = true;
+                panelCharsLevel.Enabled = true;
+                numericUpDownCharsExpLvUp.Enabled = true;
+                labelGfLevelValue.Enabled = true;
+                panelGfLevel.Enabled = true;
+                numericUpDownGfExpLvUp.Enabled = true;
+                buttonSave.Enabled = true;
+                buttonSaveAs.Enabled = true;
+
+                numericUpDownCharsExpLvUp.Value = 1000;
+                numericUpDownGfExpLvUp.Value = 1000;
+
+                toolTip1.SetToolTip(numericUpDownCharsExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
+                    "This is here only to help you calculate the current level, it does nothing to init.out.");
+                toolTip1.SetToolTip(numericUpDownGfExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
+                    "This is here only to help you calculate the current level, it does nothing to init.out.");
+
+                listViewExCharactersList.Items[0].Selected = true;
+                listViewExGfList.Items[0].Selected = true;
+
+                CheckIfAllGfsAreChecked();
+
+                toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
+                toolStripStatusLabelInit.Text = Path.GetFileName(_existingFilename) + " loaded";
+                statusStrip1.BackColor = Color.FromArgb(255, 25, 170, 30);
+                toolStripStatusLabelStatus.BackColor = Color.FromArgb(255, 25, 170, 30);
+                await Task.Delay(3000);
+                statusStrip1.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.BackColor = Color.Gray;
+                toolStripStatusLabelStatus.Text = "Ready";
+            }
+            _opensaveException = false;
         }
 
         private async void buttonSave_Click(object sender, EventArgs e)
@@ -1870,7 +1878,7 @@ namespace Quezacotl
         private async void buttonSaveAs_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveAsDialog = new SaveFileDialog();
-            saveAsDialog.Title = "Open FF8 init.out";
+            saveAsDialog.Title = "Save FF8 init.out";
             saveAsDialog.Filter = "FF8 Init File|*.out";
             saveAsDialog.FileName = Path.GetFileName(_existingFilename);
 
@@ -1901,6 +1909,29 @@ namespace Quezacotl
                     toolStripStatusLabelStatus.Text = "Ready";
                 }
                 _opensaveException = false;
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!(string.IsNullOrEmpty(_existingFilename)) && InitWorker.Init != null)
+            {
+                DialogResult dialogResult = MessageBox.Show("Save changes to " + Path.GetFileName(_existingFilename) + " before closing?", "Close",
+                    MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    SaveFileDialog saveAsDialog = new SaveFileDialog();
+                    saveAsDialog.Title = "Save FF8 init.out";
+                    saveAsDialog.Filter = "FF8 Init File|*.out";
+                    saveAsDialog.FileName = Path.GetFileName(_existingFilename);
+
+                    if (saveAsDialog.ShowDialog() != DialogResult.OK) return;
+                    File.WriteAllBytes(saveAsDialog.FileName, InitWorker.Init);
+                }
+
+                else if (dialogResult == DialogResult.Cancel)
+                    e.Cancel = true;
             }
         }
 
@@ -2072,6 +2103,11 @@ namespace Quezacotl
                         toolTip1.SetToolTip(control, $"Default: 0x{Convert.ToSByte(value).ToString("X2")}");
                         break;
                     }
+                case _bp_hex2:
+                    {
+                        toolTip1.SetToolTip(control, $"Default: 0x{Convert.ToUInt16(value).ToString("X4")}");
+                        break;
+                    }
                 default:
                     goto case _bp_numerical;
             }
@@ -2223,35 +2259,43 @@ namespace Quezacotl
             {
                 panelCharacters.Visible = true;
                 panelGf.Visible = false;
+                panelBattleItems.Visible = false;
                 panelItems.Visible = false;
                 panelMisc.Visible = false;
+                panelConfig.Visible = false;
             }
-            else if (listBoxMain.SelectedIndex == 1)
+            if (listBoxMain.SelectedIndex == 1)
             {
                 panelCharacters.Visible = false;
                 panelGf.Visible = true;
+                panelBattleItems.Visible = false;
                 panelItems.Visible = false;
                 panelMisc.Visible = false;
+                panelConfig.Visible = false;
             }
-            else if (listBoxMain.SelectedIndex == 2)
+            if (listBoxMain.SelectedIndex == 2)
             {
                 panelCharacters.Visible = false;
                 panelGf.Visible = false;
+                panelBattleItems.Visible = false;
                 panelItems.Visible = true;
                 panelMisc.Visible = false;
+                panelConfig.Visible = false;
             }
-            else if (listBoxMain.SelectedIndex == 3)
+            if (listBoxMain.SelectedIndex == 3)
             {
                 panelCharacters.Visible = false;
                 panelGf.Visible = false;
+                panelBattleItems.Visible = false;
                 panelItems.Visible = false;
                 panelMisc.Visible = true;
+                panelConfig.Visible = false;
             }
         }
 
         #endregion
 
-        #region Loader loops + give focus after load
+        #region Loader loops
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -2266,12 +2310,8 @@ namespace Quezacotl
             for (int i = 0; i < tabControlGf.TabPages.Count; i++)
                 tabControlGf.SelectedIndex = i;
             tabControlGf.SelectedIndex = 0;
-        }
 
-        private void Form1_Shown(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            this.Focus();
+            listBoxMain.SelectedIndex = 0;
         }
 
         #endregion
@@ -2281,13 +2321,86 @@ namespace Quezacotl
 
         private void listViewExCharactersList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listViewExCharactersList.Items[0].Selected || listViewExCharactersList.Items[6].Selected || listViewExCharactersList.Items[7].Selected)
+            if (listViewExCharactersList.Items[0].Selected)
             {
-                tabPageChars6.Enabled = false;
-                tabPageChars6.Visible = false;
+                labelLimitNotAv.Visible = true;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = false;
+                panelLbIrvine.Visible = false;
+                panelLbQuistis.Visible = false;
+                panelLbRinoa.Visible = false;
+                panelLbSelphie.Visible = false;
             }
-            else
-                tabPageChars6.Enabled = true;
+            else if (listViewExCharactersList.Items[1].Selected)
+            {
+                labelLimitNotAv.Visible = false;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = true;
+                panelLbIrvine.Visible = false;
+                panelLbQuistis.Visible = false;
+                panelLbRinoa.Visible = false;
+                panelLbSelphie.Visible = false;
+            }
+            else if (listViewExCharactersList.Items[2].Selected)
+            {
+                labelLimitNotAv.Visible = false;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = false;
+                panelLbIrvine.Visible = true;
+                panelLbQuistis.Visible = false;
+                panelLbRinoa.Visible = false;
+                panelLbSelphie.Visible = false;
+            }
+            else if (listViewExCharactersList.Items[3].Selected)
+            {
+                labelLimitNotAv.Visible = false;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = false;
+                panelLbIrvine.Visible = false;
+                panelLbQuistis.Visible = true;
+                panelLbRinoa.Visible = false;
+                panelLbSelphie.Visible = false;
+            }
+            else if (listViewExCharactersList.Items[4].Selected)
+            {
+                labelLimitNotAv.Visible = false;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = false;
+                panelLbIrvine.Visible = false;
+                panelLbQuistis.Visible = false;
+                panelLbRinoa.Visible = true;
+                panelLbSelphie.Visible = false;
+            }
+            else if (listViewExCharactersList.Items[5].Selected)
+            {
+                labelLimitNotAv.Visible = false;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = false;
+                panelLbIrvine.Visible = false;
+                panelLbQuistis.Visible = false;
+                panelLbRinoa.Visible = false;
+                panelLbSelphie.Visible = true;
+            }
+            else if (listViewExCharactersList.Items[6].Selected)
+            {
+                labelLimitNotAv.Visible = true;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = false;
+                panelLbIrvine.Visible = false;
+                panelLbQuistis.Visible = false;
+                panelLbRinoa.Visible = false;
+                panelLbSelphie.Visible = false;
+            }
+            else if (listViewExCharactersList.Items[7].Selected)
+            {
+                labelLimitNotAv.Visible = true;
+                panelLbSquall.Visible = false;
+                panelLbZell.Visible = false;
+                panelLbIrvine.Visible = false;
+                panelLbQuistis.Visible = false;
+                panelLbRinoa.Visible = false;
+                panelLbSelphie.Visible = false;
+            }
 
             _loaded = false;
             if (InitWorker.Init == null || InitWorker.BackupInit == null)
@@ -2632,7 +2745,7 @@ namespace Quezacotl
             try
             {
                 ToolTip(numericUpDownGfExp, 0, InitWorker.GetSelectedGfData.Exp);
-                ToolTip(hexUpDownGfUnknown, 0, InitWorker.GetSelectedGfData.Unknown1);
+                ToolTip(hexUpDownGfUnknown, 3, InitWorker.GetSelectedGfData.Unknown1);
                 ToolTip(checkBoxGfAvailable, 1, (InitWorker.GetSelectedGfData.Available & 0x01) >= 1 ? true : false);
                 ToolTip(numericUpDownGfHp, 0, InitWorker.GetSelectedGfData.CurrentHp);
                 ToolTip(checkBoxGfAb001, 1, (InitWorker.GetSelectedGfData.LearnedAbility1 & 0x01) >= 1 ? true : false);
@@ -2939,6 +3052,274 @@ namespace Quezacotl
                 numericUpDownGfKills.Value = InitWorker.GetSelectedGfData.Kills;
                 numericUpDownGfKOs.Value = InitWorker.GetSelectedGfData.KOs;
                 comboBoxGfLearningAbility.SelectedIndex = InitWorker.GetSelectedGfData.LearningAbility;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+        private void InitConfig()
+        {
+            _loaded = false;
+            if (InitWorker.Init == null || InitWorker.BackupInit == null)
+                return;
+
+            InitWorker.ReadConfig(InitWorker.BackupInit);
+            try
+            {
+                ToolTip(radioButtonStereo, 1, (InitWorker.GetSelectedConfigData.Flag & 0x00) >= 1 ? true : false);
+                ToolTip(radioButtonMono, 1, (InitWorker.GetSelectedConfigData.Flag & 0x02) >= 1 ? true : false);
+                ToolTip(radioButtonInitial, 1, (InitWorker.GetSelectedConfigData.Flag & 0x00) >= 1 ? true : false);
+                ToolTip(radioButtonMemory, 1, (InitWorker.GetSelectedConfigData.Flag & 0x04) >= 1 ? true : false);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            InitWorker.ReadConfig(InitWorker.Init);
+            try
+            {
+                radioButtonStereo.Checked = (InitWorker.GetSelectedConfigData.Flag & 0x00) >= 1 ? true : false;
+                radioButtonMono.Checked = (InitWorker.GetSelectedConfigData.Flag & 0x02) >= 1 ? true : false;
+                radioButtonInitial.Checked = (InitWorker.GetSelectedConfigData.Flag & 0x00) >= 1 ? true : false;
+                radioButtonMemory.Checked = (InitWorker.GetSelectedConfigData.Flag & 0x04) >= 1 ? true : false;
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+            _loaded = true;
+        }
+
+
+        private void InitMisc()
+        {
+            _loaded = false;
+            if (InitWorker.Init == null || InitWorker.BackupInit == null)
+                return;
+
+            InitWorker.ReadMisc(InitWorker.BackupInit);
+            try
+            {
+                ToolTip(comboBoxParty1, 2, comboBoxParty1.Items[InitWorker.GetSelectedMiscData.PartyMem1]);
+                ToolTip(comboBoxParty2, 2, comboBoxParty1.Items[InitWorker.GetSelectedMiscData.PartyMem2]);
+                ToolTip(comboBoxParty3, 2, comboBoxParty1.Items[InitWorker.GetSelectedMiscData.PartyMem3]);
+                ToolTip(checkBoxWeapon1, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon2, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon3, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon4, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon5, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon6, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon7, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon8, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon9, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon10, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon11, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon12, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon13, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon14, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon15, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon16, 1, (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon17, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon18, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon19, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon20, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon21, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon22, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon23, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon24, 1, (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon25, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon26, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon27, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon28, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon29, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon30, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon31, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxWeapon32, 1, (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x80) >= 1 ? true : false);
+                ToolTip(hexUpDownB1, 4, InitWorker.GetSelectedMiscData.Unknown1);
+                ToolTip(hexUpDownB2, 4, InitWorker.GetSelectedMiscData.Unknown2);
+                ToolTip(numericUpDownGil, 0, InitWorker.GetSelectedMiscData.Gil);
+                ToolTip(numericUpDownGilLaguna, 0, InitWorker.GetSelectedMiscData.GilLaguna);
+                ToolTip(checkBoxBlueMagic1, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic2, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic3, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic4, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic5, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic6, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic7, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic8, 1, (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic9, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic10, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic11, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic12, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic13, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic14, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic15, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxBlueMagic16, 1, (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove1, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove2, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove3, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove4, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove5, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove6, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove7, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove8, 1, (InitWorker.GetSelectedMiscData.limitZell1 & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove9, 1, (InitWorker.GetSelectedMiscData.limitZell2 & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxDuelMove10, 1, (InitWorker.GetSelectedMiscData.limitZell2 & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxShot1, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxShot2, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxShot3, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxShot4, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxShot5, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxShot6, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxShot7, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxShot8, 1, (InitWorker.GetSelectedMiscData.limitIrvine & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxSlot1, 1, (InitWorker.GetSelectedMiscData.limitSelphie & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxSlot2, 1, (InitWorker.GetSelectedMiscData.limitSelphie & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxSlot3, 1, (InitWorker.GetSelectedMiscData.limitSelphie & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxSlot4, 1, (InitWorker.GetSelectedMiscData.limitSelphie & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxSlot5, 1, (InitWorker.GetSelectedMiscData.limitSelphie & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxSlot6, 1, (InitWorker.GetSelectedMiscData.limitSelphie & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom1, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom2, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom3, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom4, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom5, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom6, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom7, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloCom8, 1, (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x80) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn1, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x01) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn2, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x02) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn3, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x04) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn4, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x08) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn5, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x10) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn6, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x20) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn7, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x40) >= 1 ? true : false);
+                ToolTip(checkBoxAngeloKn8, 1, (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x80) >= 1 ? true : false);
+                ToolTip(numericUpDownAngelo1, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints1);
+                ToolTip(numericUpDownAngelo2, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints2);
+                ToolTip(numericUpDownAngelo3, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints3);
+                ToolTip(numericUpDownAngelo4, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints4);
+                ToolTip(numericUpDownAngelo5, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints5);
+                ToolTip(numericUpDownAngelo6, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints6);
+                ToolTip(numericUpDownAngelo7, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints7);
+                ToolTip(numericUpDownAngelo8, 0, InitWorker.GetSelectedMiscData.limitAngeloPoints8);
+            }
+            catch (Exception Exception)
+            {
+                MessageBox.Show(Exception.ToString());
+            }
+
+            InitWorker.ReadMisc(InitWorker.Init);
+            try
+            {
+                comboBoxParty1.SelectedIndex = InitWorker.GetSelectedMiscData.PartyMem1;
+                comboBoxParty2.SelectedIndex = InitWorker.GetSelectedMiscData.PartyMem2;
+                comboBoxParty3.SelectedIndex = InitWorker.GetSelectedMiscData.PartyMem3;
+                checkBoxWeapon1.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x01) >= 1 ? true : false;
+                checkBoxWeapon2.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x02) >= 1 ? true : false;
+                checkBoxWeapon3.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x04) >= 1 ? true : false;
+                checkBoxWeapon4.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x08) >= 1 ? true : false;
+                checkBoxWeapon5.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x10) >= 1 ? true : false;
+                checkBoxWeapon6.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x20) >= 1 ? true : false;
+                checkBoxWeapon7.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x40) >= 1 ? true : false;
+                checkBoxWeapon8.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x80) >= 1 ? true : false;
+                checkBoxWeapon9.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x01) >= 1 ? true : false;
+                checkBoxWeapon10.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x02) >= 1 ? true : false;
+                checkBoxWeapon11.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x04) >= 1 ? true : false;
+                checkBoxWeapon12.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x08) >= 1 ? true : false;
+                checkBoxWeapon13.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x10) >= 1 ? true : false;
+                checkBoxWeapon14.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x20) >= 1 ? true : false;
+                checkBoxWeapon15.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x40) >= 1 ? true : false;
+                checkBoxWeapon16.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons2 & 0x80) >= 1 ? true : false;
+                checkBoxWeapon17.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x01) >= 1 ? true : false;
+                checkBoxWeapon18.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x02) >= 1 ? true : false;
+                checkBoxWeapon19.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x04) >= 1 ? true : false;
+                checkBoxWeapon20.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x08) >= 1 ? true : false;
+                checkBoxWeapon21.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x10) >= 1 ? true : false;
+                checkBoxWeapon22.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x20) >= 1 ? true : false;
+                checkBoxWeapon23.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x40) >= 1 ? true : false;
+                checkBoxWeapon24.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons3 & 0x80) >= 1 ? true : false;
+                checkBoxWeapon25.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x01) >= 1 ? true : false;
+                checkBoxWeapon26.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x02) >= 1 ? true : false;
+                checkBoxWeapon27.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x04) >= 1 ? true : false;
+                checkBoxWeapon28.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x08) >= 1 ? true : false;
+                checkBoxWeapon29.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x10) >= 1 ? true : false;
+                checkBoxWeapon30.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x20) >= 1 ? true : false;
+                checkBoxWeapon31.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x40) >= 1 ? true : false;
+                checkBoxWeapon32.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons4 & 0x80) >= 1 ? true : false;
+                hexUpDownB1.Value = InitWorker.GetSelectedMiscData.Unknown1;
+                hexUpDownB2.Value = InitWorker.GetSelectedMiscData.Unknown2;
+                numericUpDownGil.Value = InitWorker.GetSelectedMiscData.Gil;
+                numericUpDownGilLaguna.Value = InitWorker.GetSelectedMiscData.GilLaguna;
+                checkBoxBlueMagic1.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x01) >= 1 ? true : false;
+                checkBoxBlueMagic2.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x02) >= 1 ? true : false;
+                checkBoxBlueMagic3.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x04) >= 1 ? true : false;
+                checkBoxBlueMagic4.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x08) >= 1 ? true : false;
+                checkBoxBlueMagic5.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x10) >= 1 ? true : false;
+                checkBoxBlueMagic6.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x20) >= 1 ? true : false;
+                checkBoxBlueMagic7.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x40) >= 1 ? true : false;
+                checkBoxBlueMagic8.Checked = (InitWorker.GetSelectedMiscData.limitQuistis1 & 0x80) >= 1 ? true : false;
+                checkBoxBlueMagic9.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x01) >= 1 ? true : false;
+                checkBoxBlueMagic10.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x02) >= 1 ? true : false;
+                checkBoxBlueMagic11.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x04) >= 1 ? true : false;
+                checkBoxBlueMagic12.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x08) >= 1 ? true : false;
+                checkBoxBlueMagic13.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x10) >= 1 ? true : false;
+                checkBoxBlueMagic14.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x20) >= 1 ? true : false;
+                checkBoxBlueMagic15.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x40) >= 1 ? true : false;
+                checkBoxBlueMagic16.Checked = (InitWorker.GetSelectedMiscData.limitQuistis2 & 0x80) >= 1 ? true : false;
+                checkBoxDuelMove1.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x01) >= 1 ? true : false;
+                checkBoxDuelMove2.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x02) >= 1 ? true : false;
+                checkBoxDuelMove3.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x04) >= 1 ? true : false;
+                checkBoxDuelMove4.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x08) >= 1 ? true : false;
+                checkBoxDuelMove5.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x10) >= 1 ? true : false;
+                checkBoxDuelMove6.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x20) >= 1 ? true : false;
+                checkBoxDuelMove7.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x40) >= 1 ? true : false;
+                checkBoxDuelMove8.Checked = (InitWorker.GetSelectedMiscData.limitZell1 & 0x80) >= 1 ? true : false;
+                checkBoxDuelMove9.Checked = (InitWorker.GetSelectedMiscData.limitZell2 & 0x01) >= 1 ? true : false;
+                checkBoxDuelMove10.Checked = (InitWorker.GetSelectedMiscData.limitZell2 & 0x02) >= 1 ? true : false;
+                checkBoxShot1.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x01) >= 1 ? true : false;
+                checkBoxShot2.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x02) >= 1 ? true : false;
+                checkBoxShot3.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x04) >= 1 ? true : false;
+                checkBoxShot4.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x08) >= 1 ? true : false;
+                checkBoxShot5.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x10) >= 1 ? true : false;
+                checkBoxShot6.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x20) >= 1 ? true : false;
+                checkBoxShot7.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x40) >= 1 ? true : false;
+                checkBoxShot8.Checked = (InitWorker.GetSelectedMiscData.limitIrvine & 0x80) >= 1 ? true : false;
+                checkBoxSlot1.Checked = (InitWorker.GetSelectedMiscData.limitSelphie & 0x01) >= 1 ? true : false;
+                checkBoxSlot2.Checked = (InitWorker.GetSelectedMiscData.limitSelphie & 0x02) >= 1 ? true : false;
+                checkBoxSlot3.Checked = (InitWorker.GetSelectedMiscData.limitSelphie & 0x04) >= 1 ? true : false;
+                checkBoxSlot4.Checked = (InitWorker.GetSelectedMiscData.limitSelphie & 0x08) >= 1 ? true : false;
+                checkBoxSlot5.Checked = (InitWorker.GetSelectedMiscData.limitSelphie & 0x10) >= 1 ? true : false;
+                checkBoxSlot6.Checked = (InitWorker.GetSelectedMiscData.limitSelphie & 0x20) >= 1 ? true : false;
+                checkBoxAngeloCom1.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x01) >= 1 ? true : false;
+                checkBoxAngeloCom2.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x02) >= 1 ? true : false;
+                checkBoxAngeloCom3.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x04) >= 1 ? true : false;
+                checkBoxAngeloCom4.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x08) >= 1 ? true : false;
+                checkBoxAngeloCom5.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x10) >= 1 ? true : false;
+                checkBoxAngeloCom6.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x20) >= 1 ? true : false;
+                checkBoxAngeloCom7.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x40) >= 1 ? true : false;
+                checkBoxAngeloCom8.Checked = (InitWorker.GetSelectedMiscData.limitAngeloCompleted & 0x80) >= 1 ? true : false;
+                checkBoxAngeloKn1.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x01) >= 1 ? true : false;
+                checkBoxAngeloKn2.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x02) >= 1 ? true : false;
+                checkBoxAngeloKn3.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x04) >= 1 ? true : false;
+                checkBoxAngeloKn4.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x08) >= 1 ? true : false;
+                checkBoxAngeloKn5.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x10) >= 1 ? true : false;
+                checkBoxAngeloKn6.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x20) >= 1 ? true : false;
+                checkBoxAngeloKn7.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x40) >= 1 ? true : false;
+                checkBoxAngeloKn8.Checked = (InitWorker.GetSelectedMiscData.limitAngeloKnown & 0x80) >= 1 ? true : false;
+                numericUpDownAngelo1.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints1;
+                numericUpDownAngelo2.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints2;
+                numericUpDownAngelo3.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints3;
+                numericUpDownAngelo4.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints4;
+                numericUpDownAngelo5.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints5;
+                numericUpDownAngelo6.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints6;
+                numericUpDownAngelo7.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints7;
+                numericUpDownAngelo8.Value = InitWorker.GetSelectedMiscData.limitAngeloPoints8;
             }
             catch (Exception Exception)
             {

@@ -80,6 +80,9 @@
     <Compile Include="HexUpDown.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="HexUpDownB.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="InitWorker.cs" />
     <Compile Include="ListViewEx.cs">
       <SubType>Component</SubType>
@@ -210,6 +213,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\weapon27.png" />
+    <None Include="Resources\weapon26.png" />
+    <None Include="Resources\weapon25.png" />
+    <None Include="Resources\weapon24.png" />
+    <None Include="Resources\weapon23.png" />
+    <None Include="Resources\weapon22.png" />
+    <None Include="Resources\weapon21.png" />
+    <None Include="Resources\weapon20.png" />
+    <None Include="Resources\weapon19.png" />
+    <None Include="Resources\weapon18.png" />
+    <None Include="Resources\weapon17.png" />
+    <None Include="Resources\weapon16.png" />
+    <None Include="Resources\weapon15.png" />
+    <None Include="Resources\weapon14.png" />
+    <None Include="Resources\weapon13.png" />
+    <None Include="Resources\weapon12.png" />
+    <None Include="Resources\weapon11.png" />
+    <None Include="Resources\weapon10.png" />
+    <None Include="Resources\weapon09.png" />
+    <None Include="Resources\weapon08.png" />
+    <None Include="Resources\weapon07.png" />
+    <None Include="Resources\weapon06.png" />
+    <None Include="Resources\weapon05.png" />
+    <None Include="Resources\weapon04.png" />
+    <None Include="Resources\weapon03.png" />
+    <None Include="Resources\weapon02.png" />
+    <None Include="Resources\weapon01.png" />
+    <None Include="Resources\weapon00.png" />
     <None Include="Resources\List_Items.txt" />
     <None Include="Resources\loading font.png" />
     <None Include="Resources\List_Magic.txt" />
