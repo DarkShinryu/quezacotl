@@ -1,10 +1,10 @@
-# Doomtrain
-Doomtrain is a C# editor for Final Fantasy VIII kernel.bin file.
+# Quezacotl
+Quezacotl is a C# editor for Final Fantasy VIII init.out file.
 
-<img src="https://cloud.githubusercontent.com/assets/5892410/17307688/b5270ade-5836-11e6-8e03-e2f91e47c0f8.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/5892410/17307689/b52c1218-5836-11e6-9094-2756dbacd76b.png" width="30%"></img> <img src="https://cloud.githubusercontent.com/assets/5892410/17307690/b535fb5c-5836-11e6-8d6a-a3cf0c11a1a0.png" width="30%"></img> 
+<img src="(https://cloud.githubusercontent.com/assets/5892410/18287959/9e2c373c-7479-11e6-97c9-85abd476a5be.png" width="30%"></img>
 
 ## Requirements
-- .NET Framework 4.5
+- .NET Framework 4.6
 - Visual Studio or MSBuild
 
 ## License

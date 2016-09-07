@@ -1608,8 +1608,12 @@ namespace Quezacotl
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
-            SetWindowTheme(listViewExCharactersList.Handle, "explorer", null);
-            SetWindowTheme(listViewExGfList.Handle, "explorer", null);
+
+            if (!this.DesignMode && Environment.OSVersion.Platform == PlatformID.Win32NT && Environment.OSVersion.Version.Major >= 6)
+            {
+                SetWindowTheme(listViewExCharactersList.Handle, "explorer", null);
+                SetWindowTheme(listViewExGfList.Handle, "explorer", null);
+            }
         }
 
         #endregion        
@@ -1825,10 +1829,10 @@ namespace Quezacotl
                 toolTip1.SetToolTip(numericUpDownGfExpLvUp, "The Exp required to level up is in kernel.bin.\n" +
                     "This is here only to help you calculate the current level, it does nothing to init.out.");
 
+                CheckIfAllGfsAreChecked();
+
                 listViewExCharactersList.Items[0].Selected = true;
                 listViewExGfList.Items[0].Selected = true;
-
-                CheckIfAllGfsAreChecked();
 
                 toolStripStatusLabelStatus.Text = Path.GetFileName(_existingFilename) + " loaded successfully";
                 toolStripStatusLabelInit.Text = Path.GetFileName(_existingFilename) + " loaded";
@@ -2311,6 +2315,13 @@ namespace Quezacotl
             tabControlGf.SelectedIndex = 0;
 
             listBoxMain.SelectedIndex = 0;
+            listViewExCharactersList.Items[0].Selected = true;
+            listViewExGfList.Items[0].Selected = true;
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            this.Activate();
         }
 
         #endregion
@@ -4147,5 +4158,7 @@ namespace Quezacotl
         }
 
         #endregion
+
+
     }
 }

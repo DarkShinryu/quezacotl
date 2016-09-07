@@ -17540,6 +17540,7 @@
             // 
             // listViewExCharactersList
             // 
+            this.listViewExCharactersList.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.listViewExCharactersList.AutoArrange = false;
             this.listViewExCharactersList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listViewExCharactersList.Dock = System.Windows.Forms.DockStyle.Top;
@@ -17735,6 +17736,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quezacotl v1.0.0";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGfExpLvUp)).EndInit();
             this.panelGfLevel.ResumeLayout(false);
             this.panelGfLevel.PerformLayout();

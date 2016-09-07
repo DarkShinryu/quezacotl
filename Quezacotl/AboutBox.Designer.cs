@@ -36,13 +36,10 @@
             this.linkLabelDonate = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabelForum = new System.Windows.Forms.LinkLabel();
-            this.label5 = new System.Windows.Forms.Label();
             this.linkLabelGit = new System.Windows.Forms.LinkLabel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxFont = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQue)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -69,7 +66,7 @@
             this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(255)))), ((int)(((byte)(160)))));
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.Location = new System.Drawing.Point(82, 307);
+            this.buttonClose.Location = new System.Drawing.Point(74, 307);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(145, 25);
@@ -83,9 +80,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.buttonClose);
-            this.panel1.Location = new System.Drawing.Point(241, 0);
+            this.panel1.Location = new System.Drawing.Point(236, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(309, 347);
+            this.panel1.Size = new System.Drawing.Size(292, 347);
             this.panel1.TabIndex = 11;
             // 
             // panel2
@@ -96,12 +93,9 @@
             this.panel2.Controls.Add(this.linkLabelDonate);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.linkLabelForum);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.linkLabelGit);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(82, 89);
+            this.panel2.Location = new System.Drawing.Point(74, 89);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(145, 203);
             this.panel2.TabIndex = 13;
@@ -131,11 +125,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label4.Location = new System.Drawing.Point(37, 127);
+            this.label4.Location = new System.Drawing.Point(39, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 15);
+            this.label4.Size = new System.Drawing.Size(74, 60);
             this.label4.TabIndex = 11;
-            this.label4.Text = "• Maki";
+            this.label4.Text = "• Maki\r\n• JWP\r\n• Melchior01\r\n• myst6re";
             // 
             // linkLabelForum
             // 
@@ -148,16 +142,6 @@
             this.linkLabelForum.Text = "Official Forum Thread";
             this.linkLabelForum.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelForum_LinkClicked);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label5.Location = new System.Drawing.Point(37, 144);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 15);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "• JWP";
-            // 
             // linkLabelGit
             // 
             this.linkLabelGit.AutoSize = true;
@@ -168,16 +152,6 @@
             this.linkLabelGit.TabStop = true;
             this.linkLabelGit.Text = "GitHub Repository";
             this.linkLabelGit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelGit_LinkClicked);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label6.Location = new System.Drawing.Point(37, 161);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 15);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "• Melchior01";
             // 
             // label3
             // 
@@ -193,7 +167,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F);
-            this.label2.Location = new System.Drawing.Point(82, 61);
+            this.label2.Location = new System.Drawing.Point(74, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 20);
             this.label2.TabIndex = 11;
@@ -202,30 +176,20 @@
             // pictureBoxFont
             // 
             this.pictureBoxFont.Image = global::Quezacotl.Properties.Resources.about_font;
-            this.pictureBoxFont.Location = new System.Drawing.Point(241, 12);
+            this.pictureBoxFont.Location = new System.Drawing.Point(233, 6);
             this.pictureBoxFont.Name = "pictureBoxFont";
             this.pictureBoxFont.Size = new System.Drawing.Size(295, 52);
             this.pictureBoxFont.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxFont.TabIndex = 0;
             this.pictureBoxFont.TabStop = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label7.Location = new System.Drawing.Point(37, 178);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 15);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "• myst6re";
-            // 
             // AboutBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Azure;
             this.CancelButton = this.buttonClose;
-            this.ClientSize = new System.Drawing.Size(544, 344);
+            this.ClientSize = new System.Drawing.Size(527, 344);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBoxFont);
             this.Controls.Add(this.pictureBoxQue);
@@ -254,14 +218,11 @@
         private System.Windows.Forms.PictureBox pictureBoxFont;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabelDonate;
         private System.Windows.Forms.LinkLabel linkLabelForum;
         private System.Windows.Forms.LinkLabel linkLabelGit;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
     }
 }
