@@ -3115,9 +3115,17 @@ namespace Quezacotl
             InitWorker.ReadMisc(InitWorker.BackupInit);
             try
             {
-                ToolTip(comboBoxParty1, 2, comboBoxParty1.Items[InitWorker.GetSelectedMiscData.PartyMem1]);
-                ToolTip(comboBoxParty2, 2, comboBoxParty1.Items[InitWorker.GetSelectedMiscData.PartyMem2]);
-                ToolTip(comboBoxParty3, 2, comboBoxParty1.Items[InitWorker.GetSelectedMiscData.PartyMem3]);
+                void setCombo(ref ComboBox combo, byte value)
+                {
+                    if (value < 0xFF)
+                        value++;
+
+                    else value = 0;
+                    ToolTip(combo, 2, comboBoxParty1.Items[value + 1]);
+                };
+                setCombo(ref comboBoxParty1, InitWorker.GetSelectedMiscData.PartyMem1);
+                setCombo(ref comboBoxParty2, InitWorker.GetSelectedMiscData.PartyMem2);
+                setCombo(ref comboBoxParty3, InitWorker.GetSelectedMiscData.PartyMem3);
                 ToolTip(checkBoxWeapon1, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x01) >= 1 ? true : false);
                 ToolTip(checkBoxWeapon2, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x02) >= 1 ? true : false);
                 ToolTip(checkBoxWeapon3, 1, (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x04) >= 1 ? true : false);
@@ -3227,9 +3235,16 @@ namespace Quezacotl
             InitWorker.ReadMisc(InitWorker.Init);
             try
             {
-                comboBoxParty1.SelectedIndex = InitWorker.GetSelectedMiscData.PartyMem1;
-                comboBoxParty2.SelectedIndex = InitWorker.GetSelectedMiscData.PartyMem2;
-                comboBoxParty3.SelectedIndex = InitWorker.GetSelectedMiscData.PartyMem3;
+                void setCombo(ref ComboBox combo, byte value)
+                {
+                    if (value < 0xFF)
+                        value++;
+                    else value = 0;
+                    combo.SelectedIndex = value;
+                };
+                setCombo(ref comboBoxParty1, InitWorker.GetSelectedMiscData.PartyMem1);
+                setCombo(ref comboBoxParty2, InitWorker.GetSelectedMiscData.PartyMem2);
+                setCombo(ref comboBoxParty3, InitWorker.GetSelectedMiscData.PartyMem3);
                 checkBoxWeapon1.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x01) >= 1 ? true : false;
                 checkBoxWeapon2.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x02) >= 1 ? true : false;
                 checkBoxWeapon3.Checked = (InitWorker.GetSelectedMiscData.KnownWeapons1 & 0x04) >= 1 ? true : false;
