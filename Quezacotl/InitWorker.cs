@@ -1410,16 +1410,22 @@ namespace Quezacotl
         {
             if (!Form1._loaded || Init == null)
                 return;
+            byte CorrectParty(byte value)
+            {
+                if (value == 0)
+                    return 0xFF;
+                else return value--;
+            }
             switch (index)
             {
                 case 0:
-                    Init[OffsetToMiscSelected] = Convert.ToByte(variable); //party member 1
+                    Init[OffsetToMiscSelected] = CorrectParty(Convert.ToByte(variable)); //party member 1
                     return;
                 case 1:
-                    Init[OffsetToMiscSelected + 1] = Convert.ToByte(variable); //party member 2
+                    Init[OffsetToMiscSelected + 1] = CorrectParty(Convert.ToByte(variable)); //party member 2
                     return;
                 case 2:
-                    Init[OffsetToMiscSelected + 2] = Convert.ToByte(variable); //party member 3
+                    Init[OffsetToMiscSelected + 2] = CorrectParty(Convert.ToByte(variable)); //party member 3
                     return;
                 case 3:
                     Init[OffsetToMiscSelected + 3] = (byte)(Init[OffsetToMiscSelected + 4] ^ Convert.ToByte(variable)); //known weapons 1
